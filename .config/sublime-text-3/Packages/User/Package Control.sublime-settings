@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"AutoFileName",
+		"Base16 Color Schemes",
+		"BracketHighlighter",
+		"C Improved",
+		"C++ Snippets",
+		"ChannelRepositoryTools",
+		"ColorPicker",
+		"Colorsublime",
+		"Highlight Build Errors",
+		"Highlighter",
+		"JavaIME",
+		"MagicPython",
+		"MarkdownEditing",
+		"MarkdownPreview",
+		"Package Control",
+		"PackageDev",
+		"SideBarEnhancements",
+		"Solarized Color Scheme",
+		"SublimeLinter",
+		"SublimeLinter-gcc",
+		"SublimeLinter-javac",
+		"SublimeLinter-php"
+	]
+}

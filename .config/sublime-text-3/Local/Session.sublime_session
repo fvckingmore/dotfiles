@@ -1,0 +1,2724 @@
+{
+	"folder_history":
+	[
+		"/home/moreno/pruebaPHP",
+		"/home/moreno/curso-de-vim/capitulos",
+		"/var/lib/lxc/web/rootfs/var/www/html",
+		"/var/lib/lxc/web/rootfs/var/www/html/webTST",
+		"/home/moreno/WEB",
+		"/home/moreno/Documentos/Universidad/projectCont",
+		"/home/moreno/examenProgramacion",
+		"/home/moreno/cliente",
+		"/home/moreno/Documentos/examenProgram",
+		"/home/moreno/Documentos/Chat-Application-Using-Java-Sockets",
+		"/home/moreno/Documentos/examenEstructuras",
+		"/home/moreno/Documentos/templates",
+		"/home/moreno/Documentos/projectChat",
+		"/home/moreno/Documentos/projectCont",
+		"/home/moreno/Documentos/Universidad/programIII/Ejercicio5_AdrianMoreno",
+		"/home/moreno/Documentos/projectReversi",
+		"/home/moreno/Documentos/projectDic",
+		"/home/moreno/Documentos/Universidad/estructuraDeDatos/ejercicios",
+		"/home/moreno/Documentos/Universidad/estructuraDeDatos/asignacionN1",
+		"/home/moreno/pruebaC",
+		"/home/moreno/Documentos/Project",
+		"/media/moreno/fvckingmore/Programacion/python/Ejercicios",
+		"/home/moreno/Documentos/C",
+		"/home/moreno/Documentos/C/Program II",
+		"/home/moreno/python/Ejercicios",
+		"/home/moreno/dvde",
+		"/home/moreno/html",
+		"/home/moreno/html/Listas"
+	],
+	"last_version": 3211,
+	"last_window_id": 131,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 675.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"prnt",
+						"print"
+					],
+					[
+						"tam",
+						"tamIzq"
+					],
+					[
+						"cont",
+						"contarNodos"
+					],
+					[
+						"count",
+						"countNodes"
+					],
+					[
+						"NET",
+						"NETWORKINTERFACE\tJava Class"
+					],
+					[
+						"pu",
+						"public"
+					],
+					[
+						"packa",
+						"package"
+					],
+					[
+						"form",
+						"format()\tfunc"
+					],
+					[
+						"syst",
+						"System"
+					],
+					[
+						"pri",
+						"println()\tfunc"
+					],
+					[
+						"ou",
+						"out()\tfunc"
+					],
+					[
+						"print",
+						"PRINTABLE\tJava Class"
+					],
+					[
+						"impo",
+						"IMPLICITACTIVATIONPOLICY\tOrg Class"
+					],
+					[
+						"begi",
+						"begin"
+					],
+					[
+						"sol",
+						"Solarized (dark).sublime-color-scheme  \tSolarized Color Scheme"
+					],
+					[
+						"csv",
+						"csvFile"
+					],
+					[
+						"even",
+						"events"
+					],
+					[
+						"eve",
+						"events"
+					],
+					[
+						"accoun",
+						"accounts"
+					],
+					[
+						"acco",
+						"accountMap"
+					],
+					[
+						"event",
+						"eventMap"
+					],
+					[
+						"eventTyp",
+						"eventType"
+					],
+					[
+						"tr",
+						"true"
+					],
+					[
+						"r",
+						"rsrc/"
+					],
+					[
+						"sort",
+						"sortByVal"
+					],
+					[
+						"data",
+						"dataType"
+					],
+					[
+						"lo",
+						"log.hpp"
+					],
+					[
+						"cehc",
+						"checkEventType"
+					],
+					[
+						"logs",
+						"logsCount"
+					],
+					[
+						"log",
+						"logsCont"
+					],
+					[
+						"get",
+						"getAccount"
+					],
+					[
+						"Log",
+						"logNode.hpp"
+					],
+					[
+						"inc",
+						"include"
+					],
+					[
+						"name",
+						"namespace"
+					],
+					[
+						"strin",
+						"string"
+					],
+					[
+						"cou",
+						"count"
+					],
+					[
+						"inde",
+						"indexOnDictionary"
+					],
+					[
+						"dic",
+						"diccionaryWord"
+					],
+					[
+						"sho",
+						"showIndexDefinition"
+					],
+					[
+						"dicc",
+						"diccionary"
+					],
+					[
+						"AVL",
+						"AVLTreeNode"
+					],
+					[
+						"end",
+						"endif"
+					],
+					[
+						"_",
+						"_WIN32"
+					],
+					[
+						"str",
+						"stringToModify"
+					],
+					[
+						"inser",
+						"inserDictionaryWord"
+					],
+					[
+						"modi",
+						"modifyDictionaryWord"
+					],
+					[
+						"Dicc",
+						"Diccionario"
+					],
+					[
+						"read",
+						"readKey"
+					],
+					[
+						"in",
+						"index"
+					],
+					[
+						"optio",
+						"optionsDiccionary"
+					],
+					[
+						"opti",
+						"optionsDiccionary"
+					],
+					[
+						"opt",
+						"optionsIndex"
+					],
+					[
+						"en",
+						"endl"
+					],
+					[
+						"retur",
+						"return"
+					],
+					[
+						"palabra",
+						"palabra"
+					],
+					[
+						"line",
+						"lineCount"
+					],
+					[
+						"file",
+						"fileName"
+					],
+					[
+						"nam",
+						"namespace"
+					],
+					[
+						"usin",
+						"using"
+					],
+					[
+						"v",
+						"vec"
+					],
+					[
+						"wordTest",
+						"wordTest.h"
+					],
+					[
+						"NO",
+						"NODO"
+					],
+					[
+						"tmp",
+						"tmp"
+					],
+					[
+						"ran",
+						"randomArray"
+					],
+					[
+						"mejor",
+						"mejorJugada"
+					],
+					[
+						"actu",
+						"actualizacionIndividual"
+					],
+					[
+						"act",
+						"actualizacion"
+					],
+					[
+						"acta",
+						"actualizacionIndividual"
+					],
+					[
+						"mejo",
+						"mejorJugada"
+					],
+					[
+						"reco",
+						"recorridoPrincipal"
+					],
+					[
+						"me",
+						"mejorJugada"
+					],
+					[
+						"re",
+						"recorridos/"
+					],
+					[
+						"extr",
+						"ExtractNodeTail"
+					],
+					[
+						"Extra",
+						"ExtractNodeHead"
+					],
+					[
+						"ex",
+						"ExtractNodeHead"
+					],
+					[
+						"ad",
+						"AddNodeTail"
+					],
+					[
+						"Ad",
+						"AddNodeHead"
+					],
+					[
+						"pre",
+						"prev"
+					],
+					[
+						"ne",
+						"next"
+					],
+					[
+						"f_ed",
+						"f_edit_standar_user"
+					],
+					[
+						"lib",
+						"lib_user.h"
+					],
+					[
+						"mis",
+						"misc.h"
+					],
+					[
+						"h",
+						"misc.h"
+					],
+					[
+						"u",
+						"user.h"
+					],
+					[
+						"li",
+						"lib_pro.c"
+					],
+					[
+						"user",
+						"lib_user.c"
+					],
+					[
+						"n",
+						"n"
+					],
+					[
+						"cod",
+						"codigo"
+					],
+					[
+						"codi",
+						"codigo_auxiliar"
+					],
+					[
+						"Nombre",
+						"nombre"
+					],
+					[
+						"produ",
+						"productos"
+					],
+					[
+						"cd",
+						"codigo"
+					],
+					[
+						"cdi",
+						"codigo_auxiliar"
+					],
+					[
+						"codigo",
+						"codigo_auxiliar"
+					],
+					[
+						"scr",
+						"scr"
+					],
+					[
+						"exist",
+						"exist"
+					],
+					[
+						"us",
+						"username"
+					],
+					[
+						"temp",
+						"temp_pass"
+					],
+					[
+						"ic",
+						"include"
+					],
+					[
+						"lib_us",
+						"lib_user.h"
+					],
+					[
+						"getch",
+						"getchar"
+					],
+					[
+						"f_s",
+						"f_show_users"
+					],
+					[
+						"f_ad",
+						"f_admin_users_manager_menu"
+					],
+					[
+						"aux",
+						"aux_username"
+					],
+					[
+						"menu",
+						"f_standar_menu"
+					],
+					[
+						"f_ver",
+						"f_verify_id"
+					],
+					[
+						"filep",
+						"filep"
+					],
+					[
+						"au",
+						"aux"
+					],
+					[
+						"pa",
+						"password"
+					],
+					[
+						"del",
+						"relative_delete"
+					],
+					[
+						"op",
+						"op"
+					],
+					[
+						"de",
+						"del"
+					],
+					[
+						"tem",
+						"temp_user"
+					],
+					[
+						"c",
+						"conio.c"
+					],
+					[
+						"tm",
+						"temp_pass"
+					],
+					[
+						"valid",
+						"valid_user"
+					],
+					[
+						"te",
+						"temp_user"
+					],
+					[
+						"pass",
+						"password"
+					],
+					[
+						"sc",
+						"scr"
+					],
+					[
+						"use",
+						"username"
+					],
+					[
+						"library_test",
+						"library_test.c"
+					],
+					[
+						"p",
+						"puts"
+					],
+					[
+						"persona",
+						"persona_1"
+					],
+					[
+						"pr",
+						"prom"
+					],
+					[
+						"sa",
+						"scanf"
+					],
+					[
+						"estudin",
+						"estudiante"
+					],
+					[
+						"estu",
+						"estudiante_3"
+					],
+					[
+						"suma",
+						"suma_diaria"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++_win.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cpp.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cpp.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cpp.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/python_more.sublime-build",
+							""
+						],
+						[
+							"Packages/User/python_more.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/User/python_more.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"insa",
+						"Package Control: Install Package"
+					],
+					[
+						"repo",
+						"ChannelRepositoryTools: Test Default Channel"
+					],
+					[
+						"chann",
+						"ChannelRepositoryTools: Test Default Channel (including Remote Repositories)"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"package contr",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"unin",
+						"Colorsublime: Uninstall Theme"
+					],
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"markdown",
+						"Markdown Preview: Save to HTML"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"disab",
+						"Package Control: Disable Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"DISAB",
+						"Package Control: Disable Package"
+					],
+					[
+						"sche",
+						"UI: Select Color Scheme"
+					],
+					[
+						"scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"schem",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"package",
+						"Package Control: List Packages"
+					],
+					[
+						"en\tab",
+						"Package Control: Enable Package"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"di",
+						"Package Control: Disable Package"
+					],
+					[
+						"packagedi",
+						"Package Control: Disable Package"
+					],
+					[
+						"ackage",
+						"Package Control: Disable Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: i",
+						"Package Control: Install Package"
+					],
+					[
+						"them",
+						"UI: Select Theme"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa in",
+						"Package Control: Install Package"
+					],
+					[
+						"packa re",
+						"Package Control: Remove Package"
+					],
+					[
+						"pck ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"package con rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"package con ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: re",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: incl",
+						"Snippet: #include <…>"
+					],
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"LiveReload: enable",
+						"LiveReload: Enable/disable plug-ins"
+					],
+					[
+						"package rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ht",
+						"Snippet: html"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ",
+						"Snippet: #include <…>"
+					],
+					[
+						"packa",
+						"Preferences: Browse Packages"
+					],
+					[
+						"vm",
+						"View: Toggle Menu"
+					],
+					[
+						"Package Control:ins",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 230.0,
+				"history":
+				[
+					"find ${folser}",
+					"print floder;",
+					"print floder",
+					"print ${folder}",
+					"${folder}",
+					"${folser}",
+					"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/moreno/Documentos/Universidad/projectCont/src/log.hpp",
+				"/home/moreno/examenProgramacion/compile",
+				"/home/moreno/examenProgramacion/src/gui/VentanaCliente.java",
+				"/home/moreno/Documentos/examenEstructuras/examen.md",
+				"/home/moreno/Documentos/examenEstructuras/examen.html",
+				"/home/moreno/Documentos/examenEstructuras/5.cpp",
+				"/home/moreno/Documentos/templates/arboles.hpp",
+				"/home/moreno/Documentos/examenEstructuras/1.cpp",
+				"/home/moreno/Documentos/templates/listaDobleEnlazada.hpp",
+				"/home/moreno/Documentos/projectDic/src/tree/node/AVLTreeNode.hpp",
+				"/home/moreno/Documentos/projectDic/src/tree/struct/AVLTree.hpp",
+				"/home/moreno/Documentos/examenEstructuras/4.cpp",
+				"/home/moreno/Documentos/projectChat/src/main/Main.java",
+				"/home/moreno/Documentos/projectChat/compileProjects.sh",
+				"/home/moreno/Documentos/EstructuraDeDatos/listasEnlazadas.cpp",
+				"/home/moreno/Documentos/templates/listaSimpleEnlazada.cpp",
+				"/home/moreno/Documentos/templates/cola.hpp",
+				"/home/moreno/Documentos/templates/pila.hpp",
+				"/home/moreno/Documentos/projectCont/src/ui.hpp",
+				"/home/moreno/Documentos/projectCont/src/main.cpp",
+				"/home/moreno/Documentos/projectCont/src/logFilter.hpp",
+				"/home/moreno/Documentos/projectCont/src/log.hpp",
+				"/home/moreno/Documentos/Universidad/programIII/Ejercicio5_AdrianMoreno/src/client/Client.java",
+				"/home/moreno/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+				"/home/moreno/Documentos/projectCont/informeCodigo.md",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/MarkdownEditing/Markdown.sublime-settings",
+				"/home/moreno/Documentos/projectCont/informe.md",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Markdown (Standard).sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/MarkdownEditing/README.md",
+				"/home/moreno/Documentos/projectDic/src/UI/ui.hpp",
+				"/home/moreno/Documentos/projectCont/src/logManip/logFilter.hpp",
+				"/home/moreno/Documentos/projectCont/src/logManip/log.hpp",
+				"/home/moreno/Documentos/projectCont/src/ui/ui.hpp",
+				"/home/moreno/Documentos/projectDic/src/fileHandler/FileHandler.hpp",
+				"/home/moreno/Documentos/projectCont/src/eventMap.hpp",
+				"/home/moreno/Documentos/projectDic/src/mapa.hpp",
+				"/home/moreno/Documentos/projectCont/src/logNode.hpp",
+				"/home/moreno/Documentos/projectCont/src/main",
+				"/home/moreno/Documentos/projectDic/src/main/main.cpp",
+				"/home/moreno/Documentos/projectDic/src/main/main",
+				"/home/moreno/Documentos/projectDic/src/fileHandler/wordTest.h",
+				"/home/moreno/Documentos/projectDic/src/UI/misc.hpp",
+				"/home/moreno/Documentos/Universidad/Project Manager/misc.h",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/fileHandler/FileHandler.hpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/fileHandler/wordTest.h",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/main/main.cpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/tree/struct/mapa.hpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/tree/struct/AVLTree.hpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/mapa.hpp",
+				"/home/moreno/Documentos/projectDic/wordTest.h",
+				"/home/moreno/Documentos/projectDic/src/tree/AVLTree.hpp",
+				"/usr/include/c++/5/cstring",
+				"/home/moreno/Documentos/projectReversi/recorrido/recorrido.hpp",
+				"/usr/include/c++/5/iostream",
+				"/usr/include/c++/5/bits/basic_string.h",
+				"/usr/include/c++/5/string",
+				"/home/moreno/Documentos/projectDic/src/tree/AVLTreeNode.hpp",
+				"/home/moreno/Documentos/projectDic/tst.cpp",
+				"/home/moreno/Documentos/projectCont/src/filter.h",
+				"/home/moreno/Documentos/projectCont/signals.log",
+				"/home/moreno/Documentos/projectDic/src/charHandler/CharHandler.hpp",
+				"/home/moreno/Documentos/projectDic/dicc.h",
+				"/home/moreno/Documentos/EstructuraDeDatos/template.cpp",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/ejercicios/guia2/ejercicio1.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/pilas.cpp",
+				"/home/moreno/Documentos/Universidad/Program II/laboratorio030519_pila_Adrian_Moreno.c",
+				"/home/moreno/Documentos/EstructuraDeDatos/expresionBalanceada.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/colas.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/listasConArreglo.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/listasDoblementeEnlazadas.cpp",
+				"/home/moreno/Documentos/Universidad/Program II/laboratorio140519_Lista_Doble_Adrian_Moreno.c",
+				"/home/moreno/Documentos/Universidad/Program II/laboratorio300419_lista_Adrian_Moreno.c",
+				"/home/moreno/Documentos/projectReversi/src/recorridos/recorrido.hpp",
+				"/home/moreno/Documentos/projectReversi/src/GUI/Ventana.hpp",
+				"/media/moreno/fvckingmore/programacion/python/Ejercicios/tictactoe/TicTacToe.py",
+				"/home/moreno/Documentos/projectReversi/src/tablero/Tablero.hpp",
+				"/home/moreno/Documentos/projectReversi/src/bot/Bot.hpp",
+				"/home/moreno/Documentos/projectReversi/src/GUI/Opciones.hpp",
+				"/home/moreno/Documentos/projectReversi/src/jugador/Jugador.hpp",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/asignacionN1/orderMethods.hpp",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/asignacionN1/main.cpp",
+				"/home/moreno/Documentos/Universidad/programIII/Ejercicio5_AdrianMoreno/src/Main.java",
+				"/home/moreno/Metodos de Ordenamiento(1).cpp",
+				"/home/moreno/Metodos de Ordenamiento.cpp",
+				"/home/moreno/Documentos/projectReversi/src/bot/bot.hpp",
+				"/home/moreno/Documentos/projectReversi/tstMain.cpp",
+				"/home/moreno/Documentos/projectReversi/src/recorridos/actualizacion.hpp",
+				"/home/moreno/Documentos/Universidad/Proyecto_Buscaminas/Proyecto_Buscaminas_FULL_HD_READY_PAL_BICHETEO_ACTIVO_ENLAPISTA_EQUISDE .c",
+				"/home/moreno/Documentos/projectReversi/recorrido/actualizacion.hpp",
+				"/home/moreno/pruebaC/metodos.hpp",
+				"/home/moreno/pruebaC/main.cpp",
+				"/home/moreno/pruebaC/clase.hpp",
+				"/home/moreno/Documentos/projectReversi/src/coordenadas/Coordenadas.hpp",
+				"/home/moreno/Documentos/projectReversi/tstMethods.h",
+				"/home/moreno/Documentos/projectReversi/src/main.cpp",
+				"/home/moreno/Documentos/projectReversi/recorrido.hpp",
+				"/home/moreno/Documentos/projectReversi/src2/tstMain.cpp",
+				"/home/moreno/Documentos/projectReversi/src2/metodos/tstMethods.h",
+				"/home/moreno/Documentos/projectReversi/src/coordenadas/Coordenadas.h",
+				"/home/moreno/Documentos/projectReversi/src/tablero/Tablero.h",
+				"/home/moreno/Documentos/projectReversi/src/conversor/Conversor.h",
+				"/home/moreno/Documentos/projectReversi/src/GUI/Ventana.h",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/asignacionN1/orderMethods.h",
+				"/home/moreno/dotfiles",
+				"/home/moreno/Documentos/C/Program II/ListaTest.c",
+				"/home/moreno/.config/openbox/lubuntu-rc.xml",
+				"/home/moreno/Documentos/C/Program II/laboratorio300419_lista_Adrian_Moreno.c",
+				"/home/moreno/Documentos/Project/lib_user.h",
+				"/home/moreno/Documentos/Project/misc.h",
+				"/home/moreno/Documentos/Project/main.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio140519.c",
+				"/home/moreno/Documentos/Project/lib_pro.c",
+				"/home/moreno/Documentos/Project/lib_user.c",
+				"/home/moreno/Documentos/Project/conio.h",
+				"/home/moreno/Documentos/Project/pro.c",
+				"/home/moreno/Documentos/Project/user.h",
+				"/home/moreno/Documentos/Project/user.c",
+				"/home/moreno/Documentos/Project/pro.h",
+				"/home/moreno/Documentos/Project/lib_misc.h",
+				"/home/moreno/Documentos/Project/lib_pro.h",
+				"/home/moreno/Documentos/Project/lib_misc.c",
+				"/home/moreno/Documentos/Project/misc.c",
+				"/home/moreno/.local/share/applications/firefox.desktop",
+				"/usr/share/applications/firefox.desktop",
+				"/home/moreno/.local/share/applications/filezilla.desktop",
+				"/home/moreno/Documentos/test.c",
+				"/usr/include/stdlib.h"
+			],
+			"find":
+			{
+				"height": 21.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"Postorder",
+					"root",
+					"rightHt",
+					"leftHt",
+					"isHeightBalanced",
+					"root",
+					"del",
+					"next",
+					"ptr2",
+					"ptr1",
+					"word",
+					"Tlista",
+					"tLISTA",
+					"Tlista",
+					"sgte",
+					"nro",
+					"nodo",
+					"eventMap",
+					"eventMa",
+					"   ",
+					"  ",
+					"--",
+					"accounts",
+					"getAc",
+					"parse",
+					"accountMap",
+					"logMap",
+					"logs->",
+					"char",
+					"count",
+					"data",
+					"repe",
+					"[]",
+					"mapa",
+					"conte",
+					"map",
+					"diccionary",
+					"hea",
+					"->",
+					".",
+					"->",
+					"cout<< \"Total: \"<<\n\t\t\tindex.getCoutTotalWords()<< \" palabra/s\\n\\n\";",
+					"diccionaryWord",
+					"cadena",
+					"conte",
+					"scr();",
+					"case 1:\n\n\t\t\tbreak;",
+					"case 1:\n\n\t\t\tbreak;\n",
+					"str",
+					"str3",
+					"str2",
+					"length",
+					"endl",
+					"tail",
+					"inicio",
+					" * 1000",
+					"ms",
+					"randomArray",
+					"(orderedArray, invertedArray, randomArray)",
+					"init",
+					"/ 2",
+					"recorridoPrincipalBot",
+					"cout",
+					"**contadorFichas++;",
+					"**contadorFichas",
+					"*contadorFichas++;",
+					"endl",
+					"coAdyacente",
+					"==",
+					"tmpCoord",
+					"coBase",
+					"Ficha",
+					"ficha",
+					"curso",
+					"tmp",
+					"Ficha",
+					"ficha",
+					"tmp",
+					"coord",
+					"bcoord",
+					"coord",
+					"ficha",
+					"tmp",
+					"coord",
+					"bcoord",
+					"tmp",
+					"coordBase",
+					"tmp",
+					"coord",
+					"tmp",
+					"COORD",
+					" COORD",
+					"COORD",
+					"coord",
+					"COORD",
+					"i",
+					"2",
+					"bcoord",
+					"valor",
+					"n_mina",
+					"COORD",
+					"10",
+					"togg",
+					"maximi",
+					"openbox_con",
+					"openbox",
+					"ope",
+					"appl",
+					"/*",
+					"case 1:\n\n\t\t\t\tbreak;",
+					"scan",
+					"USER",
+					"User",
+					"USER",
+					"aux",
+					"error",
+					"\");\n",
+					"wait",
+					"opcion",
+					"slee",
+					"wait",
+					"slee",
+					"f_admin",
+					"f_standar",
+					"}\n",
+					"slee",
+					"scanf",
+					"pri"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"dictionary",
+					"coAdyacente",
+					"Coordenadas",
+					"arch"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 21.0
+			},
+			"input":
+			{
+				"height": 117.0
+			},
+			"menu_visible": true,
+			"output.SublimeLinter":
+			{
+				"height": 92.0
+			},
+			"output.SublimeLinter Messages":
+			{
+				"height": 91.0
+			},
+			"output.exec":
+			{
+				"height": 109.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.markdown":
+			{
+				"height": 91.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 97.0
+			},
+			"pinned_build_system": "Packages/MarkdownPreview/Markdown.sublime-build",
+			"replace":
+			{
+				"height": 38.0
+			},
+			"save_all_on_build": false,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Documentos/untitled.c"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 392.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 592.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 161.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 504.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"con",
+						"conex\tabc"
+					],
+					[
+						"mysq",
+						"mysql_close"
+					],
+					[
+						"db",
+						"dbHost\tabc"
+					],
+					[
+						"g",
+						"gge\tabc"
+					],
+					[
+						"prnt",
+						"print"
+					],
+					[
+						"tam",
+						"tamIzq"
+					],
+					[
+						"cont",
+						"contarNodos"
+					],
+					[
+						"count",
+						"countNodes"
+					],
+					[
+						"NET",
+						"NETWORKINTERFACE\tJava Class"
+					],
+					[
+						"pu",
+						"public"
+					],
+					[
+						"packa",
+						"package"
+					],
+					[
+						"form",
+						"format()\tfunc"
+					],
+					[
+						"syst",
+						"System"
+					],
+					[
+						"pri",
+						"println()\tfunc"
+					],
+					[
+						"ou",
+						"out()\tfunc"
+					],
+					[
+						"print",
+						"PRINTABLE\tJava Class"
+					],
+					[
+						"impo",
+						"IMPLICITACTIVATIONPOLICY\tOrg Class"
+					],
+					[
+						"begi",
+						"begin"
+					],
+					[
+						"sol",
+						"Solarized (dark).sublime-color-scheme  \tSolarized Color Scheme"
+					],
+					[
+						"csv",
+						"csvFile"
+					],
+					[
+						"even",
+						"events"
+					],
+					[
+						"eve",
+						"events"
+					],
+					[
+						"accoun",
+						"accounts"
+					],
+					[
+						"acco",
+						"accountMap"
+					],
+					[
+						"event",
+						"eventMap"
+					],
+					[
+						"eventTyp",
+						"eventType"
+					],
+					[
+						"tr",
+						"true"
+					],
+					[
+						"r",
+						"rsrc/"
+					],
+					[
+						"sort",
+						"sortByVal"
+					],
+					[
+						"data",
+						"dataType"
+					],
+					[
+						"lo",
+						"log.hpp"
+					],
+					[
+						"cehc",
+						"checkEventType"
+					],
+					[
+						"logs",
+						"logsCount"
+					],
+					[
+						"log",
+						"logsCont"
+					],
+					[
+						"get",
+						"getAccount"
+					],
+					[
+						"Log",
+						"logNode.hpp"
+					],
+					[
+						"inc",
+						"include"
+					],
+					[
+						"name",
+						"namespace"
+					],
+					[
+						"strin",
+						"string"
+					],
+					[
+						"cou",
+						"count"
+					],
+					[
+						"inde",
+						"indexOnDictionary"
+					],
+					[
+						"dic",
+						"diccionaryWord"
+					],
+					[
+						"sho",
+						"showIndexDefinition"
+					],
+					[
+						"dicc",
+						"diccionary"
+					],
+					[
+						"AVL",
+						"AVLTreeNode"
+					],
+					[
+						"end",
+						"endif"
+					],
+					[
+						"_",
+						"_WIN32"
+					],
+					[
+						"str",
+						"stringToModify"
+					],
+					[
+						"inser",
+						"inserDictionaryWord"
+					],
+					[
+						"modi",
+						"modifyDictionaryWord"
+					],
+					[
+						"Dicc",
+						"Diccionario"
+					],
+					[
+						"read",
+						"readKey"
+					],
+					[
+						"in",
+						"index"
+					],
+					[
+						"optio",
+						"optionsDiccionary"
+					],
+					[
+						"opti",
+						"optionsDiccionary"
+					],
+					[
+						"opt",
+						"optionsIndex"
+					],
+					[
+						"en",
+						"endl"
+					],
+					[
+						"retur",
+						"return"
+					],
+					[
+						"palabra",
+						"palabra"
+					],
+					[
+						"line",
+						"lineCount"
+					],
+					[
+						"file",
+						"fileName"
+					],
+					[
+						"nam",
+						"namespace"
+					],
+					[
+						"usin",
+						"using"
+					],
+					[
+						"v",
+						"vec"
+					],
+					[
+						"wordTest",
+						"wordTest.h"
+					],
+					[
+						"NO",
+						"NODO"
+					],
+					[
+						"tmp",
+						"tmp"
+					],
+					[
+						"ran",
+						"randomArray"
+					],
+					[
+						"mejor",
+						"mejorJugada"
+					],
+					[
+						"actu",
+						"actualizacionIndividual"
+					],
+					[
+						"act",
+						"actualizacion"
+					],
+					[
+						"acta",
+						"actualizacionIndividual"
+					],
+					[
+						"mejo",
+						"mejorJugada"
+					],
+					[
+						"reco",
+						"recorridoPrincipal"
+					],
+					[
+						"me",
+						"mejorJugada"
+					],
+					[
+						"re",
+						"recorridos/"
+					],
+					[
+						"extr",
+						"ExtractNodeTail"
+					],
+					[
+						"Extra",
+						"ExtractNodeHead"
+					],
+					[
+						"ex",
+						"ExtractNodeHead"
+					],
+					[
+						"ad",
+						"AddNodeTail"
+					],
+					[
+						"Ad",
+						"AddNodeHead"
+					],
+					[
+						"pre",
+						"prev"
+					],
+					[
+						"ne",
+						"next"
+					],
+					[
+						"f_ed",
+						"f_edit_standar_user"
+					],
+					[
+						"lib",
+						"lib_user.h"
+					],
+					[
+						"mis",
+						"misc.h"
+					],
+					[
+						"h",
+						"misc.h"
+					],
+					[
+						"u",
+						"user.h"
+					],
+					[
+						"li",
+						"lib_pro.c"
+					],
+					[
+						"user",
+						"lib_user.c"
+					],
+					[
+						"n",
+						"n"
+					],
+					[
+						"cod",
+						"codigo"
+					],
+					[
+						"codi",
+						"codigo_auxiliar"
+					],
+					[
+						"Nombre",
+						"nombre"
+					],
+					[
+						"produ",
+						"productos"
+					],
+					[
+						"cd",
+						"codigo"
+					],
+					[
+						"cdi",
+						"codigo_auxiliar"
+					],
+					[
+						"codigo",
+						"codigo_auxiliar"
+					],
+					[
+						"scr",
+						"scr"
+					],
+					[
+						"exist",
+						"exist"
+					],
+					[
+						"us",
+						"username"
+					],
+					[
+						"temp",
+						"temp_pass"
+					],
+					[
+						"ic",
+						"include"
+					],
+					[
+						"lib_us",
+						"lib_user.h"
+					],
+					[
+						"getch",
+						"getchar"
+					],
+					[
+						"f_s",
+						"f_show_users"
+					],
+					[
+						"f_ad",
+						"f_admin_users_manager_menu"
+					],
+					[
+						"aux",
+						"aux_username"
+					],
+					[
+						"menu",
+						"f_standar_menu"
+					],
+					[
+						"f_ver",
+						"f_verify_id"
+					],
+					[
+						"filep",
+						"filep"
+					],
+					[
+						"au",
+						"aux"
+					],
+					[
+						"pa",
+						"password"
+					],
+					[
+						"del",
+						"relative_delete"
+					],
+					[
+						"op",
+						"op"
+					],
+					[
+						"de",
+						"del"
+					],
+					[
+						"tem",
+						"temp_user"
+					],
+					[
+						"c",
+						"conio.c"
+					],
+					[
+						"tm",
+						"temp_pass"
+					],
+					[
+						"valid",
+						"valid_user"
+					],
+					[
+						"te",
+						"temp_user"
+					],
+					[
+						"pass",
+						"password"
+					],
+					[
+						"sc",
+						"scr"
+					],
+					[
+						"use",
+						"username"
+					],
+					[
+						"library_test",
+						"library_test.c"
+					],
+					[
+						"p",
+						"puts"
+					],
+					[
+						"persona",
+						"persona_1"
+					],
+					[
+						"pr",
+						"prom"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/moreno/pruebaPHP/tstdb.php",
+					"settings":
+					{
+						"buffer_size": 290,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/moreno/pruebaPHP/conexion.php",
+					"settings":
+					{
+						"buffer_size": 90,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++_win.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cpp.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cpp.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cpp.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/python_more.sublime-build",
+							""
+						],
+						[
+							"Packages/User/python_more.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/User/python_more.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"ensa",
+						"AutoFileName: Quick Settings"
+					],
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"insa",
+						"Package Control: Install Package"
+					],
+					[
+						"repo",
+						"ChannelRepositoryTools: Test Default Channel"
+					],
+					[
+						"chann",
+						"ChannelRepositoryTools: Test Default Channel (including Remote Repositories)"
+					],
+					[
+						"package contr",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"unin",
+						"Colorsublime: Uninstall Theme"
+					],
+					[
+						"markdown",
+						"Markdown Preview: Save to HTML"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"disab",
+						"Package Control: Disable Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"DISAB",
+						"Package Control: Disable Package"
+					],
+					[
+						"sche",
+						"UI: Select Color Scheme"
+					],
+					[
+						"scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"schem",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"package",
+						"Package Control: List Packages"
+					],
+					[
+						"en\tab",
+						"Package Control: Enable Package"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"di",
+						"Package Control: Disable Package"
+					],
+					[
+						"packagedi",
+						"Package Control: Disable Package"
+					],
+					[
+						"ackage",
+						"Package Control: Disable Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: i",
+						"Package Control: Install Package"
+					],
+					[
+						"them",
+						"UI: Select Theme"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa in",
+						"Package Control: Install Package"
+					],
+					[
+						"packa re",
+						"Package Control: Remove Package"
+					],
+					[
+						"pck ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"package con rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"package con ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: re",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: incl",
+						"Snippet: #include <…>"
+					],
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"LiveReload: enable",
+						"LiveReload: Enable/disable plug-ins"
+					],
+					[
+						"package rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ht",
+						"Snippet: html"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ",
+						"Snippet: #include <…>"
+					],
+					[
+						"packa",
+						"Preferences: Browse Packages"
+					],
+					[
+						"vm",
+						"View: Toggle Menu"
+					],
+					[
+						"Package Control:ins",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 230.0,
+				"history":
+				[
+					"find ${folser}",
+					"print floder;",
+					"print floder",
+					"print ${folder}",
+					"${folder}",
+					"${folser}",
+					"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/moreno/pruebaPHP"
+			],
+			"file_history":
+			[
+				"/home/moreno/curso-de-vim/capitulos/vim2.md",
+				"/home/moreno/curso-de-vim/capitulos/vim1.md",
+				"/var/lib/lxc/web/rootfs/var/www/html/dbConnect.php",
+				"/var/lib/lxc/web/rootfs/var/www/html/webTST/dbConnect.php",
+				"/home/moreno/WEB/dbConnect.php",
+				"/home/moreno/pruebaPHP/index.php",
+				"/home/moreno/pruebaPHP/prueba.php",
+				"/home/moreno/Documentos/Universidad/projectCont/src/log.hpp",
+				"/home/moreno/examenProgramacion/compile",
+				"/home/moreno/examenProgramacion/src/gui/VentanaCliente.java",
+				"/home/moreno/Documentos/examenEstructuras/examen.md",
+				"/home/moreno/Documentos/examenEstructuras/examen.html",
+				"/home/moreno/Documentos/examenEstructuras/5.cpp",
+				"/home/moreno/Documentos/templates/arboles.hpp",
+				"/home/moreno/Documentos/examenEstructuras/1.cpp",
+				"/home/moreno/Documentos/templates/listaDobleEnlazada.hpp",
+				"/home/moreno/Documentos/projectDic/src/tree/node/AVLTreeNode.hpp",
+				"/home/moreno/Documentos/projectDic/src/tree/struct/AVLTree.hpp",
+				"/home/moreno/Documentos/examenEstructuras/4.cpp",
+				"/home/moreno/Documentos/projectChat/src/main/Main.java",
+				"/home/moreno/Documentos/projectChat/compileProjects.sh",
+				"/home/moreno/Documentos/EstructuraDeDatos/listasEnlazadas.cpp",
+				"/home/moreno/Documentos/templates/listaSimpleEnlazada.cpp",
+				"/home/moreno/Documentos/templates/cola.hpp",
+				"/home/moreno/Documentos/templates/pila.hpp",
+				"/home/moreno/Documentos/projectCont/src/ui.hpp",
+				"/home/moreno/Documentos/projectCont/src/main.cpp",
+				"/home/moreno/Documentos/projectCont/src/logFilter.hpp",
+				"/home/moreno/Documentos/projectCont/src/log.hpp",
+				"/home/moreno/Documentos/Universidad/programIII/Ejercicio5_AdrianMoreno/src/client/Client.java",
+				"/home/moreno/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+				"/home/moreno/Documentos/projectCont/informeCodigo.md",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/MarkdownEditing/Markdown.sublime-settings",
+				"/home/moreno/Documentos/projectCont/informe.md",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Markdown (Standard).sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/MarkdownEditing/README.md",
+				"/home/moreno/Documentos/projectDic/src/UI/ui.hpp",
+				"/home/moreno/Documentos/projectCont/src/logManip/logFilter.hpp",
+				"/home/moreno/Documentos/projectCont/src/logManip/log.hpp",
+				"/home/moreno/Documentos/projectCont/src/ui/ui.hpp",
+				"/home/moreno/Documentos/projectDic/src/fileHandler/FileHandler.hpp",
+				"/home/moreno/Documentos/projectCont/src/eventMap.hpp",
+				"/home/moreno/Documentos/projectDic/src/mapa.hpp",
+				"/home/moreno/Documentos/projectCont/src/logNode.hpp",
+				"/home/moreno/Documentos/projectCont/src/main",
+				"/home/moreno/Documentos/projectDic/src/main/main.cpp",
+				"/home/moreno/Documentos/projectDic/src/main/main",
+				"/home/moreno/Documentos/projectDic/src/fileHandler/wordTest.h",
+				"/home/moreno/Documentos/projectDic/src/UI/misc.hpp",
+				"/home/moreno/Documentos/Universidad/Project Manager/misc.h",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/fileHandler/FileHandler.hpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/fileHandler/wordTest.h",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/main/main.cpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/tree/struct/mapa.hpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/tree/struct/AVLTree.hpp",
+				"/home/moreno/Documentos/projectDic/diccionario-hash/diccionario-devAlexei/src/mapa.hpp",
+				"/home/moreno/Documentos/projectDic/wordTest.h",
+				"/home/moreno/Documentos/projectDic/src/tree/AVLTree.hpp",
+				"/usr/include/c++/5/cstring",
+				"/home/moreno/Documentos/projectReversi/recorrido/recorrido.hpp",
+				"/usr/include/c++/5/iostream",
+				"/usr/include/c++/5/bits/basic_string.h",
+				"/usr/include/c++/5/string",
+				"/home/moreno/Documentos/projectDic/src/tree/AVLTreeNode.hpp",
+				"/home/moreno/Documentos/projectDic/tst.cpp",
+				"/home/moreno/Documentos/projectCont/src/filter.h",
+				"/home/moreno/Documentos/projectCont/signals.log",
+				"/home/moreno/Documentos/projectDic/src/charHandler/CharHandler.hpp",
+				"/home/moreno/Documentos/projectDic/dicc.h",
+				"/home/moreno/Documentos/EstructuraDeDatos/template.cpp",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/ejercicios/guia2/ejercicio1.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/pilas.cpp",
+				"/home/moreno/Documentos/Universidad/Program II/laboratorio030519_pila_Adrian_Moreno.c",
+				"/home/moreno/Documentos/EstructuraDeDatos/expresionBalanceada.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/colas.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/listasConArreglo.cpp",
+				"/home/moreno/Documentos/EstructuraDeDatos/listasDoblementeEnlazadas.cpp",
+				"/home/moreno/Documentos/Universidad/Program II/laboratorio140519_Lista_Doble_Adrian_Moreno.c",
+				"/home/moreno/Documentos/Universidad/Program II/laboratorio300419_lista_Adrian_Moreno.c",
+				"/home/moreno/Documentos/projectReversi/src/recorridos/recorrido.hpp",
+				"/home/moreno/Documentos/projectReversi/src/GUI/Ventana.hpp",
+				"/media/moreno/fvckingmore/programacion/python/Ejercicios/tictactoe/TicTacToe.py",
+				"/home/moreno/Documentos/projectReversi/src/tablero/Tablero.hpp",
+				"/home/moreno/Documentos/projectReversi/src/bot/Bot.hpp",
+				"/home/moreno/Documentos/projectReversi/src/GUI/Opciones.hpp",
+				"/home/moreno/Documentos/projectReversi/src/jugador/Jugador.hpp",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/asignacionN1/orderMethods.hpp",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/asignacionN1/main.cpp",
+				"/home/moreno/Documentos/Universidad/programIII/Ejercicio5_AdrianMoreno/src/Main.java",
+				"/home/moreno/Metodos de Ordenamiento(1).cpp",
+				"/home/moreno/Metodos de Ordenamiento.cpp",
+				"/home/moreno/Documentos/projectReversi/src/bot/bot.hpp",
+				"/home/moreno/Documentos/projectReversi/tstMain.cpp",
+				"/home/moreno/Documentos/projectReversi/src/recorridos/actualizacion.hpp",
+				"/home/moreno/Documentos/Universidad/Proyecto_Buscaminas/Proyecto_Buscaminas_FULL_HD_READY_PAL_BICHETEO_ACTIVO_ENLAPISTA_EQUISDE .c",
+				"/home/moreno/Documentos/projectReversi/recorrido/actualizacion.hpp",
+				"/home/moreno/pruebaC/metodos.hpp",
+				"/home/moreno/pruebaC/main.cpp",
+				"/home/moreno/pruebaC/clase.hpp",
+				"/home/moreno/Documentos/projectReversi/src/coordenadas/Coordenadas.hpp",
+				"/home/moreno/Documentos/projectReversi/tstMethods.h",
+				"/home/moreno/Documentos/projectReversi/src/main.cpp",
+				"/home/moreno/Documentos/projectReversi/recorrido.hpp",
+				"/home/moreno/Documentos/projectReversi/src2/tstMain.cpp",
+				"/home/moreno/Documentos/projectReversi/src2/metodos/tstMethods.h",
+				"/home/moreno/Documentos/projectReversi/src/coordenadas/Coordenadas.h",
+				"/home/moreno/Documentos/projectReversi/src/tablero/Tablero.h",
+				"/home/moreno/Documentos/projectReversi/src/conversor/Conversor.h",
+				"/home/moreno/Documentos/projectReversi/src/GUI/Ventana.h",
+				"/home/moreno/Documentos/Universidad/estructuraDeDatos/asignacionN1/orderMethods.h",
+				"/home/moreno/dotfiles",
+				"/home/moreno/Documentos/C/Program II/ListaTest.c",
+				"/home/moreno/.config/openbox/lubuntu-rc.xml",
+				"/home/moreno/Documentos/C/Program II/laboratorio300419_lista_Adrian_Moreno.c",
+				"/home/moreno/Documentos/Project/lib_user.h",
+				"/home/moreno/Documentos/Project/misc.h",
+				"/home/moreno/Documentos/Project/main.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio140519.c",
+				"/home/moreno/Documentos/Project/lib_pro.c",
+				"/home/moreno/Documentos/Project/lib_user.c",
+				"/home/moreno/Documentos/Project/conio.h",
+				"/home/moreno/Documentos/Project/pro.c",
+				"/home/moreno/Documentos/Project/user.h",
+				"/home/moreno/Documentos/Project/user.c",
+				"/home/moreno/Documentos/Project/pro.h",
+				"/home/moreno/Documentos/Project/lib_misc.h",
+				"/home/moreno/Documentos/Project/lib_pro.h"
+			],
+			"find":
+			{
+				"height": 23.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/moreno/pruebaPHP"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/moreno/pruebaPHP/tstdb.php",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 290,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										206,
+										206
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												259,
+												260
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/curly_bracket.png",
+												"region.purplish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												204,
+												205
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content"
+									],
+									"syntax": "Packages/PHP/PHP.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/moreno/pruebaPHP/conexion.php",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 90,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										90,
+										90
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content"
+									],
+									"open_with_edit": true,
+									"syntax": "Packages/PHP/PHP.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 23.0
+			},
+			"input":
+			{
+				"height": 117.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.SublimeLinter":
+			{
+				"height": 92.0
+			},
+			"output.SublimeLinter Messages":
+			{
+				"height": 91.0
+			},
+			"output.exec":
+			{
+				"height": 109.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.markdown":
+			{
+				"height": 91.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 97.0
+			},
+			"pinned_build_system": "Packages/MarkdownPreview/Markdown.sublime-build",
+			"position": "0,0,0,0,0,640,20,1274,714,1280,720",
+			"project": "",
+			"replace":
+			{
+				"height": 42.0
+			},
+			"save_all_on_build": false,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Documentos/untitled.c"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 392.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 592.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 172.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 131,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/home/moreno/dvde/fan_page_dvde.sublime-workspace",
+			"/home/moreno/dvde/index.sublime-workspace"
+		]
+	}
+}

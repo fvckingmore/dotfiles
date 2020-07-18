@@ -1,0 +1,29 @@
+#!/bin/bash
+
+PASS="kldhs025"
+OPT="$1"
+
+HELP() {
+
+	printf "1. gmail\n2. hotmail\n3. yahoo"
+}
+
+LOGIN() {
+
+	case $OPT in
+
+		1) mega-login adrianemoreno.25@gmail.com $PASS ;;
+
+		2) mega-login adrianem_10@hotmail.com $PASS ;;
+
+		3) mega-login ekimasache@yahoo.com $PASS ;;
+
+		*) HELP ;;
+
+	esac
+	
+}
+
+
+[ -z $OPT ] || { mega-logout; LOGIN; } && HELP
+

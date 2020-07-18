@@ -1,0 +1,21 @@
+{
+	"jdk_version":
+	{
+		"JDK1.8.0u232":
+		{
+			"bin": "/usr/lib/jvm/java-8-openjdk-i386/bin",
+			"home": "/usr/lib/jvm/java-8-openjdk-i386/jre",
+			"update": "232",
+			"version": "1.8.0"
+		},
+		"home": "/usr/lib/jvm/java-8-openjdk-i386/jre",
+		"use": ""
+	},
+	"message_id": 20,
+	"project_data":
+	{
+		"2":
+		{
+		}
+	}
+}

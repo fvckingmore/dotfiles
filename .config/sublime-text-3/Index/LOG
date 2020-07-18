@@ -1,0 +1,6 @@
+2020/06/24-02:45:00.985872 aec0fb40 Recovering log #596
+2020/06/24-02:45:01.045796 aec0fb40 Level-0 table #598: started
+2020/06/24-02:45:01.145690 aec0fb40 Level-0 table #598: 277 bytes OK
+2020/06/24-02:45:01.600112 aec0fb40 Delete type=3 #594
+2020/06/24-02:45:01.600361 aec0fb40 Delete type=0 #596
+2020/06/24-02:45:01.702432 ad40eb40 Moved #589 to level-1 237 bytes OK: files[ 3 4 0 0 0 0 0 ]

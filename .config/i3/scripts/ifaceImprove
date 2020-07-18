@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#if=$(ip route | awk '/^default/{print $5}')
+#ip=$(ip route show dev $if | awk '/link/{print $(NF-2)}')
+
+
+if=$(ip route | grep default | cut -d" " -f5)
+ip=$(ip route show dev $if | grep scope | awk '{print $7}')
+
+echo "$ip"
+echo "$ip"
+
+
+

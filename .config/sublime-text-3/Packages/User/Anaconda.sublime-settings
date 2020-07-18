@@ -1,0 +1,7 @@
+{
+	"anaconda_linting": false,
+	"pep8": false,
+
+
+"swallow_startup_errors": true,
+}

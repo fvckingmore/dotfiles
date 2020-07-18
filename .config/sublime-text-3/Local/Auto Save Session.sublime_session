@@ -1,0 +1,2837 @@
+{
+	"folder_history":
+	[
+		"/home/moreno/Documentos/Project",
+		"/media/moreno/fvckingmore/Programacion/python/Ejercicios",
+		"/home/moreno/Documentos/C",
+		"/home/moreno/Documentos/C/Program II",
+		"/home/moreno/python/Ejercicios",
+		"/home/moreno/dvde",
+		"/home/moreno/html",
+		"/home/moreno/html/Listas"
+	],
+	"last_version": 3207,
+	"last_window_id": 96,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 873.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"pre",
+						"prev"
+					],
+					[
+						"ne",
+						"next"
+					],
+					[
+						"f_ed",
+						"f_edit_standar_user"
+					],
+					[
+						"lib",
+						"lib_user.h"
+					],
+					[
+						"mis",
+						"misc.h"
+					],
+					[
+						"h",
+						"misc.h"
+					],
+					[
+						"u",
+						"user.h"
+					],
+					[
+						"li",
+						"lib_pro.c"
+					],
+					[
+						"user",
+						"lib_user.c"
+					],
+					[
+						"v",
+						"v"
+					],
+					[
+						"n",
+						"n"
+					],
+					[
+						"cod",
+						"codigo"
+					],
+					[
+						"codi",
+						"codigo_auxiliar"
+					],
+					[
+						"Nombre",
+						"nombre"
+					],
+					[
+						"pri",
+						"primero"
+					],
+					[
+						"produ",
+						"productos"
+					],
+					[
+						"cd",
+						"codigo"
+					],
+					[
+						"cdi",
+						"codigo_auxiliar"
+					],
+					[
+						"codigo",
+						"codigo_auxiliar"
+					],
+					[
+						"scr",
+						"scr"
+					],
+					[
+						"exist",
+						"exist"
+					],
+					[
+						"us",
+						"username"
+					],
+					[
+						"temp",
+						"temp_pass"
+					],
+					[
+						"get",
+						"getchar"
+					],
+					[
+						"ic",
+						"include"
+					],
+					[
+						"lib_us",
+						"lib_user.h"
+					],
+					[
+						"getch",
+						"getchar"
+					],
+					[
+						"f_s",
+						"f_show_users"
+					],
+					[
+						"f_ad",
+						"f_admin_users_manager_menu"
+					],
+					[
+						"aux",
+						"aux_username"
+					],
+					[
+						"menu",
+						"f_standar_menu"
+					],
+					[
+						"f_ver",
+						"f_verify_id"
+					],
+					[
+						"file",
+						"filep_aux"
+					],
+					[
+						"filep",
+						"filep"
+					],
+					[
+						"au",
+						"aux"
+					],
+					[
+						"pa",
+						"password"
+					],
+					[
+						"del",
+						"relative_delete"
+					],
+					[
+						"op",
+						"op"
+					],
+					[
+						"de",
+						"del"
+					],
+					[
+						"tem",
+						"temp_user"
+					],
+					[
+						"c",
+						"conio.c"
+					],
+					[
+						"inc",
+						"include"
+					],
+					[
+						"tm",
+						"temp_pass"
+					],
+					[
+						"valid",
+						"valid_user"
+					],
+					[
+						"te",
+						"temp_user"
+					],
+					[
+						"pass",
+						"password"
+					],
+					[
+						"sc",
+						"scr"
+					],
+					[
+						"use",
+						"username"
+					],
+					[
+						"library_test",
+						"library_test.c"
+					],
+					[
+						"p",
+						"puts"
+					],
+					[
+						"r",
+						"ram"
+					],
+					[
+						"persona",
+						"persona_1"
+					],
+					[
+						"pr",
+						"prom"
+					],
+					[
+						"sa",
+						"scanf"
+					],
+					[
+						"estudin",
+						"estudiante"
+					],
+					[
+						"estu",
+						"estudiante_3"
+					],
+					[
+						"suma",
+						"suma_diaria"
+					],
+					[
+						"ped",
+						"pedidos"
+					],
+					[
+						"sua",
+						"suma_diaria"
+					],
+					[
+						"in",
+						"include"
+					],
+					[
+						"i",
+						"i"
+					],
+					[
+						"b",
+						"b"
+					],
+					[
+						"eno",
+						"encontrado\tstatement"
+					],
+					[
+						"segun",
+						"segundo_nombre\tstatement"
+					],
+					[
+						"ape",
+						"append\tfunction"
+					],
+					[
+						"mostra",
+						"mostrar_datos"
+					],
+					[
+						"_se",
+						"__segundo_nombre"
+					],
+					[
+						"prime",
+						"primer_nombre"
+					],
+					[
+						"int",
+						"__init__"
+					],
+					[
+						"ran",
+						"range\tfunction"
+					],
+					[
+						"cp",
+						"f_cpu_easy"
+					],
+					[
+						"f_pla",
+						"f_player2\tfunction"
+					],
+					[
+						"colu",
+						"colum_usr"
+					],
+					[
+						"col",
+						"colum_usr"
+					],
+					[
+						"fila",
+						"fila_usr\tstatement"
+					],
+					[
+						"tip",
+						"f_tipo_juego"
+					],
+					[
+						"ec",
+						"except"
+					],
+					[
+						"tpi",
+						"f_tipo_juego"
+					],
+					[
+						"el",
+						"else"
+					],
+					[
+						"colum",
+						"colum_usr\tstatement"
+					],
+					[
+						"verifi",
+						"f_verificar"
+					],
+					[
+						"f_v",
+						"f_volver_jugar\tfunction"
+					],
+					[
+						"min",
+						"mint\tstatement"
+					],
+					[
+						"me",
+						"mext\tparam"
+					],
+					[
+						"x",
+						"__x\tstatement"
+					],
+					[
+						"matri",
+						"matriz_ext\tparam"
+					],
+					[
+						"matr",
+						"matriz_int\tstatement"
+					],
+					[
+						"ra",
+						"randint\tstatement"
+					],
+					[
+						"range",
+						"randrange\tstatement"
+					],
+					[
+						"rand",
+						"randrange\tstatement"
+					],
+					[
+						"reu",
+						"return\tkeyword"
+					],
+					[
+						"mo",
+						"moveRight"
+					],
+					[
+						"move",
+						"moveUp"
+					],
+					[
+						"mov",
+						"moveUp"
+					],
+					[
+						"main",
+						"__main__"
+					],
+					[
+						"list",
+						"list_abrir"
+					],
+					[
+						"retu",
+						"return"
+					],
+					[
+						"ds",
+						"dest"
+					],
+					[
+						"Fi",
+						"FILE"
+					],
+					[
+						"pasaje",
+						"pasajero"
+					],
+					[
+						"ve",
+						"vuelo"
+					],
+					[
+						"ma",
+						"main\tmain()"
+					],
+					[
+						"cstdi",
+						"cstdlib\tstandard header"
+					],
+					[
+						"ed",
+						"edad"
+					],
+					[
+						"e",
+						"endl"
+					],
+					[
+						"lis",
+						"list-style\tproperty"
+					],
+					[
+						"margin",
+						"margin-left\tproperty"
+					],
+					[
+						"marg",
+						"margin-left\tproperty"
+					],
+					[
+						"blo",
+						"block\tdisplay"
+					],
+					[
+						"posi",
+						"position\tproperty"
+					],
+					[
+						"mar",
+						"margin-right\tproperty"
+					],
+					[
+						"bl",
+						"block\tdisplay"
+					],
+					[
+						"a",
+						"all\tpadding"
+					],
+					[
+						"alin",
+						"vertical-align\tproperty"
+					],
+					[
+						"ali",
+						"text-align\tproperty"
+					],
+					[
+						"mari",
+						"margin-right\tproperty"
+					],
+					[
+						"marig",
+						"margin-left\tproperty"
+					],
+					[
+						"marign",
+						"margin-top\tproperty"
+					],
+					[
+						"font",
+						"font-style\tproperty"
+					],
+					[
+						"backg",
+						"background-color\tproperty"
+					],
+					[
+						"su",
+						"sum"
+					],
+					[
+						"backgrou",
+						"background-color\tproperty"
+					],
+					[
+						"back",
+						"background-color\tproperty"
+					],
+					[
+						"cl",
+						"clear"
+					],
+					[
+						"mostr",
+						"mostrar_disciplina"
+					],
+					[
+						"en",
+						"endl"
+					],
+					[
+						"cst",
+						"cstdio\tstandard header"
+					],
+					[
+						"llenar",
+						"llenar_disciplinas"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++_win.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cpp.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cpp.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cpp.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/python_more.sublime-build",
+							""
+						],
+						[
+							"Packages/User/python_more.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/User/python_more.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"DISAB",
+						"Package Control: Disable Package"
+					],
+					[
+						"sche",
+						"UI: Select Color Scheme"
+					],
+					[
+						"scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"schem",
+						"UI: Select Color Scheme"
+					],
+					[
+						"disab",
+						"Package Control: Disable Package"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: List Packages"
+					],
+					[
+						"en\tab",
+						"Package Control: Enable Package"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"di",
+						"Package Control: Disable Package"
+					],
+					[
+						"packagedi",
+						"Package Control: Disable Package"
+					],
+					[
+						"ackage",
+						"Package Control: Disable Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: i",
+						"Package Control: Install Package"
+					],
+					[
+						"them",
+						"UI: Select Theme"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa in",
+						"Package Control: Install Package"
+					],
+					[
+						"packa re",
+						"Package Control: Remove Package"
+					],
+					[
+						"pck ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"package con rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"package con ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: re",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: incl",
+						"Snippet: #include <…>"
+					],
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"LiveReload: enable",
+						"LiveReload: Enable/disable plug-ins"
+					],
+					[
+						"package rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ht",
+						"Snippet: html"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ",
+						"Snippet: #include <…>"
+					],
+					[
+						"packa",
+						"Preferences: Browse Packages"
+					],
+					[
+						"vm",
+						"View: Toggle Menu"
+					],
+					[
+						"Package Control:ins",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 230.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/moreno/Documentos/Project/lib_user.h",
+				"/home/moreno/Documentos/Project/misc.h",
+				"/home/moreno/Documentos/Project/main.c",
+				"/home/moreno/.config/openbox/lubuntu-rc.xml",
+				"/home/moreno/Documentos/C/Program II/laboratorio140519.c",
+				"/home/moreno/Documentos/Project/lib_pro.c",
+				"/home/moreno/Documentos/Project/lib_user.c",
+				"/home/moreno/Documentos/Project/conio.h",
+				"/home/moreno/Documentos/Project/pro.c",
+				"/home/moreno/Documentos/Project/user.h",
+				"/home/moreno/Documentos/Project/user.c",
+				"/home/moreno/Documentos/Project/pro.h",
+				"/home/moreno/Documentos/Project/lib_misc.h",
+				"/home/moreno/Documentos/Project/lib_pro.h",
+				"/home/moreno/Documentos/Project/lib_misc.c",
+				"/home/moreno/Documentos/Project/misc.c",
+				"/home/moreno/.local/share/applications/firefox.desktop",
+				"/usr/share/applications/firefox.desktop",
+				"/home/moreno/.local/share/applications/filezilla.desktop",
+				"/home/moreno/Documentos/test.c",
+				"/usr/include/stdlib.h",
+				"/usr/include/stdio.h",
+				"/home/moreno/Documentos/C/Program II/laboratorio030519_cola.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio260419_memoria_dinamica.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio300419_lista.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio030519_pila.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio300419.c",
+				"/home/moreno/Documentos/C/Program II/rand_test.c",
+				"/home/moreno/.local/share/applications/sublime_text.desktop",
+				"/home/moreno/.local/share/applications/Sublime.desktop",
+				"/home/moreno/Documentos/untitled.c",
+				"/home/moreno/Documentos/C/Program II/ideone_7sQ1ud.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio260419.c",
+				"/home/moreno/.emacs",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/base16-solarflare-more.tmTheme",
+				"/home/moreno/.config/sublime-text-3/Installed Packages/base16-solarflare-more.tmTheme",
+				"/home/moreno/.config/sublime-text-3/Installed Packages/base16-solarflare_more.tmTheme",
+				"/home/moreno/.config/sublime-text-3/Cache/Base16 Color Schemes/Themes/base16-solarflare.tmTheme.cache",
+				"/home/moreno/.config/sublime-text-3/Installed Packages/Base16 Color Schemes.sublime-package",
+				"/tmp/mozilla_moreno0/generate.vim",
+				"/home/moreno/Documentos/Project/conio.c",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula_More.tmTheme",
+				"/home/moreno/Documentos/Project/user_lib.c",
+				"/home/moreno/Documentos/C/Program II/Project/Prototipo_de_libreria_1.c",
+				"/home/moreno/Documentos/C/Program II/project_manager_test.c",
+				"/home/moreno/Laboratorio_050419.c",
+				"/home/moreno/.config/sublime-text-3/Packages/User/C_C++.sublime-build",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/DarkKorokai_More.tmTheme",
+				"/home/moreno/Documentos/C/Program II/fecha.c",
+				"/home/moreno/comp.c",
+				"/home/moreno/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/DocBlockr/README.md",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Flatland_Monokai_More.tmTheme",
+				"/home/moreno/ideone_7sQ1ud.c",
+				"/home/moreno/Documentos/C/test.c",
+				"/home/moreno/Documentos/C/library.c",
+				"/home/moreno/Documentos/C/library.h",
+				"/home/moreno/Documentos/C/MASTER MIND/MASTER MIND V2.1.2.1 FULL UNIX .c",
+				"/home/moreno/Documentos/C/MASTER MIND/MASTER MIND V2.1.2.1 FULL DOS .c",
+				"/home/moreno/.config/sublime-text-3/Packages/User/C_C++_win.sublime-build",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercicio_2.c",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercicio_Estructura_Persona.c",
+				"/home/moreno/Documentos/C/Program II/ejercicio.c",
+				"/home/moreno/Documentos/C/Program II/ejercicio2.c",
+				"/home/moreno/.icons/Paper-Vimix/index.theme",
+				"/media/moreno/fvckingmore/fvckingmore/Dispositivos",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercico_persona_vectores.c",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercico_persona.c",
+				"/home/moreno/Documentos/C/Ejercicios Struct/struct_2.c",
+				"/home/moreno/Documentos/C/Ejercicios Struct/struct_3.c",
+				"/media/moreno/fvckingmore/Programacion/c++/practica3.cpp",
+				"/media/moreno/fvckingmore/Programacion/c++/practica4.cpp",
+				"/media/moreno/fvckingmore/Programacion/c++/practica2.cpp",
+				"/media/moreno/fvckingmore/Documentos/Docs/Prueba Compu/Practicas/Practica1.cpp",
+				"/media/moreno/fvckingmore/Documentos/Docs/Prueba Compu/2/reg.cpp",
+				"/media/moreno/fvckingmore/Documentos/C/Banco.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicio_Matrices_Panaderia.c",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Side Bar.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/User/HighlightBuildErrors.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena1.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena2.c",
+				"/home/moreno/Documentos/C/3_cadenas_con_tamanio.c",
+				"/home/moreno/Documentos/C/concatenar_primeras_letras.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Matrices2.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Matrices1.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Matrices2",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena1",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena2",
+				"/home/moreno/untitled.c",
+				"/home/moreno/Documentos/C/Adrian_Moreno_Ejercicio1.c",
+				"/home/moreno/.icons/Flat-Remix-Dark/index.theme",
+				"/home/moreno/Documentos/C/BUSCAMINAS_FULL_HD/Proyecto_Buscaminas_FULL_HD_READY_PAL_BICHETEO_ACTIVO_ENLAPISTA_EQUISDE _NOHOMO_ISTHISLOSS_F.c",
+				"/home/moreno/.config/sublime-text-3/Packages/SublimeLinter-gcc/miscellaneous/demo.cpp",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/8_13.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/3_3.py",
+				"/home/moreno/Adrian_Moreno_Ejercicio1.c",
+				"/home/moreno/Playlist.html",
+				"/media/moreno/fvckingmore/fvckingmore/Music/Playlist.xspf",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/tictactoe/TicTacToe.py",
+				"/usr/share/themes/Onyx/openbox-3/themerc",
+				"/usr/lib/pymodules/python2.7/fluxgui/settings.py",
+				"/home/moreno/Documentos/SM/SMLoadrConfig.json",
+				"/home/moreno/Documentos/SM/downloadedUnsuccessfully.txt",
+				"/home/moreno/Documentos/SM/downloadLinks.txt",
+				"/home/moreno/Documentos/SM/suice",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/8_16.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/hola.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/files.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/Adivina_el_numero.py",
+				"/home/moreno/Lubuntu-default/gtk-3.0/gtk-main.css",
+				"/home/moreno/Lubuntu-default/gtk-3.0/settings.ini",
+				"/home/moreno/Lubuntu-default/gtk-3.0/gtk.css",
+				"/home/moreno/.themes/Arc-Dark1/gtk-3.0/gtk.css",
+				"/home/moreno/.themes/Mona 3.0/gtk-2.0/gtkrc",
+				"/home/moreno/.themes/Mona 3.0/gtk-3.0/gtk.css",
+				"/home/moreno/.themes/Mona 3.0/gtk-3.0/gtk-dark.css",
+				"/home/moreno/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/prueba_poo.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/prubea_grafica.py",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+				"/home/moreno/lubuntu-rc.xml",
+				"/home/moreno/prueba/Nuevo.txt",
+				"/home/moreno/prueba/untitled.py",
+				"/home/moreno/TicTacToe.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/TICTACTOE/TicTacToe_windows.py"
+			],
+			"find":
+			{
+				"height": 117.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"error",
+					"\");\n",
+					"wait",
+					"opcion",
+					"slee",
+					"wait",
+					"slee",
+					"f_admin",
+					"f_standar",
+					"}\n",
+					"slee",
+					"scanf",
+					"pri",
+					"sleep",
+					"puts",
+					"printf",
+					"puts",
+					"//scrw();",
+					"nodo",
+					"NODO",
+					"nodo",
+					"scanf",
+					"fsee",
+					"scanf",
+					"mallo",
+					"*",
+					"f_verify_username",
+					"void",
+					"else",
+					"if",
+					";\n",
+					"182",
+					"case",
+					"menu",
+					"ID",
+					"user.",
+					"user",
+					"*user",
+					"f_admin",
+					"user.id",
+					"ID",
+					"scrw();",
+					"scrw();\n",
+					"scrw();",
+					"scr",
+					"//TEMPORAL",
+					"opcion",
+					"show",
+					"relati",
+					"id",
+					"printf(\"%d\\n\", *ID);",
+					"printf(\"%d\\n\", ID);",
+					"ID",
+					"verify_logi",
+					"gets",
+					"f_relative_user_delete",
+					"f_relative_delete",
+					"f_verify_use",
+					"f_verify_lo",
+					"exist",
+					"relative_delete",
+					"standar_menu",
+					"valid_user",
+					"login",
+					"show_users",
+					"add_users",
+					"add_user",
+					"scanf",
+					"delete",
+					"codigo",
+					"void",
+					"term",
+					"log",
+					"back"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"arch"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 117.0
+			},
+			"input":
+			{
+				"height": 117.0
+			},
+			"menu_visible": true,
+			"output.SublimeLinter":
+			{
+				"height": 92.0
+			},
+			"output.exec":
+			{
+				"height": 109.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 97.0
+			},
+			"pinned_build_system": "Packages/User/C_C++.sublime-build",
+			"replace":
+			{
+				"height": 230.0
+			},
+			"save_all_on_build": false,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Documentos/untitled.c"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 392.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 592.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 364.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 949.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"sho",
+						"ShowAfterTail"
+					],
+					[
+						"extr",
+						"ExtractNodeTail"
+					],
+					[
+						"Extra",
+						"ExtractNodeHead"
+					],
+					[
+						"ex",
+						"ExtractNodeHead"
+					],
+					[
+						"ad",
+						"AddNodeTail"
+					],
+					[
+						"Ad",
+						"AddNodeHead"
+					],
+					[
+						"pre",
+						"prev"
+					],
+					[
+						"ne",
+						"next"
+					],
+					[
+						"f_ed",
+						"f_edit_standar_user"
+					],
+					[
+						"lib",
+						"lib_user.h"
+					],
+					[
+						"mis",
+						"misc.h"
+					],
+					[
+						"h",
+						"misc.h"
+					],
+					[
+						"u",
+						"user.h"
+					],
+					[
+						"li",
+						"lib_pro.c"
+					],
+					[
+						"user",
+						"lib_user.c"
+					],
+					[
+						"v",
+						"v"
+					],
+					[
+						"n",
+						"n"
+					],
+					[
+						"cod",
+						"codigo"
+					],
+					[
+						"codi",
+						"codigo_auxiliar"
+					],
+					[
+						"Nombre",
+						"nombre"
+					],
+					[
+						"pri",
+						"primero"
+					],
+					[
+						"produ",
+						"productos"
+					],
+					[
+						"cd",
+						"codigo"
+					],
+					[
+						"cdi",
+						"codigo_auxiliar"
+					],
+					[
+						"codigo",
+						"codigo_auxiliar"
+					],
+					[
+						"scr",
+						"scr"
+					],
+					[
+						"exist",
+						"exist"
+					],
+					[
+						"us",
+						"username"
+					],
+					[
+						"temp",
+						"temp_pass"
+					],
+					[
+						"get",
+						"getchar"
+					],
+					[
+						"ic",
+						"include"
+					],
+					[
+						"lib_us",
+						"lib_user.h"
+					],
+					[
+						"getch",
+						"getchar"
+					],
+					[
+						"f_s",
+						"f_show_users"
+					],
+					[
+						"f_ad",
+						"f_admin_users_manager_menu"
+					],
+					[
+						"aux",
+						"aux_username"
+					],
+					[
+						"menu",
+						"f_standar_menu"
+					],
+					[
+						"f_ver",
+						"f_verify_id"
+					],
+					[
+						"file",
+						"filep_aux"
+					],
+					[
+						"filep",
+						"filep"
+					],
+					[
+						"au",
+						"aux"
+					],
+					[
+						"pa",
+						"password"
+					],
+					[
+						"del",
+						"relative_delete"
+					],
+					[
+						"op",
+						"op"
+					],
+					[
+						"de",
+						"del"
+					],
+					[
+						"tem",
+						"temp_user"
+					],
+					[
+						"c",
+						"conio.c"
+					],
+					[
+						"inc",
+						"include"
+					],
+					[
+						"tm",
+						"temp_pass"
+					],
+					[
+						"valid",
+						"valid_user"
+					],
+					[
+						"te",
+						"temp_user"
+					],
+					[
+						"pass",
+						"password"
+					],
+					[
+						"sc",
+						"scr"
+					],
+					[
+						"use",
+						"username"
+					],
+					[
+						"library_test",
+						"library_test.c"
+					],
+					[
+						"p",
+						"puts"
+					],
+					[
+						"r",
+						"ram"
+					],
+					[
+						"persona",
+						"persona_1"
+					],
+					[
+						"pr",
+						"prom"
+					],
+					[
+						"sa",
+						"scanf"
+					],
+					[
+						"estudin",
+						"estudiante"
+					],
+					[
+						"estu",
+						"estudiante_3"
+					],
+					[
+						"suma",
+						"suma_diaria"
+					],
+					[
+						"ped",
+						"pedidos"
+					],
+					[
+						"sua",
+						"suma_diaria"
+					],
+					[
+						"in",
+						"include"
+					],
+					[
+						"i",
+						"i"
+					],
+					[
+						"b",
+						"b"
+					],
+					[
+						"eno",
+						"encontrado\tstatement"
+					],
+					[
+						"segun",
+						"segundo_nombre\tstatement"
+					],
+					[
+						"ape",
+						"append\tfunction"
+					],
+					[
+						"mostra",
+						"mostrar_datos"
+					],
+					[
+						"_se",
+						"__segundo_nombre"
+					],
+					[
+						"prime",
+						"primer_nombre"
+					],
+					[
+						"int",
+						"__init__"
+					],
+					[
+						"ran",
+						"range\tfunction"
+					],
+					[
+						"cp",
+						"f_cpu_easy"
+					],
+					[
+						"f_pla",
+						"f_player2\tfunction"
+					],
+					[
+						"colu",
+						"colum_usr"
+					],
+					[
+						"col",
+						"colum_usr"
+					],
+					[
+						"fila",
+						"fila_usr\tstatement"
+					],
+					[
+						"tip",
+						"f_tipo_juego"
+					],
+					[
+						"ec",
+						"except"
+					],
+					[
+						"tpi",
+						"f_tipo_juego"
+					],
+					[
+						"el",
+						"else"
+					],
+					[
+						"colum",
+						"colum_usr\tstatement"
+					],
+					[
+						"verifi",
+						"f_verificar"
+					],
+					[
+						"f_v",
+						"f_volver_jugar\tfunction"
+					],
+					[
+						"min",
+						"mint\tstatement"
+					],
+					[
+						"me",
+						"mext\tparam"
+					],
+					[
+						"x",
+						"__x\tstatement"
+					],
+					[
+						"matri",
+						"matriz_ext\tparam"
+					],
+					[
+						"matr",
+						"matriz_int\tstatement"
+					],
+					[
+						"ra",
+						"randint\tstatement"
+					],
+					[
+						"range",
+						"randrange\tstatement"
+					],
+					[
+						"rand",
+						"randrange\tstatement"
+					],
+					[
+						"reu",
+						"return\tkeyword"
+					],
+					[
+						"mo",
+						"moveRight"
+					],
+					[
+						"move",
+						"moveUp"
+					],
+					[
+						"mov",
+						"moveUp"
+					],
+					[
+						"main",
+						"__main__"
+					],
+					[
+						"list",
+						"list_abrir"
+					],
+					[
+						"retu",
+						"return"
+					],
+					[
+						"ds",
+						"dest"
+					],
+					[
+						"Fi",
+						"FILE"
+					],
+					[
+						"pasaje",
+						"pasajero"
+					],
+					[
+						"ve",
+						"vuelo"
+					],
+					[
+						"ma",
+						"main\tmain()"
+					],
+					[
+						"cstdi",
+						"cstdlib\tstandard header"
+					],
+					[
+						"ed",
+						"edad"
+					],
+					[
+						"e",
+						"endl"
+					],
+					[
+						"lis",
+						"list-style\tproperty"
+					],
+					[
+						"margin",
+						"margin-left\tproperty"
+					],
+					[
+						"marg",
+						"margin-left\tproperty"
+					],
+					[
+						"blo",
+						"block\tdisplay"
+					],
+					[
+						"posi",
+						"position\tproperty"
+					],
+					[
+						"mar",
+						"margin-right\tproperty"
+					],
+					[
+						"bl",
+						"block\tdisplay"
+					],
+					[
+						"a",
+						"all\tpadding"
+					],
+					[
+						"alin",
+						"vertical-align\tproperty"
+					],
+					[
+						"ali",
+						"text-align\tproperty"
+					],
+					[
+						"mari",
+						"margin-right\tproperty"
+					],
+					[
+						"marig",
+						"margin-left\tproperty"
+					],
+					[
+						"marign",
+						"margin-top\tproperty"
+					],
+					[
+						"font",
+						"font-style\tproperty"
+					],
+					[
+						"backg",
+						"background-color\tproperty"
+					],
+					[
+						"su",
+						"sum"
+					],
+					[
+						"backgrou",
+						"background-color\tproperty"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/moreno/Documentos/C/Program II/ListaTest.c",
+					"settings":
+					{
+						"buffer_size": 3671,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/moreno/dotfiles",
+					"settings":
+					{
+						"buffer_size": 1175,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "Packages/User/C_C++.sublime-build",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							""
+						],
+						[
+							"Packages/User/C_C++_win.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/C_C++_win.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cpp.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cpp.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cpp.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/python_more.sublime-build",
+							""
+						],
+						[
+							"Packages/User/python_more.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/User/python_more.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"ena",
+						"Package Control: Enable Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"remov",
+						"Package Control: Remove Package"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"DISAB",
+						"Package Control: Disable Package"
+					],
+					[
+						"sche",
+						"UI: Select Color Scheme"
+					],
+					[
+						"scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						"schem",
+						"UI: Select Color Scheme"
+					],
+					[
+						"disab",
+						"Package Control: Disable Package"
+					],
+					[
+						"color",
+						"UI: Select Color Scheme"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: List Packages"
+					],
+					[
+						"en\tab",
+						"Package Control: Enable Package"
+					],
+					[
+						"colo",
+						"Color Picker"
+					],
+					[
+						"rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"di",
+						"Package Control: Disable Package"
+					],
+					[
+						"packagedi",
+						"Package Control: Disable Package"
+					],
+					[
+						"ackage",
+						"Package Control: Disable Package"
+					],
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: i",
+						"Package Control: Install Package"
+					],
+					[
+						"them",
+						"UI: Select Theme"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"packa in",
+						"Package Control: Install Package"
+					],
+					[
+						"packa re",
+						"Package Control: Remove Package"
+					],
+					[
+						"pck ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"package con rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"package con ins",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: re",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: incl",
+						"Snippet: #include <…>"
+					],
+					[
+						"Package Control: in",
+						"Package Control: Install Package"
+					],
+					[
+						"Package Control: ins",
+						"Package Control: Install Package"
+					],
+					[
+						"LiveReload: enable",
+						"LiveReload: Enable/disable plug-ins"
+					],
+					[
+						"package rem",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ht",
+						"Snippet: html"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
+					[
+						"Snippet: ",
+						"Snippet: #include <…>"
+					],
+					[
+						"packa",
+						"Preferences: Browse Packages"
+					],
+					[
+						"vm",
+						"View: Toggle Menu"
+					],
+					[
+						"Package Control:ins",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 230.0,
+				"history":
+				[
+					"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/moreno/Documentos/C",
+				"/home/moreno/Documentos/C/Program II",
+				"/home/moreno/Documentos/Project"
+			],
+			"file_history":
+			[
+				"/home/moreno/.config/openbox/lubuntu-rc.xml",
+				"/home/moreno/Documentos/C/Program II/laboratorio300419_lista_Adrian_Moreno.c",
+				"/home/moreno/Documentos/Project/lib_user.h",
+				"/home/moreno/Documentos/Project/misc.h",
+				"/home/moreno/Documentos/Project/main.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio140519.c",
+				"/home/moreno/Documentos/Project/lib_pro.c",
+				"/home/moreno/Documentos/Project/lib_user.c",
+				"/home/moreno/Documentos/Project/conio.h",
+				"/home/moreno/Documentos/Project/pro.c",
+				"/home/moreno/Documentos/Project/user.h",
+				"/home/moreno/Documentos/Project/user.c",
+				"/home/moreno/Documentos/Project/pro.h",
+				"/home/moreno/Documentos/Project/lib_misc.h",
+				"/home/moreno/Documentos/Project/lib_pro.h",
+				"/home/moreno/Documentos/Project/lib_misc.c",
+				"/home/moreno/Documentos/Project/misc.c",
+				"/home/moreno/.local/share/applications/firefox.desktop",
+				"/usr/share/applications/firefox.desktop",
+				"/home/moreno/.local/share/applications/filezilla.desktop",
+				"/home/moreno/Documentos/test.c",
+				"/usr/include/stdlib.h",
+				"/usr/include/stdio.h",
+				"/home/moreno/Documentos/C/Program II/laboratorio030519_cola.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio260419_memoria_dinamica.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio300419_lista.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio030519_pila.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio300419.c",
+				"/home/moreno/Documentos/C/Program II/rand_test.c",
+				"/home/moreno/.local/share/applications/sublime_text.desktop",
+				"/home/moreno/.local/share/applications/Sublime.desktop",
+				"/home/moreno/Documentos/untitled.c",
+				"/home/moreno/Documentos/C/Program II/ideone_7sQ1ud.c",
+				"/home/moreno/Documentos/C/Program II/laboratorio260419.c",
+				"/home/moreno/.emacs",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/base16-solarflare-more.tmTheme",
+				"/home/moreno/.config/sublime-text-3/Installed Packages/base16-solarflare-more.tmTheme",
+				"/home/moreno/.config/sublime-text-3/Installed Packages/base16-solarflare_more.tmTheme",
+				"/home/moreno/.config/sublime-text-3/Cache/Base16 Color Schemes/Themes/base16-solarflare.tmTheme.cache",
+				"/home/moreno/.config/sublime-text-3/Installed Packages/Base16 Color Schemes.sublime-package",
+				"/tmp/mozilla_moreno0/generate.vim",
+				"/home/moreno/Documentos/Project/conio.c",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Dark-Dracula_More.tmTheme",
+				"/home/moreno/Documentos/Project/user_lib.c",
+				"/home/moreno/Documentos/C/Program II/Project/Prototipo_de_libreria_1.c",
+				"/home/moreno/Documentos/C/Program II/project_manager_test.c",
+				"/home/moreno/Laboratorio_050419.c",
+				"/home/moreno/.config/sublime-text-3/Packages/User/C_C++.sublime-build",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/DarkKorokai_More.tmTheme",
+				"/home/moreno/Documentos/C/Program II/fecha.c",
+				"/home/moreno/comp.c",
+				"/home/moreno/.config/sublime-text-3/Packages/DocBlockr/Base File.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/DocBlockr/README.md",
+				"/home/moreno/.config/sublime-text-3/Packages/Colorsublime - Themes/cache/Colorsublime-Themes-master/themes/Flatland_Monokai_More.tmTheme",
+				"/home/moreno/ideone_7sQ1ud.c",
+				"/home/moreno/Documentos/C/test.c",
+				"/home/moreno/Documentos/C/library.c",
+				"/home/moreno/Documentos/C/library.h",
+				"/home/moreno/Documentos/C/MASTER MIND/MASTER MIND V2.1.2.1 FULL UNIX .c",
+				"/home/moreno/Documentos/C/MASTER MIND/MASTER MIND V2.1.2.1 FULL DOS .c",
+				"/home/moreno/.config/sublime-text-3/Packages/User/C_C++_win.sublime-build",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercicio_2.c",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercicio_Estructura_Persona.c",
+				"/home/moreno/Documentos/C/Program II/ejercicio.c",
+				"/home/moreno/Documentos/C/Program II/ejercicio2.c",
+				"/home/moreno/.icons/Paper-Vimix/index.theme",
+				"/media/moreno/fvckingmore/fvckingmore/Dispositivos",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercico_persona_vectores.c",
+				"/home/moreno/Documentos/C/Program II/Adrian_Moreno_Ejercico_persona.c",
+				"/home/moreno/Documentos/C/Ejercicios Struct/struct_2.c",
+				"/home/moreno/Documentos/C/Ejercicios Struct/struct_3.c",
+				"/media/moreno/fvckingmore/Programacion/c++/practica3.cpp",
+				"/media/moreno/fvckingmore/Programacion/c++/practica4.cpp",
+				"/media/moreno/fvckingmore/Programacion/c++/practica2.cpp",
+				"/media/moreno/fvckingmore/Documentos/Docs/Prueba Compu/Practicas/Practica1.cpp",
+				"/media/moreno/fvckingmore/Documentos/Docs/Prueba Compu/2/reg.cpp",
+				"/media/moreno/fvckingmore/Documentos/C/Banco.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicio_Matrices_Panaderia.c",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Side Bar.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/User/HighlightBuildErrors.sublime-settings",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena1.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena2.c",
+				"/home/moreno/Documentos/C/3_cadenas_con_tamanio.c",
+				"/home/moreno/Documentos/C/concatenar_primeras_letras.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Matrices2.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Matrices1.c",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Matrices2",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena1",
+				"/home/moreno/Documentos/C/Program II/Ejercicios_N3/Ejercicio_Cadena2",
+				"/home/moreno/untitled.c",
+				"/home/moreno/Documentos/C/Adrian_Moreno_Ejercicio1.c",
+				"/home/moreno/.icons/Flat-Remix-Dark/index.theme",
+				"/home/moreno/Documentos/C/BUSCAMINAS_FULL_HD/Proyecto_Buscaminas_FULL_HD_READY_PAL_BICHETEO_ACTIVO_ENLAPISTA_EQUISDE _NOHOMO_ISTHISLOSS_F.c",
+				"/home/moreno/.config/sublime-text-3/Packages/SublimeLinter-gcc/miscellaneous/demo.cpp",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/8_13.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/3_3.py",
+				"/home/moreno/Adrian_Moreno_Ejercicio1.c",
+				"/home/moreno/Playlist.html",
+				"/media/moreno/fvckingmore/fvckingmore/Music/Playlist.xspf",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/tictactoe/TicTacToe.py",
+				"/usr/share/themes/Onyx/openbox-3/themerc",
+				"/usr/lib/pymodules/python2.7/fluxgui/settings.py",
+				"/home/moreno/Documentos/SM/SMLoadrConfig.json",
+				"/home/moreno/Documentos/SM/downloadedUnsuccessfully.txt",
+				"/home/moreno/Documentos/SM/downloadLinks.txt",
+				"/home/moreno/Documentos/SM/suice",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/8_16.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/hola.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/files.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/Adivina_el_numero.py",
+				"/home/moreno/Lubuntu-default/gtk-3.0/gtk-main.css",
+				"/home/moreno/Lubuntu-default/gtk-3.0/settings.ini",
+				"/home/moreno/Lubuntu-default/gtk-3.0/gtk.css",
+				"/home/moreno/.themes/Arc-Dark1/gtk-3.0/gtk.css",
+				"/home/moreno/.themes/Mona 3.0/gtk-2.0/gtkrc",
+				"/home/moreno/.themes/Mona 3.0/gtk-3.0/gtk.css",
+				"/home/moreno/.themes/Mona 3.0/gtk-3.0/gtk-dark.css",
+				"/home/moreno/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/prueba_poo.py",
+				"/media/moreno/fvckingmore/Programacion/python/Ejercicios/prubea_grafica.py",
+				"/home/moreno/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+				"/home/moreno/lubuntu-rc.xml",
+				"/home/moreno/prueba/Nuevo.txt",
+				"/home/moreno/prueba/untitled.py",
+				"/home/moreno/TicTacToe.py"
+			],
+			"find":
+			{
+				"height": 23.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"10",
+					"togg",
+					"maximi",
+					"openbox_con",
+					"openbox",
+					"ope",
+					"appl",
+					"/*",
+					"case 1:\n\n\t\t\t\tbreak;",
+					"scan",
+					"USER",
+					"User",
+					"USER",
+					"aux",
+					"error",
+					"\");\n",
+					"wait",
+					"opcion",
+					"slee",
+					"wait",
+					"slee",
+					"f_admin",
+					"f_standar",
+					"}\n",
+					"slee",
+					"scanf",
+					"pri",
+					"sleep",
+					"puts",
+					"printf",
+					"puts",
+					"//scrw();",
+					"nodo",
+					"NODO",
+					"nodo",
+					"scanf",
+					"fsee",
+					"scanf",
+					"mallo",
+					"*",
+					"f_verify_username",
+					"void",
+					"else",
+					"if",
+					";\n",
+					"182",
+					"case",
+					"menu",
+					"ID",
+					"user.",
+					"user",
+					"*user",
+					"f_admin",
+					"user.id",
+					"ID",
+					"scrw();",
+					"scrw();\n",
+					"scrw();",
+					"scr",
+					"//TEMPORAL",
+					"opcion",
+					"show",
+					"relati",
+					"id",
+					"printf(\"%d\\n\", *ID);",
+					"printf(\"%d\\n\", ID);",
+					"ID",
+					"verify_logi",
+					"gets",
+					"f_relative_user_delete",
+					"f_relative_delete",
+					"f_verify_use",
+					"f_verify_lo",
+					"exist",
+					"relative_delete",
+					"standar_menu",
+					"valid_user",
+					"login",
+					"show_users",
+					"add_users",
+					"add_user",
+					"scanf",
+					"delete",
+					"codigo",
+					"void",
+					"term",
+					"log",
+					"back"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"arch"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/moreno/Documentos/C"
+				},
+				{
+					"path": "/media/moreno/fvckingmore/Programacion/python/Ejercicios"
+				},
+				{
+					"path": "/home/moreno/Documentos/Project"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/moreno/Documentos/C/Program II/ListaTest.c",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3671,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										393,
+										393
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.clone": -1,
+									"bracket_highlighter.clone_locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												1230,
+												1231
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/curly_bracket.png",
+												"region.purplish"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												1076,
+												1077
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.clone_regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content"
+									],
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+										},
+										"icon":
+										{
+										},
+										"open":
+										{
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content"
+									],
+									"syntax": "Packages/C++/C.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 212.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/moreno/dotfiles",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1175,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1024,
+										1024
+									]
+								],
+								"settings":
+								{
+									"bracket_highlighter.busy": false,
+									"bracket_highlighter.clone": -1,
+									"bracket_highlighter.clone_locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												1120,
+												1122
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/dot.png",
+												"region.yellowish brackethighlighter.default"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												884,
+												886
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.clone_regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content"
+									],
+									"bracket_highlighter.locations":
+									{
+										"close":
+										{
+											"1":
+											[
+												1122,
+												1124
+											]
+										},
+										"icon":
+										{
+											"1":
+											[
+												"Packages/BracketHighlighter/icons/dot.png",
+												"region.yellowish brackethighlighter.default"
+											]
+										},
+										"open":
+										{
+											"1":
+											[
+												884,
+												886
+											]
+										},
+										"unmatched":
+										{
+										}
+									},
+									"bracket_highlighter.regions":
+									[
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_round_content",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_single_quote_content",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_unmatched_content",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_default_content",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_square_content",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_angle_content",
+										"bh_c_define",
+										"bh_c_define_center",
+										"bh_c_define_open",
+										"bh_c_define_close",
+										"bh_c_define_content",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_curly_content",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_regex_content",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_tag_content",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_double_quote_content"
+									],
+									"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 603.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 23.0
+			},
+			"input":
+			{
+				"height": 117.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.SublimeLinter":
+			{
+				"height": 92.0
+			},
+			"output.exec":
+			{
+				"height": 109.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 97.0
+			},
+			"pinned_build_system": "Packages/User/C_C++.sublime-build",
+			"position": "0,0,0,0,0,1034,12,1816,881,2624,900",
+			"project": "",
+			"replace":
+			{
+				"height": 42.0
+			},
+			"save_all_on_build": false,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Documentos/untitled.c"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 392.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 592.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 364.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 77,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/home/moreno/dvde/fan_page_dvde.sublime-workspace",
+			"/home/moreno/dvde/index.sublime-workspace"
+		]
+	}
+}

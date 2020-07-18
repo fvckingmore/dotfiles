@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Plain text syntax
+{
+	"margin": 0,
+	"auto_complete_delay": 0,
+}

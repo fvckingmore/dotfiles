@@ -1,0 +1,83 @@
+#!/bin/bash
+ 
+# Display All Hidden Dot Files In a Directory
+# ls -a | egrep "^\." > backup_dotfiles.sh
+DESTINATION="/home/moreno/Documentos/dotfiles"  # do not use a trailing slash (/)
+
+ 
+# Colors
+blue="\e[0;34m"
+green="\e[1;32m"
+red="\e[0;31m"
+bold="\e[1;30m"
+reset="\e[0m"
+ 
+# file list (use trailing slash for directories)
+FILES="
+.apport-ignore.xml
+.asoundrc
+.bash_history
+.bash_logout
+.bashrc
+.bashrc~
+.bss
+.config/
+.conky/
+.data
+.dbus/
+.dmrc
+.emacs
+.fonts/
+.gconf/
+.gitconfig
+.gksu.lock
+.gtkrc-2.0
+.idata
+.itext
+.lesshst
+.osh-update
+.oh-my-zsh/
+.pinerc
+.profile
+.python_history
+.rdata
+.redshiftgrc
+.sdirs
+.%s.log
+.swm
+.swn
+.swo
+.swp
+.text
+.tls
+.tmux.conf
+.viminfo
+.viminfy.tmp
+.viminfz.tmp
+.vimrc
+.Xauthority
+.xscreensaver
+.xsel.log
+.xsession-errors
+.xsession-errors.old
+.zcompdump
+.zcompdump-moreno-5.0.2
+.zsh_history
+.zshrc
+.zshrc.pre-oh-my-zsh
+3dsp-master.zip
+"
+for file in $FILES
+do
+   if [ -d $file ]; then
+      mkdir -p $DESTINATION/$file
+      cp -vfr $HOME/$file* $DESTINATION/$file
+   elif [ -f $file ]; then
+      cp -vfr $HOME/$file $DESTINATION
+   else
+      echo -e "$red:: $file is not a file/directory! $reset"
+   fi     
+done
+ 
+echo -e "$green:: Done! $reset"
+exit 0
