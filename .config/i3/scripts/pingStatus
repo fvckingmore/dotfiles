@@ -1,6 +1,7 @@
 #!/bin/bash
 
-COM=$(ping -c5 -i 0.3 8.8.8.8 | awk '/seq=/{printf ("%d\n", substr($7,6))}')
+#COM=$(ping -c5 -i 0.3 8.8.8.8 | awk '/seq=/{printf ("%d\n", substr($7,6))}')
+COM=$(ping -c5 -i 0.3 8.8.8.8 | grep from | cut -d" " -f7 | sed -e 's/time=//g' -e 's/\..*//g')
 CONT=0
 ACUM=0
 

@@ -167,42 +167,6 @@ bindsym $mod+d mode "resize"
 
 
 
-#######################################################
-#COLORS
-#######################################################
-
-# class                 border  bground text    indicator child_border
-client.focused          #859900 #859900 #FFFFFF #CB4B16   #859900
-client.focused_inactive #002B36 #002B36 #657B83 #CB4B16   #002B36
-client.unfocused        #002B36 #002B36 #657B83 #CB4B16   #002B36
-client.urgent           #DC322F #DC322F #FFFFFF #CB4B16   #002B36
-client.placeholder      #6C71C4 #6C71C4 #FFFFFF #CB4B16   #002B36
-
-client.background       #002B36
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        #status_command i3status
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        tray_output primary
-	position top
-	
-	font pango:SFNS Display Bold 8
-		
- 	colors {
-		
-			background #002B36
-    		statusline #FFFFFF
-    		separator  #859900
-
-    		focused_workspace  #859900 #859900 #FFFFFF
-    		active_workspace   #268BD2 #268BD2 #FFFFFF
-    		inactive_workspace #002B36 #002B36 #FFFFFF
-    		urgent_workspace   #DC322F #DC322F #FFFFFF
-    		binding_mode       #DC322F #DC322F #FFFFFF
-  	}
-}
 
 
 
@@ -315,7 +279,8 @@ bindsym Control+Print exec xfce4-screenshooter -r
 bindsym Print exec xfce4-screenshooter -f
 
 #Suspende keybind
-bindsym XF86Sleep exec "lxlock & systemctl suspend"  
+#bindsym XF86Sleep exec "lxlock & systemctl suspend"  
+bindsym XF86Sleep exec "systemctl suspend"  
 
 #Screen Output Menu
 #bindsym XF86Display exec ~/.config/i3/scripts/screenOutputMenu -d
@@ -347,3 +312,42 @@ exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
 exec --no-startup-id redshift -O 3400
 exec --no-startup-id xcompmgr
+
+
+
+#######################################################
+#COLORS
+#######################################################
+
+# class                 border  bground text    indicator child_border
+client.focused          #859900 #859900 #FFFFFF #CB4B16   #859900
+client.focused_inactive #002B36 #002B36 #657B83 #CB4B16   #002B36
+client.unfocused        #002B36 #002B36 #657B83 #CB4B16   #002B36
+client.urgent           #DC322F #DC322F #FFFFFF #CB4B16   #002B36
+client.placeholder      #6C71C4 #6C71C4 #FFFFFF #CB4B16   #002B36
+
+client.background       #002B36
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        #status_command i3status
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        tray_output primary
+	position top
+	
+	font pango:SFNS Display Bold 8
+		
+ 	colors {
+		
+			background #002B36
+    		statusline #FFFFFF
+    		separator  #859900
+
+    		focused_workspace  #859900 #859900 #FFFFFF
+    		active_workspace   #268BD2 #268BD2 #FFFFFF
+    		inactive_workspace #002B36 #002B36 #FFFFFF
+    		urgent_workspace   #DC322F #DC322F #FFFFFF
+    		binding_mode       #DC322F #DC322F #FFFFFF
+  	}
+}

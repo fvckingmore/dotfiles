@@ -1,17 +1,4 @@
 "=======================================================
-"PLUGIN MANAGER
-"=======================================================
-call plug#begin('~/.vim/plugged')
-Plug 'vim-airline/vim-airline'
-Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree'
-
-
-call plug#end()
-
-
-
-"=======================================================
 "STANDAR CONFIG
 "=======================================================
 "
@@ -398,8 +385,8 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
-set number
+"set number
 syntax on
 set tabstop=4
 set autoindent
-
+set rnu

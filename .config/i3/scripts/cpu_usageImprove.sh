@@ -1,14 +1,14 @@
 #/bin/bash
 
-LOAD=$(mpstat 1 1 | grep -i average | awk '{print $12}')
+LOAD=$(mpstat 1 1 | grep -i average | sed -e 's/  */ /g' -e 's/,/\./g' | cut -d" " -f12 )
 
 
-CPU=$((100,00 - $LOAD))
+CPU=$(echo "100.00 - $LOAD" | bc)
 
-echo $CPU
-echo $CPU
+echo "${CPU}%"
+echo "${CPU}%"
 
-[[ $CPU -gt 70 ]] && exit 33
+[ $(echo "$CPU > 70" | bc) -eq 1 ] && exit 33
 
 exit 0
 

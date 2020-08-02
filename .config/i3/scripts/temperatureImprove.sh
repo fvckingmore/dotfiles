@@ -1,6 +1,7 @@
 #!/bin/bash
 
-TEMP=$(acpi -t | cut -d" " -f 4)
+#TEMP=$(acpi -t | cut -d" " -f 4)
+TEMP=$(cat /sys/class/thermal/thermal_zone0/temp | xargs -I% echo "% / 1000" | bc)
 
 echo "${TEMP}°C"
 echo "${TEMP}°C"
