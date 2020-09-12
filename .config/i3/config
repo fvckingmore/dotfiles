@@ -30,7 +30,8 @@ font pango:SFNS Display Bold 6
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-#for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 3
+#for_window [class="^.*"] border normal 2
 #for_window [class="^.*"] font pango:monospace 5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -46,7 +47,8 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+r exec dmenu_run
-bindsym $mod+r exec "dmenu_run -i -nf '#FFFFFF' -nb '#002B36' -sb '#859900' -sf '#FFFFFF' -fn 'SFNS Display Bold-10'"
+#bindsym $mod+r exec "dmenu_run -i -nf '#FFFFFF' -nb '#002B36' -sb '#859900' -sf '#FFFFFF' -fn 'SFNS Display Bold-10'"
+bindsym $mod+r exec "rofi -modi 'run,drun' -show run -theme solarized"
 
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -335,6 +337,7 @@ bar {
 	status_command i3blocks -c ~/.config/i3/i3blocks.conf
         tray_output primary
 	position top
+#	workspace_buttons no
 	
 	font pango:SFNS Display Bold 8
 		
@@ -350,4 +353,8 @@ bar {
     		urgent_workspace   #DC322F #DC322F #FFFFFF
     		binding_mode       #DC322F #DC322F #FFFFFF
   	}
+
+	mode hide
+	hidden_state hide
+	modifier $mod
 }
