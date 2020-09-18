@@ -30,7 +30,8 @@ font pango:SFNS Display Bold 6
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-for_window [class="^.*"] border pixel 3
+#for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 1
 #for_window [class="^.*"] border normal 2
 #for_window [class="^.*"] font pango:monospace 5
 
@@ -47,8 +48,8 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+r exec dmenu_run
-#bindsym $mod+r exec "dmenu_run -i -nf '#FFFFFF' -nb '#002B36' -sb '#859900' -sf '#FFFFFF' -fn 'SFNS Display Bold-10'"
-bindsym $mod+r exec "rofi -modi 'run,drun' -show run -theme solarized"
+bindsym $mod+r exec "dmenu_run -i -nf '#FFFFFF' -nb '$cBlack2' -sb '$cYellow' -sf '#FFFFFF' -fn 'SFNS Display Bold-10'"
+#bindsym $mod+r exec "rofi -modi 'run,drun' -show run -theme solarized"
 
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -247,7 +248,8 @@ mode "$scr_mode" {
 #USER CUSTOM EXIT MODE
 
 set $mode_exit Exit? Enter:yes Escape:no
-bindsym $mod+Shift+e mode "$mode_exit" 
+#bindsym $mod+Shift+e mode "$mode_exit" 
+bindsym $mod+Shift+e exec "i3-msg exit" 
 
 mode "$mode_exit" {
 	
@@ -313,7 +315,8 @@ exec --no-startup-id sudo /etc/init.d/network-manager restart
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
 exec --no-startup-id redshift -O 3400
-exec --no-startup-id xcompmgr
+#exec --no-startup-id xcompmgr
+exec --no-startup-id xcompmgr -c -t-5 -l-5 -r5 -o.55 -fF -I.05 -O.05 -D3
 
 
 
@@ -321,21 +324,63 @@ exec --no-startup-id xcompmgr
 #COLORS
 #######################################################
 
-# class                 border  bground text    indicator child_border
-client.focused          #859900 #859900 #FFFFFF #CB4B16   #859900
-client.focused_inactive #002B36 #002B36 #657B83 #CB4B16   #002B36
-client.unfocused        #002B36 #002B36 #657B83 #CB4B16   #002B36
-client.urgent           #DC322F #DC322F #FFFFFF #CB4B16   #002B36
-client.placeholder      #6C71C4 #6C71C4 #FFFFFF #CB4B16   #002B36
 
-client.background       #002B36
+set $cBlack #002B36
+set $cRed #DC322F
+set $cGreen #859900
+set $cYellow #B58900
+set $cBlue #268BD2
+set $cRose #D33682
+set $cCyan #2AA198
+set $cWhite #D9D3C2
+set $cWhite2 #FFFFFF
+ 
+
+# class                 border  bground text    indicator child_border
+client.focused          $cYellow $cYellow $cBlack2 $cRed   $cYellow
+client.focused_inactive $cBlack2 $cBlack2 $cWhite $cRed   $cBlack
+client.unfocused        $cBlack2 $cBlack2 $cWhite $cRed   $cBlack
+client.urgent           $cRed $cRed $cWhite2 $cRed   $cBlack
+client.placeholder      $cBlue $cBlue $cWhite2 $cRed   $cBlack
+
+client.background       $cBlack2
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
+
+#bar {
+
+#	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#   tray_output primary
+#	position top
+	
+#	font pango:SFNS Display Bold 8
+		
+# 	colors {
+		
+#			background $cBlack
+#    		statusline #FFFFFF
+#    		separator  $cGreen
+
+#    		focused_workspace  $cGreen $cGreen #FFFFFF
+#    		active_workspace   $cBlue $cBlue #FFFFFF
+#    		inactive_workspace $cBlack $cBlack #FFFFFF
+#    		urgent_workspace   $cRed $cRed #FFFFFF
+#    		binding_mode       $cRed $cRed #FFFFFF
+#  	}
+
+#	mode hide
+#	hidden_state hide
+#	modifier $mod
+#}
+
+set $cBlack2 #282a36
+
 bar {
         #status_command i3status
 	status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        tray_output primary
+    tray_output primary
 	position top
 #	workspace_buttons no
 	
@@ -343,15 +388,15 @@ bar {
 		
  	colors {
 		
-			background #002B36
-    		statusline #FFFFFF
-    		separator  #859900
+			background $cBlack2
+    		statusline $cWhite2
+    		separator $cYellow
 
-    		focused_workspace  #859900 #859900 #FFFFFF
-    		active_workspace   #268BD2 #268BD2 #FFFFFF
-    		inactive_workspace #002B36 #002B36 #FFFFFF
-    		urgent_workspace   #DC322F #DC322F #FFFFFF
-    		binding_mode       #DC322F #DC322F #FFFFFF
+    		focused_workspace  $cYellow $cYellow $cBlack2
+    		active_workspace   $cBlue $cBlue $cWhite2
+    		inactive_workspace $cBlack2 $cBlack2 $cWhite2
+    		urgent_workspace   $cRed $cRed $cWhite2
+    		binding_mode       $cRed $cRed $cWhite2
   	}
 
 	mode hide
