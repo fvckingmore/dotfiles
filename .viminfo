@@ -11,21 +11,49 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último Patrón de búsqueda:
-~MSle0~/dme
+~MSle0~/+f
 
 # Último SustituciónPatrón de búsqueda:
 ~MSle0&#002B36
 
 # Última cadena de sustitución:
-$$cBlack
+$
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
 :wq
-|2,0,1600615350,,"wq"
-:q
-|2,0,1600542203,,"q"
+|2,0,1601350083,,"wq"
 :w
-|2,0,1600542201,,"w"
+|2,0,1601350016,,"w"
+:set nu!
+|2,0,1601349532,,"set nu!"
+:set rnu!
+|2,0,1601349527,,"set rnu!"
+:q!
+|2,0,1601349461,,"q!"
+:q
+|2,0,1601343668,,"q"
+:W
+|2,0,1601335480,,"W"
+:11
+|2,0,1601334889,,"11"
+:setnu!
+|2,0,1601326486,,"setnu!"
+:38
+|2,0,1601262562,,"38"
+:21
+|2,0,1601262506,,"21"
+:q1
+|2,0,1601261276,,"q1"
+:wq!
+|2,0,1601239303,,"wq!"
+:53
+|2,0,1601231426,,"53"
+:51
+|2,0,1601231415,,"51"
+:next
+|2,0,1601216150,,"next"
+:new
+|2,0,1601216011,,"new"
 :rnu !
 |2,0,1600525059,,"rnu !"
 :!rnu
@@ -48,8 +76,6 @@ $$cBlack
 |2,0,1600464404,," % s/#073642/$cBlack/"
 :w!
 |2,0,1600366336,,"w!"
-:q!
-|2,0,1600015426,,"q!"
 : e ~/.config/i3/scripts/cpu_usageCustom
 |2,0,1596382732,," e ~/.config/i3/scripts/cpu_usageCustom"
 :/num
@@ -66,8 +92,6 @@ $$cBlack
 |2,0,1595885896,,"% s/#/\"/g"
 :1
 |2,0,1594255528,,"1"
-:W
-|2,0,1593028143,,"W"
 :% s/FOLDER/SERVER/
 |2,0,1593018781,,"% s/FOLDER/SERVER/"
 :Q
@@ -146,6 +170,20 @@ $$cBlack
 |2,0,0,,"e .config/i3/scripts/bandwidthCustom"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+? \s\+$
+|2,1,1601350083,,"\\s\\+$"
+?/redsF
+|2,1,1601336807,47,"redsF"
+?/+f
+|2,1,1601335936,47,"+f"
+?/find
+|2,1,1601335863,47,"find"
+?/reds
+|2,1,1601326147,47,"reds"
+?/xlock
+|2,1,1601325993,47,"xlock"
+? @$
+|2,1,1601317278,,"@$"
 ?/dme
 |2,1,1600542438,47,"dme"
 ?/i
@@ -176,8 +214,6 @@ $$cBlack
 |2,1,1596679567,47,"iface"
 ?/lock
 |2,1,1596462270,47,"lock"
-? \s\+$
-|2,1,1596389721,,"\\s\\+$"
 ?/| 
 |2,1,1596382224,47,"| "
 ?/bar
@@ -236,8 +272,6 @@ $$cBlack
 |2,1,0,,"\\<SERVER\\>"
 ?//
 |2,1,0,47,"/"
-? @$
-|2,1,0,,"@$"
 ?/fvc
 |2,1,0,47,"fvc"
 ??\a
@@ -266,8 +300,6 @@ $$cBlack
 |2,1,0,47,"term"
 ?/pdf
 |2,1,0,47,"pdf"
-?/+f
-|2,1,0,47,"+f"
 ?/tempe
 |2,1,0,47,"tempe"
 ?/memo
@@ -293,287 +325,576 @@ $$cBlack
 
 # Registros:
 "0	LINE	0
-	set $cWhite #D9D3C2
-|3,0,0,1,1,0,1600468356,"set $cWhite #D9D3C2"
+	program[term]		= xfce4-terminal.wrapper
+|3,0,0,1,1,0,1601343451,"program[term]		= xfce4-terminal.wrapper"
 "1	LINE	0
-	        #status_command i3status
-|3,0,1,1,1,0,1600466761,"        #status_command i3status"
-"2	LINE	0
-	#	workspace_buttons no
-|3,0,2,1,1,0,1600466756,"#	workspace_buttons no"
-"3	LINE	0
-	set $cGreen
-|3,0,3,1,1,0,1600464144,"set $cGreen"
-"4	LINE	0
-		hidden_state hide
-|3,0,4,1,1,0,1599832778,"	hidden_state hide"
-"5	LINE	0
-	border pixel 3
-|3,0,5,1,1,0,1596854155,"border pixel 3"
-"6	LINE	0
 	
-|3,0,6,1,1,0,1596421304,""
+|3,0,1,1,1,0,1601344570,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1601344570,""
+"3	LINE	0
+	obtain() {
+	
+		local sum=0
+	    local current=$(cat /sys/class/net/{w,e}*/statistics/${1}_bytes)
+	
+	
+	    for i in $current; do
+	
+	        sum=$(echo "$sum + $i" | bc)
+	    done
+	
+	    cache="/tmp/$1"
+	
+	    [ -f $cache ] && old=$(cat $cache) || old=0
+	    echo $sum > $cache
+	    echo "$(( (sum-old) / 1024 ))"
+	
+	}
+	
+	
+	band() {
+	
+		#check
+	
+		down=$(obtain rx)
+		up=$(obtain tx)
+	
+		echo -n "D ${down}K U ${up}K"
+	
+	}
+|3,0,3,1,30,0,1601344568,"obtain() {","","	local sum=0","    local current=$(cat /sys/class/net/{w,e}*/statistics/${1}_bytes)","","","    for i in $current; do","","        sum=$(echo \"$sum + $i\" | bc)","    done","","    cache=\"/tmp/$1\"","","    [ -f $cache ] && old=$(cat $cache) || old=0","    echo $sum > $cache","    echo \"$(( (sum-old) / 1024 ))\"","","}","","","band() {","","	#check","","	down=$(obtain rx)","	up=$(obtain tx)","",>34
+|<"	echo -n \"D ${down}K U ${up}K\"","","}"
+"4	LINE	0
+	traffic() {}
+|3,0,4,1,1,0,1601344151,"traffic() {}"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1601343948,""
+"6	LINE	0
+	check() {
+	
+	    [[ $(cat /sys/class/net/e*/operstate) == "down" ]] && {
+	
+	        echo "DOWN";
+	        echo "DOWN";
+	        exit 33;
+	    }
+	}
+|3,0,6,1,9,0,1601343945,"check() {","","    [[ $(cat /sys/class/net/e*/operstate) == \"down\" ]] && {","","        echo \"DOWN\";","        echo \"DOWN\";","        exit 33;","    }","}"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1596421302,""
+|3,0,7,1,1,0,1601343337,""
 "8	LINE	0
-	#if=$(ip route | awk '/^default/{print $5}')
-	#ip=$(ip route show dev $if | awk '/link/{print $(NF-2)}')
-|3,0,8,1,2,0,1596421300,"#if=$(ip route | awk '/^default/{print $5}')","#ip=$(ip route show dev $if | awk '/link/{print $(NF-2)}')"
+	
+|3,0,8,1,1,0,1601341801,""
 "9	LINE	0
-	#ip=$(ip route show dev $if | grep scope | awk '{print $7}')
-|3,0,9,1,1,0,1596421296,"#ip=$(ip route show dev $if | grep scope | awk '{print $7}')"
+	
+|3,0,9,1,1,0,1601341800,""
 "e	CHAR	0
 	e
 |3,0,14,0,1,0,1593014617,"e"
+"j	CHAR	0
+	jjjjjjhhhhhhhhhhhhhhhi{�kr�kl
+|3,0,19,0,1,0,1601328217,"jjjjjjhhhhhhhhhhhhhhhi{�kr�kl"
 "u	CHAR	0
-	u
-|3,0,30,0,1,0,1596383440,"u"
+	u:w
+|3,0,30,0,1,0,1601328478,"u:w"
 ""-	CHAR	0
-	Green
-|3,1,36,0,1,0,1600542467,"Green"
+	nose
+|3,1,36,0,1,0,1601349864,"nose"
 
 # Marcas en el archivo:
-'0  319  67  ~/.config/i3/config
-|4,48,319,67,1600615350,"~/.config/i3/config"
-'1  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,49,1,0,1600542599,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
-'2  319  67  ~/.config/i3/config
-|4,50,319,67,1600542534,"~/.config/i3/config"
-'3  51  75  ~/.config/i3/config
-|4,51,51,75,1600542471,"~/.config/i3/config"
-'4  51  75  ~/.config/i3/config
-|4,52,51,75,1600542471,"~/.config/i3/config"
-'5  51  75  ~/.config/i3/config
-|4,53,51,75,1600542471,"~/.config/i3/config"
-'6  51  75  ~/.config/i3/config
-|4,54,51,75,1600542471,"~/.config/i3/config"
-'7  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,55,1,0,1600542333,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
-'8  319  69  ~/.config/i3/config
-|4,56,319,69,1600542286,"~/.config/i3/config"
-'9  319  69  ~/.config/i3/config
-|4,57,319,69,1600542286,"~/.config/i3/config"
+'0  142  1  ~/.config/baraction.sh
+|4,48,142,1,1601350083,"~/.config/baraction.sh"
+'1  35  0  ~/.config/i3/scripts/bandwidthImprove
+|4,49,35,0,1601349818,"~/.config/i3/scripts/bandwidthImprove"
+'2  1  0  ~/.config/baraction
+|4,50,1,0,1601349461,"~/.config/baraction"
+'3  114  1  ~/.config/baraction.sh
+|4,51,114,1,1601344575,"~/.config/baraction.sh"
+'4  114  1  ~/.config/baraction.sh
+|4,52,114,1,1601344575,"~/.config/baraction.sh"
+'5  139  12  ~/.config/baractionbak.sh
+|4,53,139,12,1601344085,"~/.config/baractionbak.sh"
+'6  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,54,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+'7  22  19  ~/dotfiles
+|4,55,22,19,1601343570,"~/dotfiles"
+'8  293  0  ~/.spectrwm.conf
+|4,56,293,0,1601343466,"~/.spectrwm.conf"
+'9  286  29  ~/.spectrwm.conf
+|4,57,286,29,1601337644,"~/.spectrwm.conf"
 
 # Lista de saltos (el más reciente va primero):
--'  319  67  ~/.config/i3/config
-|4,39,319,67,1600615350,"~/.config/i3/config"
--'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1600542599,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1600542599,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  319  67  ~/.config/i3/config
-|4,39,319,67,1600542534,"~/.config/i3/config"
--'  319  67  ~/.config/i3/config
-|4,39,319,67,1600542534,"~/.config/i3/config"
--'  326  0  ~/.config/i3/config
-|4,39,326,0,1600542505,"~/.config/i3/config"
--'  320  0  ~/.config/i3/config
-|4,39,320,0,1600542505,"~/.config/i3/config"
--'  310  0  ~/.config/i3/config
-|4,39,310,0,1600542505,"~/.config/i3/config"
--'  305  0  ~/.config/i3/config
-|4,39,305,0,1600542505,"~/.config/i3/config"
--'  292  0  ~/.config/i3/config
-|4,39,292,0,1600542505,"~/.config/i3/config"
--'  288  0  ~/.config/i3/config
-|4,39,288,0,1600542505,"~/.config/i3/config"
--'  284  0  ~/.config/i3/config
-|4,39,284,0,1600542505,"~/.config/i3/config"
--'  326  0  ~/.config/i3/config
-|4,39,326,0,1600542505,"~/.config/i3/config"
--'  320  0  ~/.config/i3/config
-|4,39,320,0,1600542505,"~/.config/i3/config"
--'  310  0  ~/.config/i3/config
-|4,39,310,0,1600542505,"~/.config/i3/config"
--'  305  0  ~/.config/i3/config
-|4,39,305,0,1600542505,"~/.config/i3/config"
--'  292  0  ~/.config/i3/config
-|4,39,292,0,1600542505,"~/.config/i3/config"
--'  288  0  ~/.config/i3/config
-|4,39,288,0,1600542505,"~/.config/i3/config"
--'  284  0  ~/.config/i3/config
-|4,39,284,0,1600542505,"~/.config/i3/config"
--'  326  0  ~/.config/i3/config
-|4,39,326,0,1600542505,"~/.config/i3/config"
--'  320  0  ~/.config/i3/config
-|4,39,320,0,1600542505,"~/.config/i3/config"
--'  310  0  ~/.config/i3/config
-|4,39,310,0,1600542505,"~/.config/i3/config"
--'  305  0  ~/.config/i3/config
-|4,39,305,0,1600542505,"~/.config/i3/config"
--'  292  0  ~/.config/i3/config
-|4,39,292,0,1600542505,"~/.config/i3/config"
--'  288  0  ~/.config/i3/config
-|4,39,288,0,1600542505,"~/.config/i3/config"
--'  284  0  ~/.config/i3/config
-|4,39,284,0,1600542505,"~/.config/i3/config"
--'  279  0  ~/.config/i3/config
-|4,39,279,0,1600542504,"~/.config/i3/config"
--'  276  0  ~/.config/i3/config
-|4,39,276,0,1600542504,"~/.config/i3/config"
--'  272  0  ~/.config/i3/config
-|4,39,272,0,1600542504,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1600542504,"~/.config/i3/config"
--'  264  0  ~/.config/i3/config
-|4,39,264,0,1600542504,"~/.config/i3/config"
--'  259  0  ~/.config/i3/config
-|4,39,259,0,1600542504,"~/.config/i3/config"
--'  253  0  ~/.config/i3/config
-|4,39,253,0,1600542504,"~/.config/i3/config"
--'  249  0  ~/.config/i3/config
-|4,39,249,0,1600542504,"~/.config/i3/config"
--'  245  0  ~/.config/i3/config
-|4,39,245,0,1600542504,"~/.config/i3/config"
--'  238  0  ~/.config/i3/config
-|4,39,238,0,1600542504,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1600542504,"~/.config/i3/config"
--'  279  0  ~/.config/i3/config
-|4,39,279,0,1600542504,"~/.config/i3/config"
--'  276  0  ~/.config/i3/config
-|4,39,276,0,1600542504,"~/.config/i3/config"
--'  272  0  ~/.config/i3/config
-|4,39,272,0,1600542504,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1600542504,"~/.config/i3/config"
--'  264  0  ~/.config/i3/config
-|4,39,264,0,1600542504,"~/.config/i3/config"
--'  259  0  ~/.config/i3/config
-|4,39,259,0,1600542504,"~/.config/i3/config"
--'  253  0  ~/.config/i3/config
-|4,39,253,0,1600542504,"~/.config/i3/config"
--'  249  0  ~/.config/i3/config
-|4,39,249,0,1600542504,"~/.config/i3/config"
--'  245  0  ~/.config/i3/config
-|4,39,245,0,1600542504,"~/.config/i3/config"
--'  238  0  ~/.config/i3/config
-|4,39,238,0,1600542504,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1600542504,"~/.config/i3/config"
--'  279  0  ~/.config/i3/config
-|4,39,279,0,1600542504,"~/.config/i3/config"
--'  276  0  ~/.config/i3/config
-|4,39,276,0,1600542504,"~/.config/i3/config"
--'  272  0  ~/.config/i3/config
-|4,39,272,0,1600542504,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1600542504,"~/.config/i3/config"
--'  264  0  ~/.config/i3/config
-|4,39,264,0,1600542504,"~/.config/i3/config"
--'  259  0  ~/.config/i3/config
-|4,39,259,0,1600542504,"~/.config/i3/config"
--'  253  0  ~/.config/i3/config
-|4,39,253,0,1600542504,"~/.config/i3/config"
--'  249  0  ~/.config/i3/config
-|4,39,249,0,1600542504,"~/.config/i3/config"
--'  245  0  ~/.config/i3/config
-|4,39,245,0,1600542504,"~/.config/i3/config"
--'  238  0  ~/.config/i3/config
-|4,39,238,0,1600542504,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1600542504,"~/.config/i3/config"
--'  234  0  ~/.config/i3/config
-|4,39,234,0,1600542503,"~/.config/i3/config"
--'  230  0  ~/.config/i3/config
-|4,39,230,0,1600542503,"~/.config/i3/config"
--'  228  0  ~/.config/i3/config
-|4,39,228,0,1600542503,"~/.config/i3/config"
--'  222  0  ~/.config/i3/config
-|4,39,222,0,1600542503,"~/.config/i3/config"
--'  218  0  ~/.config/i3/config
-|4,39,218,0,1600542503,"~/.config/i3/config"
--'  211  0  ~/.config/i3/config
-|4,39,211,0,1600542503,"~/.config/i3/config"
--'  207  0  ~/.config/i3/config
-|4,39,207,0,1600542503,"~/.config/i3/config"
--'  200  0  ~/.config/i3/config
-|4,39,200,0,1600542503,"~/.config/i3/config"
--'  188  0  ~/.config/i3/config
-|4,39,188,0,1600542503,"~/.config/i3/config"
--'  182  0  ~/.config/i3/config
-|4,39,182,0,1600542503,"~/.config/i3/config"
--'  179  0  ~/.config/i3/config
-|4,39,179,0,1600542503,"~/.config/i3/config"
--'  170  0  ~/.config/i3/config
-|4,39,170,0,1600542503,"~/.config/i3/config"
--'  168  0  ~/.config/i3/config
-|4,39,168,0,1600542503,"~/.config/i3/config"
--'  163  0  ~/.config/i3/config
-|4,39,163,0,1600542503,"~/.config/i3/config"
--'  157  0  ~/.config/i3/config
-|4,39,157,0,1600542503,"~/.config/i3/config"
--'  148  0  ~/.config/i3/config
-|4,39,148,0,1600542503,"~/.config/i3/config"
--'  143  0  ~/.config/i3/config
-|4,39,143,0,1600542503,"~/.config/i3/config"
--'  136  0  ~/.config/i3/config
-|4,39,136,0,1600542503,"~/.config/i3/config"
--'  124  0  ~/.config/i3/config
-|4,39,124,0,1600542503,"~/.config/i3/config"
--'  112  0  ~/.config/i3/config
-|4,39,112,0,1600542503,"~/.config/i3/config"
--'  109  0  ~/.config/i3/config
-|4,39,109,0,1600542503,"~/.config/i3/config"
--'  106  0  ~/.config/i3/config
-|4,39,106,0,1600542503,"~/.config/i3/config"
--'  103  0  ~/.config/i3/config
-|4,39,103,0,1600542503,"~/.config/i3/config"
--'  93  0  ~/.config/i3/config
-|4,39,93,0,1600542503,"~/.config/i3/config"
--'  234  0  ~/.config/i3/config
-|4,39,234,0,1600542503,"~/.config/i3/config"
--'  230  0  ~/.config/i3/config
-|4,39,230,0,1600542503,"~/.config/i3/config"
--'  228  0  ~/.config/i3/config
-|4,39,228,0,1600542503,"~/.config/i3/config"
--'  222  0  ~/.config/i3/config
-|4,39,222,0,1600542503,"~/.config/i3/config"
--'  218  0  ~/.config/i3/config
-|4,39,218,0,1600542503,"~/.config/i3/config"
--'  211  0  ~/.config/i3/config
-|4,39,211,0,1600542503,"~/.config/i3/config"
--'  207  0  ~/.config/i3/config
-|4,39,207,0,1600542503,"~/.config/i3/config"
--'  200  0  ~/.config/i3/config
-|4,39,200,0,1600542503,"~/.config/i3/config"
--'  188  0  ~/.config/i3/config
-|4,39,188,0,1600542503,"~/.config/i3/config"
--'  182  0  ~/.config/i3/config
-|4,39,182,0,1600542503,"~/.config/i3/config"
--'  179  0  ~/.config/i3/config
-|4,39,179,0,1600542503,"~/.config/i3/config"
--'  170  0  ~/.config/i3/config
-|4,39,170,0,1600542503,"~/.config/i3/config"
--'  168  0  ~/.config/i3/config
-|4,39,168,0,1600542503,"~/.config/i3/config"
--'  163  0  ~/.config/i3/config
-|4,39,163,0,1600542503,"~/.config/i3/config"
--'  157  0  ~/.config/i3/config
-|4,39,157,0,1600542503,"~/.config/i3/config"
--'  148  0  ~/.config/i3/config
-|4,39,148,0,1600542503,"~/.config/i3/config"
--'  143  0  ~/.config/i3/config
-|4,39,143,0,1600542503,"~/.config/i3/config"
+-'  142  1  ~/.config/baraction.sh
+|4,39,142,1,1601350083,"~/.config/baraction.sh"
+-'  114  0  ~/.config/baraction.sh
+|4,39,114,0,1601349824,"~/.config/baraction.sh"
+-'  35  0  ~/.config/i3/scripts/bandwidthImprove
+|4,39,35,0,1601349818,"~/.config/i3/scripts/bandwidthImprove"
+-'  35  0  ~/.config/i3/scripts/bandwidthImprove
+|4,39,35,0,1601349818,"~/.config/i3/scripts/bandwidthImprove"
+-'  19  0  ~/.config/i3/scripts/bandwidthImprove
+|4,39,19,0,1601349487,"~/.config/i3/scripts/bandwidthImprove"
+-'  19  0  ~/.config/i3/scripts/bandwidthImprove
+|4,39,19,0,1601349487,"~/.config/i3/scripts/bandwidthImprove"
+-'  1  0  ~/.config/baraction
+|4,39,1,0,1601349461,"~/.config/baraction"
+-'  1  0  ~/.config/baraction
+|4,39,1,0,1601349461,"~/.config/baraction"
+-'  1  0  ~/.config/baraction
+|4,39,1,0,1601349461,"~/.config/baraction"
+-'  1  0  ~/.config/baraction
+|4,39,1,0,1601349461,"~/.config/baraction"
+-'  114  1  ~/.config/baraction.sh
+|4,39,114,1,1601344575,"~/.config/baraction.sh"
+-'  114  1  ~/.config/baraction.sh
+|4,39,114,1,1601344575,"~/.config/baraction.sh"
+-'  114  1  ~/.config/baraction.sh
+|4,39,114,1,1601344575,"~/.config/baraction.sh"
+-'  114  1  ~/.config/baraction.sh
+|4,39,114,1,1601344575,"~/.config/baraction.sh"
+-'  110  4  ~/.config/baraction.sh
+|4,39,110,4,1601344475,"~/.config/baraction.sh"
+-'  110  4  ~/.config/baraction.sh
+|4,39,110,4,1601344475,"~/.config/baraction.sh"
+-'  110  4  ~/.config/baraction.sh
+|4,39,110,4,1601344475,"~/.config/baraction.sh"
+-'  110  4  ~/.config/baraction.sh
+|4,39,110,4,1601344475,"~/.config/baraction.sh"
+-'  110  4  ~/.config/baraction.sh
+|4,39,110,4,1601344475,"~/.config/baraction.sh"
+-'  101  102  ~/.config/baraction.sh
+|4,39,101,102,1601344386,"~/.config/baraction.sh"
+-'  101  102  ~/.config/baraction.sh
+|4,39,101,102,1601344386,"~/.config/baraction.sh"
+-'  101  102  ~/.config/baraction.sh
+|4,39,101,102,1601344386,"~/.config/baraction.sh"
+-'  101  102  ~/.config/baraction.sh
+|4,39,101,102,1601344386,"~/.config/baraction.sh"
+-'  101  102  ~/.config/baraction.sh
+|4,39,101,102,1601344386,"~/.config/baraction.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  139  12  ~/.config/baractionbak.sh
+|4,39,139,12,1601344085,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  142  0  ~/.config/baractionbak.sh
+|4,39,142,0,1601344068,"~/.config/baractionbak.sh"
+-'  1  0  ~/.config/baractionbak.sh
+|4,39,1,0,1601344068,"~/.config/baractionbak.sh"
+-'  65  0  ~/.config/baraction.sh
+|4,39,65,0,1601343988,"~/.config/baraction.sh"
+-'  65  0  ~/.config/baraction.sh
+|4,39,65,0,1601343988,"~/.config/baraction.sh"
+-'  65  0  ~/.config/baraction.sh
+|4,39,65,0,1601343988,"~/.config/baraction.sh"
+-'  65  0  ~/.config/baraction.sh
+|4,39,65,0,1601343988,"~/.config/baraction.sh"
+-'  65  0  ~/.config/baraction.sh
+|4,39,65,0,1601343988,"~/.config/baraction.sh"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  9  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,9,1601343668,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
+-'  22  19  ~/dotfiles
+|4,39,22,19,1601343570,"~/dotfiles"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
 
+> ~/.config/baraction.sh
+	*	1601350016	0
+	"	142	1
+	^	142	2
+	.	142	1
+	+	65	0
+	+	65	34
+	+	65	1
+	+	65	0
+	+	30	35
+	+	110	69
+	+	87	9
+	+	90	0
+	+	89	0
+	+	110	59
+	+	89	0
+	+	34	0
+	+	30	1
+	+	32	79
+	+	34	14
+	+	17	111
+	+	18	111
+	+	17	75
+	+	18	75
+	+	19	14
+	+	32	60
+	+	32	16
+	+	32	0
+	+	17	0
+	+	30	1
+	+	32	1
+	+	30	27
+	+	32	0
+	+	93	10
+	+	98	0
+	+	97	7
+	+	94	0
+	+	110	202
+	+	65	0
+	+	110	125
+	+	101	11
+	+	101	54
+	+	110	127
+	+	101	101
+	+	110	121
+	+	101	8
+	+	103	0
+	+	104	0
+	+	105	0
+	+	110	127
+	+	104	13
+	+	65	0
+	+	138	126
+	+	142	7
+	+	138	219
+	+	142	1
+
+> ~/.config/i3/scripts/bandwidthImprove
+	*	1601349814	0
+	"	35	0
+	^	19	0
+	.	38	0
+	+	8	11
+	+	9	11
+	+	42	0
+	+	41	5
+	+	18	39
+	+	12	0
+	+	11	0
+	+	24	0
+	+	38	0
+
+> ~/.config/baraction
+	*	1601349459	0
+	"	1	0
+
+> ~/.config/baractionbak.sh
+	*	1601344083	0
+	"	139	12
+	^	139	13
+	.	139	12
+	+	137	1
+	+	139	12
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1601343667	0
+	"	1	9
+	^	1	10
+	.	1	9
+	+	1	6
+	+	31	25
+	+	29	46
+	+	1	6
+	+	26	65
+	+	24	12
+	+	22	6
+	+	20	34
+	+	1	15
+	+	18	0
+	+	17	41
+	+	1	6
+	+	15	17
+	+	13	29
+	+	1	16
+	+	11	13
+	+	12	0
+	+	8	1
+	+	7	0
+	+	1	8
+	+	8	1
+	+	8	0
+	+	4	0
+	+	1	18
+	+	3	26
+	+	1	9
+
+> ~/dotfiles
+	*	1601343569	0
+	"	22	19
+	^	22	20
+	.	22	19
+	+	28	10
+	+	17	0
+	+	18	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	27	0
+	+	28	0
+	+	29	0
+	+	18	9
+	+	19	0
+	+	24	0
+	+	19	21
+	+	23	14
+	+	23	0
+	+	20	0
+	+	23	0
+	+	35	0
+	+	39	15
+	+	41	10
+	+	39	28
+	+	28	0
+	+	27	0
+	+	24	0
+	+	17	0
+	+	27	4
+	+	17	0
+	+	33	7
+	+	26	13
+	+	21	19
+	+	22	19
+
+> ~/.spectrwm.conf
+	*	1601343459	0
+	"	293	0
+	^	138	1
+	.	292	0
+	+	242	4
+	+	204	4
+	+	195	4
+	+	190	4
+	+	283	0
+	+	222	0
+	+	220	0
+	+	209	0
+	+	222	0
+	+	211	0
+	+	224	8
+	+	226	0
+	+	283	0
+	+	213	33
+	+	214	32
+	+	283	0
+	+	200	0
+	+	287	0
+	+	253	0
+	+	264	9
+	+	266	0
+	+	286	29
+	+	222	32
+	+	284	16
+	+	287	0
+	+	283	0
+	+	215	0
+	+	186	38
+	+	283	17
+	+	289	8
+	+	283	0
+	+	291	9
+	+	293	0
+	+	270	0
+	+	271	0
+	+	272	0
+	+	273	0
+	+	274	0
+	+	275	0
+	+	276	0
+	+	277	0
+	+	278	0
+	+	283	0
+	+	266	0
+	+	200	29
+	+	199	21
+	+	71	0
+	+	144	39
+	+	142	42
+	+	144	32
+	+	142	24
+	+	15	43
+	+	17	42
+	+	35	0
+	+	37	0
+	+	45	52
+	+	46	128
+	+	45	65
+	+	46	12
+	+	48	131
+	+	66	1
+	+	67	1
+	+	68	1
+	+	71	1
+	+	58	1
+	+	44	0
+	+	40	0
+	+	49	0
+	+	53	0
+	+	56	0
+	+	61	0
+	+	75	0
+	+	76	0
+	+	78	0
+	+	81	0
+	+	83	0
+	+	88	0
+	+	90	0
+	+	91	8
+	+	92	0
+	+	101	0
+	+	107	0
+	+	104	0
+	+	106	0
+	+	105	8
+	+	114	0
+	+	116	0
+	+	118	0
+	+	117	8
+	+	131	0
+	+	133	0
+	+	135	44
+	+	136	0
+	+	160	0
+	+	162	0
+	+	164	0
+	+	137	0
+	+	138	0
+	+	292	0
+	m	215	0
+
 > ~/.config/i3/config
-	*	1600615347	0
-	"	319	67
-	^	319	68
-	.	319	67
-	+	335	0
-	+	331	11
-	+	332	9
-	+	333	9
-	+	334	9
-	+	335	10
-	+	330	19
-	+	331	19
-	+	332	17
-	+	333	17
+	*	1601337012	0
+	"	114	0
+	^	344	63
+	.	344	62
 	+	334	17
 	+	335	18
 	+	358	0
@@ -664,53 +985,48 @@ $$cBlack
 	+	319	69
 	+	51	75
 	+	319	67
+	+	20	29
+	+	319	67
+	+	403	0
+	+	404	13
+	+	405	0
+	+	407	23
+	+	341	65
+	+	342	65
+	+	343	60
+	+	344	62
 
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1600542597	0
-	"	1	0
-	^	1	22
-	.	1	21
-	+	1	6
-	+	29	25
-	+	27	46
-	+	1	6
-	+	24	65
-	+	22	12
-	+	20	6
-	+	18	34
-	+	1	15
-	+	16	0
-	+	15	41
-	+	1	6
-	+	13	17
-	+	11	29
-	+	1	16
-	+	9	13
-	+	10	0
-	+	6	1
+> ~/.config/i3/scripts/temperatureImprove.sh
+	*	1601331780	0
+	"	4	0
+	^	4	0
+	.	4	74
+	+	3	30
 	+	5	0
-	+	1	8
-	+	6	1
-	+	6	0
-	+	2	0
-	+	1	21
-
-> ~/dbLinks
-	*	1600533257	0
-	"	83	0
-	^	83	0
-	.	83	0
-	+	55	0
-	+	70	0
-	+	82	0
-	+	83	0
+	+	6	15
+	+	7	0
+	+	9	34
+	+	9	35
+	+	15	0
+	+	9	86
+	+	10	0
+	+	11	0
+	+	12	19
+	+	9	75
+	+	12	33
+	+	9	75
+	+	12	47
+	+	14	5
+	+	9	60
+	+	4	0
+	+	3	0
+	+	4	74
 
 > ~/.config/i3/i3blocks.conf
-	*	1600468221	0
-	"	23	0
-	^	79	1
-	.	49	0
-	+	132	8
+	*	1601328785	0
+	"	115	0
+	^	115	3
+	.	115	0
 	+	133	0
 	+	139	7
 	+	135	0
@@ -810,36 +1126,298 @@ $$cBlack
 	+	79	0
 	+	62	0
 	+	49	0
+	+	115	0
+
+> ~/.config/autostart.sh
+	*	1601326170	0
+	"	3	9
+	.	3	9
+	+	3	9
 
 > ~/.xinitrc
-	*	1600366543	0
-	"	2	0
-	^	2	0
-	.	2	0
-	+	2	6
+	*	1601325561	0
+	"	5	0
+	^	5	0
+	.	5	0
+	+	1	26
 	+	1	18
 	+	3	11
-	+	2	0
+	+	1	20
 	+	3	0
-	+	2	0
+	+	1	20
 	+	3	0
-	+	2	0
+	+	1	20
 	+	3	0
-	+	2	0
+	+	1	20
 	+	3	0
-	+	2	0
+	+	1	20
 	+	3	0
-	+	2	0
+	+	1	20
 	+	3	0
-	+	2	0
+	+	1	20
 	+	3	0
-	+	2	0
+	+	1	20
 	+	4	7
-	+	2	0
+	+	1	20
 	+	4	0
-	+	2	0
+	+	1	20
 	+	4	0
+	+	1	20
+	+	5	12
+	+	1	20
+	+	5	0
+	+	1	20
+	+	5	0
+	+	1	20
+	+	5	0
+	+	1	20
 	+	2	0
+	+	5	0
+
+> ~/baraction.sh
+	*	1601263177	0
+	"	38	0
+	^	19	8
+	.	37	0
+	+	27	92
+	+	44	28
+	+	27	66
+	+	22	0
+	+	23	0
+	+	21	0
+	+	20	0
+	+	15	0
+	+	15	97
+	+	17	0
+	+	15	0
+	+	15	100
+	+	15	98
+	+	16	0
+	+	17	0
+	+	18	2
+	+	19	0
+	+	15	0
+	+	32	7
+	+	19	7
+	+	18	0
+	+	19	7
+	+	35	12
+	+	37	0
+
+> ~/.config/i3/scripts/memoryImprove
+	*	1601262843	0
+	"	6	0
+	^	6	97
+	.	6	54
+	+	2	0
+	+	5	51
+	+	7	44
+	+	15	0
+	+	8	20
+	+	1	13
+	+	3	37
+	+	5	37
+	+	8	19
+	+	9	25
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	13	20
+	+	10	6
+	+	11	6
+	+	13	21
+	+	11	0
+	+	13	21
+	+	4	97
+	+	6	0
+	+	3	1
+	+	5	0
+	+	6	54
+
+> ~/.baraction.sh
+	*	1601262419	0
+	"	33	0
+	^	34	27
+	.	33	0
+	+	4	0
+	+	13	0
+	+	19	0
+	+	30	0
+	+	31	0
+	+	18	0
+	+	27	0
+	+	26	17
+	+	21	92
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	24	0
+	+	26	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	37	0
+	+	36	0
+	+	33	1
+	+	34	26
+	+	33	0
+
+> ~/.config/i3/scripts/cpu_usageImprove.sh
+	*	1601262108	0
+	"	11	0
+	^	3	60
+	.	11	0
+	+	3	69
+	+	15	0
+	+	3	71
+	+	6	17
+	+	11	13
+	+	8	8
+	+	9	0
+	+	11	37
+	+	3	53
+	+	11	29
+	+	12	0
+	+	11	0
+	+	3	52
+	+	6	12
+	+	3	0
+	+	3	1
+	+	3	52
+	+	6	16
+	+	6	32
+	+	6	0
+	+	3	86
+	+	11	13
+	+	3	71
+	+	6	15
+	+	3	86
+	+	6	15
+	+	11	31
+	+	11	0
+	+	11	1
+	+	11	33
+	+	8	13
+	+	9	13
+	+	3	0
+	+	4	0
+	+	3	59
+	+	3	0
+	+	6	0
+	+	11	0
+
+> /media/moreno/fvckingmore/DGB/tmp.sh
+	*	1601239276	0
+	"	43	3
+	^	2	5
+	.	2	4
+	+	44	0
+	+	44	3
+	+	44	8
+	+	44	7
+	+	44	0
+	+	44	11
+	+	44	4
+	+	44	0
+	+	1	5
+	+	40	0
+	+	1	71
+	+	40	0
+	+	1	6
+	+	39	0
+	+	40	0
+	+	1	5
+	+	39	0
+	+	42	1
+	+	44	0
+	+	43	0
+	+	42	26
+	+	39	0
+	+	39	65
+	+	39	0
+	+	2	65
+	+	26	0
+	+	2	4
+	e	41	0
+
+> ~/dbLinks
+	*	1601239221	0
+	"	190	0
+	^	191	1
+	.	191	0
+	+	55	0
+	+	70	0
+	+	82	0
+	+	83	0
+	+	146	0
+	+	162	0
+	+	166	0
+	+	191	0
+
+> ~/Descargas/VPN/us-free-04.protonvpn.com.udp.ovpn
+	*	1601231433	0
+	"	53	19
+	^	53	20
+	.	53	19
+	+	51	22
+	+	51	37
+	+	51	0
+	+	53	19
+
+> ~/VPN/us-free-04.protonvpn.com.udp.ovpn
+	*	1601216155	0
+	"	53	27
+	^	53	28
+	.	53	15
+	+	53	15
+
+> ~/VPN/us-free-03.protonvpn.com.udp.ovpn
+	*	1601216147	0
+	"	53	27
+	^	53	28
+	.	53	15
+	+	53	15
+
+> ~/VPN/us-free-02.protonvpn.com.udp.ovpn
+	*	1601216138	0
+	"	53	27
+	^	53	28
+	.	53	15
+	+	53	15
+
+> ~/VPN/us-free-01.protonvpn.com.udp.ovpn
+	*	1601216131	0
+	"	53	27
+	^	53	28
+	.	53	27
+	+	53	27
+
+> ~/Descargas/VPN/us-free-05.protonvpn.com.udp.ovpn
+	*	1601211827	0
+	"	53	35
+	^	53	36
+	.	53	35
+	+	53	35
+
+> /etc/openvpn/auth.txt
+	*	1600711637	0
+	"	2	23
+	^	2	24
+	.	2	23
+	+	2	7
+	+	1	23
+	+	2	23
+
+> /etc/openvpn/vpn.conf
+	*	1600711606	0
+	"	53	35
+	^	53	36
+	.	53	35
+	+	10	35
+	+	53	35
 
 > ~/.applications/dwm-6.2/config.h
 	*	1600366340	0
@@ -947,40 +1525,6 @@ $$cBlack
 	*	1597599862	0
 	"	139	0
 
-> ~/dotfiles
-	*	1596680748	0
-	"	30	7
-	^	30	8
-	.	30	7
-	+	25	10
-	+	17	0
-	+	18	0
-	+	21	0
-	+	22	0
-	+	23	0
-	+	24	0
-	+	25	0
-	+	26	0
-	+	18	9
-	+	19	0
-	+	22	0
-	+	19	21
-	+	21	14
-	+	21	0
-	+	20	0
-	+	21	0
-	+	32	0
-	+	36	15
-	+	38	10
-	+	36	28
-	+	25	0
-	+	24	0
-	+	22	0
-	+	17	0
-	+	24	4
-	+	17	0
-	+	30	7
-
 > ~/.config/i3/scripts/ifaceImprove
 	*	1596658855	0
 	"	2	0
@@ -1005,37 +1549,6 @@ $$cBlack
 	+	4	55
 	+	4	0
 	+	2	0
-
-> ~/.config/i3/scripts/memoryImprove
-	*	1596655978	0
-	"	6	0
-	^	6	97
-	.	6	54
-	+	2	0
-	+	5	51
-	+	7	44
-	+	15	0
-	+	8	20
-	+	1	13
-	+	3	37
-	+	5	37
-	+	8	19
-	+	9	25
-	+	8	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	13	20
-	+	10	6
-	+	11	6
-	+	13	21
-	+	11	0
-	+	13	21
-	+	4	97
-	+	6	0
-	+	3	1
-	+	5	0
-	+	6	54
 
 > ~/.config/i3/scripts/pingStatus
 	*	1596613282	0
@@ -1107,94 +1620,9 @@ $$cBlack
 	+	31	12
 	+	31	10
 
-> ~/.config/i3/scripts/temperatureImprove.sh
-	*	1596389418	0
-	"	4	74
-	^	4	44
-	.	4	74
-	+	3	30
-	+	5	0
-	+	6	15
-	+	7	0
-	+	9	34
-	+	9	35
-	+	15	0
-	+	9	86
-	+	10	0
-	+	11	0
-	+	12	19
-	+	9	75
-	+	12	33
-	+	9	75
-	+	12	47
-	+	14	5
-	+	9	60
-	+	4	0
-	+	3	0
-	+	4	74
-
-> ~/.config/i3/scripts/cpu_usageImprove.sh
-	*	1596383214	0
-	"	11	0
-	^	3	60
-	.	11	0
-	+	3	69
-	+	15	0
-	+	3	71
-	+	6	17
-	+	11	13
-	+	8	8
-	+	9	0
-	+	11	37
-	+	3	53
-	+	11	29
-	+	12	0
-	+	11	0
-	+	3	52
-	+	6	12
-	+	3	0
-	+	3	1
-	+	3	52
-	+	6	16
-	+	6	32
-	+	6	0
-	+	3	86
-	+	11	13
-	+	3	71
-	+	6	15
-	+	3	86
-	+	6	15
-	+	11	31
-	+	11	0
-	+	11	1
-	+	11	33
-	+	8	13
-	+	9	13
-	+	3	0
-	+	4	0
-	+	3	59
-	+	3	0
-	+	6	0
-	+	11	0
-
 > ~/.config/i3/scripts/cpu_usageCustom
 	*	1596382788	0
 	"	28	11
-
-> ~/.config/i3/scripts/bandwidthImprove
-	*	1596380846	0
-	"	20	0
-	^	18	40
-	.	38	0
-	+	8	11
-	+	9	11
-	+	42	0
-	+	41	5
-	+	18	39
-	+	12	0
-	+	11	0
-	+	24	0
-	+	38	0
 
 > ~/daily.sh
 	*	1596058412	0
@@ -2008,418 +2436,3 @@ $$cBlack
 	+	10	0
 	+	6	22
 	+	9	10
-
-> ~/.oh-my-zsh/themes/xxf.zsh-theme
-	"	39	0
-
-> /etc/network/interfaces
-	"	1	0
-
-> ~/tst.json
-	"	233	0
-	^	37	10
-	.	177	4
-	+	82	15
-	+	102	15
-	+	103	15
-	+	104	15
-	+	105	15
-	+	137	15
-	+	138	15
-	+	139	15
-	+	140	15
-	+	160	15
-	+	161	15
-	+	162	15
-	+	163	15
-	+	195	15
-	+	196	15
-	+	197	15
-	+	198	15
-	+	216	0
-	+	218	15
-	+	219	15
-	+	220	15
-	+	221	15
-	+	24	0
-	+	23	44
-	+	24	47
-	+	25	102
-	+	15	7
-	+	16	7
-	+	17	7
-	+	17	7
-	+	37	7
-	+	38	7
-	+	39	7
-	+	39	7
-	+	39	8
-	+	39	8
-	+	17	8
-	+	17	8
-	+	16	38
-	+	38	38
-	+	16	8
-	+	38	8
-	+	15	36
-	+	37	35
-	+	15	36
-	+	16	7
-	+	38	7
-	+	37	36
-	+	15	37
-	+	16	26
-	+	15	25
-	+	16	27
-	+	15	24
-	+	16	26
-	+	15	25
-	+	16	26
-	+	37	24
-	+	38	26
-	+	15	24
-	+	16	26
-	+	37	23
-	+	38	26
-	+	15	9
-	+	37	8
-	+	1	0
-	+	12	0
-	+	34	0
-	+	17	0
-	+	15	7
-	+	16	7
-	+	17	7
-	+	39	0
-	+	37	7
-	+	38	7
-	+	39	7
-	+	15	24
-	+	16	27
-	+	17	50
-	+	37	24
-	+	38	27
-	+	39	51
-	+	17	9
-	+	16	9
-	+	38	9
-	+	39	9
-	+	37	34
-	+	15	34
-	+	26	32
-	+	49	42
-	+	84	15
-	+	142	42
-	+	165	15
-	+	200	42
-	+	223	15
-	+	1	0
-	+	3	4
-	+	61	4
-	+	107	42
-	+	119	4
-	+	177	4
-
-> /usr/share/i3blocks/iface
-	"	61	0
-
-> ~/bakTst.sh
-	"	124	0
-	^	124	34
-	.	124	33
-	+	40	12
-	+	40	20
-	+	40	12
-	+	13	25
-	+	14	9
-	+	15	0
-	+	21	0
-	+	22	0
-	+	24	0
-	+	23	20
-	+	47	0
-	+	49	0
-	+	51	0
-	+	50	15
-	+	54	0
-	+	82	0
-	+	83	0
-	+	85	0
-	+	84	25
-	+	83	26
-	+	85	26
-	+	90	0
-	+	91	0
-	+	93	0
-	+	92	4
-	+	88	0
-	+	95	0
-	+	97	0
-	+	121	0
-	+	55	0
-	+	52	0
-	+	99	11
-	+	103	22
-	+	105	22
-	+	107	24
-	+	109	24
-	+	111	22
-	+	113	22
-	+	115	26
-	+	70	25
-	+	109	28
-	+	53	38
-	+	109	44
-	+	40	11
-	+	109	42
-	+	103	33
-	+	105	22
-	+	107	36
-	+	111	22
-	+	113	33
-	+	115	26
-	+	117	0
-	+	40	23
-	+	40	16
-	+	40	21
-	+	66	40
-	+	70	55
-	+	59	23
-	+	66	52
-	+	70	0
-	+	59	34
-	+	65	40
-	+	10	0
-	+	7	9
-	+	5	1
-	+	6	1
-	+	7	1
-	+	4	32
-	+	5	30
-	+	6	21
-	+	7	17
-	+	8	31
-	+	27	34
-	+	28	0
-	+	27	0
-	+	30	0
-	+	30	11
-	+	29	0
-	+	40	12
-	+	45	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	34	2
-	+	35	3
-	+	36	2
-	+	37	0
-	+	39	0
-	+	38	4
-	+	63	12
-	+	70	12
-	+	41	8
-	+	43	12
-	+	31	3
-	+	32	7
-	+	18	23
-	+	32	4
-	+	109	29
-	+	124	33
-
-> ~/usage.sh
-	"	6	24
-	^	6	25
-	.	6	24
-	+	48	24
-	+	2	13
-	+	48	28
-	+	43	30
-	+	38	7
-	+	38	28
-	+	30	18
-	+	43	0
-	+	48	0
-	+	43	0
-	+	48	0
-	+	43	49
-	+	45	0
-	+	43	47
-	+	45	47
-	+	48	30
-	+	2	0
-	+	2	14
-	+	48	0
-	+	38	0
-	+	40	0
-	+	2	9
-	+	38	20
-	+	2	10
-	+	40	28
-	+	2	16
-	+	38	19
-	+	38	17
-	+	38	10
-	+	38	10
-	+	38	10
-	+	38	9
-	+	38	0
-	+	2	0
-	+	2	8
-	+	2	17
-	+	2	17
-	+	2	0
-	+	2	4
-	+	41	41
-	+	41	41
-	+	41	40
-	+	41	40
-	+	41	0
-	+	41	40
-	+	41	0
-	+	41	0
-	+	41	0
-	+	41	7
-	+	41	52
-	+	41	52
-	+	2	0
-	+	41	0
-	+	43	0
-	+	41	0
-	+	43	0
-	+	43	0
-	+	40	0
-	+	43	0
-	+	17	6
-	+	30	0
-	+	31	40
-	+	33	17
-	+	29	15
-	+	31	31
-	+	33	23
-	+	2	0
-	+	20	51
-	+	31	11
-	+	43	0
-	+	43	0
-	+	38	15
-	+	39	12
-	+	33	0
-	+	43	25
-	+	45	0
-	+	44	0
-	+	2	0
-	+	2	0
-	+	23	17
-	+	32	18
-	+	43	0
-	+	44	0
-	+	39	0
-	+	33	22
-	+	39	0
-	+	43	0
-	+	44	0
-	+	15	0
-	+	3	9
-	+	13	0
-	+	5	55
-	+	6	55
-	+	12	0
-	+	8	12
-	+	9	12
-	+	10	9
-	+	4	0
-	+	36	4
-	+	6	24
-
-> ~/.config/i3/scripts/bandwidthCustom
-	"	49	0
-	^	1	14
-	.	1	13
-	+	73	9
-	+	84	9
-	+	1	13
-
-> /tmp/tst.sh
-	"	10	0
-	^	9	19
-	.	9	18
-	+	20	54
-	+	2	1
-	+	2	6
-	+	5	1
-	+	6	1
-	+	7	1
-	+	3	0
-	+	5	1
-	+	6	1
-	+	8	1
-	+	11	1
-	+	10	0
-	+	12	0
-	+	13	1
-	+	14	1
-	+	15	0
-	+	16	0
-	+	18	0
-	+	20	0
-	+	19	0
-	+	20	0
-	+	9	16
-	+	8	0
-	+	20	0
-	+	9	18
-
-> ~/Imágenes/Screenshot from 2020-01-13 20-06-14.png
-	"	2	0
-
-> ~/.vim/plugins.vim
-	"	4	0
-	.	4	0
-	+	5	37
-	+	4	0
-	+	5	0
-	+	4	0
-	+	4	0
-	+	4	30
-	+	4	46
-	+	4	0
-
-> ~/tst.c
-	"	6	0
-	^	7	28
-	.	7	0
-	+	1	17
-	+	2	16
-	+	5	12
-	+	10	8
-	+	7	0
-
-> ~/.config/i3/scripts/filterManager
-	"	27	0
-
-> /tmp/tutorADyOjj
-	"	769	5
-	^	667	13
-	.	667	0
-	+	337	60
-	+	360	73
-	+	461	0
-	+	642	0
-	+	667	0
-
-> ~/tst
-	"	313	0
-	.	308	0
-	+	93	0
-	+	209	296
-	+	210	0
-	+	309	0
-	+	308	0
-
-> /etc/init/lxc-net.conf
-	"	1	0
-
-> /etc/networks
-	"	1	0
