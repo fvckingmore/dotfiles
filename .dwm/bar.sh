@@ -28,11 +28,13 @@ mem() {
 cpuUsage() {
 
 	#LOAD=$(mpstat 1 1 | grep -i Ave | sed -e 's/  */ /g' -e 's/,/\./g' | cut -d" " -f12 )
-	LOAD=$(mpstat -A | grep all | sed -e 's/  */ /g' -e 's/,/\./g' | cut -d" " -f 12)
+	#LOAD=$(top -bn1 | grep Cpu | sed -e 's/  */ /g' -e 's/,/\./g' | cut -d" " -f8)
+	LOAD=$(cat /proc/loadavg | cut -d" " -f1 | xargs -I% echo "scale=2; %/2" | bc)
 
-	CPU=$(echo "100.00 - $LOAD" | bc)
+	#CPU=$(echo "100.00 - $LOAD" | bc)
 
-	echo -n "${CPU}%"
+	#echo -n "${CPU}%"
+	echo -n "${LOAD}"
 
 
 }
@@ -111,7 +113,8 @@ TRAF() {
 
 while :; do
 
-	echo " +@fg=7; V $(vol)  +@fg=8;|  +@fg=3;M $(mem) +@fg=8; |  +@fg=6;/H $(home) /F $(fmore)  +@fg=8;|  +@fg=4;$(iface)  $(TRAF)  +@fg=5;$(gge)  +@fg=8;|  +@fg=2;C $(cpuUsage)  +@fg=8;|  T $(temper)  |  +@fg=1;$(datee)";
+	#xsetroot -name "  V $(vol)  |  M $(mem)  |  /H $(home) /F $(fmore)  |  $(iface)  $(TRAF)  $(gge)  |  C $(cpuUsage)  |  T $(temper)  |  $(datee)";
+	xsetroot -name "   V $(vol)   |   M $(mem)   |   /H $(home)  /F $(fmore)   |   $(iface)  $(TRAF)  $(gge)   |   C $(cpuUsage)   |   T $(temper)   |   $(datee)";
 
 
 
