@@ -28,7 +28,7 @@ static const char *colors[][3]      = {
 	//[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	//[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 	[SchemeNorm] = { dCWhite, dCBlack, dCBlack },
-	[SchemeSel]  = { dCBlack, dCPurple,  dCPurple },
+	[SchemeSel]  = { dCBlack, dCPink,  dCPink },
 };
 
 /* tagging */
@@ -72,7 +72,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", dCBlack, "-nf", dCWhite, "-sb", dCPurple, "-sf", dCBlack, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", dCBlack, "-nf", dCWhite, "-sb", dCPink, "-sf", dCBlack, NULL };
 static const char *termcmd[]  = { "xfce4-terminal.wrapper", NULL };
 static const char *filemgr[]  = { "pcmanfm", NULL };
 static const char *ss[]  = { "xfce4-screenshooter", "-f", NULL };
@@ -126,10 +126,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask, 			XK_Up,  		tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask, 			XK_Down, 		tagmon,         {.i = +1 } },
 
-	{ MODKEY,                       XK_minus,  setgaps,        {.i = -2 } },
-	{ MODKEY,                       XK_plus,  setgaps,        {.i = +2 } },
-	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = GAP_RESET } },
-	{ MODKEY|ShiftMask,             XK_plus,  setgaps,        {.i = GAP_TOGGLE} },
+	{ MODKEY,                       XK_minus,  		setgaps,        {.i = -2 } },
+	{ MODKEY,                       XK_plus,  		setgaps,        {.i = +2 } },
+	{ MODKEY|ShiftMask,             XK_minus,  		setgaps,        {.i = GAP_RESET } },
+	{ MODKEY|ShiftMask,             XK_plus,  		setgaps,        {.i = GAP_TOGGLE} },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)

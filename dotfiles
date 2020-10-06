@@ -14,66 +14,35 @@ reset="\e[0m"
  
 # file list (use trailing slash for directories)
 FILES="
-.apport-ignore.xml
-.asoundrc
-.bash_history
-.bash_logout
+.applications/dwm*
 .bashrc
-.bashrc~
-.bss
-.config/
-.conky/
-.data
-.dbus/
-.dmrc
-.emacs
+.config/i3
+.config/sublime-text-3
+.config/openbox
+.config/baraction.sh
+.config/autostart.sh
+.config/*.sh
+.dwm
 .fonts/
-.gconf/
-.gitconfig
-.gksu.lock
-.gtkrc-2.0
-.idata
-.itext
-.lesshst
-.osh-update
 .oh-my-zsh/
-.pinerc
 .profile
-.python_history
-.rdata
-.redshiftgrc
-.sdirs
-.%s.log
-.swm
-.swn
-.swo
-.swp
-.text
-.tls
-.tmux.conf
-.viminfo
-.viminfy.tmp
-.viminfz.tmp
-.vimrc
-.Xauthority
-.xscreensaver
-.xsel.log
-.xsession-errors
-.xsession-errors.old
-.zcompdump
-.zcompdump-moreno-5.0.2
+.spectrwm.conf
+.vim*
+.Xresources
 .zsh_history
 .zshrc
 .zshrc.pre-oh-my-zsh
-3dsp-master.zip
+scripts/
+.xinitrc
+dotfiles
 "
 for file in $FILES
 do
    if [ -d $file ]; then
       mkdir -p $DESTINATION/$file
-      cp -vfr $HOME/$file* $DESTINATION/$file
+      rsync -vru $HOME/$file/* $DESTINATION/$file
    elif [ -f $file ]; then
-      cp -vfr $HOME/$file $DESTINATION
+      rsync -vru $HOME/$file $DESTINATION
    else
       echo -e "$red:: $file is not a file/directory! $reset"
    fi     

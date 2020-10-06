@@ -18,13 +18,13 @@ $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
 :wq
-|2,0,1601935608,,"wq"
+|2,0,1602016666,,"wq"
+:w
+|2,0,1601951999,,"w"
 :q!
 |2,0,1601935574,,"q!"
 :set rnu!
 |2,0,1601934707,,"set rnu!"
-:w
-|2,0,1601935428,,"w"
 :1674
 |2,0,1601935398,,"1674"
 :1511
@@ -115,6 +115,8 @@ $
 |2,0,1601780228,,"tabnew"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+? \s\+$
+|2,1,1602016493,,"\\s\\+$"
 ?/tile
 |2,1,1601935407,47,"tile"
 ?/setcfa
@@ -127,8 +129,6 @@ $
 |2,1,1601934904,47,"manage"
 ?/setlay
 |2,1,1601934880,47,"setlay"
-? \s\+$
-|2,1,1601929107,,"\\s\\+$"
 ?/grab
 |2,1,1601852042,47,"grab"
 ?/int isf
@@ -177,27 +177,30 @@ $
 # Historia de Debug Line (de lo más nuevo a lo más antiguo):
 
 # Registros:
-""0	LINE	0
-		xsetroot -name "  V $(vol)  |  M $(mem)  |  /H $(home) /F $(fmore)  |  $(iface)  $(TRAF)  $(gge)  |  C $(cpuUsage)  |  T $(temper)  |  $(datee)";
-|3,1,0,1,1,0,1601929030,"	xsetroot -name \"  V $(vol)  |  M $(mem)  |  /H $(home) /F $(fmore)  |  $(iface)  $(TRAF)  $(gge)  |  C $(cpuUsage)  |  T $(temper)  |  $(datee)\";"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1601935427,""
+"0	LINE	0
+		sleep 1;
+|3,0,0,1,1,0,1602016312,"	sleep 1;"
+""1	LINE	0
+	PATH="/usr/games:$PATH"
+|3,1,1,1,1,0,1602016630,"PATH=\"/usr/games:$PATH\""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1601935426,""
+|3,0,2,1,1,0,1601935427,""
 "3	LINE	0
+	
+|3,0,3,1,1,0,1601935426,""
+"4	LINE	0
 		for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) {
 	       if (n < m->nmaster)
 	           mfacts += c->cfact;
 	       else
 	           sfacts += c->cfact;
 	   }
-|3,0,3,1,6,0,1601935424,"	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) {","       if (n < m->nmaster)","           mfacts += c->cfact;","       else","           sfacts += c->cfact;","   }"
-"4	LINE	0
-		float mfacts = 0, sfacts = 0;
-|3,0,4,1,1,0,1601935411,"	float mfacts = 0, sfacts = 0;"
+|3,0,4,1,6,0,1601935424,"	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++) {","       if (n < m->nmaster)","           mfacts += c->cfact;","       else","           sfacts += c->cfact;","   }"
 "5	LINE	0
+		float mfacts = 0, sfacts = 0;
+|3,0,5,1,1,0,1601935411,"	float mfacts = 0, sfacts = 0;"
+"6	LINE	0
 	void setcfact(const Arg *arg) {
 	   float f;
 	   Client *c;
@@ -214,268 +217,306 @@ $
 	   c->cfact = f;
 	   arrange(selmon);
 	}
-|3,0,5,1,16,0,1601935387,"void setcfact(const Arg *arg) {","   float f;","   Client *c;","","   c = selmon->sel;","","   if(!arg || !c || !selmon->lt[selmon->sellt]->arrange)","       return;","   f = arg->f + c->cfact;","   if(arg->f == 0.0)","       f = 1.0;","   else if(f < 0.25 || f > 4.0)","       return;","   c->cfact = f;","   arrange(selmon);","}"
-"6	LINE	0
-		c->cfact = 1.0;
-|3,0,6,1,1,0,1601935356,"	c->cfact = 1.0;"
+|3,0,6,1,16,0,1601935387,"void setcfact(const Arg *arg) {","   float f;","   Client *c;","","   c = selmon->sel;","","   if(!arg || !c || !selmon->lt[selmon->sellt]->arrange)","       return;","   f = arg->f + c->cfact;","   if(arg->f == 0.0)","       f = 1.0;","   else if(f < 0.25 || f > 4.0)","       return;","   c->cfact = f;","   arrange(selmon);","}"
 "7	LINE	0
-	static void setcfact(const Arg *arg);
-|3,0,7,1,1,0,1601935341,"static void setcfact(const Arg *arg);"
+		c->cfact = 1.0;
+|3,0,7,1,1,0,1601935356,"	c->cfact = 1.0;"
 "8	LINE	0
-		float cfact;
-|3,0,8,1,1,0,1601935317,"	float cfact;"
+	static void setcfact(const Arg *arg);
+|3,0,8,1,1,0,1601935341,"static void setcfact(const Arg *arg);"
 "9	LINE	0
-		xsetroot -name "  [ V $(vol) ]  [ M $(mem) ]  [ /H $(home)  /F $(fmore) ]  [ $(iface)  $(TRAF)  $(gge) ]  [ C $(cpuUsage) ]  [ T $(temper) ]  [ $(datee) ]";
-|3,0,9,1,1,0,1601929027,"	xsetroot -name \"  [ V $(vol) ]  [ M $(mem) ]  [ /H $(home)  /F $(fmore) ]  [ $(iface)  $(TRAF)  $(gge) ]  [ C $(cpuUsage) ]  [ T $(temper) ]  [ $(datee) ]\";"
+		float cfact;
+|3,0,9,1,1,0,1601935317,"	float cfact;"
 "-	CHAR	0
-	+
-|3,0,36,0,1,0,1601935044,"+"
+	Purple
+|3,0,36,0,1,0,1601952203,"Purple"
 
 # Marcas en el archivo:
-'0  3  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,48,3,0,1601935608,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
-'1  115  1  ~/.applications/dwm-6.2/config.def.h
-|4,49,115,1,1601935574,"~/.applications/dwm-6.2/config.def.h"
-'2  117  0  ~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff
-|4,50,117,0,1601935473,"~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff"
-'3  1845  1  ~/.applications/dwm-6.2/dwm.c
-|4,51,1845,1,1601935436,"~/.applications/dwm-6.2/dwm.c"
-'4  1855  3  ~/.applications/dwm-6.2/dwm.c
-|4,52,1855,3,1601935218,"~/.applications/dwm-6.2/dwm.c"
-'5  1883  3  ~/.applications/dwm-6.2/dwm.c
-|4,53,1883,3,1601935218,"~/.applications/dwm-6.2/dwm.c"
-'6  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,54,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
-'7  111  1  ~/.applications/dwm-6.2/config.def.h
-|4,55,111,1,1601934689,"~/.applications/dwm-6.2/config.def.h"
-'8  111  1  ~/.applications/dwm-6.2/config.def.h
-|4,56,111,1,1601934689,"~/.applications/dwm-6.2/config.def.h"
-'9  111  1  ~/.applications/dwm-6.2/config.def.h
-|4,57,111,1,1601934689,"~/.applications/dwm-6.2/config.def.h"
+'0  37  7  ~/dotfiles
+|4,48,37,7,1602016666,"~/dotfiles"
+'1  20  0  ~/.profile
+|4,49,20,0,1602016633,"~/.profile"
+'2  3  23  ~/.local/bin/hola.sh
+|4,50,3,23,1602016493,"~/.local/bin/hola.sh"
+'3  122  9  ~/.dwm/bar.sh
+|4,51,122,9,1602016319,"~/.dwm/bar.sh"
+'4  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,52,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+'5  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,53,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+'6  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,54,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+'7  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,55,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+'8  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,56,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+'9  3  12  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,57,3,12,1601951712,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
 
 # Lista de saltos (el más reciente va primero):
--'  3  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,0,1601935608,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  115  1  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,1,1601935574,"~/.applications/dwm-6.2/config.def.h"
--'  115  1  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,1,1601935574,"~/.applications/dwm-6.2/config.def.h"
--'  117  0  ~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff
-|4,39,117,0,1601935473,"~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff"
--'  117  0  ~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff
-|4,39,117,0,1601935473,"~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff"
--'  117  0  ~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff
-|4,39,117,0,1601935473,"~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff"
--'  117  0  ~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff
-|4,39,117,0,1601935473,"~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff"
--'  1845  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1845,1,1601935436,"~/.applications/dwm-6.2/dwm.c"
--'  1845  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1845,1,1601935436,"~/.applications/dwm-6.2/dwm.c"
--'  1845  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1845,1,1601935436,"~/.applications/dwm-6.2/dwm.c"
--'  1845  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1845,1,1601935436,"~/.applications/dwm-6.2/dwm.c"
--'  1674  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,2,1601935407,"~/.applications/dwm-6.2/dwm.c"
--'  1674  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,2,1601935407,"~/.applications/dwm-6.2/dwm.c"
--'  1674  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,2,1601935407,"~/.applications/dwm-6.2/dwm.c"
--'  1674  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,2,1601935407,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601935380,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601935380,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601935380,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601935380,"~/.applications/dwm-6.2/dwm.c"
--'  1029  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,2,1601935354,"~/.applications/dwm-6.2/dwm.c"
--'  1029  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,2,1601935354,"~/.applications/dwm-6.2/dwm.c"
--'  1029  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,2,1601935354,"~/.applications/dwm-6.2/dwm.c"
--'  1029  2  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,2,1601935354,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601935334,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601935334,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601935334,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601935334,"~/.applications/dwm-6.2/dwm.c"
--'  87  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,87,0,1601935315,"~/.applications/dwm-6.2/dwm.c"
--'  87  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,87,0,1601935315,"~/.applications/dwm-6.2/dwm.c"
--'  87  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,87,0,1601935315,"~/.applications/dwm-6.2/dwm.c"
--'  87  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,87,0,1601935315,"~/.applications/dwm-6.2/dwm.c"
--'  1855  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1855,3,1601935302,"~/.applications/dwm-6.2/dwm.c"
--'  1855  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1855,3,1601935302,"~/.applications/dwm-6.2/dwm.c"
--'  1855  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1855,3,1601935302,"~/.applications/dwm-6.2/dwm.c"
--'  1855  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1855,3,1601935302,"~/.applications/dwm-6.2/dwm.c"
--'  1883  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1883,3,1601935218,"~/.applications/dwm-6.2/dwm.c"
--'  1883  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1883,3,1601935218,"~/.applications/dwm-6.2/dwm.c"
--'  1883  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1883,3,1601935218,"~/.applications/dwm-6.2/dwm.c"
--'  1883  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1883,3,1601935218,"~/.applications/dwm-6.2/dwm.c"
--'  1677  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1677,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1686  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1686,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1677  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1677,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1686  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1686,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1677  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1677,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1686  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1686,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1677  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1677,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1686  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1686,3,1601935074,"~/.applications/dwm-6.2/dwm.c"
--'  1865  72  ~/.applications/dwm-6.2/dwm.c
-|4,39,1865,72,1601935055,"~/.applications/dwm-6.2/dwm.c"
--'  1865  72  ~/.applications/dwm-6.2/dwm.c
-|4,39,1865,72,1601935055,"~/.applications/dwm-6.2/dwm.c"
--'  1865  72  ~/.applications/dwm-6.2/dwm.c
-|4,39,1865,72,1601935055,"~/.applications/dwm-6.2/dwm.c"
--'  1865  72  ~/.applications/dwm-6.2/dwm.c
-|4,39,1865,72,1601935055,"~/.applications/dwm-6.2/dwm.c"
--'  1671  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1671,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1674  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1671  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1671,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1674  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1671  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1671,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1674  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1671  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1671,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1674  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1674,1,1601934988,"~/.applications/dwm-6.2/dwm.c"
--'  1508  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1508,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1508  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1508,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1508  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1508,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1508  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1508,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1511  3  ~/.applications/dwm-6.2/dwm.c
-|4,39,1511,3,1601934942,"~/.applications/dwm-6.2/dwm.c"
--'  1027  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1027,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  1029  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  1027  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1027,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  1029  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  1027  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1027,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  1029  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  1027  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1027,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  1029  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,1029,0,1601934904,"~/.applications/dwm-6.2/dwm.c"
--'  199  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,199,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  199  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,199,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  199  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,199,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  199  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,199,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  200  0  ~/.applications/dwm-6.2/dwm.c
-|4,39,200,0,1601934880,"~/.applications/dwm-6.2/dwm.c"
--'  1116  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1116,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  1119  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1119,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  1116  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1116,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  1119  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1119,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  1116  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1116,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  1119  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1119,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  1116  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1116,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  1119  1  ~/.applications/dwm-6.2/dwm.c
-|4,39,1119,1,1601934840,"~/.applications/dwm-6.2/dwm.c"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
--'  115  76  ~/.applications/dwm-6.2/config.def.h
-|4,39,115,76,1601934831,"~/.applications/dwm-6.2/config.def.h"
+-'  37  7  ~/dotfiles
+|4,39,37,7,1602016666,"~/dotfiles"
+-'  25  0  ~/dotfiles
+|4,39,25,0,1602016645,"~/dotfiles"
+-'  20  0  ~/.profile
+|4,39,20,0,1602016633,"~/.profile"
+-'  20  0  ~/.profile
+|4,39,20,0,1602016633,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1602016622,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1602016622,"~/.profile"
+-'  3  23  ~/.local/bin/hola.sh
+|4,39,3,23,1602016493,"~/.local/bin/hola.sh"
+-'  3  23  ~/.local/bin/hola.sh
+|4,39,3,23,1602016493,"~/.local/bin/hola.sh"
+-'  3  23  ~/.local/bin/hola.sh
+|4,39,3,23,1602016493,"~/.local/bin/hola.sh"
+-'  3  23  ~/.local/bin/hola.sh
+|4,39,3,23,1602016493,"~/.local/bin/hola.sh"
+-'  1  0  ~/.local/bin/hola.sh
+|4,39,1,0,1602016471,"~/.local/bin/hola.sh"
+-'  1  0  ~/.local/bin/hola.sh
+|4,39,1,0,1602016471,"~/.local/bin/hola.sh"
+-'  1  0  ~/.local/bin/hola.sh
+|4,39,1,0,1602016471,"~/.local/bin/hola.sh"
+-'  1  0  ~/.local/bin/hola.sh
+|4,39,1,0,1602016471,"~/.local/bin/hola.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  122  9  ~/.dwm/bar.sh
+|4,39,122,9,1602016319,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  117  1  ~/.dwm/bar.sh
+|4,39,117,1,1602016307,"~/.dwm/bar.sh"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  75  125  ~/.applications/dwm-6.2/config.def.h
+|4,39,75,125,1601952206,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,1,1601952188,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  41  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,41,1601952148,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
+-'  31  45  ~/.applications/dwm-6.2/config.def.h
+|4,39,31,45,1601952053,"~/.applications/dwm-6.2/config.def.h"
 -'  111  1  ~/.applications/dwm-6.2/config.def.h
-|4,39,111,1,1601934702,"~/.applications/dwm-6.2/config.def.h"
+|4,39,111,1,1601951997,"~/.applications/dwm-6.2/config.def.h"
+-'  111  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,111,1,1601951997,"~/.applications/dwm-6.2/config.def.h"
+-'  111  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,111,1,1601951997,"~/.applications/dwm-6.2/config.def.h"
+-'  111  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,111,1,1601951997,"~/.applications/dwm-6.2/config.def.h"
+-'  111  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,111,1,1601951997,"~/.applications/dwm-6.2/config.def.h"
+-'  111  1  ~/.applications/dwm-6.2/config.def.h
+|4,39,111,1,1601951997,"~/.applications/dwm-6.2/config.def.h"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
 
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1601935607	0
-	"	3	0
-	^	3	20
-	.	3	19
-	+	3	19
+> ~/dotfiles
+	*	1602016665	0
+	"	37	7
+	^	37	8
+	.	37	7
+	+	17	17
+	+	24	11
+	+	25	3
+	+	37	7
+
+> ~/.profile
+	*	1602016630	0
+	"	20	0
+	.	21	0
+	+	21	0
+
+> ~/.local/bin/hola.sh
+	*	1602016492	0
+	"	3	23
+	^	3	24
+	.	3	23
+	+	3	23
+
+> ~/.dwm/bar.sh
+	*	1602016318	0
+	"	122	9
+	^	122	10
+	.	122	9
+	+	30	1
+	+	31	1
+	+	31	5
+	+	30	1
+	+	31	0
+	+	37	0
+	+	32	163
+	+	37	15
+	+	31	1
+	+	34	1
+	+	36	1
+	+	32	1
+	+	30	1
+	+	34	1
+	+	36	1
+	+	37	1
+	+	118	0
+	+	116	1
+	+	118	0
+	+	116	1
+	+	117	0
+	+	116	1
+	+	117	147
+	+	122	0
+	+	121	1
+	+	122	9
 
 > ~/.applications/dwm-6.2/config.def.h
-	*	1601935569	0
-	"	115	1
-	^	114	71
-	.	115	76
-	+	79	53
-	+	80	54
-	+	62	15
-	+	98	63
-	+	81	71
-	+	82	69
-	+	99	76
+	*	1601952206	0
+	"	75	125
+	^	75	126
+	.	75	125
 	+	100	74
 	+	99	22
 	+	100	22
@@ -569,6 +610,22 @@ $
 	+	116	48
 	+	114	71
 	+	115	76
+	+	129	45
+	+	130	44
+	+	131	45
+	+	132	44
+	+	111	0
+	+	31	41
+	+	75	125
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1601951708	0
+	"	3	12
+	^	3	13
+	.	3	11
+	+	5	19
+	+	1	14
+	+	3	11
 
 > ~/.applications/dwm-6.2/dwm-cfacts-6.2-1.diff
 	*	1601935434	0
@@ -660,35 +717,6 @@ $
 	+	1841	0
 	+	1843	1
 	+	1845	0
-
-> ~/.dwm/bar.sh
-	*	1601929106	0
-	"	117	147
-	^	117	148
-	.	117	147
-	+	30	1
-	+	31	1
-	+	31	5
-	+	30	1
-	+	31	0
-	+	37	0
-	+	32	163
-	+	37	15
-	+	31	1
-	+	34	1
-	+	36	1
-	+	32	1
-	+	30	1
-	+	34	1
-	+	36	1
-	+	37	1
-	+	118	0
-	+	116	1
-	+	118	0
-	+	116	1
-	+	117	0
-	+	116	1
-	+	117	147
 
 > ~/.applications/dwm-6.2/dwm-maximize_vert_horz-20160731-56a31dc.diff
 	*	1601853843	0
@@ -873,15 +901,6 @@ $
 > ~/.applications/dwm-6.2/dwm-hide_vacant_tags-6.2.diff
 	*	1601840594	0
 	"	55	0
-
-> ~/dotfiles
-	*	1601838265	0
-	"	25	3
-	^	25	4
-	.	25	3
-	+	17	17
-	+	24	11
-	+	25	3
 
 > ~/.applications/dwm-6.2/dwm-fullgaps-toggle-20200830.diff
 	*	1601837858	0
