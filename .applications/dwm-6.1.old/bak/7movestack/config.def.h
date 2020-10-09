@@ -5,43 +5,15 @@ static const char *fonts[] = {
 	"Ubuntu Bold:size=8"
 };
 static const char dmenufont[]       = "Ubuntu Bold:size=9";
-
-#define dCBlack "#282a36";
-#define dCWhite "#f8f8f2";
-#define dCCyan "#8be9fd";
-#define dCGreen "#50fa7b";
-#define dCOrange "#ffb86c";
-#define dCPink "#ff79c6";
-#define dCPurple "#bd93f9";
-#define dCRed "#ff5555";
-#define dCYellow "#f1fa8c";
-
-/*
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
 static const char selbordercolor[]  = "#005577";
 static const char selbgcolor[]      = "#005577";
 static const char selfgcolor[]      = "#eeeeee";
-*/
-
-
-static const char normbordercolor[] = dCBlack;
-static const char normbgcolor[]     = dCBlack;
-static const char normfgcolor[]     = dCWhite;
-static const char selbordercolor[]  = dCPink;
-static const char selbgcolor[]      = dCPink;
-static const char selfgcolor[]      = dCBlack;
-
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 5;       /* snap pixel */
-
-static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
-static const unsigned int systrayspacing = 2;   /* systray spacing */
-static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, 0: display systray on the last monitor*/
-static const int showsystray        = 1;        /* 0 means no systray */
-
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
@@ -71,7 +43,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod4Mask
+#define MODKEY Mod1Mask
 #define ALTKEY Mod1Mask
 #define CTRLKEY ControlMask
 #define TAGKEYS(KEY,TAG) \
@@ -156,7 +128,7 @@ static Key keys[] = {
     { 0,                            XK_Print,       spawn,          {.v = ss } },
     { ALTKEY,                       XK_Print,       spawn,          {.v = ssw } },
     { CTRLKEY,                      XK_Print,       spawn,          {.v = ssr } },
-	{ 0,                            XF86XK_AudioRaiseVolume,    spawn,          {.v = vup } },
+    { 0,                            XF86XK_AudioRaiseVolume,    spawn,          {.v = vup } },
     { 0,                            XF86XK_AudioLowerVolume,    spawn,          {.v = vdown } },
     { 0,                            XF86XK_Display, spawn,          {.v = scrmenu } },
     { MODKEY|ShiftMask,             XK_Right,       movestack,      {.i = +1 } },
@@ -189,6 +161,8 @@ static Key keys[] = {
     { MODKEY,                       XK_minus,       setgaps,        {.i = -2 } },
     { MODKEY,                       XK_plus,        setgaps,        {.i = +2 } },
     { MODKEY|ShiftMask,             XK_minus,       setgaps,        {.i = 0 } },
+//    { MODKEY|ShiftMask,             XK_minus,       setgaps,        {.i = GAP_RESET } },
+//    { MODKEY|ShiftMask,             XK_plus,        setgaps,        {.i = GAP_TOGGLE} },
 
     TAGKEYS(                        XK_1,                      0)
     TAGKEYS(                        XK_2,                      1)

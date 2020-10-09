@@ -34,7 +34,7 @@ static const char selbgcolor[]      = dCPink;
 static const char selfgcolor[]      = dCBlack;
 
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int gappx     = 8;        /* gaps between windows */
 static const unsigned int snap      = 5;       /* snap pixel */
 
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -156,9 +156,9 @@ static Key keys[] = {
     { 0,                            XK_Print,       spawn,          {.v = ss } },
     { ALTKEY,                       XK_Print,       spawn,          {.v = ssw } },
     { CTRLKEY,                      XK_Print,       spawn,          {.v = ssr } },
-	{ 0,                            XF86XK_AudioRaiseVolume,    spawn,          {.v = vup } },
-    { 0,                            XF86XK_AudioLowerVolume,    spawn,          {.v = vdown } },
-    { 0,                            XF86XK_Display, spawn,          {.v = scrmenu } },
+    { MODKEY,                            XK_F8,    spawn,          {.v = vup } },
+    { MODKEY,                            XK_F7,    spawn,          {.v = vdown } },
+//    { 0,                            XF86XK_Display, spawn,          {.v = scrmenu } },
     { MODKEY|ShiftMask,             XK_Right,       movestack,      {.i = +1 } },
     { MODKEY|ShiftMask,             XK_Left,        movestack,      {.i = -1 } },
 

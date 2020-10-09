@@ -901,9 +901,7 @@ for (i = 0; i < LENGTH(tags); i++) {
 	w = TEXTW(tags[i]);
 	drw_setscheme(drw, m->tagset[m->seltags] & 1 << i ? &scheme[SchemeSel] : &scheme[SchemeNorm]);
 	drw_text(drw, x, 0, w, bh, tags[i], urg & 1 << i);
-//	drw_rect(drw, x + 1, 1, dx, dx, m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
-//
-	drw_rect(drw, x + dx, 0, w - ( 2 * dx + 1 ), dx / 2, m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
+	drw_rect(drw, x + 1, 1, dx, dx, m == selmon && selmon->sel && selmon->sel->tags & 1 << i,
 //		           occ & 1 << i, urg & 1 << i);
 			   0, urg & 1 << i);
 	x += w;
