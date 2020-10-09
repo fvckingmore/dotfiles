@@ -41,7 +41,8 @@ cpuUsage() {
 
 vol() {
 
-	VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]" | xargs -n1 -I% echo -n "% " | sed 's/  */ /g' | cut -d" " -f1)
+	#VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]" | xargs -n1 -I% echo -n "% " | sed 's/  */ /g' | cut -d" " -f1)
+	VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]")
 
 	echo -n $VOL
 
@@ -104,7 +105,8 @@ temper() {
 TRAF() {
 
 
-	echo -n $(~/.config/i3/scripts/bandwidthImprove | xargs -n1 -I% echo -n "% " | cut -d" " -f1-4)
+	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | xargs -n1 -I% echo -n "% " | cut -d" " -f1-4)
+	echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd" " | cut -d" " -f1-4)
 }
 
 
