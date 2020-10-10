@@ -18,11 +18,15 @@ $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
 :wq
-|2,0,1602276064,,"wq"
-:w
-|2,0,1602215756,,"w"
+|2,0,1602288999,,"wq"
+:760
+|2,0,1602288985,,"760"
+:720
+|2,0,1602288891,,"720"
 :q!
-|2,0,1602215481,,"q!"
+|2,0,1602288034,,"q!"
+:w
+|2,0,1602286278,,"w"
 :w bandwidthImprove2
 |2,0,1602215328,,"w bandwidthImprove2"
 :set rnu!
@@ -135,8 +139,12 @@ $
 |2,0,1601780228,,"tabnew"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/drw_te
+|2,1,1602288899,47,"drw_te"
+? @$
+|2,1,1602288032,,"@$"
 ? \s\+$
-|2,1,1602215771,,"\\s\\+$"
+|2,1,1602286301,,"\\s\\+$"
 ?/grabbu
 |2,1,1602191804,47,"grabbu"
 ?/isfix
@@ -207,8 +215,6 @@ $
 |2,1,1601837314,47,"struc"
 ?/main
 |2,1,1601828030,47,"main"
-? @$
-|2,1,1601781995,,"@$"
 ?/GC
 |2,1,1601780899,47,"GC"
 ?/int x, y, z
@@ -223,9 +229,9 @@ $
 # Historia de Debug Line (de lo más nuevo a lo más antiguo):
 
 # Registros:
-"0	LINE	0
-		VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]" | xargs -n1 -I% echo -n "% " | sed 's/  */ /g' | cut -d" " -f1)
-|3,0,0,1,1,0,1602215690,"	VOL=$(amixer -M get Master | grep -E -o \"\\[[0-9]+%\\]\" | xargs -n1 -I% echo -n \"% \" | sed 's/  */ /g' | cut -d\" \" -f1)"
+""0	CHAR	0
+	#
+|3,1,0,0,1,0,1602288032,"#"
 "1	LINE	0
 	    { MODKEY,                            XK_F8,    spawn,          {.v = vup } },
 	    { MODKEY,                            XK_F7,    spawn,          {.v = vdown } },
@@ -254,235 +260,366 @@ $
 "9	LINE	0
 	
 |3,0,9,1,1,0,1601935426,""
-""-	CHAR	0
-	/
-|3,1,36,0,1,0,1602275987,"/"
+"-	CHAR	0
+	#
+|3,0,36,0,1,0,1602287874,"#"
 
 # Marcas en el archivo:
-'0  37  38  ~/.applications/dwm-6.1.systray/config.def.h
-|4,48,37,38,1602276064,"~/.applications/dwm-6.1.systray/config.def.h"
-'1  73  0  ~/.applications/dwm-6.2/config.def.h
-|4,49,73,0,1602276028,"~/.applications/dwm-6.2/config.def.h"
-'2  73  0  ~/.applications/dwm-6.2/config.def.h
-|4,50,73,0,1602276027,"~/.applications/dwm-6.2/config.def.h"
-'3  195  1  ~/.applications/dwm-6.1.systray/config.def.h
-|4,51,195,1,1602276001,"~/.applications/dwm-6.1.systray/config.def.h"
-'4  195  1  ~/.applications/dwm-6.1.systray/config.def.h
-|4,52,195,1,1602276001,"~/.applications/dwm-6.1.systray/config.def.h"
-'5  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,53,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
-'6  1  8  ~/.dwm/bar.sh
-|4,54,1,8,1602215771,"~/.dwm/bar.sh"
-'7  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,55,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
-'8  20  0  ~/.config/i3/scripts/bandwidthImprove
-|4,56,20,0,1602215356,"~/.config/i3/scripts/bandwidthImprove"
-'9  68  18  ~/.applications/dwm-6.1/config.def.h
-|4,57,68,18,1602211689,"~/.applications/dwm-6.1/config.def.h"
+'0  760  76  ~/.applications/dwm-6.1.stable/dwm.c
+|4,48,760,76,1602288999,"~/.applications/dwm-6.1.stable/dwm.c"
+'1  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
+|4,49,1,0,1602288946,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff"
+'2  764  8  ~/.applications/dwm-6.1.stable/dwm.c
+|4,50,764,8,1602288927,"~/.applications/dwm-6.1.stable/dwm.c"
+'3  764  8  ~/.applications/dwm-6.1.stable/dwm.c
+|4,51,764,8,1602288927,"~/.applications/dwm-6.1.stable/dwm.c"
+'4  7  0  ~/.xinitrc
+|4,52,7,0,1602287877,"~/.xinitrc"
+'5  7  0  ~/.xinitrc
+|4,53,7,0,1602287795,"~/.xinitrc"
+'6  94  78  ~/.dwm/bar.sh
+|4,54,94,78,1602286301,"~/.dwm/bar.sh"
+'7  105  0  ~/.dwm/bar.sh
+|4,55,105,0,1602285921,"~/.dwm/bar.sh"
+'8  105  0  ~/.dwm/bar.sh
+|4,56,105,0,1602285921,"~/.dwm/bar.sh"
+'9  125  0  ~/Documentos/dotfiles/.dwm/bar.sh
+|4,57,125,0,1602276297,"~/Documentos/dotfiles/.dwm/bar.sh"
 
 # Lista de saltos (el más reciente va primero):
--'  37  38  ~/.applications/dwm-6.1.systray/config.def.h
-|4,39,37,38,1602276064,"~/.applications/dwm-6.1.systray/config.def.h"
--'  195  4  ~/.applications/dwm-6.1.systray/config.def.h
-|4,39,195,4,1602276052,"~/.applications/dwm-6.1.systray/config.def.h"
--'  73  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,73,0,1602276028,"~/.applications/dwm-6.2/config.def.h"
--'  73  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,73,0,1602276028,"~/.applications/dwm-6.2/config.def.h"
--'  73  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,73,0,1602276027,"~/.applications/dwm-6.2/config.def.h"
--'  73  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,73,0,1602276027,"~/.applications/dwm-6.2/config.def.h"
--'  195  1  ~/.applications/dwm-6.1.systray/config.def.h
-|4,39,195,1,1602276001,"~/.applications/dwm-6.1.systray/config.def.h"
--'  160  95  ~/.applications/dwm-6.1.systray/config.def.h
-|4,39,160,95,1602275985,"~/.applications/dwm-6.1.systray/config.def.h"
--'  160  95  ~/.applications/dwm-6.1.systray/config.def.h
-|4,39,160,95,1602275985,"~/.applications/dwm-6.1.systray/config.def.h"
--'  1  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,1,0,1602275947,"~/.applications/dwm-6.2/config.def.h"
--'  1  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,1,0,1602275947,"~/.applications/dwm-6.2/config.def.h"
--'  1  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,1,0,1602275947,"~/.applications/dwm-6.2/config.def.h"
--'  1  0  ~/.applications/dwm-6.2/config.def.h
-|4,39,1,0,1602275947,"~/.applications/dwm-6.2/config.def.h"
--'  1  0  ~/.applications/dwm-6.1.systray/config.def.h
-|4,39,1,0,1602275921,"~/.applications/dwm-6.1.systray/config.def.h"
--'  1  0  ~/.applications/dwm-6.1.systray/config.def.h
-|4,39,1,0,1602275921,"~/.applications/dwm-6.1.systray/config.def.h"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  3  21  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,3,21,1602215843,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  5  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,5,0,1602215820,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  1  8  ~/.dwm/bar.sh
-|4,39,1,8,1602215771,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  108  125  ~/.dwm/bar.sh
-|4,39,108,125,1602215591,"~/.dwm/bar.sh"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  1  0  ~/.config/i3/scripts/bandwidthImprove2
-|4,39,1,0,1602215481,"~/.config/i3/scripts/bandwidthImprove2"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  124  1  ~/.dwm/bar.sh
-|4,39,124,1,1602215474,"~/.dwm/bar.sh"
--'  20  0  ~/.config/i3/scripts/bandwidthImprove
-|4,39,20,0,1602215356,"~/.config/i3/scripts/bandwidthImprove"
--'  20  0  ~/.config/i3/scripts/bandwidthImprove
-|4,39,20,0,1602215356,"~/.config/i3/scripts/bandwidthImprove"
--'  20  0  ~/.config/i3/scripts/bandwidthImprove
-|4,39,20,0,1602215356,"~/.config/i3/scripts/bandwidthImprove"
--'  20  0  ~/.config/i3/scripts/bandwidthImprove
-|4,39,20,0,1602215356,"~/.config/i3/scripts/bandwidthImprove"
--'  20  0  ~/.config/i3/scripts/bandwidthImprove
-|4,39,20,0,1602215356,"~/.config/i3/scripts/bandwidthImprove"
+-'  760  76  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,760,76,1602288999,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  764  2  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,764,2,1602288981,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
+|4,39,1,0,1602288946,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
+|4,39,1,0,1602288946,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff"
+-'  764  8  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,764,8,1602288927,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  720  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,720,0,1602288899,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  720  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,720,0,1602288899,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1,0,1602288888,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1,0,1602288888,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
+|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
+|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
+|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
+|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
+|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
+-'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
+|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287877,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  7  0  ~/.xinitrc
+|4,39,7,0,1602287795,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  8  0  ~/.xinitrc
+|4,39,8,0,1602287792,"~/.xinitrc"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+-'  94  78  ~/.dwm/bar.sh
+|4,39,94,78,1602286301,"~/.dwm/bar.sh"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/.applications/dwm-6.1.stable/dwm.c
+	*	1602288998	0
+	"	760	76
+	^	760	77
+	.	760	77
+	+	758	1
+	+	761	0
+	+	760	77
+
+> ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
+	*	1602288038	0
+	"	1	0
+
+> ~/.xinitrc
+	*	1602287877	0
+	"	7	0
+	^	7	1
+	.	7	0
+	+	3	37
+	+	3	23
+	+	3	38
+	+	3	0
+	+	3	48
+	+	3	6
+	+	3	4
+	+	3	19
+	+	3	33
+	+	3	23
+	+	3	1
+	+	3	11
+	+	3	1
+	+	3	0
+	+	3	29
+	+	6	0
+	+	9	0
+	+	6	0
+	+	9	0
+	+	6	0
+	+	3	0
+	+	9	0
+	+	6	0
+	+	6	21
+	+	6	0
+	+	6	14
+	+	6	0
+	+	6	14
+	+	7	0
+	+	8	9
+	+	7	0
+	+	8	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	8	0
+	+	7	0
+
+> ~/.dwm/bar.sh
+	*	1602286299	0
+	"	94	78
+	^	95	154
+	.	94	78
+	+	30	1
+	+	31	1
+	+	31	5
+	+	30	1
+	+	31	0
+	+	37	0
+	+	32	163
+	+	37	15
+	+	31	1
+	+	34	1
+	+	36	1
+	+	32	1
+	+	30	1
+	+	34	1
+	+	36	1
+	+	37	1
+	+	122	0
+	+	120	1
+	+	122	0
+	+	120	1
+	+	121	0
+	+	120	1
+	+	121	147
+	+	126	0
+	+	125	1
+	+	126	9
+	+	110	0
+	+	111	0
+	+	110	1
+	+	111	64
+	+	45	0
+	+	44	1
+	+	45	54
+	+	55	4
+	+	56	0
+	+	55	57
+	+	57	23
+	+	93	0
+	+	94	0
+	+	95	0
+	+	94	142
+	+	95	82
+	+	55	58
+	+	95	82
+	+	94	78
+
+> ~/.config/i3/scripts/bandwidthImprove2
+	*	1602276294	0
+	"	37	0
+	^	37	1
+	.	37	0
+	+	37	0
+
+> ~/Documentos/dotfiles/.dwm/bar.sh
+	*	1602276244	0
+	"	125	0
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1602276213	0
+	"	1	25
+	^	1	26
+	.	1	25
+	+	9	19
+	+	1	14
+	+	7	0
+	+	1	17
+	+	5	29
+	+	3	21
+	+	1	25
 
 > ~/.applications/dwm-6.1.systray/config.def.h
 	*	1602276064	0
@@ -599,61 +736,6 @@ $
 	+	111	0
 	+	31	41
 	+	75	125
-
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1602215842	0
-	"	3	21
-	^	3	22
-	.	3	21
-	+	9	19
-	+	1	14
-	+	7	0
-	+	1	17
-	+	5	29
-	+	3	21
-
-> ~/.dwm/bar.sh
-	*	1602215769	0
-	"	1	8
-	^	44	2
-	.	45	54
-	+	30	1
-	+	31	1
-	+	31	5
-	+	30	1
-	+	31	0
-	+	37	0
-	+	32	163
-	+	37	15
-	+	31	1
-	+	34	1
-	+	36	1
-	+	32	1
-	+	30	1
-	+	34	1
-	+	36	1
-	+	37	1
-	+	120	0
-	+	118	1
-	+	120	0
-	+	118	1
-	+	119	0
-	+	118	1
-	+	119	147
-	+	124	0
-	+	123	1
-	+	124	9
-	+	108	0
-	+	109	0
-	+	108	1
-	+	109	64
-	+	45	0
-	+	44	1
-	+	45	54
-
-> ~/.config/i3/scripts/bandwidthImprove2
-	*	1602215361	0
-	"	1	0
 
 > ~/.config/i3/scripts/bandwidthImprove
 	*	1602215355	0
@@ -772,46 +854,6 @@ $
 	+	33	38
 	+	34	38
 	+	68	18
-
-> ~/.xinitrc
-	*	1602211624	0
-	"	8	0
-	^	8	0
-	.	8	0
-	+	3	37
-	+	3	23
-	+	3	38
-	+	3	0
-	+	3	48
-	+	3	6
-	+	3	4
-	+	3	19
-	+	3	33
-	+	3	23
-	+	3	1
-	+	3	11
-	+	3	1
-	+	3	0
-	+	3	29
-	+	6	0
-	+	9	0
-	+	6	0
-	+	9	0
-	+	6	0
-	+	3	0
-	+	9	0
-	+	6	0
-	+	6	21
-	+	6	0
-	+	6	14
-	+	6	0
-	+	6	14
-	+	7	0
-	+	8	9
-	+	7	0
-	+	8	0
-	+	7	0
-	+	8	0
 
 > ~/dotfiles
 	*	1602193559	0

@@ -34,7 +34,7 @@ obtain() {
 	echo "$(( (current-old) / 1024 ))"
 }
 
-check
+#check
 
 down=$(obtain rx)
 up=$(obtain tx)

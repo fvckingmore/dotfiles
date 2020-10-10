@@ -52,8 +52,9 @@ vol() {
 home() {
 
 	HD=$(df /home | grep / | sed 's/  */ /g' | cut -d" " -f4 | xargs -I% echo "scale=2; % / 1024" | bc | xargs -I% echo "%M")
+	PER=$(df /home | grep / | sed 's/  */ /g' | cut -d" " -f5)
 
-	echo -n $HD
+	echo -n "${HD}(${PER})"
 
 }
 
@@ -90,7 +91,8 @@ gge() {
 
 fmore() {
 
-	echo -n $(df /media/moreno/fvckingmore | grep / | sed 's/  */ /g' | cut -d" " -f4 | xargs -I% echo "scale=2; % / 1024" | bc | xargs -I% echo "%M")
+	PER=$(df /media/moreno/fvckingmore | grep / | sed 's/  */ /g' | cut -d" " -f5)
+	echo -n "$(df /media/moreno/fvckingmore | grep / | sed 's/  */ /g' | cut -d" " -f4 | xargs -I% echo "scale=2; % / 1024" | bc | xargs -I% echo "%M")(${PER})"
 
 }
 
