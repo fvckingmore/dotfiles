@@ -37,7 +37,7 @@ case $CHOISE in
 
 	"VGA Single") $COM || ($DIR/1280x720 && xrandr --output LVDS1 --off --output VGA1 --primary; nitrogen --restore) ;;
 
-	"VGA Extended") $COM || $DIR/1280x720; nitrogen --restore ;;
+	"VGA Extended") $COM || $DIR/1280x720; nitrogen --restore; xrandr --output LVDS1 --primary ;;
 
 	"Manual") arandr ;;
 

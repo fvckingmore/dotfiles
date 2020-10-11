@@ -11,28 +11,60 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último Patrón de búsqueda:
-~MSle0~/creat
+~MSle0~/updatewm
 
 # Última cadena de sustitución:
 $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:q!
+|2,0,1602438972,,"q!"
 :wq
-|2,0,1602288999,,"wq"
+|2,0,1602438925,,"wq"
+:w dwm
+|2,0,1602438909,,"w dwm"
+:2031
+|2,0,1602438771,,"2031"
+:1731
+|2,0,1602438689,,"1731"
+:1692
+|2,0,1602438645,,"1692"
+:1539
+|2,0,1602438611,,"1539"
+:1517
+|2,0,1602438515,,"1517"
+:981
+|2,0,1602438452,,"981"
+:640
+|2,0,1602438387,,"640"
+:537
+|2,0,1602438344,,"537"
+:526
+|2,0,1602438296,,"526"
+:270
+|2,0,1602438229,,"270"
+:130
+|2,0,1602438207,,"130"
+:111
+|2,0,1602438164,,"111"
+:set rnu!
+|2,0,1602438185,,"set rnu!"
+:1057
+|2,0,1602435766,,"1057"
+:w
+|2,0,1602435301,,"w"
+:q
+|2,0,1602434363,,"q"
+:W
+|2,0,1602434124,,"W"
+:ew
+|2,0,1602426537,,"ew"
 :760
 |2,0,1602288985,,"760"
 :720
 |2,0,1602288891,,"720"
-:q!
-|2,0,1602288034,,"q!"
-:w
-|2,0,1602286278,,"w"
 :w bandwidthImprove2
 |2,0,1602215328,,"w bandwidthImprove2"
-:set rnu!
-|2,0,1602192697,,"set rnu!"
-:q
-|2,0,1602192268,,"q"
 :1075
 |2,0,1602191781,,"1075"
 :93
@@ -69,8 +101,6 @@ $
 |2,0,1602189917,,"406"
 :147
 |2,0,1602189887,,"147"
-:1057
-|2,0,1602189703,,"1057"
 :63
 |2,0,1602127225,,"63"
 :1674
@@ -103,10 +133,6 @@ $
 |2,0,1601837480,,"639"
 :169
 |2,0,1601837341,,"169"
-:W
-|2,0,1601837335,,"W"
-:111
-|2,0,1601837255,,"111"
 :57
 |2,0,1601837228,,"57"
 :84
@@ -139,12 +165,42 @@ $
 |2,0,1601780228,,"tabnew"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/updatewm
+|2,1,1602438784,47,"updatewm"
+?/toggleview
+|2,1,1602438697,47,"toggleview"
+?/toggle
+|2,1,1602438664,47,"toggle"
+?/setmfa
+|2,1,1602438618,47,"setmfa"
+?/setlayou
+|2,1,1602438525,47,"setlayou"
+?/inc
+|2,1,1602438464,47,"inc"
+?/strnc
+|2,1,1602438425,47,"strnc"
+?/create
+|2,1,1602438397,47,"create"
+?/pop
+|2,1,1602438359,47,"pop"
+?/clientmessa
+|2,1,1602438322,47,"clientmessa"
+?/static Wind
+|2,1,1602438252,47,"static Wind"
+?/const
+|2,1,1602438213,47,"const"
+?/struct
+|2,1,1602438179,47,"struct"
+?/manage
+|2,1,1602435782,47,"manage"
+? \s\+$
+|2,1,1602434817,,"\\s\\+$"
+??\a
+|2,1,1602434734,63,"\\a"
+? @$
+|2,1,1602434734,,"@$"
 ?/drw_te
 |2,1,1602288899,47,"drw_te"
-? @$
-|2,1,1602288032,,"@$"
-? \s\+$
-|2,1,1602286301,,"\\s\\+$"
 ?/grabbu
 |2,1,1602191804,47,"grabbu"
 ?/isfix
@@ -175,8 +231,6 @@ $
 |2,1,1602190025,47,"atta"
 ?/send
 |2,1,1602190015,47,"send"
-?/manage
-|2,1,1602189964,47,"manage"
 ?/attach
 |2,1,1602189901,47,"attach"
 ?/setcfa
@@ -229,285 +283,272 @@ $
 # Historia de Debug Line (de lo más nuevo a lo más antiguo):
 
 # Registros:
-""0	CHAR	0
-	#
-|3,1,0,0,1,0,1602288032,"#"
+"0	LINE	0
+	bind[mvrg_next]	=	MOD+Shift+Down
+|3,0,0,1,1,0,1602435291,"bind[mvrg_next]	=	MOD+Shift+Down"
 "1	LINE	0
+	bar_format		= +@fg=1; [+L] +2<M:+M +2<+S +A +|T +@fg=5; +@bg=0; +2<+W 
+|3,0,1,1,1,0,1602434307,"bar_format		= +@fg=1; [+L] +2<M:+M +2<+S +A +|T +@fg=5; +@bg=0; +2<+W "
+"2	LINE	0
 	    { MODKEY,                            XK_F8,    spawn,          {.v = vup } },
 	    { MODKEY,                            XK_F7,    spawn,          {.v = vdown } },
-|3,0,1,1,2,0,1602275969,"    { MODKEY,                            XK_F8,    spawn,          {.v = vup } },","    { MODKEY,                            XK_F7,    spawn,          {.v = vdown } },"
-"2	LINE	0
-	//    { MODKEY|ShiftMask,             XK_plus,        setgaps,        {.i = GAP_TOGGLE} },
-|3,0,2,1,1,0,1602192644,"//    { MODKEY|ShiftMask,             XK_plus,        setgaps,        {.i = GAP_TOGGLE} },"
+|3,0,2,1,2,0,1602275969,"    { MODKEY,                            XK_F8,    spawn,          {.v = vup } },","    { MODKEY,                            XK_F7,    spawn,          {.v = vdown } },"
 "3	LINE	0
-	//    { MODKEY|ShiftMask,             XK_minus,       setgaps,        {.i = GAP_RESET } },
-|3,0,3,1,1,0,1602192643,"//    { MODKEY|ShiftMask,             XK_minus,       setgaps,        {.i = GAP_RESET } },"
+	//    { MODKEY|ShiftMask,             XK_plus,        setgaps,        {.i = GAP_TOGGLE} },
+|3,0,3,1,1,0,1602192644,"//    { MODKEY|ShiftMask,             XK_plus,        setgaps,        {.i = GAP_TOGGLE} },"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1602192152,""
+	//    { MODKEY|ShiftMask,             XK_minus,       setgaps,        {.i = GAP_RESET } },
+|3,0,4,1,1,0,1602192643,"//    { MODKEY|ShiftMask,             XK_minus,       setgaps,        {.i = GAP_RESET } },"
 "5	LINE	0
-		{ MODKEY,                       XK_f,           togglemaximize,      {0} },
-|3,0,5,1,1,0,1602192150,"	{ MODKEY,                       XK_f,           togglemaximize,      {0} },"
-"6	LINE	0
-	#include <freetype2/ft2build.h>
-|3,0,6,1,1,0,1602126977,"#include <freetype2/ft2build.h>"
-"7	LINE	0
-	PATH="/usr/games:$PATH"
-|3,0,7,1,1,0,1602016630,"PATH=\"/usr/games:$PATH\""
-"8	LINE	0
 	
-|3,0,8,1,1,0,1601935427,""
+|3,0,5,1,1,0,1602192152,""
+"6	LINE	0
+		{ MODKEY,                       XK_f,           togglemaximize,      {0} },
+|3,0,6,1,1,0,1602192150,"	{ MODKEY,                       XK_f,           togglemaximize,      {0} },"
+"7	LINE	0
+	#include <freetype2/ft2build.h>
+|3,0,7,1,1,0,1602126977,"#include <freetype2/ft2build.h>"
+"8	LINE	0
+	PATH="/usr/games:$PATH"
+|3,0,8,1,1,0,1602016630,"PATH=\"/usr/games:$PATH\""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1601935426,""
-"-	CHAR	0
-	#
-|3,0,36,0,1,0,1602287874,"#"
+|3,0,9,1,1,0,1601935427,""
+""-	CHAR	0
+	+
+|3,1,36,0,1,0,1602438888,"+"
 
 # Marcas en el archivo:
-'0  760  76  ~/.applications/dwm-6.1.stable/dwm.c
-|4,48,760,76,1602288999,"~/.applications/dwm-6.1.stable/dwm.c"
-'1  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
-|4,49,1,0,1602288946,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff"
-'2  764  8  ~/.applications/dwm-6.1.stable/dwm.c
-|4,50,764,8,1602288927,"~/.applications/dwm-6.1.stable/dwm.c"
-'3  764  8  ~/.applications/dwm-6.1.stable/dwm.c
-|4,51,764,8,1602288927,"~/.applications/dwm-6.1.stable/dwm.c"
-'4  7  0  ~/.xinitrc
-|4,52,7,0,1602287877,"~/.xinitrc"
-'5  7  0  ~/.xinitrc
-|4,53,7,0,1602287795,"~/.xinitrc"
-'6  94  78  ~/.dwm/bar.sh
-|4,54,94,78,1602286301,"~/.dwm/bar.sh"
-'7  105  0  ~/.dwm/bar.sh
-|4,55,105,0,1602285921,"~/.dwm/bar.sh"
-'8  105  0  ~/.dwm/bar.sh
-|4,56,105,0,1602285921,"~/.dwm/bar.sh"
-'9  125  0  ~/Documentos/dotfiles/.dwm/bar.sh
-|4,57,125,0,1602276297,"~/Documentos/dotfiles/.dwm/bar.sh"
+'0  8  0  ~/.xinitrc
+|4,48,8,0,1602438972,"~/.xinitrc"
+'1  2221  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,49,2221,0,1602438925,"~/.applications/dwm-6.1.stable/dwm.c"
+'2  199  0  ~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff
+|4,50,199,0,1602438912,"~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff"
+'3  58  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,51,58,0,1602437948,"~/.applications/dwm-6.1.stable/config.def.h"
+'4  58  31  ~/.applications/dwm-6.1.stable/config.def.h
+|4,52,58,31,1602437882,"~/.applications/dwm-6.1.stable/config.def.h"
+'5  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,53,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+'6  1166  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,54,1166,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+'7  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,55,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+'8  8  0  ~/.xinitrc
+|4,56,8,0,1602435523,"~/.xinitrc"
+'9  273  29  ~/.spectrwm.conf
+|4,57,273,29,1602435511,"~/.spectrwm.conf"
 
 # Lista de saltos (el más reciente va primero):
--'  760  76  ~/.applications/dwm-6.1.stable/dwm.c
-|4,39,760,76,1602288999,"~/.applications/dwm-6.1.stable/dwm.c"
--'  764  2  ~/.applications/dwm-6.1.stable/dwm.c
-|4,39,764,2,1602288981,"~/.applications/dwm-6.1.stable/dwm.c"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
-|4,39,1,0,1602288946,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
-|4,39,1,0,1602288946,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff"
--'  764  8  ~/.applications/dwm-6.1.stable/dwm.c
-|4,39,764,8,1602288927,"~/.applications/dwm-6.1.stable/dwm.c"
--'  720  0  ~/.applications/dwm-6.1.stable/dwm.c
-|4,39,720,0,1602288899,"~/.applications/dwm-6.1.stable/dwm.c"
--'  720  0  ~/.applications/dwm-6.1.stable/dwm.c
-|4,39,720,0,1602288899,"~/.applications/dwm-6.1.stable/dwm.c"
--'  1  0  ~/.applications/dwm-6.1.stable/dwm.c
-|4,39,1,0,1602288888,"~/.applications/dwm-6.1.stable/dwm.c"
--'  1  0  ~/.applications/dwm-6.1.stable/dwm.c
-|4,39,1,0,1602288888,"~/.applications/dwm-6.1.stable/dwm.c"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
-|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
-|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
-|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
-|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
-|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
--'  1  0  ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar
-|4,39,1,0,1602288032,"~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287877,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
--'  7  0  ~/.xinitrc
-|4,39,7,0,1602287795,"~/.xinitrc"
 -'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  8  0  ~/.xinitrc
-|4,39,8,0,1602287792,"~/.xinitrc"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
--'  94  78  ~/.dwm/bar.sh
-|4,39,94,78,1602286301,"~/.dwm/bar.sh"
+|4,39,8,0,1602438972,"~/.xinitrc"
+-'  2221  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2221,0,1602438925,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2221  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2221,0,1602438925,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  199  0  ~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff
+|4,39,199,0,1602438912,"~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff"
+-'  199  0  ~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff
+|4,39,199,0,1602438912,"~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff"
+-'  2231  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2231,0,1602438885,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2231  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2231,0,1602438885,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2230  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2230,0,1602438884,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2229  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2229,0,1602438884,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2230  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2230,0,1602438884,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2229  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2229,0,1602438884,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2031  4  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2031,4,1602438784,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  2031  4  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,2031,4,1602438784,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1731  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1731,1,1602438697,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1731  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1731,1,1602438697,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1692  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1692,1,1602438664,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1692  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1692,1,1602438664,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1539  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1539,1,1602438618,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1539  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1539,1,1602438618,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1646  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1646,0,1602438572,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1646  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1646,0,1602438572,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1517  4  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1517,4,1602438525,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1517  4  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1517,4,1602438525,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  981  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,981,1,1602438464,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  981  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,981,1,1602438464,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  696  6  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,696,6,1602438425,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  696  6  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,696,6,1602438425,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  640  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,640,0,1602438397,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  640  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,640,0,1602438397,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  586  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,586,1,1602438359,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  586  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,586,1,1602438359,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  526  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,526,1,1602438322,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  526  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,526,1,1602438322,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  270  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,270,0,1602438252,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  270  0  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,270,0,1602438252,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  130  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,130,1,1602438213,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  130  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,130,1,1602438213,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  111  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,111,1,1602438179,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  111  1  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,111,1,1602438179,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1166  4  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1166,4,1602438157,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1166  4  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1166,4,1602438157,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff
+|4,39,1,0,1602438148,"~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff
+|4,39,1,0,1602438148,"~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff"
+-'  58  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,0,1602437948,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,0,1602437948,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,0,1602437948,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,0,1602437948,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,0,1602437948,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,0,1602437948,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  31  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,31,1602437882,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  31  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,31,1602437882,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  31  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,31,1602437882,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  31  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,31,1602437882,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  31  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,31,1602437882,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  58  31  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,58,31,1602437882,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,1,0,1602437789,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1  0  ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+|4,39,1,0,1602435807,"~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
+-'  1113  5  ~/.applications/dwm-6.1.stable/dwm.c
+|4,39,1113,5,1602435803,"~/.applications/dwm-6.1.stable/dwm.c"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
 
-> ~/.applications/dwm-6.1.stable/dwm.c
-	*	1602288998	0
-	"	760	76
-	^	760	77
-	.	760	77
-	+	758	1
-	+	761	0
-	+	760	77
-
-> ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
-	*	1602288038	0
-	"	1	0
-
 > ~/.xinitrc
-	*	1602287877	0
-	"	7	0
-	^	7	1
-	.	7	0
+	*	1602438970	0
+	"	8	0
+	^	8	0
+	.	8	0
 	+	3	37
 	+	3	23
 	+	3	38
@@ -545,6 +586,232 @@ $
 	+	7	0
 	+	8	0
 	+	7	0
+	+	8	0
+	+	6	0
+	+	8	0
+
+> ~/.applications/dwm-6.1.stable/dwm.c
+	*	1602438910	0
+	"	2221	0
+	^	2239	0
+	.	2221	0
+	+	588	0
+	+	697	0
+	+	696	6
+	+	732	0
+	+	730	0
+	+	729	0
+	+	728	0
+	+	727	0
+	+	726	0
+	+	725	0
+	+	724	0
+	+	723	0
+	+	722	0
+	+	721	0
+	+	720	0
+	+	719	0
+	+	718	0
+	+	717	0
+	+	716	0
+	+	715	0
+	+	714	0
+	+	713	0
+	+	712	0
+	+	711	0
+	+	710	0
+	+	1073	1
+	+	1076	0
+	+	1075	81
+	+	1636	1
+	+	1637	1
+	+	1646	0
+	+	1644	0
+	+	1642	0
+	+	1641	0
+	+	1640	0
+	+	1639	0
+	+	1646	1
+	+	1651	0
+	+	1649	0
+	+	1648	0
+	+	1649	0
+	+	1670	1
+	+	1673	0
+	+	1672	0
+	+	1837	1
+	+	1840	0
+	+	1839	86
+	+	1880	6
+	+	1895	0
+	+	1893	0
+	+	1892	0
+	+	1891	0
+	+	1890	0
+	+	1889	0
+	+	1888	0
+	+	1887	0
+	+	1886	0
+	+	1885	0
+	+	1884	0
+	+	1907	0
+	+	1905	0
+	+	1904	0
+	+	1903	0
+	+	1902	0
+	+	1901	0
+	+	1900	0
+	+	1899	0
+	+	1898	0
+	+	2210	0
+	+	2209	0
+	+	2208	0
+	+	2207	0
+	+	2214	1
+	+	2218	0
+	+	2217	0
+	+	2216	0
+	+	2219	1
+	+	2219	0
+	+	2240	0
+	+	2238	0
+	+	2237	0
+	+	2236	0
+	+	2235	0
+	+	2234	0
+	+	2233	0
+	+	2232	0
+	+	2231	0
+	+	2230	0
+	+	2232	0
+	+	2231	0
+	+	2230	0
+	+	2229	0
+	+	2228	0
+	+	2227	0
+	+	2226	0
+	+	2225	0
+	+	2224	0
+	+	2223	0
+	+	2222	0
+	+	2221	0
+
+> ~/.applications/dwm-6.1.stable/dwm-pertag-6.1.diff
+	*	1602438893	0
+	"	199	0
+
+> ~/.applications/dwm-6.1.stable/config.def.h
+	*	1602437935	0
+	"	58	0
+	.	58	31
+	+	58	31
+
+> ~/.applications/dwm-6.1.stable/bak/1alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff
+	*	1602435753	0
+	"	1	0
+
+> ~/.spectrwm.conf
+	*	1602435301	0
+	"	273	29
+	^	273	30
+	.	273	29
+	+	181	0
+	+	19	26
+	+	41	19
+	+	59	32
+	+	149	0
+	+	148	81
+	+	307	76
+	+	148	81
+	+	59	42
+	+	57	18
+	+	59	52
+	+	18	16
+	+	59	44
+	+	57	0
+	+	59	50
+	+	57	20
+	+	59	0
+	+	60	0
+	+	59	0
+	+	60	0
+	+	59	0
+	+	60	0
+	+	59	47
+	+	60	0
+	+	59	0
+	+	60	0
+	+	59	42
+	+	270	23
+	+	271	21
+	+	272	31
+	+	273	29
+
+> ~/.config/screenMenu.sh
+	*	1602434816	0
+	"	40	90
+	^	40	91
+	.	40	90
+	+	40	90
+
+> ~/.config/baraction.sh
+	*	1602426537	0
+	"	122	0
+	^	122	1
+	.	122	0
+	+	123	0
+	+	128	0
+	+	110	19
+	+	121	0
+	+	124	0
+	+	126	0
+	+	136	0
+	+	126	9
+	+	110	9
+	+	130	14
+	+	110	10
+	+	112	0
+	+	114	1
+	+	118	1
+	+	119	0
+	+	110	6
+	+	126	6
+	+	110	12
+	+	126	12
+	+	120	0
+	+	126	0
+	+	110	4
+	+	130	18
+	+	33	31
+	+	33	0
+	+	30	0
+	+	31	7
+	+	30	1
+	+	122	0
+	+	121	1
+	+	122	0
+
+> ~/.config/baraction.sh.new
+	*	1602426442	0
+	"	134	0
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1602289150	0
+	"	3	20
+	^	3	21
+	.	3	20
+	+	11	19
+	+	1	14
+	+	9	0
+	+	1	17
+	+	7	29
+	+	5	21
+	+	1	22
+	+	3	20
+
+> ~/.applications/dwm-6.1.systray.bug/bak/9activeindicatorbar/dwm-activetagindicatorbar-6.1.diff
+	*	1602288038	0
+	"	1	0
 
 > ~/.dwm/bar.sh
 	*	1602286299	0
@@ -607,19 +874,6 @@ $
 > ~/Documentos/dotfiles/.dwm/bar.sh
 	*	1602276244	0
 	"	125	0
-
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1602276213	0
-	"	1	25
-	^	1	26
-	.	1	25
-	+	9	19
-	+	1	14
-	+	7	0
-	+	1	17
-	+	5	29
-	+	3	21
-	+	1	25
 
 > ~/.applications/dwm-6.1.systray/config.def.h
 	*	1602276064	0
@@ -1401,10 +1655,6 @@ $
 	*	1601837858	0
 	"	148	0
 
-> ~/.spectrwm.conf
-	*	1601835022	0
-	"	325	0
-
 > ~/.config/dwm/autostart.sh
 	*	1601828422	0
 	"	8	22
@@ -1455,40 +1705,6 @@ $
 > ~/.applications/dwm-6.2/dwm-attachbottom-6.2.diff
 	*	1601827363	0
 	"	71	0
-
-> ~/.config/baraction.sh
-	*	1601783538	0
-	"	30	1
-	^	30	2
-	.	30	1
-	+	122	0
-	+	127	0
-	+	110	19
-	+	121	0
-	+	123	0
-	+	125	0
-	+	135	0
-	+	125	9
-	+	110	9
-	+	129	14
-	+	110	10
-	+	112	0
-	+	114	1
-	+	118	1
-	+	119	0
-	+	110	6
-	+	125	6
-	+	110	12
-	+	125	12
-	+	120	0
-	+	125	0
-	+	110	4
-	+	129	18
-	+	33	31
-	+	33	0
-	+	30	0
-	+	31	7
-	+	30	1
 
 > ~/.config/autostart.sh
 	*	1601782007	0

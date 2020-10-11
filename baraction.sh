@@ -28,18 +28,21 @@ mem() {
 cpuUsage() {
 
 	#LOAD=$(mpstat 1 1 | grep -i Ave | sed -e 's/  */ /g' -e 's/,/\./g' | cut -d" " -f12 )
-	LOAD=$(mpstat -A | grep all | sed -e 's/  */ /g' -e 's/,/\./g' | cut -d" " -f 12)
+	#LOAD=$(top -bn1 | grep Cpu | sed -e 's/  */ /g' -e 's/,/\./g' | cut -d" " -f8)
+	LOAD=$(cat /proc/loadavg | cut -d" " -f1 | xargs -I% echo "scale=2; %/2" | bc)
 
-	CPU=$(echo "100.00 - $LOAD" | bc)
+	#CPU=$(echo "100.00 - $LOAD" | bc)
 
-	echo -n "${CPU}%"
+	#echo -n "${CPU}%"
+	echo -n "${LOAD}"
 
 
 }
 
 vol() {
 
-	VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]" | xargs -n1 -I% echo -n "% " | sed 's/  */ /g' | cut -d" " -f1)
+	#VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]" | xargs -n1 -I% echo -n "% " | sed 's/  */ /g' | cut -d" " -f1)
+	VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]")
 
 	echo -n $VOL
 
@@ -49,8 +52,9 @@ vol() {
 home() {
 
 	HD=$(df /home | grep / | sed 's/  */ /g' | cut -d" " -f4 | xargs -I% echo "scale=2; % / 1024" | bc | xargs -I% echo "%M")
+	PER=$(df /home | grep / | sed 's/  */ /g' | cut -d" " -f5)
 
-	echo -n $HD
+	echo -n "${HD}(${PER})"
 
 }
 
@@ -87,7 +91,8 @@ gge() {
 
 fmore() {
 
-	echo -n $(df /media/moreno/fvckingmore | grep / | sed 's/  */ /g' | cut -d" " -f4 | xargs -I% echo "scale=2; % / 1024" | bc | xargs -I% echo "%M")
+	PER=$(df /media/moreno/fvckingmore | grep / | sed 's/  */ /g' | cut -d" " -f5)
+	echo -n "$(df /media/moreno/fvckingmore | grep / | sed 's/  */ /g' | cut -d" " -f4 | xargs -I% echo "scale=2; % / 1024" | bc | xargs -I% echo "%M")(${PER})"
 
 }
 
@@ -102,7 +107,8 @@ temper() {
 TRAF() {
 
 
-	echo -n $(~/.config/i3/scripts/bandwidthImprove | xargs -n1 -I% echo -n "% " | cut -d" " -f1-4)
+	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | xargs -n1 -I% echo -n "% " | cut -d" " -f1-4)
+	echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd" " | cut -d" " -f1-4)
 }
 
 
@@ -111,9 +117,12 @@ TRAF() {
 
 while :; do
 
-	echo " +@fg=7; V $(vol)  +@fg=8;|  +@fg=3;M $(mem) +@fg=8; |  +@fg=6;/H $(home) /F $(fmore)  +@fg=8;|  +@fg=4;$(iface)  $(TRAF)  +@fg=5;$(gge)  +@fg=8;|  +@fg=2;C $(cpuUsage)  +@fg=8;|  T $(temper)  |  +@fg=1;$(datee)";
+	#xsetroot -name "  V $(vol)  |  M $(mem)  |  /H $(home) /F $(fmore)  |  $(iface)  $(TRAF)  $(gge)  |  C $(cpuUsage)  |  T $(temper)  |  $(datee)";
+	#xsetroot -name "   V $(vol)   |   M $(mem)   |   /H $(home)  /F $(fmore)   |   $(iface)  $(TRAF)  $(gge)   |   C $(cpuUsage)   |   T $(temper)   |   $(datee)";
+	echo "   V $(vol)   |   M $(mem)   |   /H $(home)  /F $(fmore)   |   $(iface)  $(TRAF)  $(gge)   |   C $(cpuUsage)   |   T $(temper)   |   $(datee)";
 
 
 
-	sleep 1;
+	#sleep 1;
+	sleep 0.5;
 done
