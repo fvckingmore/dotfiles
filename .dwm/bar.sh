@@ -108,7 +108,8 @@ TRAF() {
 
 
 	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | xargs -n1 -I% echo -n "% " | cut -d" " -f1-4)
-	echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd" " | cut -d" " -f1-4)
+	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd" " | cut -d" " -f1-4)
+	echo -n $(~/.config/i3/scripts/bandMon)
 }
 
 
@@ -118,10 +119,11 @@ TRAF() {
 while :; do
 
 	#xsetroot -name "  V $(vol)  |  M $(mem)  |  /H $(home) /F $(fmore)  |  $(iface)  $(TRAF)  $(gge)  |  C $(cpuUsage)  |  T $(temper)  |  $(datee)";
-	xsetroot -name "   V $(vol)   |   M $(mem)   |   /H $(home)  /F $(fmore)   |   $(iface)  $(TRAF)  $(gge)   |   C $(cpuUsage)   |   T $(temper)   |   $(datee)";
+	#xsetroot -name "   V $(vol)   |   M $(mem)   |   /H $(home)  /F $(fmore)   |   $(iface)  $(TRAF)  $(gge)   |   C $(cpuUsage)   |   T $(temper)   |   $(datee)";
+	xsetroot -name "   V $(vol)   |   M $(mem)   |   /H $(home)  /F $(fmore)   |   $(iface)  $(TRAF)   |   C $(cpuUsage)   |   T $(temper)   |   $(datee)";
 
 
 
-	#sleep 1;
+	#sleep 2;
 	sleep 0.5;
 done

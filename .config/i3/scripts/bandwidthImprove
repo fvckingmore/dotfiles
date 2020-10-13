@@ -15,7 +15,7 @@ check() {
 obtain() {
 
 	local sum=0
-	local current=$(cat /sys/class/net/{w,e}*/statistics/${1}_bytes)
+	local current=$(cat /sys/class/net/w*/statistics/${1}_bytes)
 
 
 	for i in $current; do

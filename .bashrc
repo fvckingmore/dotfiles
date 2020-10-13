@@ -154,3 +154,6 @@ echo "
   ░   ▒   ░      ░
       ░  ░       ░
 "
+
+export HISTFILESIZE=
+export HISTSIZE=

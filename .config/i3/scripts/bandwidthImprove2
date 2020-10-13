@@ -15,7 +15,7 @@ check() {
 obtain() {
 
 	local sum=0
-	local current=$(echo $(cat /sys/class/net/{w,e}*/statistics/${1}_bytes | paste -sd"+") | bc)
+	local current=$(echo $(cat /sys/class/net/w*/statistics/${1}_bytes | paste -sd"+") | bc)
 
 : '
 	for i in $current; do
@@ -23,7 +23,7 @@ obtain() {
 		sum=$(echo "$sum + $i" | bc)
 	done
 '
-	cache="/tmp/$1"
+	cache="$1"
 
 	[ -f $cache ] && old=$(cat $cache) || old=0
 	: '
