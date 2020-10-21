@@ -15,17 +15,17 @@ $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
 :wq
-|2,0,1602627759,,"wq"
+|2,0,1603238395,,"wq"
+:q!
+|2,0,1603136964,,"q!"
 :w
 |2,0,1602551397,,"w"
-:q!
-|2,0,1602546933,,"q!"
 : '
 |2,0,1602543871,," '"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
 ? \s\+$
-|2,1,1602575616,,"\\s\\+$"
+|2,1,1603064245,,"\\s\\+$"
 ?/- 
 |2,1,1602545889,47,"- "
 
@@ -37,273 +37,341 @@ $
 
 # Registros:
 "0	LINE	0
-	current=$(grep wlp2s0 /proc/net/dev | sed 's/  */ /g' | cut -d" " -f2,10)
-|3,0,0,1,1,0,1602627741,"current=$(grep wlp2s0 /proc/net/dev | sed 's/  */ /g' | cut -d\" \" -f2,10)"
-"1	CHAR	0
-	
-	
-|3,0,1,0,2,0,1602545856,"",""
+		LOAD=$(cat /proc/loadavg | cut -d" " -f1 | xargs -I% echo "scale=2; %/2" | bc)
+|3,0,0,1,1,0,1603063965,"	LOAD=$(cat /proc/loadavg | cut -d\" \" -f1 | xargs -I% echo \"scale=2; %/2\" | bc)"
+""1	LINE	0
+	.dwm
+|3,1,1,1,1,0,1603238393,".dwm"
 "2	LINE	0
-		local sum=0
-|3,0,2,1,1,0,1602544935,"	local sum=0"
+		LOAD2=$(mpstat | grep all| sed -e 's/  */ /g' -e 's/,/\./g' | cut -d' ' -f12 | xargs -I% echo "scale=2; 100-%" | bc)
+|3,0,2,1,1,0,1603064243,"	LOAD2=$(mpstat | grep all| sed -e 's/  */ /g' -e 's/,/\\./g' | cut -d' ' -f12 | xargs -I% echo \"scale=2; 100-%\" | bc)"
 "3	LINE	0
-	echo "D ${down}K U ${up}K"
-|3,0,3,1,1,0,1602544270,"echo \"D ${down}K U ${up}K\""
+		local up=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4 --output-delimiter='+' | xargs -I% echo "scale=2; (%)*100" | bc)
+|3,0,3,1,1,0,1603062220,"	local up=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4 --output-delimiter='+' | xargs -I% echo \"scale=2; (%)*100\" | bc)"
 "4	LINE	0
+		local dup=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4,5 --output-delimiter='+' | xargs -I% echo "scale=2; %" | bc)
+|3,0,4,1,1,0,1603062217,"	local dup=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4,5 --output-delimiter='+' | xargs -I% echo \"scale=2; %\" | bc)"
+"5	LINE	0
+		local per=$(echo "scale=2; $up/$dup" | bc)
+|3,0,5,1,1,0,1603062216,"	local per=$(echo \"scale=2; $up/$dup\" | bc)"
+"6	CHAR	0
+	
+	
+|3,0,6,0,2,0,1602545856,"",""
+"7	LINE	0
+		local sum=0
+|3,0,7,1,1,0,1602544935,"	local sum=0"
+"8	LINE	0
+	echo "D ${down}K U ${up}K"
+|3,0,8,1,1,0,1602544270,"echo \"D ${down}K U ${up}K\""
+"9	LINE	0
 	: '
 		for i in $current; do
 	
 			sum=$(echo "$sum + $i" | bc)
 		done
 	'
-|3,0,4,1,6,0,1602543973,": '","	for i in $current; do","","		sum=$(echo \"$sum + $i\" | bc)","	done","'"
-"5	LINE	0
-	check
-|3,0,5,1,1,0,1602543954,"check"
-"6	LINE	0
-	
-|3,0,6,1,1,0,1602543672,""
-"7	LINE	0
-	check() {
-	
-		( [ $(cat /sys/class/net/w*/operstate) == "down" ] &&
-		[ $(cat /sys/class/net/e*/operstate) == "down" ]) && {
-	
-			echo "DOWN";
-			echo "DOWN";
-			exit 33;
-		}
-	}
-|3,0,7,1,10,0,1602543670,"check() {","","	( [ $(cat /sys/class/net/w*/operstate) == \"down\" ] &&","	[ $(cat /sys/class/net/e*/operstate) == \"down\" ]) && {","","		echo \"DOWN\";","		echo \"DOWN\";","		exit 33;","	}","}"
-""-	CHAR	0
-	grep wlp2s0 /proc/net/dev | sed 's/  */ /g' | cut -d" " -f2,10
-|3,1,36,0,1,0,1602627746,"grep wlp2s0 /proc/net/dev | sed 's/  */ /g' | cut -d\" \" -f2,10"
+|3,0,9,1,6,0,1602543973,": '","	for i in $current; do","","		sum=$(echo \"$sum + $i\" | bc)","	done","'"
+"-	CHAR	0
+	  ${LOAD2}%
+|3,0,36,0,1,0,1603064240,"  ${LOAD2}%"
 
 # Marcas en el archivo:
-'0  17  0  ~/.config/i3/scripts/bandMon
-|4,48,17,0,1602627759,"~/.config/i3/scripts/bandMon"
-'1  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,49,1,0,1602578086,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
-'2  159  15  ~/.bashrc
-|4,50,159,15,1602576052,"~/.bashrc"
-'3  119  0  ~/.dwm/bar.sh
-|4,51,119,0,1602575617,"~/.dwm/bar.sh"
-'4  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,52,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
-'5  123  99  ~/.dwm/bar.sh
-|4,53,123,99,1602551726,"~/.dwm/bar.sh"
-'6  123  99  ~/.dwm/bar.sh
-|4,54,123,99,1602551726,"~/.dwm/bar.sh"
-'7  112  0  ~/.dwm/bar.sh
-|4,55,112,0,1602551652,"~/.dwm/bar.sh"
-'8  112  0  ~/.dwm/bar.sh
-|4,56,112,0,1602551652,"~/.dwm/bar.sh"
-'9  112  0  ~/.dwm/bar.sh
-|4,57,112,0,1602551652,"~/.dwm/bar.sh"
+'0  25  0  ~/dotfiles
+|4,48,25,0,1603238395,"~/dotfiles"
+'1  63  1  ~/.applications/dwm-6.1.stable/config.h
+|4,49,63,1,1603136964,"~/.applications/dwm-6.1.stable/config.h"
+'2  63  0  ~/.applications/dwm-6.1.stable/config.h
+|4,50,63,0,1603136924,"~/.applications/dwm-6.1.stable/config.h"
+'3  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,51,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+'4  33  0  ~/.dwm/bar.sh
+|4,52,33,0,1603064245,"~/.dwm/bar.sh"
+'5  37  21  ~/.dwm/bar.sh
+|4,53,37,21,1603064045,"~/.dwm/bar.sh"
+'6  38  21  ~/.dwm/bar.sh
+|4,54,38,21,1603064045,"~/.dwm/bar.sh"
+'7  37  26  ~/.dwm/bar.sh
+|4,55,37,26,1603063988,"~/.dwm/bar.sh"
+'8  38  26  ~/.dwm/bar.sh
+|4,56,38,26,1603063988,"~/.dwm/bar.sh"
+'9  36  17  ~/.dwm/bar.sh
+|4,57,36,17,1603062227,"~/.dwm/bar.sh"
 
 # Lista de saltos (el más reciente va primero):
--'  17  0  ~/.config/i3/scripts/bandMon
-|4,39,17,0,1602627759,"~/.config/i3/scripts/bandMon"
--'  18  11  ~/.config/i3/scripts/bandMon
-|4,39,18,11,1602627746,"~/.config/i3/scripts/bandMon"
--'  30  0  ~/.config/i3/scripts/bandMon
-|4,39,30,0,1602627679,"~/.config/i3/scripts/bandMon"
--'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1602578086,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1602578086,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  159  15  ~/.bashrc
-|4,39,159,15,1602576052,"~/.bashrc"
--'  159  15  ~/.bashrc
-|4,39,159,15,1602576052,"~/.bashrc"
--'  159  15  ~/.bashrc
-|4,39,159,15,1602576052,"~/.bashrc"
--'  159  15  ~/.bashrc
-|4,39,159,15,1602576052,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1602576047,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1602576047,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1602576047,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1602576047,"~/.bashrc"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  119  0  ~/.dwm/bar.sh
-|4,39,119,0,1602575617,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  123  1  ~/.dwm/bar.sh
-|4,39,123,1,1602573947,"~/.dwm/bar.sh"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  22  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,22,1602551852,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  6  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,6,0,1602551839,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  123  99  ~/.dwm/bar.sh
-|4,39,123,99,1602551726,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  1  ~/.dwm/bar.sh
-|4,39,112,1,1602551702,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
--'  112  0  ~/.dwm/bar.sh
-|4,39,112,0,1602551652,"~/.dwm/bar.sh"
+-'  25  0  ~/dotfiles
+|4,39,25,0,1603238395,"~/dotfiles"
+-'  1  0  ~/dotfiles
+|4,39,1,0,1603238382,"~/dotfiles"
+-'  63  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,63,1,1603136964,"~/.applications/dwm-6.1.stable/config.h"
+-'  63  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,63,1,1603136964,"~/.applications/dwm-6.1.stable/config.h"
+-'  63  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,63,0,1603136924,"~/.applications/dwm-6.1.stable/config.h"
+-'  63  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,63,0,1603136924,"~/.applications/dwm-6.1.stable/config.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  33  0  ~/.dwm/bar.sh
+|4,39,33,0,1603064245,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  37  1  ~/.dwm/bar.sh
+|4,39,37,1,1603064235,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  21  ~/.dwm/bar.sh
+|4,39,38,21,1603064045,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  38  26  ~/.dwm/bar.sh
+|4,39,38,26,1603063988,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+-'  33  10  ~/.dwm/bar.sh
+|4,39,33,10,1603063971,"~/.dwm/bar.sh"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/dotfiles
+	*	1603238393	0
+	"	25	0
+	.	25	0
+	+	25	0
+
+> ~/.applications/dwm-6.1.stable/config.h
+	*	1603136961	0
+	"	63	1
+
+> ~/.applications/dwm-6.1.stable/config.def.h
+	*	1603136893	0
+	"	56	34
+	^	56	35
+	.	56	34
+	+	56	34
+
+> ~/.dwm/bar.sh
+	*	1603064243	0
+	"	33	0
+	^	37	22
+	.	33	0
+	+	128	1
+	+	127	1
+	+	112	0
+	+	111	1
+	+	112	38
+	+	127	7
+	+	111	1
+	+	112	1
+	+	127	1
+	+	128	1
+	+	111	1
+	+	112	1
+	+	123	0
+	+	122	1
+	+	123	97
+	+	33	117
+	+	37	26
+	+	33	142
+	+	33	133
+	+	37	22
+	+	33	42
+	+	37	18
+	+	33	0
+	+	37	17
+	+	33	115
+	+	37	17
+	+	33	0
+
+> /media/moreno/fvckingmore/fvckingmore/UNIX/OfflineWebManuals/.git/COMMIT_EDITMSG
+	*	1602968052	0
+	"	1	44
+	^	1	45
+	.	1	43
+	+	1	43
+
+> /etc/apt/sources.list
+	*	1602801609	0
+	"	42	0
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1602637769	0
+	"	1	0
+	^	1	23
+	.	1	22
+	+	5	15
+	+	3	7
+	+	6	11
+	+	1	22
 
 > ~/.config/i3/scripts/bandMon
 	*	1602627757	0
@@ -356,43 +424,12 @@ $
 	+	18	74
 	+	17	0
 
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1602578085	0
-	"	1	0
-	^	1	23
-	.	1	22
-	+	5	15
-	+	3	7
-	+	6	11
-	+	1	22
-
 > ~/.bashrc
 	*	1602576051	0
 	"	159	15
 	^	159	16
 	.	159	15
 	+	159	15
-
-> ~/.dwm/bar.sh
-	*	1602575609	0
-	"	119	0
-	^	122	2
-	.	123	97
-	+	128	1
-	+	127	1
-	+	112	0
-	+	111	1
-	+	112	38
-	+	127	7
-	+	111	1
-	+	112	1
-	+	127	1
-	+	128	1
-	+	111	1
-	+	112	1
-	+	123	0
-	+	122	1
-	+	123	97
 
 > ~/.config/i3/scripts/bandwidthImprove2
 	*	1602542485	0
@@ -408,7 +445,3 @@ $
 	^	18	38
 	.	18	37
 	+	18	37
-
-> ~/.applications/dwm-6.1.stable/config.def.h
-	*	1602453939	0
-	"	154	4

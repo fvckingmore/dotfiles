@@ -22,7 +22,6 @@ FILES="
 .config/baraction.sh
 .config/autostart.sh
 .config/*.sh
-.dwm
 .fonts/
 .oh-my-zsh/
 .profile
