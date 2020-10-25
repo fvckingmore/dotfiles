@@ -155,5 +155,4 @@ echo "
       ░  ░       ░
 "
 
-export HISTFILESIZE=
-export HISTSIZE=
+export HISTSIZE="GOTCHA"

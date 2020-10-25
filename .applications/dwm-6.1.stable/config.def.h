@@ -16,6 +16,8 @@ static const char dmenufont[]       = "Ubuntu Bold:size=9";
 #define dCRed "#ff5555";
 #define dCYellow "#f1fa8c";
 
+#define oCBlue "#005577";
+
 /*
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
@@ -29,8 +31,8 @@ static const char selfgcolor[]      = "#eeeeee";
 static const char normbordercolor[] = dCBlack;
 static const char normbgcolor[]     = dCBlack;
 static const char normfgcolor[]     = dCWhite;
-static const char selbordercolor[]  = dCPink;
-static const char selbgcolor[]      = dCPink;
+static const char selbordercolor[]  = dCCyan;
+static const char selbgcolor[]      = dCCyan;
 static const char selfgcolor[]      = dCBlack;
 
 static const unsigned int borderpx  = 2;        /* border pixel of windows */

@@ -14,10 +14,12 @@
 $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
-:wq
-|2,0,1603238395,,"wq"
 :q!
-|2,0,1603136964,,"q!"
+|2,0,1603626203,,"q!"
+:wq
+|2,0,1603626199,,"wq"
+:tabnew config.def.h
+|2,0,1603626179,,"tabnew config.def.h"
 :w
 |2,0,1602551397,,"w"
 : '
@@ -25,7 +27,7 @@ $
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
 ? \s\+$
-|2,1,1603064245,,"\\s\\+$"
+|2,1,1603577251,,"\\s\\+$"
 ?/- 
 |2,1,1602545889,47,"- "
 
@@ -36,288 +38,345 @@ $
 # Historia de Debug Line (de lo más nuevo a lo más antiguo):
 
 # Registros:
-"0	LINE	0
-		LOAD=$(cat /proc/loadavg | cut -d" " -f1 | xargs -I% echo "scale=2; %/2" | bc)
-|3,0,0,1,1,0,1603063965,"	LOAD=$(cat /proc/loadavg | cut -d\" \" -f1 | xargs -I% echo \"scale=2; %/2\" | bc)"
-""1	LINE	0
-	.dwm
-|3,1,1,1,1,0,1603238393,".dwm"
+""0	LINE	0
+	#define oCBlue "#005577";
+|3,1,0,1,1,0,1603626190,"#define oCBlue \"#005577\";"
+"1	LINE	0
+	
+|3,0,1,1,1,0,1603625990,""
 "2	LINE	0
-		LOAD2=$(mpstat | grep all| sed -e 's/  */ /g' -e 's/,/\./g' | cut -d' ' -f12 | xargs -I% echo "scale=2; 100-%" | bc)
-|3,0,2,1,1,0,1603064243,"	LOAD2=$(mpstat | grep all| sed -e 's/  */ /g' -e 's/,/\\./g' | cut -d' ' -f12 | xargs -I% echo \"scale=2; 100-%\" | bc)"
+	#define dCYellow "#f1fa8c";
+|3,0,2,1,1,0,1603625989,"#define dCYellow \"#f1fa8c\";"
 "3	LINE	0
-		local up=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4 --output-delimiter='+' | xargs -I% echo "scale=2; (%)*100" | bc)
-|3,0,3,1,1,0,1603062220,"	local up=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4 --output-delimiter='+' | xargs -I% echo \"scale=2; (%)*100\" | bc)"
+	xcompmgr &
+|3,0,3,1,1,0,1603332439,"xcompmgr &"
 "4	LINE	0
-		local dup=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4,5 --output-delimiter='+' | xargs -I% echo "scale=2; %" | bc)
-|3,0,4,1,1,0,1603062217,"	local dup=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4,5 --output-delimiter='+' | xargs -I% echo \"scale=2; %\" | bc)"
+	export HISTFILESIZE=
+|3,0,4,1,1,0,1603332324,"export HISTFILESIZE="
 "5	LINE	0
-		local per=$(echo "scale=2; $up/$dup" | bc)
-|3,0,5,1,1,0,1603062216,"	local per=$(echo \"scale=2; $up/$dup\" | bc)"
-"6	CHAR	0
-	
-	
-|3,0,6,0,2,0,1602545856,"",""
+	.dwm
+|3,0,5,1,1,0,1603238393,".dwm"
+"6	LINE	0
+		LOAD2=$(mpstat | grep all| sed -e 's/  */ /g' -e 's/,/\./g' | cut -d' ' -f12 | xargs -I% echo "scale=2; 100-%" | bc)
+|3,0,6,1,1,0,1603064243,"	LOAD2=$(mpstat | grep all| sed -e 's/  */ /g' -e 's/,/\\./g' | cut -d' ' -f12 | xargs -I% echo \"scale=2; 100-%\" | bc)"
 "7	LINE	0
-		local sum=0
-|3,0,7,1,1,0,1602544935,"	local sum=0"
+		local up=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4 --output-delimiter='+' | xargs -I% echo "scale=2; (%)*100" | bc)
+|3,0,7,1,1,0,1603062220,"	local up=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4 --output-delimiter='+' | xargs -I% echo \"scale=2; (%)*100\" | bc)"
 "8	LINE	0
-	echo "D ${down}K U ${up}K"
-|3,0,8,1,1,0,1602544270,"echo \"D ${down}K U ${up}K\""
+		local dup=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4,5 --output-delimiter='+' | xargs -I% echo "scale=2; %" | bc)
+|3,0,8,1,1,0,1603062217,"	local dup=$(cat /proc/stat | grep -E 'cpu ' | sed 's/  */ /g' | cut -d' ' -f2,4,5 --output-delimiter='+' | xargs -I% echo \"scale=2; %\" | bc)"
 "9	LINE	0
-	: '
-		for i in $current; do
-	
-			sum=$(echo "$sum + $i" | bc)
-		done
-	'
-|3,0,9,1,6,0,1602543973,": '","	for i in $current; do","","		sum=$(echo \"$sum + $i\" | bc)","	done","'"
+		local per=$(echo "scale=2; $up/$dup" | bc)
+|3,0,9,1,1,0,1603062216,"	local per=$(echo \"scale=2; $up/$dup\" | bc)"
 "-	CHAR	0
-	  ${LOAD2}%
-|3,0,36,0,1,0,1603064240,"  ${LOAD2}%"
+	Black
+|3,0,36,0,1,0,1603626100,"Black"
 
 # Marcas en el archivo:
-'0  25  0  ~/dotfiles
-|4,48,25,0,1603238395,"~/dotfiles"
-'1  63  1  ~/.applications/dwm-6.1.stable/config.h
-|4,49,63,1,1603136964,"~/.applications/dwm-6.1.stable/config.h"
-'2  63  0  ~/.applications/dwm-6.1.stable/config.h
-|4,50,63,0,1603136924,"~/.applications/dwm-6.1.stable/config.h"
-'3  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,51,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
-'4  33  0  ~/.dwm/bar.sh
-|4,52,33,0,1603064245,"~/.dwm/bar.sh"
-'5  37  21  ~/.dwm/bar.sh
-|4,53,37,21,1603064045,"~/.dwm/bar.sh"
-'6  38  21  ~/.dwm/bar.sh
-|4,54,38,21,1603064045,"~/.dwm/bar.sh"
-'7  37  26  ~/.dwm/bar.sh
-|4,55,37,26,1603063988,"~/.dwm/bar.sh"
-'8  38  26  ~/.dwm/bar.sh
-|4,56,38,26,1603063988,"~/.dwm/bar.sh"
-'9  36  17  ~/.dwm/bar.sh
-|4,57,36,17,1603062227,"~/.dwm/bar.sh"
+'0  19  0  ~/.applications/dwm-6.1.stable/config.h
+|4,48,19,0,1603626203,"~/.applications/dwm-6.1.stable/config.h"
+'1  36  44  ~/.applications/dwm-6.1.stable/config.h
+|4,49,36,44,1603626104,"~/.applications/dwm-6.1.stable/config.h"
+'2  36  44  ~/.applications/dwm-6.1.stable/config.h
+|4,50,36,44,1603626104,"~/.applications/dwm-6.1.stable/config.h"
+'3  34  40  ~/.applications/dwm-6.1.stable/config.h
+|4,51,34,40,1603625799,"~/.applications/dwm-6.1.stable/config.h"
+'4  34  40  ~/.applications/dwm-6.1.stable/config.h
+|4,52,34,40,1603625799,"~/.applications/dwm-6.1.stable/config.h"
+'5  36  44  ~/.applications/dwm-6.1.stable/config.h
+|4,53,36,44,1603625761,"~/.applications/dwm-6.1.stable/config.h"
+'6  34  44  ~/.applications/dwm-6.1.stable/config.h
+|4,54,34,44,1603625761,"~/.applications/dwm-6.1.stable/config.h"
+'7  36  44  ~/.applications/dwm-6.1.stable/config.h
+|4,55,36,44,1603625761,"~/.applications/dwm-6.1.stable/config.h"
+'8  34  44  ~/.applications/dwm-6.1.stable/config.h
+|4,56,34,44,1603625761,"~/.applications/dwm-6.1.stable/config.h"
+'9  36  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,57,36,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
 
 # Lista de saltos (el más reciente va primero):
--'  25  0  ~/dotfiles
-|4,39,25,0,1603238395,"~/dotfiles"
--'  1  0  ~/dotfiles
-|4,39,1,0,1603238382,"~/dotfiles"
+-'  19  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,19,0,1603626203,"~/.applications/dwm-6.1.stable/config.h"
+-'  36  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,36,0,1603626171,"~/.applications/dwm-6.1.stable/config.h"
+-'  36  44  ~/.applications/dwm-6.1.stable/config.h
+|4,39,36,44,1603626104,"~/.applications/dwm-6.1.stable/config.h"
+-'  34  45  ~/.applications/dwm-6.1.stable/config.h
+|4,39,34,45,1603626067,"~/.applications/dwm-6.1.stable/config.h"
+-'  34  45  ~/.applications/dwm-6.1.stable/config.h
+|4,39,34,45,1603626067,"~/.applications/dwm-6.1.stable/config.h"
+-'  18  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,18,0,1603626023,"~/.applications/dwm-6.1.stable/config.h"
+-'  18  0  ~/.applications/dwm-6.1.stable/config.h
+|4,39,18,0,1603626023,"~/.applications/dwm-6.1.stable/config.h"
+-'  19  32  ~/.applications/dwm-6.1.stable/config.h
+|4,39,19,32,1603626022,"~/.applications/dwm-6.1.stable/config.h"
+-'  34  40  ~/.applications/dwm-6.1.stable/config.h
+|4,39,34,40,1603625799,"~/.applications/dwm-6.1.stable/config.h"
+-'  34  44  ~/.applications/dwm-6.1.stable/config.h
+|4,39,34,44,1603625761,"~/.applications/dwm-6.1.stable/config.h"
+-'  67  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,67,1,1603625732,"~/.applications/dwm-6.1.stable/config.h"
+-'  65  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,65,1,1603625732,"~/.applications/dwm-6.1.stable/config.h"
+-'  67  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,67,1,1603625732,"~/.applications/dwm-6.1.stable/config.h"
+-'  65  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,65,1,1603625732,"~/.applications/dwm-6.1.stable/config.h"
+-'  65  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,65,1,1603625732,"~/.applications/dwm-6.1.stable/config.h"
 -'  63  1  ~/.applications/dwm-6.1.stable/config.h
-|4,39,63,1,1603136964,"~/.applications/dwm-6.1.stable/config.h"
+|4,39,63,1,1603625730,"~/.applications/dwm-6.1.stable/config.h"
+-'  65  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,65,1,1603625730,"~/.applications/dwm-6.1.stable/config.h"
 -'  63  1  ~/.applications/dwm-6.1.stable/config.h
-|4,39,63,1,1603136964,"~/.applications/dwm-6.1.stable/config.h"
--'  63  0  ~/.applications/dwm-6.1.stable/config.h
-|4,39,63,0,1603136924,"~/.applications/dwm-6.1.stable/config.h"
--'  63  0  ~/.applications/dwm-6.1.stable/config.h
-|4,39,63,0,1603136924,"~/.applications/dwm-6.1.stable/config.h"
--'  1  0  ~/.applications/dwm-6.1.stable/config.h
-|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
--'  1  0  ~/.applications/dwm-6.1.stable/config.h
-|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
--'  1  0  ~/.applications/dwm-6.1.stable/config.h
-|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
--'  1  0  ~/.applications/dwm-6.1.stable/config.h
-|4,39,1,0,1603136917,"~/.applications/dwm-6.1.stable/config.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  56  34  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,56,34,1603136894,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  154  4  ~/.applications/dwm-6.1.stable/config.def.h
-|4,39,154,4,1603136867,"~/.applications/dwm-6.1.stable/config.def.h"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  33  0  ~/.dwm/bar.sh
-|4,39,33,0,1603064245,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  37  1  ~/.dwm/bar.sh
-|4,39,37,1,1603064235,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  21  ~/.dwm/bar.sh
-|4,39,38,21,1603064045,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  38  26  ~/.dwm/bar.sh
-|4,39,38,26,1603063988,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
--'  33  10  ~/.dwm/bar.sh
-|4,39,33,10,1603063971,"~/.dwm/bar.sh"
+|4,39,63,1,1603625730,"~/.applications/dwm-6.1.stable/config.h"
+-'  63  1  ~/.applications/dwm-6.1.stable/config.h
+|4,39,63,1,1603625730,"~/.applications/dwm-6.1.stable/config.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,0,1603625726,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  34  41  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,34,41,1603625665,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  56  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,56,0,1603625563,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
+-'  2  9  /etc/openvpn/auth.txt
+|4,39,2,9,1603577251,"/etc/openvpn/auth.txt"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/.applications/dwm-6.1.stable/config.h
+	*	1603626199	0
+	"	19	0
+	^	36	45
+	.	36	44
+	+	34	42
+	+	35	42
+	+	36	40
+	+	18	0
+	+	19	0
+	+	20	0
+	+	19	0
+	+	20	0
+	+	19	13
+	+	34	43
+	+	35	43
+	+	36	44
+
+> ~/.applications/dwm-6.1.stable/config.def.h
+	*	1603626198	0
+	"	19	0
+	^	18	0
+	.	19	0
+	+	58	34
+	+	34	43
+	+	35	43
+	+	18	0
+	+	19	0
+
+> /etc/openvpn/auth.txt
+	*	1603577251	0
+	"	2	9
+	^	2	10
+	.	3	0
+	+	1	9
+	+	3	0
+
+> /usr/share/freeoffice2018/mime/remove_icons.sh
+	*	1603408827	0
+	"	1034	0
+
+> ~/.applications/dwm-6.1.stable/dwm.cfg/autostart.sh
+	*	1603386693	0
+	"	7	0
+	.	7	0
+	+	8	0
+	+	7	0
+	+	8	0
+	+	7	0
+
+> ~/.bashrc
+	*	1603332324	0
+	"	158	0
+	^	158	23
+	.	158	0
+	+	158	15
+	+	158	20
+	+	158	0
+
+> ~/.vimrc
+	*	1603332187	0
+	"	56	0
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1603241493	0
+	"	3	0
+	^	3	0
+	.	2	0
+	+	7	15
+	+	5	7
+	+	8	11
+	+	1	17
+	+	2	0
 
 > ~/dotfiles
 	*	1603238393	0
 	"	25	0
 	.	25	0
 	+	25	0
-
-> ~/.applications/dwm-6.1.stable/config.h
-	*	1603136961	0
-	"	63	1
-
-> ~/.applications/dwm-6.1.stable/config.def.h
-	*	1603136893	0
-	"	56	34
-	^	56	35
-	.	56	34
-	+	56	34
 
 > ~/.dwm/bar.sh
 	*	1603064243	0
@@ -362,16 +421,6 @@ $
 > /etc/apt/sources.list
 	*	1602801609	0
 	"	42	0
-
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1602637769	0
-	"	1	0
-	^	1	23
-	.	1	22
-	+	5	15
-	+	3	7
-	+	6	11
-	+	1	22
 
 > ~/.config/i3/scripts/bandMon
 	*	1602627757	0
@@ -423,13 +472,6 @@ $
 	+	30	0
 	+	18	74
 	+	17	0
-
-> ~/.bashrc
-	*	1602576051	0
-	"	159	15
-	^	159	16
-	.	159	15
-	+	159	15
 
 > ~/.config/i3/scripts/bandwidthImprove2
 	*	1602542485	0
