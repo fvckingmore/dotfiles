@@ -16,6 +16,8 @@ static const char dmenufont[]       = "Ubuntu Bold:size=9";
 #define dCRed "#ff5555";
 #define dCYellow "#f1fa8c";
 
+#define sCBlue "#268BD2";
+
 #define oCBlue "#005577";
 
 /*

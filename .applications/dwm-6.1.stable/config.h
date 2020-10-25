@@ -16,6 +16,10 @@ static const char dmenufont[]       = "Ubuntu Bold:size=9";
 #define dCRed "#ff5555";
 #define dCYellow "#f1fa8c";
 
+#define sCBlue "#268BD2";
+#define sCRed "#DC322F";
+
+
 #define oCBlue "#005577";
 
 /*
@@ -31,7 +35,7 @@ static const char selfgcolor[]      = "#eeeeee";
 static const char normbordercolor[] = dCBlack;
 static const char normbgcolor[]     = dCBlack;
 static const char normfgcolor[]     = dCWhite;
-static const char selbordercolor[]  = oCBlue;
+static const char selbordercolor[]  = sCRed;
 static const char selbgcolor[]      = oCBlue;
 static const char selfgcolor[]      = dCWhite;
 
