@@ -1,6 +1,0 @@
-#!/bin/bash
-xrandr --newmode 1400x768 87.50  1400 1472 1616 1832  768 771 781 798 -hsync +vsync
-xrandr --addmode VGA1 1400x768
-xrandr --output LVDS1 --mode 1024x600 --output VGA1 --mode 1400x768 --right-of LVDS1
-nitrogen --restore
-
