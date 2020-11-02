@@ -1,0 +1,818 @@
+# Vim 8.0 generó este archivo "viminfo".
+# Puede editarlo, ¡sólo si tiene cuidado!
+
+# Viminfo version
+|1,4
+
+# Valor de 'encoding' cuando se escribió este archivo
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Último Patrón de búsqueda:
+~MSle0~/chro
+
+# Última cadena de sustitución:
+$
+
+# Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
+:wq
+|2,0,1604284264,,"wq"
+:w
+|2,0,1604284174,,"w"
+:q!
+|2,0,1604282688,,"q!"
+:.,.+1wq
+|2,0,1604245072,,".,.+1wq"
+:tabe .config/openbox/autostart
+|2,0,1604007309,,"tabe .config/openbox/autostart"
+:colorscheme desert
+|2,0,1603660350,,"colorscheme desert"
+:colorscheme ron
+|2,0,1603660344,,"colorscheme ron"
+:colorscheme default
+|2,0,1603660332,,"colorscheme default"
+:Wq
+|2,0,1603660364,,"Wq"
+:colorscheme torte
+|2,0,1603660065,,"colorscheme torte"
+:colorscheme zellner
+|2,0,1603660063,,"colorscheme zellner"
+:colorscheme slate
+|2,0,1603659917,,"colorscheme slate"
+:colorscheme shine
+|2,0,1603659910,,"colorscheme shine"
+:colorscheme peachpuff
+|2,0,1603659882,,"colorscheme peachpuff"
+:colorscheme pablo
+|2,0,1603659872,,"colorscheme pablo"
+:colorscheme murphy
+|2,0,1603659864,,"colorscheme murphy"
+:colorscheme morning
+|2,0,1603659857,,"colorscheme morning"
+:colorscheme koehler
+|2,0,1603659847,,"colorscheme koehler"
+:colorscheme industry
+|2,0,1603659840,,"colorscheme industry"
+:colorscheme evening
+|2,0,1603659831,,"colorscheme evening"
+:colorscheme elflord
+|2,0,1603659822,,"colorscheme elflord"
+:colorscheme delek
+|2,0,1603659807,,"colorscheme delek"
+:colorscheme darkblue
+|2,0,1603659756,,"colorscheme darkblue"
+:colorscheme blue
+|2,0,1603659748,,"colorscheme blue"
+:tabe .vimrc.full
+|2,0,1603649413,,"tabe .vimrc.full"
+:ter
+|2,0,1603644851,,"ter"
+:Q!
+|2,0,1603642419,,"Q!"
+:set wrap!
+|2,0,1603641402,,"set wrap!"
+:set wrap
+|2,0,1603641398,,"set wrap"
+:tabnew .vimrc.full
+|2,0,1603641229,,"tabnew .vimrc.full"
+:set termguicolors!
+|2,0,1603640956,,"set termguicolors!"
+:h cterm-colors
+|2,0,1603640776,,"h cterm-colors"
+:set termguicolors
+|2,0,1603640741,,"set termguicolors"
+:q
+|2,0,1603639414,,"q"
+:tabnew config.h
+|2,0,1603631849,,"tabnew config.h"
+:tabnew config.def.h
+|2,0,1603626179,,"tabnew config.def.h"
+: '
+|2,0,1602543871,," '"
+
+# Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/chro
+|2,1,1604188513,47,"chro"
+?/menu
+|2,1,1604095376,47,"menu"
+?/dese
+|2,1,1603660359,47,"dese"
+?/desert
+|2,1,1603660254,47,"desert"
+?/deser
+|2,1,1603660019,47,"deser"
+?/gnome
+|2,1,1603659446,47,"gnome"
+?/gnom
+|2,1,1603641984,47,"gnom"
+?/search
+|2,1,1603641712,47,"search"
+?/color
+|2,1,1603641585,47,"color"
+?/status
+|2,1,1603641234,47,"status"
+?/hasp
+|2,1,1603641073,47,"hasp"
+?/hightli
+|2,1,1603639860,47,"hightli"
+?/map
+|2,1,1603639817,47,"map"
+?/hid
+|2,1,1603639426,47,"hid"
+? \s\+$
+|2,1,1603577251,,"\\s\\+$"
+?/- 
+|2,1,1602545889,47,"- "
+
+# Historia de Expresión (de lo más nuevo a lo más antiguo):
+
+# Historia de Línea de entrada (de lo más nuevo a lo más antiguo):
+
+# Historia de Debug Line (de lo más nuevo a lo más antiguo):
+
+# Registros:
+"0	LINE	0
+	PS1="\n\[\033[1;31m\][ \[\033[0;32m\]\u\[\033[0;96m\]@\[\033[0;32m\]\h:\[\033[0;33m\]\w\[\033[1;31m\] ]\n\[\033[00m\]$ \[$(tput sgr0)\]"
+|3,0,0,1,1,0,1604283983,"PS1=\"\\n\\[\\033[1;31m\\][ \\[\\033[0;32m\\]\\u\\[\\033[0;96m\\]@\\[\\033[0;32m\\]\\h:\\[\\033[0;33m\\]\\w\\[\\033[1;31m\\] ]\\n\\[\\033[00m\\]$ \\[$(tput sgr0)\\]\""
+"1	CHAR	0
+	
+	
+	#
+|3,0,1,0,3,0,1604283306,"","","#"
+"2	LINE	0
+	echo -e "Default \e[92mLight green"
+	Default Light green
+	93	Light yellow	
+	echo -e "Default \e[93mLight yellow"
+	Default Light yellow
+	94	Light blue	
+	echo -e "Default \e[94mLight blue"
+	Default Light blue
+	95	Light magenta	
+	echo -e "Default \e[95mLight magenta"
+	Default Light magenta
+	96	Light cyan	
+	echo -e "Default \e[96mLight cyan"
+	Default Light cyan
+	97	White	
+	echo -e "Default \e[97mWhite"
+|3,0,2,1,16,0,1604283263,"echo -e \"Default \\e[92mLight green\"","Default Light green","93	Light yellow	","echo -e \"Default \\e[93mLight yellow\"","Default Light yellow","94	Light blue	","echo -e \"Default \\e[94mLight blue\"","Default Light blue","95	Light magenta	","echo -e \"Default \\e[95mLight magenta\"","Default Light magenta","96	Light cyan	","echo -e \"Default \\e[96mLight cyan\"","Default Light cyan","97	White	","echo -e \"Default \\e[97mWhite\""
+"3	LINE	0
+	defa39	Default foreground color	
+	
+	Default Default
+	30	Black	
+	echo -e "Default \e[30mBlack"
+	Default Black
+	31	Red	
+	echo -e "Default \e[31mRed"
+	Default Red
+	32	Green	
+	echo -e "Default \e[32mGreen"
+	Default Green
+	33	Yellow	
+	echo -e "Default \e[33mYellow"
+	Default Yellow
+	34	Blue	
+	echo -e "Default \e[34mBlue"
+	Default Blue
+	35	Magenta	
+	echo -e "Default \e[35mMagenta"
+	Default Magenta
+	36	Cyan	
+	echo -e "Default \e[36mCyan"
+	Default Cyan
+	37	Light gray	
+	echo -e "Default \e[37mLight gray"
+	Default Light gray
+	90	Dark gray	
+	echo -e "Default \e[90mDark gray"
+	Default Dark gray
+	91	Light red	
+	echo -e "Default \e[91mLight red"
+	Default Light red
+	92	Light green	
+|3,0,3,1,34,0,1604283260,"defa39	Default foreground color	","","Default Default","30	Black	","echo -e \"Default \\e[30mBlack\"","Default Black","31	Red	","echo -e \"Default \\e[31mRed\"","Default Red","32	Green	","echo -e \"Default \\e[32mGreen\"","Default Green","33	Yellow	","echo -e \"Default \\e[33mYellow\"","Default Yellow","34	Blue	","echo -e \"Default \\e[34mBlue\"","Default Blue","35	Magenta	","echo -e \"Default \\e[35mMagenta\"","Default Magenta",>10
+|<"36	Cyan	","echo -e \"Default \\e[36mCyan\"","Default Cyan","37	Light gray	","echo -e \"Default \\e[37mLight gray\"","Default Light gray","90	Dark gray	","echo -e \"Default \\e[90mDark gray\"","Default Dark gray","91	Light red	","echo -e \"Default \\e[91mLight red\"","Default Light red","92	Light green	"
+"4	LINE	0
+	echo -e "Default \e[39mDefault"
+|3,0,4,1,1,0,1604283247,"echo -e \"Default \\e[39mDefault\""
+"5	LINE	0
+	export HISTSIZE="GOTCHA"
+|3,0,5,1,1,0,1604245067,"export HISTSIZE=\"GOTCHA\""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1604096379,""
+"7	LINE	0
+	    <file>/usr/share/lubuntu/openbox/menu.xml</file>
+|3,0,7,1,1,0,1604095487,"    <file>/usr/share/lubuntu/openbox/menu.xml</file>"
+"8	LINE	0
+	exec openbox
+|3,0,8,1,1,0,1604091242,"exec openbox"
+"9	LINE	0
+	lxpanel &
+|3,0,9,1,1,0,1604091118,"lxpanel &"
+"k	CHAR	0
+	jk
+|3,0,20,0,1,0,1603640262,"jk"
+"q@	CHAR	0
+	0i" j
+|3,2,26,0,1,0,1603640372,"0i\" j"
+"u	CHAR	0
+	
+|3,0,30,0,1,0,1604091662,""
+""-	CHAR	0
+	yellow
+|3,1,36,0,1,0,1604284259,"yellow"
+
+# Marcas en el archivo:
+'0  75  68  ~/.bashrc
+|4,48,75,68,1604284264,"~/.bashrc"
+'1  1  0  ~/.bash
+|4,49,1,0,1604282688,"~/.bash"
+'2  34  0  ~/.bashrc
+|4,50,34,0,1604282663,"~/.bashrc"
+'3  20  0  ~/.bashrc
+|4,51,20,0,1604282663,"~/.bashrc"
+'4  174  0  ~/.bashrc
+|4,52,174,0,1604245073,"~/.bashrc"
+'5  174  0  ~/.bashrc
+|4,53,174,0,1604245073,"~/.bashrc"
+'6  158  0  ~/.bashrc
+|4,54,158,0,1604245073,"~/.bashrc"
+'7  158  0  ~/.bashrc
+|4,55,158,0,1604245073,"~/.bashrc"
+'8  54  0  ~/dgbzlinks
+|4,56,54,0,1604193424,"~/dgbzlinks"
+'9  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,57,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+
+# Lista de saltos (el más reciente va primero):
+-'  75  68  ~/.bashrc
+|4,39,75,68,1604284264,"~/.bashrc"
+-'  9  15  ~/.bashrc
+|4,39,9,15,1604283564,"~/.bashrc"
+-'  11  4  ~/.bashrc
+|4,39,11,4,1604283487,"~/.bashrc"
+-'  8  4  ~/.bashrc
+|4,39,8,4,1604283449,"~/.bashrc"
+-'  5  21  ~/.bashrc
+|4,39,5,21,1604283308,"~/.bashrc"
+-'  82  0  ~/.bashrc
+|4,39,82,0,1604283199,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1604282698,"~/.bashrc"
+-'  1  0  ~/.bash
+|4,39,1,0,1604282688,"~/.bash"
+-'  1  0  ~/.bash
+|4,39,1,0,1604282688,"~/.bash"
+-'  34  0  ~/.bashrc
+|4,39,34,0,1604282663,"~/.bashrc"
+-'  20  0  ~/.bashrc
+|4,39,20,0,1604282663,"~/.bashrc"
+-'  20  0  ~/.bashrc
+|4,39,20,0,1604282663,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1604282649,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1604282649,"~/.bashrc"
+-'  174  0  ~/.bashrc
+|4,39,174,0,1604245073,"~/.bashrc"
+-'  158  0  ~/.bashrc
+|4,39,158,0,1604245073,"~/.bashrc"
+-'  158  0  ~/.bashrc
+|4,39,158,0,1604245073,"~/.bashrc"
+-'  158  0  ~/.bashrc
+|4,39,158,0,1604245073,"~/.bashrc"
+-'  158  0  ~/.bashrc
+|4,39,158,0,1604245073,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1604245043,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1604245043,"~/.bashrc"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  54  0  ~/dgbzlinks
+|4,39,54,0,1604193424,"~/dgbzlinks"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
+|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  1  0  ~/dgbzlinks
+|4,39,1,0,1604193284,"~/dgbzlinks"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  5035  9  ~/paks/Packages
+|4,39,5035,9,1604188677,"~/paks/Packages"
+
+# Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/.bashrc
+	*	1604284262	0
+	"	75	68
+	^	75	69
+	.	75	68
+	+	175	15
+	+	174	0
+	+	33	0
+	+	34	0
+	+	33	0
+	+	34	1
+	+	5	0
+	+	5	28
+	+	5	0
+	+	5	17
+	+	6	0
+	+	7	0
+	+	18	0
+	+	9	0
+	+	10	4
+	+	11	2
+	+	12	4
+	+	13	5
+	+	14	3
+	+	15	6
+	+	16	3
+	+	9	17
+	+	10	16
+	+	11	12
+	+	12	16
+	+	13	17
+	+	14	15
+	+	15	18
+	+	16	15
+	+	17	15
+	+	75	0
+	+	74	4
+	+	75	91
+	+	75	70
+	+	147	0
+	+	146	0
+	+	147	88
+	+	75	68
+
+> ~/.bash
+	*	1604282685	0
+	"	1	0
+
+> /media/moreno/fvckingmore/DGBZ/tmp.sh
+	*	1604193319	0
+	"	46	3
+
+> ~/dgbzlinks
+	*	1604193304	0
+	"	54	0
+
+> ~/paks/Packages
+	*	1604188521	0
+	"	5035	9
+
+> ~/.applications/dwm-6.1.stable/config.h
+	*	1604186962	0
+	"	58	2
+	^	58	3
+	.	58	2
+	+	58	2
+
+> ~/.xinitrc
+	*	1604096379	0
+	"	2	0
+	^	4	1
+	.	2	0
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	8	11
+	+	6	9
+	+	8	0
+	+	4	0
+	+	6	9
+	+	7	0
+	+	4	0
+	+	7	0
+	+	4	0
+	+	7	0
+	+	4	0
+	+	7	0
+	+	2	0
+
+> ~/.config/openbox/rc.xml
+	*	1604095487	0
+	"	919	4
+	^	1035	3
+	.	919	0
+	+	1030	0
+	+	1036	0
+	+	1031	3
+	+	1035	2
+	+	919	0
+
+> ~/.config/openbox/environment
+	*	1604095342	0
+	"	1	0
+
+> ~/.config/lxsession/Lubuntu/autostart
+	*	1604095161	0
+	"	1	0
+
+> /usr/share/lubuntu/openbox/menu.xml
+	*	1604095128	0
+	"	206	0
+
+> /etc/menu-methods/openbox
+	*	1604095049	0
+	"	36	0
+
+> /etc/xdg/openbox/LXDE/menu.xml
+	*	1604095025	0
+	"	11	2
+
+> /etc/xdg/openbox/menu.xml
+	*	1604094975	0
+	"	34	0
+
+> ~/.config/lxsession/Lubuntu/desktop.conf
+	*	1604094197	0
+	"	1	0
+
+> /etc/xdg/openbox/LXDE/ne
+	*	1604093870	0
+	"	1	0
+
+> ~/.config/openbox/menu.xml
+	*	1604093832	0
+	"	1	0
+	^	31	67
+	.	31	23
+	+	31	23
+
+> ~/.config/lxpanel/default/panels/panel
+	*	1604092374	0
+	"	72	4
+
+> ~/.config/lxpanel/Lubuntu/panels/panel
+	*	1604092343	0
+	"	1	0
+
+> ~/.config/lxpanel/Lubuntu/config
+	*	1604092333	0
+	"	1	0
+
+> /etc/xdg/openbox/environment
+	*	1604092121	0
+	"	1	0
+
+> /etc/xdg/openbox/autostart
+	*	1604092114	0
+	"	1	0
+
+> ~/.config/autostart.sh
+	*	1604091574	0
+	"	1	0
+
+> ~/.config/openbox/autostart
+	*	1604091131	0
+	"	5	9
+	^	5	10
+	.	5	9
+	+	1	0
+	+	6	0
+	+	5	9
+
+> ~/.applications/dwm-6.1.stable/dwm.cfg/autostart.sh
+	*	1604007330	0
+	"	3	0
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1603920974	0
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/SoftMaker/Settings/install.ini
+	*	1603920099	0
+	"	1	0
+
+> ~/.config/i3/scripts/bandMon
+	*	1603660428	0
+	"	4	0
+	.	4	0
+	+	18	0
+	+	4	0
+
+> ~/.vimrc
+	*	1603660364	0
+	"	75	0
+	^	75	1
+	.	75	0
+	+	74	3
+	+	76	2
+	+	77	2
+	+	117	1
+	+	120	1
+	+	125	1
+	+	126	1
+	+	129	0
+	+	39	0
+	+	132	1
+	+	133	1
+	+	134	1
+	+	135	1
+	+	138	1
+	+	141	1
+	+	143	1
+	+	144	1
+	+	147	1
+	+	148	1
+	+	149	1
+	+	150	1
+	+	151	1
+	+	153	1
+	+	153	0
+	+	154	1
+	+	164	0
+	+	166	1
+	+	166	3
+	+	166	1
+	+	166	5
+	+	166	0
+	+	166	1
+	+	166	0
+	+	167	0
+	+	166	0
+	+	1	0
+	+	22	0
+	+	23	0
+	+	32	0
+	+	48	1
+	+	61	0
+	+	172	0
+	+	165	0
+	+	164	17
+	+	165	0
+	+	164	0
+	+	81	0
+	+	164	17
+	+	172	8
+	+	173	0
+	+	74	0
+	+	16	17
+	+	18	0
+	+	22	0
+	+	42	0
+	+	74	0
+	+	71	0
+	+	69	0
+	+	70	5
+	+	69	0
+	+	70	0
+	+	71	0
+	+	173	0
+	+	166	0
+	+	165	0
+	+	120	0
+	+	112	1
+	+	113	1
+	+	173	0
+	+	69	0
+	+	70	0
+	+	71	0
+	+	73	0
+	+	74	0
+	+	76	0
+	+	77	0
+	+	79	0
+	+	73	0
+	+	69	0
+	+	70	0
+	+	71	0
+	+	73	0
+	+	74	0
+	+	76	0
+	+	77	0
+	+	169	12
+	+	172	10
+	+	8	1
+	+	9	1
+	+	153	0
+	+	164	0
+	+	172	4
+	+	74	0
+	+	75	14
+	+	74	0
+	+	75	0
+	+	74	0
+	+	75	0
+	+	74	0
+	+	75	0
+
+> ~/scripts/screenOutputMenu
+	*	1603660227	0
+	"	2	0
+
+> ~/.config/xfce4/terminal/terminalrc
+	*	1603658948	0
+	"	25	0
+	^	25	1
+	.	25	0
+	+	29	0
+	+	25	0
+	+	29	0
+	+	25	0
+	+	23	0
+	+	28	0
+	+	24	10
+	+	27	0
+	+	26	0
+	+	25	0
+
+> /media/moreno/fvckingmore/documentos/C/Producto co solo suma_pae por referencia.c
+	*	1603651364	0
+	"	57	0
+
+> /media/moreno/fvckingmore/documentos/C/Banco.c
+	*	1603651213	0
+	"	6	8
+
+> ~/.vimrc.full
+	*	1603649424	0
+	"	40	0
+
+> /media/moreno/fvckingmore/programacion/python/Ejercicios/tictactoe/TicTacToe.py
+	*	1603646981	0
+	"	57	0
+
+> ~/.config/i3/scripts/tmp
+	*	1603646469	0
+	"	35	0
+	^	12	12
+	.	12	0
+	+	15	0
+	+	16	35
+	+	15	38
+	+	19	0
+	+	22	20
+	+	15	38
+	+	44	61
+	+	44	0
+	+	33	52
+	+	33	48
+	+	33	42
+	+	33	0
+	+	12	0
+
+> /media/moreno/fvckingmore/programacion/c++/practica4.cpp
+	*	1603646391	0
+	"	142	0
+
+> ~/dotfiles
+	*	1603642419	0
+	"	1	0

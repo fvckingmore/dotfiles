@@ -5,8 +5,8 @@
 set history=500
 
 " Enable filetype plugins
-filetype plugin on
-filetype indent on
+" filetype plugin on
+" filetype indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
@@ -68,14 +68,15 @@ syntax enable
 " 
 " if $COLORTERM == 'gnome-terminal'
 "      set t_Co=256
-" endif
+"endif
 
- " try
-" colorscheme desert
- " catch
- " endtry
+" try
+colorscheme desert
+"colorscheme ron 
+" catch
+" endtry
 
-" set background=dark
+set background=dark
 "
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -149,14 +150,6 @@ set si "Smart indent
 " map <leader>tm :tabmove 
 " map <leader>t<leader> :tabnext 
 
-
-" Specify the behavior when switching between buffers 
-try
-  set switchbuf=useopen,usetab,newtab
-  set stal=2
-catch
-endtry
-
 " Return to last edit position when opening files (You want this!)
 " au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
@@ -168,7 +161,7 @@ endtry
 set laststatus=2
 
 " Format the status line
-set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+"set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
 
 "set number
@@ -176,4 +169,4 @@ syntax on
 set tabstop=4
 set autoindent
 set rnu
-set wrap!
+set wrap

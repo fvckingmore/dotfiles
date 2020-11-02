@@ -2,6 +2,20 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+reset="\[\033[0m\]"
+bold="\[\033[1m\]"
+
+
+default="\[\033[39m\]"
+black="\[\033[30m\]"
+red="\[\033[31m\]"
+green="\[\033[32m\]"
+yellow="\[\033[33m\]"
+blue="\[\033[34m\]"
+magenta="\[\033[35m\]"
+cyan="\[\033[36m\]"
+white="\[\033[97m\]"
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -16,8 +30,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+#HISTSIZE=1000
+#HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -57,7 +71,8 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1="${debian_chroot:+($debian_chroot)}$red\u@\h$white:$bold$blue\w$default\$ "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -128,7 +143,8 @@ bind "set show-all-if-ambiguous on"
 
 #PS1="\n\033[1;31m[ \033[0;32m\u\033[0;96m@\033[0;32m\h:\033[0;33m\w\033[1;31m ]\n\033[00m$ \[$(tput sgr0)\]"
 
-PS1="\n\[\033[1;31m\][ \[\033[0;32m\]\u\[\033[0;96m\]@\[\033[0;32m\]\h:\[\033[0;33m\]\w\[\033[1;31m\] ]\n\[\033[00m\]$ \[$(tput sgr0)\]"
+#PS1="\n\[\033[1;31m\][ \[\033[0;32m\]\u\[\033[0;96m\]@\[\033[0;32m\]\h:\[\033[0;33m\]\w\[\033[1;31m\] ]\n\[\033[00m\]$ \[$(tput sgr0)\]"
+PS1="\n$bold$red[ $reset$green\u$reset$cyan@$reset$green\h:$reset$yellow\w$reset$bold$red ]\n$reset$ \[$(tput sgr0)\]"
 
 
 alias l='ls -XCF --group-directories-first'
@@ -155,4 +171,5 @@ echo "
       ░  ░       ░
 "
 
-export HISTSIZE="GOTCHA"
+export HISTFILESIZE=
+export HISTSIZE=

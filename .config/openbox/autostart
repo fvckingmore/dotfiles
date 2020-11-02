@@ -1,2 +1,6 @@
-lxpanel &
+xset s off &
+xset -dpms &
+redshift -O 3500 &
 nitrogen --restore &
+xcompmgr &
+lxpanel &
