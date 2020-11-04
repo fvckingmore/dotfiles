@@ -31,7 +31,6 @@ FILES="
 .zsh_history
 .zshrc
 .zshrc.pre-oh-my-zsh
-scripts/
 .xinitrc
 dotfiles
 "

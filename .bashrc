@@ -158,7 +158,6 @@ alias root='sudo su --preserve-environment'
 
 
 
-
 echo "
  ▄▄▄       ███▄ ▄███▓
 ▒████▄    ▓██▒▀█▀ ██▒
@@ -170,6 +169,7 @@ echo "
   ░   ▒   ░      ░
       ░  ░       ░
 "
+
 
 export HISTFILESIZE=
 export HISTSIZE=

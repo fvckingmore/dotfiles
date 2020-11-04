@@ -11,18 +11,25 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último Patrón de búsqueda:
-~MSle0~/chro
+~MSle0/resi
+
+# Último SustituciónPatrón de búsqueda:
+~MSle0~&10
 
 # Última cadena de sustitución:
-$
+$5
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
 :wq
-|2,0,1604284264,,"wq"
+|2,0,1604453038,,"wq"
 :w
-|2,0,1604284174,,"w"
+|2,0,1604452991,,"w"
+:s/10/5/g
+|2,0,1604452988,,"s/10/5/g"
 :q!
-|2,0,1604282688,,"q!"
+|2,0,1604451003,,"q!"
+:tabe ~/.config/i3/scripts/bandMon
+|2,0,1604443501,,"tabe ~/.config/i3/scripts/bandMon"
 :.,.+1wq
 |2,0,1604245072,,".,.+1wq"
 :tabe .config/openbox/autostart
@@ -93,6 +100,18 @@ $
 |2,0,1602543871,," '"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+? 10
+|2,1,1604452988,,"10"
+?/resi
+|2,1,1604452893,47,"resi"
+?/rezi
+|2,1,1604452889,47,"rezi"
+?/gap
+|2,1,1604452040,47,"gap"
+?/TRA
+|2,1,1604450975,47,"TRA"
+?/TRAF
+|2,1,1604447265,47,"TRAF"
 ?/chro
 |2,1,1604188513,47,"chro"
 ?/menu
@@ -134,86 +153,35 @@ $
 
 # Registros:
 "0	LINE	0
-	PS1="\n\[\033[1;31m\][ \[\033[0;32m\]\u\[\033[0;96m\]@\[\033[0;32m\]\h:\[\033[0;33m\]\w\[\033[1;31m\] ]\n\[\033[00m\]$ \[$(tput sgr0)\]"
-|3,0,0,1,1,0,1604283983,"PS1=\"\\n\\[\\033[1;31m\\][ \\[\\033[0;32m\\]\\u\\[\\033[0;96m\\]@\\[\\033[0;32m\\]\\h:\\[\\033[0;33m\\]\\w\\[\\033[1;31m\\] ]\\n\\[\\033[00m\\]$ \\[$(tput sgr0)\\]\""
-"1	CHAR	0
-	
-	
-	#
-|3,0,1,0,3,0,1604283306,"","","#"
+		current=$(cat /sys/class/net/wlp2s0/statistics/{rx,tx}_bytes | paste -sd" ")
+|3,0,0,1,1,0,1604451847,"	current=$(cat /sys/class/net/wlp2s0/statistics/{rx,tx}_bytes | paste -sd\" \")"
+""1	LINE	0
+		#echo "$current"
+|3,1,1,1,1,0,1604451944,"	#echo \"$current\""
 "2	LINE	0
-	echo -e "Default \e[92mLight green"
-	Default Light green
-	93	Light yellow	
-	echo -e "Default \e[93mLight yellow"
-	Default Light yellow
-	94	Light blue	
-	echo -e "Default \e[94mLight blue"
-	Default Light blue
-	95	Light magenta	
-	echo -e "Default \e[95mLight magenta"
-	Default Light magenta
-	96	Light cyan	
-	echo -e "Default \e[96mLight cyan"
-	Default Light cyan
-	97	White	
-	echo -e "Default \e[97mWhite"
-|3,0,2,1,16,0,1604283263,"echo -e \"Default \\e[92mLight green\"","Default Light green","93	Light yellow	","echo -e \"Default \\e[93mLight yellow\"","Default Light yellow","94	Light blue	","echo -e \"Default \\e[94mLight blue\"","Default Light blue","95	Light magenta	","echo -e \"Default \\e[95mLight magenta\"","Default Light magenta","96	Light cyan	","echo -e \"Default \\e[96mLight cyan\"","Default Light cyan","97	White	","echo -e \"Default \\e[97mWhite\""
+		down=$(echo "($(cut -d' ' -f1 <($current)) - $(cut -d' ' -f1 <($old))) / 1024" | bc)
+|3,0,2,1,1,0,1604447435,"	down=$(echo \"($(cut -d' ' -f1 <($current)) - $(cut -d' ' -f1 <($old))) / 1024\" | bc)"
 "3	LINE	0
-	defa39	Default foreground color	
-	
-	Default Default
-	30	Black	
-	echo -e "Default \e[30mBlack"
-	Default Black
-	31	Red	
-	echo -e "Default \e[31mRed"
-	Default Red
-	32	Green	
-	echo -e "Default \e[32mGreen"
-	Default Green
-	33	Yellow	
-	echo -e "Default \e[33mYellow"
-	Default Yellow
-	34	Blue	
-	echo -e "Default \e[34mBlue"
-	Default Blue
-	35	Magenta	
-	echo -e "Default \e[35mMagenta"
-	Default Magenta
-	36	Cyan	
-	echo -e "Default \e[36mCyan"
-	Default Cyan
-	37	Light gray	
-	echo -e "Default \e[37mLight gray"
-	Default Light gray
-	90	Dark gray	
-	echo -e "Default \e[90mDark gray"
-	Default Dark gray
-	91	Light red	
-	echo -e "Default \e[91mLight red"
-	Default Light red
-	92	Light green	
-|3,0,3,1,34,0,1604283260,"defa39	Default foreground color	","","Default Default","30	Black	","echo -e \"Default \\e[30mBlack\"","Default Black","31	Red	","echo -e \"Default \\e[31mRed\"","Default Red","32	Green	","echo -e \"Default \\e[32mGreen\"","Default Green","33	Yellow	","echo -e \"Default \\e[33mYellow\"","Default Yellow","34	Blue	","echo -e \"Default \\e[34mBlue\"","Default Blue","35	Magenta	","echo -e \"Default \\e[35mMagenta\"","Default Magenta",>10
-|<"36	Cyan	","echo -e \"Default \\e[36mCyan\"","Default Cyan","37	Light gray	","echo -e \"Default \\e[37mLight gray\"","Default Light gray","90	Dark gray	","echo -e \"Default \\e[90mDark gray\"","Default Dark gray","91	Light red	","echo -e \"Default \\e[91mLight red\"","Default Light red","92	Light green	"
+	notify-send "Loaded" &
+|3,0,3,1,1,0,1604446403,"notify-send \"Loaded\" &"
 "4	LINE	0
-	echo -e "Default \e[39mDefault"
-|3,0,4,1,1,0,1604283247,"echo -e \"Default \\e[39mDefault\""
+	xfce4-notifyd &
+|3,0,4,1,1,0,1604446402,"xfce4-notifyd &"
 "5	LINE	0
-	export HISTSIZE="GOTCHA"
-|3,0,5,1,1,0,1604245067,"export HISTSIZE=\"GOTCHA\""
+	#up=$(obtain TX)
+|3,0,5,1,1,0,1604443558,"#up=$(obtain TX)"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1604096379,""
+	cat << EOF
+|3,0,6,1,1,0,1604285848,"cat << EOF"
 "7	LINE	0
-	    <file>/usr/share/lubuntu/openbox/menu.xml</file>
-|3,0,7,1,1,0,1604095487,"    <file>/usr/share/lubuntu/openbox/menu.xml</file>"
+	
+|3,0,7,1,1,0,1604285844,""
 "8	LINE	0
-	exec openbox
-|3,0,8,1,1,0,1604091242,"exec openbox"
+	EOF
+|3,0,8,1,1,0,1604285843,"EOF"
 "9	LINE	0
-	lxpanel &
-|3,0,9,1,1,0,1604091118,"lxpanel &"
+	scripts/
+|3,0,9,1,1,0,1604285442,"scripts/"
 "k	CHAR	0
 	jk
 |3,0,20,0,1,0,1603640262,"jk"
@@ -223,241 +191,401 @@ $
 "u	CHAR	0
 	
 |3,0,30,0,1,0,1604091662,""
-""-	CHAR	0
-	yellow
-|3,1,36,0,1,0,1604284259,"yellow"
+"-	CHAR	0
+	x
+|3,0,36,0,1,0,1604451915,"x"
 
 # Marcas en el archivo:
-'0  75  68  ~/.bashrc
-|4,48,75,68,1604284264,"~/.bashrc"
-'1  1  0  ~/.bash
-|4,49,1,0,1604282688,"~/.bash"
-'2  34  0  ~/.bashrc
-|4,50,34,0,1604282663,"~/.bashrc"
-'3  20  0  ~/.bashrc
-|4,51,20,0,1604282663,"~/.bashrc"
-'4  174  0  ~/.bashrc
-|4,52,174,0,1604245073,"~/.bashrc"
-'5  174  0  ~/.bashrc
-|4,53,174,0,1604245073,"~/.bashrc"
-'6  158  0  ~/.bashrc
-|4,54,158,0,1604245073,"~/.bashrc"
-'7  158  0  ~/.bashrc
-|4,55,158,0,1604245073,"~/.bashrc"
-'8  54  0  ~/dgbzlinks
-|4,56,54,0,1604193424,"~/dgbzlinks"
-'9  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,57,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
+'0  164  0  ~/.config/i3/config
+|4,48,164,0,1604453038,"~/.config/i3/config"
+'1  393  0  ~/.config/i3/config
+|4,49,393,0,1604452507,"~/.config/i3/config"
+'2  393  0  ~/.config/i3/config
+|4,50,393,0,1604452507,"~/.config/i3/config"
+'3  182  0  ~/.config/i3/config
+|4,51,182,0,1604452338,"~/.config/i3/config"
+'4  182  0  ~/.config/i3/config
+|4,52,182,0,1604452338,"~/.config/i3/config"
+'5  182  0  ~/.config/i3/config
+|4,53,182,0,1604452338,"~/.config/i3/config"
+'6  182  0  ~/.config/i3/config
+|4,54,182,0,1604452338,"~/.config/i3/config"
+'7  182  0  ~/.config/i3/config
+|4,55,182,0,1604452025,"~/.config/i3/config"
+'8  182  0  ~/.config/i3/config
+|4,56,182,0,1604452025,"~/.config/i3/config"
+'9  182  0  ~/.config/i3/config
+|4,57,182,0,1604452025,"~/.config/i3/config"
 
 # Lista de saltos (el más reciente va primero):
--'  75  68  ~/.bashrc
-|4,39,75,68,1604284264,"~/.bashrc"
--'  9  15  ~/.bashrc
-|4,39,9,15,1604283564,"~/.bashrc"
--'  11  4  ~/.bashrc
-|4,39,11,4,1604283487,"~/.bashrc"
--'  8  4  ~/.bashrc
-|4,39,8,4,1604283449,"~/.bashrc"
--'  5  21  ~/.bashrc
-|4,39,5,21,1604283308,"~/.bashrc"
--'  82  0  ~/.bashrc
-|4,39,82,0,1604283199,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1604282698,"~/.bashrc"
--'  1  0  ~/.bash
-|4,39,1,0,1604282688,"~/.bash"
--'  1  0  ~/.bash
-|4,39,1,0,1604282688,"~/.bash"
--'  34  0  ~/.bashrc
-|4,39,34,0,1604282663,"~/.bashrc"
--'  20  0  ~/.bashrc
-|4,39,20,0,1604282663,"~/.bashrc"
--'  20  0  ~/.bashrc
-|4,39,20,0,1604282663,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1604282649,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1604282649,"~/.bashrc"
--'  174  0  ~/.bashrc
-|4,39,174,0,1604245073,"~/.bashrc"
--'  158  0  ~/.bashrc
-|4,39,158,0,1604245073,"~/.bashrc"
--'  158  0  ~/.bashrc
-|4,39,158,0,1604245073,"~/.bashrc"
--'  158  0  ~/.bashrc
-|4,39,158,0,1604245073,"~/.bashrc"
--'  158  0  ~/.bashrc
-|4,39,158,0,1604245073,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1604245043,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1604245043,"~/.bashrc"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  54  0  ~/dgbzlinks
-|4,39,54,0,1604193424,"~/dgbzlinks"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  46  3  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,46,3,1604193332,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  /media/moreno/fvckingmore/DGBZ/tmp.sh
-|4,39,1,0,1604193315,"/media/moreno/fvckingmore/DGBZ/tmp.sh"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  1  0  ~/dgbzlinks
-|4,39,1,0,1604193284,"~/dgbzlinks"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
--'  5035  9  ~/paks/Packages
-|4,39,5035,9,1604188677,"~/paks/Packages"
+-'  164  0  ~/.config/i3/config
+|4,39,164,0,1604453038,"~/.config/i3/config"
+-'  163  8  ~/.config/i3/config
+|4,39,163,8,1604452988,"~/.config/i3/config"
+-'  162  8  ~/.config/i3/config
+|4,39,162,8,1604452986,"~/.config/i3/config"
+-'  161  8  ~/.config/i3/config
+|4,39,161,8,1604452984,"~/.config/i3/config"
+-'  160  8  ~/.config/i3/config
+|4,39,160,8,1604452983,"~/.config/i3/config"
+-'  157  8  ~/.config/i3/config
+|4,39,157,8,1604452981,"~/.config/i3/config"
+-'  156  8  ~/.config/i3/config
+|4,39,156,8,1604452979,"~/.config/i3/config"
+-'  155  8  ~/.config/i3/config
+|4,39,155,8,1604452978,"~/.config/i3/config"
+-'  154  9  ~/.config/i3/config
+|4,39,154,9,1604452966,"~/.config/i3/config"
+-'  344  0  ~/.config/i3/config
+|4,39,344,0,1604452893,"~/.config/i3/config"
+-'  20  18  ~/.config/i3/config
+|4,39,20,18,1604452813,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1604452610,"~/.config/i3/config"
+-'  393  0  ~/.config/i3/config
+|4,39,393,0,1604452507,"~/.config/i3/config"
+-'  393  0  ~/.config/i3/config
+|4,39,393,0,1604452507,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1604452456,"~/.config/i3/config"
+-'  182  0  ~/.config/i3/config
+|4,39,182,0,1604452338,"~/.config/i3/config"
+-'  182  0  ~/.config/i3/config
+|4,39,182,0,1604452338,"~/.config/i3/config"
+-'  182  0  ~/.config/i3/config
+|4,39,182,0,1604452338,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1604452040,"~/.config/i3/config"
+-'  182  0  ~/.config/i3/config
+|4,39,182,0,1604452025,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1604452011,"~/.config/i3/config"
+-'  318  0  ~/.config/i3/config
+|4,39,318,0,1604451996,"~/.config/i3/config"
+-'  318  0  ~/.config/i3/config
+|4,39,318,0,1604451996,"~/.config/i3/config"
+-'  318  0  ~/.config/i3/config
+|4,39,318,0,1604451996,"~/.config/i3/config"
+-'  318  0  ~/.config/i3/config
+|4,39,318,0,1604451996,"~/.config/i3/config"
+-'  318  0  ~/.config/i3/config
+|4,39,318,0,1604451996,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1604451975,"~/.config/i3/config"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  126  0  ~/.config/i3/bar.sh
+|4,39,126,0,1604451946,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  1  0  ~/.config/i3/bar.sh
+|4,39,1,0,1604451731,"~/.config/i3/bar.sh"
+-'  136  173  ~/.config/i3/bar.sh
+|4,39,136,173,1604451692,"~/.config/i3/bar.sh"
+-'  135  173  ~/.config/i3/bar.sh
+|4,39,135,173,1604451692,"~/.config/i3/bar.sh"
+-'  136  173  ~/.config/i3/bar.sh
+|4,39,136,173,1604451692,"~/.config/i3/bar.sh"
+-'  135  173  ~/.config/i3/bar.sh
+|4,39,135,173,1604451692,"~/.config/i3/bar.sh"
+-'  136  173  ~/.config/i3/bar.sh
+|4,39,136,173,1604451692,"~/.config/i3/bar.sh"
+-'  135  173  ~/.config/i3/bar.sh
+|4,39,135,173,1604451692,"~/.config/i3/bar.sh"
+-'  136  173  ~/.config/i3/bar.sh
+|4,39,136,173,1604451692,"~/.config/i3/bar.sh"
+-'  135  173  ~/.config/i3/bar.sh
+|4,39,135,173,1604451692,"~/.config/i3/bar.sh"
+-'  136  173  ~/.config/i3/bar.sh
+|4,39,136,173,1604451692,"~/.config/i3/bar.sh"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
 
+> ~/.config/i3/config
+	*	1604452993	0
+	"	164	0
+	^	155	9
+	.	163	0
+	+	393	0
+	+	394	0
+	+	395	0
+	+	396	0
+	+	397	0
+	+	398	0
+	+	399	0
+	+	400	0
+	+	401	0
+	+	402	0
+	+	403	0
+	+	404	0
+	+	406	0
+	+	408	0
+	+	389	0
+	+	391	18
+	+	384	0
+	+	383	1
+	+	384	46
+	+	21	0
+	+	20	18
+	+	384	16
+	+	35	38
+	+	52	0
+	+	51	0
+	+	181	0
+	+	182	0
+	+	181	11
+	+	182	0
+	+	181	0
+	+	182	0
+	+	181	0
+	+	288	0
+	+	312	0
+	+	315	0
+	+	181	0
+	+	182	0
+	+	384	36
+	+	315	0
+	+	312	0
+	+	314	0
+	+	312	0
+	+	315	0
+	+	181	0
+	+	182	0
+	+	181	0
+	+	182	0
+	+	181	0
+	+	182	0
+	+	20	18
+	+	341	0
+	+	342	0
+	+	343	0
+	+	344	0
+	+	345	0
+	+	347	0
+	+	154	0
+	+	155	0
+	+	156	0
+	+	157	0
+	+	160	0
+	+	161	0
+	+	162	0
+	+	163	0
+
+> ~/.config/i3/bar.sh
+	*	1604451944	0
+	"	126	0
+	^	125	1
+	.	126	0
+	+	136	6
+	+	112	1
+	+	114	1
+	+	117	1
+	+	119	1
+	+	120	1
+	+	122	1
+	+	123	1
+	+	125	0
+	+	112	0
+	+	114	1
+	+	117	1
+	+	119	1
+	+	120	1
+	+	122	1
+	+	123	1
+	+	125	1
+	+	123	0
+	+	122	1
+	+	123	0
+	+	122	1
+	+	126	1
+	+	136	138
+	+	125	1
+	+	126	0
+	+	126	14
+	+	115	1
+	+	114	48
+	+	115	58
+	+	126	1
+	+	125	1
+	+	126	0
+
+> ~/.xinitrc
+	*	1604450862	0
+	"	3	0
+	^	3	0
+	.	3	0
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	8	11
+	+	6	9
+	+	8	0
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	2	0
+	+	6	9
+	+	2	0
+	+	6	9
+	+	7	0
+	+	2	0
+	+	3	0
+	+	7	0
+	+	3	0
+
+> ~/.applications/dwm-6.1.stable/dwm.cfg/autostart.sh
+	*	1604446403	0
+	"	9	0
+	.	9	0
+	+	9	0
+
+> ~/.config/i3/scripts/bandMon
+	*	1604443579	0
+	"	18	0
+	.	4	0
+	+	18	0
+	+	4	0
+
+> ~/.applications/dwm-6.1.stable/dwm.cfg/bar.sh
+	*	1604443575	0
+	"	135	0
+	^	112	2
+	.	123	0
+	+	113	0
+	+	114	0
+	+	112	1
+	+	123	0
+
 > ~/.bashrc
-	*	1604284262	0
-	"	75	68
-	^	75	69
-	.	75	68
+	*	1604285848	0
+	"	160	0
+	.	160	0
 	+	175	15
 	+	174	0
 	+	33	0
@@ -496,6 +624,26 @@ $
 	+	146	0
 	+	147	88
 	+	75	68
+	+	160	8
+	+	172	0
+	+	176	0
+	+	176	2
+	+	160	6
+	+	176	0
+	+	160	0
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1604285494	0
+	"	1	12
+	^	1	13
+	.	1	12
+	+	1	12
+
+> ~/dotfiles
+	*	1604285442	0
+	"	34	0
+	.	34	0
+	+	34	0
 
 > ~/.bash
 	*	1604282685	0
@@ -519,29 +667,6 @@ $
 	^	58	3
 	.	58	2
 	+	58	2
-
-> ~/.xinitrc
-	*	1604096379	0
-	"	2	0
-	^	4	1
-	.	2	0
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	8	11
-	+	6	9
-	+	8	0
-	+	4	0
-	+	6	9
-	+	7	0
-	+	4	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	2	0
 
 > ~/.config/openbox/rc.xml
 	*	1604095487	0
@@ -626,27 +751,9 @@ $
 	+	6	0
 	+	5	9
 
-> ~/.applications/dwm-6.1.stable/dwm.cfg/autostart.sh
-	*	1604007330	0
-	"	3	0
-
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1603920974	0
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
 > ~/SoftMaker/Settings/install.ini
 	*	1603920099	0
 	"	1	0
-
-> ~/.config/i3/scripts/bandMon
-	*	1603660428	0
-	"	4	0
-	.	4	0
-	+	18	0
-	+	4	0
 
 > ~/.vimrc
 	*	1603660364	0
@@ -812,7 +919,3 @@ $
 > /media/moreno/fvckingmore/programacion/c++/practica4.cpp
 	*	1603646391	0
 	"	142	0
-
-> ~/dotfiles
-	*	1603642419	0
-	"	1	0
