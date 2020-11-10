@@ -17,7 +17,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:Ubuntu Bold 8
-font pango:Ubuntu 4
+font pango:Sans 4
 #font pango:SFNS Display Bold 2
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -170,6 +170,10 @@ mode "resize" {
 bindsym $mod+d mode "resize"
 
 
+bindsym Control+$mod+Left resize shrink width 5 px or 5 ppt
+bindsym Control+$mod+Down resize grow height 5 px or 5 ppt
+bindsym Control+$mod+Up resize shrink height 5 px or 5 ppt
+bindsym Control+$mod+Right resize grow width 5 px or 5 ppt
 
 
 
@@ -178,8 +182,9 @@ bindsym $mod+d mode "resize"
 #i3 GAPS
 #######################################################
 
-gaps inner 3
-gaps outer 3
+gaps inner 4
+gaps outer 4
+
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps
@@ -221,6 +226,9 @@ mode "$mode_gaps_outer" {
 	bindsym Escape mode "$mode_gaps"
 }
 
+
+smart_borders on
+smart_borders no_gaps
 
 
 #######################################################
@@ -382,14 +390,15 @@ set $cBlack2 #282a36
 bar {
         #status_command i3status
 	#status_command i3blocks -c ~/.config/i3/i3blocks.conf
-	status_command "~/.config/i3/bar.sh"
+	status_command exec ~/.config/i3/bar.sh
+	#status_command i3status | ~/.config/i3/bar.sh
     tray_output primary
 	position top
 #	workspace_buttons no
 	
 #	font pango:SFNS Display Bold 8
 	#font pango:Ubuntu Bold 8
-	font pango:Ubuntu 8
+	font pango:Sans 8
 		
 # 	colors {
 #		

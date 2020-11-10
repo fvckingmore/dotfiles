@@ -1,3 +1,5 @@
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -170,3 +172,15 @@ set tabstop=4
 set autoindent
 set rnu
 set wrap
+
+
+
+call plug#begin('~/.vim/plugged')
+
+
+Plug 'easymotion/vim-easymotion'
+
+
+call plug#end()
+
+map <Leader>f <Plug>(easymotion-s2)

@@ -1,2 +1,0 @@
-../../i3-gaps/Makefile : ../../i3-gaps/Makefile.in
-	@ echo 'REMOVED,,,' >$@

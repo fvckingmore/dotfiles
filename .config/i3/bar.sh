@@ -111,8 +111,8 @@ TRAF() {
 	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd" " | cut -d" " -f1-4)
 #	echo -n $(~/.config/i3/scripts/bandMon)
 
-	current=$(cat /sys/class/net/wlp2s0/statistics/rx_bytes | paste -sd" ")
-	current="$current $(cat /sys/class/net/wlp2s0/statistics/tx_bytes | paste -sd" ")"
+	current=$(cat /sys/class/net/wlan0/statistics/rx_bytes | paste -sd" ")
+	current="$current $(cat /sys/class/net/wlan0/statistics/tx_bytes | paste -sd" ")"
 
 	cache="/tmp/xlog"
 

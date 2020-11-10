@@ -14,26 +14,20 @@ reset="\e[0m"
  
 # file list (use trailing slash for directories)
 FILES="
-.applications/dwm*
 .bashrc
 .config/i3
 .config/sublime-text-3
 .config/openbox
-.config/baraction.sh
-.config/autostart.sh
-.config/*.sh
 .fonts/
 .oh-my-zsh/
 .profile
-.spectrwm.conf
 .vim*
 .Xresources
 .zsh_history
 .zshrc
 .zshrc.pre-oh-my-zsh
+scripts/
 .xinitrc
-dotfiles
-scripts
 "
 for file in $FILES
 do
