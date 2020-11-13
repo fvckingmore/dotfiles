@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Example Bar Action Script for Linux.
 # Requires: acpi, iostat.
 # Tested on: Debian 10, Fedora 31.
@@ -68,26 +68,6 @@ iface() {
 }
 
 
-gge() {
-
-	COM=$(ping -c1 -i 0.3 8.8.8.8 | grep from | cut -d" " -f7 | sed -e 's/time=//g' -e 's/\..*//g')
-	CONT=0
-	ACUM=0
-
-	#for i in $COM; do
-
-	#	[ $i -ne 0 ] && {
-
-	#		((ACUM+=i));
-			#((CONT++));
-	#	}
-	#done
-
-
-    #echo -n "$((ACUM/CONT))"
-	echo -n $COM
-
-}
 
 fmore() {
 
@@ -104,23 +84,22 @@ temper() {
 
 }
 
-TRAF() {
 
+obtain() {
 
-	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | xargs -n1 -I% echo -n "% " | cut -d" " -f1-4)
-	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd" " | cut -d" " -f1-4)
-#	echo -n $(~/.config/i3/scripts/bandMon)
+	local current=$(cat /sys/class/net/{w,e}*/statistics/${1}_bytes | paste -sd'+' | bc)
 
-	current=$(cat /sys/class/net/wlan0/statistics/rx_bytes | paste -sd" ")
-	current="$current $(cat /sys/class/net/wlan0/statistics/tx_bytes | paste -sd" ")"
-
-	cache="/tmp/xlog"
+	local cache="/tmp/$1"
 
 	[ -f $cache ] && old=$(cat $cache) || old=0
 	echo $current > $cache
+	echo "$(( (current-old) / 1024 ))"
+}
 
-	down=$(echo "(${current%% *} - ${old%% *}) / 1024" | bc)
-	up=$(echo "(${current##* } - ${old##* }) / 1024" | bc)
+TRAF() {
+
+	down=$(obtain rx)
+	up=$(obtain tx)
 
 	echo "D ${down}K U ${up}K"
 } 
