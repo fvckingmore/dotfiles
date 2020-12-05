@@ -11,29 +11,57 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último Patrón de búsqueda:
-~MSle0~/TRAF
+~MSle0~/dmen
 
 # Último SustituciónPatrón de búsqueda:
 ~MSle0&10
 
 # Última cadena de sustitución:
-$5
+$
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
-:q!
-|2,0,1605304821,,"q!"
 :wq
-|2,0,1605304818,,"wq"
+|2,0,1607130003,,"wq"
+:q!
+|2,0,1607129529,,"q!"
+:709
+|2,0,1607129511,,"709"
+:689
+|2,0,1607129464,,"689"
+:236
+|2,0,1607129353,,"236"
+:44
+|2,0,1607129327,,"44"
+:tabe dmenu.c
+|2,0,1607129307,,"tabe dmenu.c"
+:47
+|2,0,1607129272,,"47"
+:tabe dmenu.1
+|2,0,1607129266,,"tabe dmenu.1"
+:634
+|2,0,1607126546,,"634"
+:624
+|2,0,1607126462,,"624"
+:598
+|2,0,1607126444,,"598"
+:e dmenu.c
+|2,0,1607126290,,"e dmenu.c"
 :w
-|2,0,1605304745,,"w"
+|2,0,1607042841,,"w"
+:324
+|2,0,1605828821,,"324"
+:tabe dwm.c
+|2,0,1605825654,,"tabe dwm.c"
+:q
+|2,0,1605825649,,"q"
+:tabe config.def.h
+|2,0,1605825607,,"tabe config.def.h"
 :tabe scripts/bandwidthImprove
 |2,0,1605304604,,"tabe scripts/bandwidthImprove"
 :WQ
 |2,0,1605123137,,"WQ"
 :tabe ~/.config/i3/config
 |2,0,1605058747,,"tabe ~/.config/i3/config"
-:q
-|2,0,1604714527,,"q"
 :PlugInstall
 |2,0,1604619008,,"PlugInstall"
 :Plu
@@ -114,6 +142,112 @@ $5
 |2,0,1602543871,," '"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/dmen
+|2,1,1607128852,47,"dmen"
+?/mw
+|2,1,1607126504,47,"mw"
+?/setup
+|2,1,1607126489,47,"setup"
+?/termi
+|2,1,1607042673,47,"termi"
+?/term
+|2,1,1606529788,47,"term"
+?/XFil
+|2,1,1605829780,47,"XFil"
+?/updatesys
+|2,1,1605829609,47,"updatesys"
+? @$
+|2,1,1605829014,,"@$"
+?/^+
+|2,1,1605828741,47,"^+"
+?/+
+|2,1,1605828731,47,"+"
+?/return selmo
+|2,1,1605828654,47,"return selmo"
+?/updatewin
+|2,1,1605828512,47,"updatewin"
+?/unmapnoti
+|2,1,1605828340,47,"unmapnoti"
+?/unmana
+|2,1,1605828315,47,"unmana"
+?/XMove
+|2,1,1605828284,47,"XMove"
+?/tag
+|2,1,1605828243,47,"tag"
+?/netatom
+|2,1,1605828173,47,"netatom"
+?/sendeve
+|2,1,1605828144,47,"sendeve"
+?/sendev
+|2,1,1605828135,47,"sendev"
+?/resta
+|2,1,1605827926,47,"resta"
+?/resize
+|2,1,1605827842,47,"resize"
+?/XPropert
+|2,1,1605827798,47,"XPropert"
+?/XMapRe
+|2,1,1605827771,47,"XMapRe"
+?/!send
+|2,1,1605827747,47,"!send"
+?/return resu
+|2,1,1605827703,47,"return resu"
+?/Atom
+|2,1,1605827628,47,"Atom"
+?/XExpose
+|2,1,1605827586,47,"XExpose"
+?/drawbar(
+|2,1,1605827564,47,"drawbar("
+?/drawbar
+|2,1,1605827525,47,"drawbar"
+?/x = m
+|2,1,1605827483,47,"x = m"
+?/TEXTW
+|2,1,1605827438,47,"TEXTW"
+?/dx =
+|2,1,1605827415,47,"dx ="
+?/unmanag
+|2,1,1605827388,47,"unmanag"
+?/updateba
+|2,1,1605827361,47,"updateba"
+?/clientmessa
+|2,1,1605827249,47,"clientmessa"
+?/cleanupm
+|2,1,1605827183,47,"cleanupm"
+?/buttonpress
+|2,1,1605827102,47,"buttonpress"
+?/Clk
+|2,1,1605827078,47,"Clk"
+?/els
+|2,1,1605827040,47,"els"
+?/buttonpres
+|2,1,1605827011,47,"buttonpres"
+?/button
+|2,1,1605826992,47,"button"
+?/Propert
+|2,1,1605826893,47,"Propert"
+?/Monito
+|2,1,1605826829,47,"Monito"
+?/updatesta
+|2,1,1605826088,47,"updatesta"
+?/spaw
+|2,1,1605826062,47,"spaw"
+?/rect
+|2,1,1605825997,47,"rect"
+?/getsta
+|2,1,1605825976,47,"getsta"
+?/focuss
+|2,1,1605825962,47,"focuss"
+?/} Ru
+|2,1,1605825914,47,"} Ru"
+?/Net
+|2,1,1605825842,47,"Net"
+?/TEXT
+|2,1,1605825704,47,"TEXT"
+?/sna
+|2,1,1605825621,47,"sna"
+? \<fixed\>
+|2,1,1605457999,,"\\<fixed\\>"
 ?/TRAF
 |2,1,1605304619,47,"TRAF"
 ?/dme
@@ -177,338 +311,552 @@ $5
 
 # Registros:
 "0	LINE	0
-	obtain() {
-	
-		local sum=0
-		local current=$(cat /sys/class/net/w*/statistics/${1}_bytes)
-	
-	
-		for i in $current; do
-	
-			sum=$(echo "$sum + $i" | bc)
-		done
-	
-		cache="/tmp/$1"
-	
-		[ -f $cache ] && old=$(cat $cache) || old=0
-		echo $sum > $cache
-		echo "$(( (sum-old) / 1024 ))"
-	}
-	
-	check
-	
-	down=$(obtain rx)
-	up=$(obtain tx)
-|3,0,0,1,22,0,1605304611,"obtain() {","","	local sum=0","	local current=$(cat /sys/class/net/w*/statistics/${1}_bytes)","","","	for i in $current; do","","		sum=$(echo \"$sum + $i\" | bc)","	done","","	cache=\"/tmp/$1\"","","	[ -f $cache ] && old=$(cat $cache) || old=0","	echo $sum > $cache","	echo \"$(( (sum-old) / 1024 ))\"","}","","check","","down=$(obtain rx)","up=$(obtain tx)"
-""1	LINE	0
-	
-	
-	
-|3,1,1,1,3,0,1605304730,"","",""
+	.applications/dwm*
+|3,0,0,1,1,0,1607129994,".applications/dwm*"
+"1	LINE	0
+		fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+|3,0,1,1,1,0,1607129498,"	fputs(\"usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\\n\""
 "2	LINE	0
-		#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | xargs -n1 -I% echo -n "% " | cut -d" " -f1-4)
-		#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd" " | cut -d" " -f1-4)
-	#	echo -n $(~/.config/i3/scripts/bandMon)
-	
-		current=$(cat /sys/class/net/{e,w}*/statistics/{rx,tx}_bytes | paste -sd" ")
-	
-		cache="/tmp/xlog"
-	
-		[ -f $cache ] && old=$(cat $cache) || old=0
-		echo $current > $cache
-	
-		down=$(echo "(${current%% *} - ${old%% *}) / 1024" | bc)
-		up=$(echo "(${current##* } - ${old##* }) / 1024" | bc)
-|3,0,2,1,13,0,1605304718,"	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | xargs -n1 -I% echo -n \"% \" | cut -d\" \" -f1-4)","	#echo -n $(~/.config/i3/scripts/bandwidthImprove2 | paste -sd\" \" | cut -d\" \" -f1-4)","#	echo -n $(~/.config/i3/scripts/bandMon)","","	current=$(cat /sys/class/net/{e,w}*/statistics/{rx,tx}_bytes | paste -sd\" \")","","	cache=\"/tmp/xlog\"","","	[ -f $cache ] && old=$(cat $cache) || old=0","	echo $current > $cache","",>61
-|<"	down=$(echo \"(${current%% *} - ${old%% *}) / 1024\" | bc)","	up=$(echo \"(${current##* } - ${old##* }) / 1024\" | bc)"
+		fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+|3,0,2,1,1,0,1607129490,"	fputs(\"usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\\n\""
 "3	LINE	0
-	check
-|3,0,3,1,1,0,1605304702,"check"
+			else if (!fstrncmp(tokv[0], item->text, len))
+				appenditem(item, &lprefix, &prefixend);
+			else
+				appenditem(item, &lsubstr, &substrend);
+|3,0,3,1,4,0,1607129430,"		else if (!fstrncmp(tokv[0], item->text, len))","			appenditem(item, &lprefix, &prefixend);","		else","			appenditem(item, &lsubstr, &substrend);"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1605304684,""
+			/* exact matches go first, then prefixes, then substrings */
+			if (!tokc || !fstrncmp(text, item->text, textsize))
+|3,0,4,1,2,0,1607129386,"		/* exact matches go first, then prefixes, then substrings */","		if (!tokc || !fstrncmp(text, item->text, textsize))"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1605304682,""
+		promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
+|3,0,5,1,1,0,1607126578,"	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;"
 "6	LINE	0
-		for i in $current; do
-	
-			sum=$(echo "$sum + $i" | bc)
-		done
-|3,0,6,1,4,0,1605304681,"	for i in $current; do","","		sum=$(echo \"$sum + $i\" | bc)","	done"
+			x = 0;
+			y = topbar ? 0 : wa.height - mh;
+			mw = wa.width;
+|3,0,6,1,3,0,1607126569,"		x = 0;","		y = topbar ? 0 : wa.height - mh;","		mw = wa.width;"
 "7	LINE	0
-		local sum=0
-|3,0,7,1,1,0,1605304646,"	local sum=0"
+			x = info[i].x_org;
+			y = info[i].y_org + (topbar ? 0 : info[i].height - mh);
+			mw = info[i].width;
+|3,0,7,1,3,0,1607126521,"		x = info[i].x_org;","		y = info[i].y_org + (topbar ? 0 : info[i].height - mh);","		mw = info[i].width;"
 "8	LINE	0
-	obtain() {
-	
-		local sum=0
-		local current=$(cat /sys/class/net/w*/statistics/${1}_bytes)
-	
-	
-		for i in $current; do
-	
-			sum=$(echo "$sum + $i" | bc)
-		done
-	
-		cache="/tmp/$1"
-	
-		[ -f $cache ] && old=$(cat $cache) || old=0
-		echo $sum > $cache
-		echo "$(( (sum-old) / 1024 ))"
-	}
-|3,0,8,1,17,0,1605304633,"obtain() {","","	local sum=0","	local current=$(cat /sys/class/net/w*/statistics/${1}_bytes)","","","	for i in $current; do","","		sum=$(echo \"$sum + $i\" | bc)","	done","","	cache=\"/tmp/$1\"","","	[ -f $cache ] && old=$(cat $cache) || old=0","	echo $sum > $cache","	echo \"$(( (sum-old) / 1024 ))\"","}"
+	 static int running = 1;
+|3,0,8,1,1,0,1605828825," static int running = 1;"
 "9	LINE	0
-	border_radius 5
-|3,0,9,1,1,0,1605227608,"border_radius 5"
+			m->barwin = XCreateWindow(dpy, root, m->wx, m->by, m->ww, bh, 0, DefaultDepth(dpy, screen),
+|3,0,9,1,1,0,1605828429,"		m->barwin = XCreateWindow(dpy, root, m->wx, m->by, m->ww, bh, 0, DefaultDepth(dpy, screen),"
+"a	LINE	0
+	+		else if (!strcmp(argv[i], "-S"))   /* do not sort matches */
+	+			sortmatches = false;
+|3,0,10,1,2,0,1607129508,"+		else if (!strcmp(argv[i], \"-S\"))   /* do not sort matches */","+			sortmatches = false;"
 "k	CHAR	0
 	jk
 |3,0,20,0,1,0,1603640262,"jk"
-"q@	CHAR	0
-	0i" j
-|3,2,26,0,1,0,1603640372,"0i\" j"
 "u	CHAR	0
-	
-|3,0,30,0,1,0,1604091662,""
-"-	CHAR	0
-	sum
-|3,0,36,0,1,0,1605304693,"sum"
+	
+|3,0,30,0,1,0,1605829794,""
+""-	CHAR	0
+	wm*
+|3,1,36,0,1,0,1607129998,"wm*"
 
 # Marcas en el archivo:
-'0  15  0  ~/.config/i3/scripts/bandwidthImprove
-|4,48,15,0,1605304821,"~/.config/i3/scripts/bandwidthImprove"
-'1  56  35  ~/.config/i3/config
-|4,49,56,35,1605304278,"~/.config/i3/config"
-'2  56  36  ~/.config/i3/config
-|4,50,56,36,1605232602,"~/.config/i3/config"
-'3  56  26  ~/.config/i3/config
-|4,51,56,26,1605232504,"~/.config/i3/config"
-'4  56  26  ~/.config/i3/config
-|4,52,56,26,1605232504,"~/.config/i3/config"
-'5  237  0  ~/.config/i3/config
-|4,53,237,0,1605227678,"~/.config/i3/config"
-'6  236  0  ~/.config/i3/config
-|4,54,236,0,1605227678,"~/.config/i3/config"
-'7  237  0  ~/.config/i3/config
-|4,55,237,0,1605227678,"~/.config/i3/config"
-'8  236  0  ~/.config/i3/config
-|4,56,236,0,1605227678,"~/.config/i3/config"
-'9  237  0  ~/.config/i3/config
-|4,57,237,0,1605227678,"~/.config/i3/config"
+'0  18  18  ~/dotfiles
+|4,48,18,18,1607130003,"~/dotfiles"
+'1  3  20  ~/.applications/dmenu/dmenu_run
+|4,49,3,20,1607129583,"~/.applications/dmenu/dmenu_run"
+'2  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,50,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+'3  3  19  ~/.applications/dmenu/dmenu_run
+|4,51,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
+'4  3  21  ~/.applications/dmenu/dmenu_run
+|4,52,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
+'5  3  21  ~/.applications/dmenu/dmenu_run
+|4,53,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
+'6  58  0  ~/.config/i3/config
+|4,54,58,0,1607128860,"~/.config/i3/config"
+'7  3  24  ~/.applications/dmenu/dmenu_run
+|4,55,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+'8  3  24  ~/.applications/dmenu/dmenu_run
+|4,56,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+'9  3  24  ~/.applications/dmenu/dmenu_run
+|4,57,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
 
 # Lista de saltos (el más reciente va primero):
--'  15  0  ~/.config/i3/scripts/bandwidthImprove
-|4,39,15,0,1605304821,"~/.config/i3/scripts/bandwidthImprove"
--'  1  0  ~/.config/i3/bar.sh
-|4,39,1,0,1605304604,"~/.config/i3/bar.sh"
--'  56  35  ~/.config/i3/config
-|4,39,56,35,1605304278,"~/.config/i3/config"
--'  56  35  ~/.config/i3/config
-|4,39,56,35,1605304278,"~/.config/i3/config"
+-'  18  18  ~/dotfiles
+|4,39,18,18,1607130003,"~/dotfiles"
+-'  1  0  ~/dotfiles
+|4,39,1,0,1607129989,"~/dotfiles"
+-'  3  20  ~/.applications/dmenu/dmenu_run
+|4,39,3,20,1607129583,"~/.applications/dmenu/dmenu_run"
+-'  3  20  ~/.applications/dmenu/dmenu_run
+|4,39,3,20,1607129583,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607129577,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607129577,"~/.applications/dmenu/dmenu_run"
+-'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
+|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
+-'  3  19  ~/.applications/dmenu/dmenu_run
+|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
+-'  3  19  ~/.applications/dmenu/dmenu_run
+|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
+-'  3  19  ~/.applications/dmenu/dmenu_run
+|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
+-'  3  19  ~/.applications/dmenu/dmenu_run
+|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
+-'  3  21  ~/.applications/dmenu/dmenu_run
+|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
+-'  3  21  ~/.applications/dmenu/dmenu_run
+|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
+-'  3  21  ~/.applications/dmenu/dmenu_run
+|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
+-'  3  21  ~/.applications/dmenu/dmenu_run
+|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
+-'  1  0  ~/.applications/dmenu/dmenu_run
+|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
+-'  58  0  ~/.config/i3/config
+|4,39,58,0,1607128860,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605304270,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605304270,"~/.config/i3/config"
--'  56  36  ~/.config/i3/config
-|4,39,56,36,1605232602,"~/.config/i3/config"
--'  56  36  ~/.config/i3/config
-|4,39,56,36,1605232602,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605232588,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605232588,"~/.config/i3/config"
--'  56  26  ~/.config/i3/config
-|4,39,56,26,1605232504,"~/.config/i3/config"
--'  56  26  ~/.config/i3/config
-|4,39,56,26,1605232504,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605232477,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605232477,"~/.config/i3/config"
--'  237  0  ~/.config/i3/config
-|4,39,237,0,1605227678,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1605227678,"~/.config/i3/config"
--'  237  0  ~/.config/i3/config
-|4,39,237,0,1605227678,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1605227678,"~/.config/i3/config"
--'  237  0  ~/.config/i3/config
-|4,39,237,0,1605227678,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1605227678,"~/.config/i3/config"
--'  237  0  ~/.config/i3/config
-|4,39,237,0,1605227678,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1605227678,"~/.config/i3/config"
--'  237  0  ~/.config/i3/config
-|4,39,237,0,1605227678,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1605227678,"~/.config/i3/config"
--'  237  0  ~/.config/i3/config
-|4,39,237,0,1605227678,"~/.config/i3/config"
--'  236  0  ~/.config/i3/config
-|4,39,236,0,1605227678,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  38  0  ~/.config/i3/config
-|4,39,38,0,1605227606,"~/.config/i3/config"
--'  430  0  ~/.config/i3/config
-|4,39,430,0,1605227596,"~/.config/i3/config"
--'  429  0  ~/.config/i3/config
-|4,39,429,0,1605227596,"~/.config/i3/config"
--'  430  0  ~/.config/i3/config
-|4,39,430,0,1605227596,"~/.config/i3/config"
--'  429  0  ~/.config/i3/config
-|4,39,429,0,1605227596,"~/.config/i3/config"
--'  430  0  ~/.config/i3/config
-|4,39,430,0,1605227596,"~/.config/i3/config"
--'  429  0  ~/.config/i3/config
-|4,39,429,0,1605227596,"~/.config/i3/config"
--'  430  0  ~/.config/i3/config
-|4,39,430,0,1605227596,"~/.config/i3/config"
--'  429  0  ~/.config/i3/config
-|4,39,429,0,1605227596,"~/.config/i3/config"
--'  430  0  ~/.config/i3/config
-|4,39,430,0,1605227596,"~/.config/i3/config"
--'  429  0  ~/.config/i3/config
-|4,39,429,0,1605227596,"~/.config/i3/config"
--'  430  0  ~/.config/i3/config
-|4,39,430,0,1605227596,"~/.config/i3/config"
--'  429  0  ~/.config/i3/config
-|4,39,429,0,1605227596,"~/.config/i3/config"
--'  193  14  ~/.config/i3/config
-|4,39,193,14,1605227593,"~/.config/i3/config"
--'  192  14  ~/.config/i3/config
-|4,39,192,14,1605227593,"~/.config/i3/config"
--'  193  14  ~/.config/i3/config
-|4,39,193,14,1605227593,"~/.config/i3/config"
--'  192  14  ~/.config/i3/config
-|4,39,192,14,1605227593,"~/.config/i3/config"
--'  193  14  ~/.config/i3/config
-|4,39,193,14,1605227593,"~/.config/i3/config"
--'  192  14  ~/.config/i3/config
-|4,39,192,14,1605227593,"~/.config/i3/config"
--'  193  14  ~/.config/i3/config
-|4,39,193,14,1605227593,"~/.config/i3/config"
--'  192  14  ~/.config/i3/config
-|4,39,192,14,1605227593,"~/.config/i3/config"
--'  193  14  ~/.config/i3/config
-|4,39,193,14,1605227593,"~/.config/i3/config"
--'  192  14  ~/.config/i3/config
-|4,39,192,14,1605227593,"~/.config/i3/config"
--'  193  14  ~/.config/i3/config
-|4,39,193,14,1605227593,"~/.config/i3/config"
--'  192  14  ~/.config/i3/config
-|4,39,192,14,1605227593,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605227535,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
 -'  1  0  ~/.config/i3/config
-|4,39,1,0,1605227535,"~/.config/i3/config"
--'  268  0  ~/.config/i3/config
-|4,39,268,0,1605147239,"~/.config/i3/config"
--'  266  0  ~/.config/i3/config
-|4,39,266,0,1605147239,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1605147239,"~/.config/i3/config"
--'  265  0  ~/.config/i3/config
-|4,39,265,0,1605147239,"~/.config/i3/config"
--'  268  0  ~/.config/i3/config
-|4,39,268,0,1605147239,"~/.config/i3/config"
--'  266  0  ~/.config/i3/config
-|4,39,266,0,1605147239,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1605147239,"~/.config/i3/config"
--'  265  0  ~/.config/i3/config
-|4,39,265,0,1605147239,"~/.config/i3/config"
--'  268  0  ~/.config/i3/config
-|4,39,268,0,1605147239,"~/.config/i3/config"
--'  266  0  ~/.config/i3/config
-|4,39,266,0,1605147239,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1605147239,"~/.config/i3/config"
--'  265  0  ~/.config/i3/config
-|4,39,265,0,1605147239,"~/.config/i3/config"
--'  268  0  ~/.config/i3/config
-|4,39,268,0,1605147239,"~/.config/i3/config"
--'  266  0  ~/.config/i3/config
-|4,39,266,0,1605147239,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1605147239,"~/.config/i3/config"
--'  265  0  ~/.config/i3/config
-|4,39,265,0,1605147239,"~/.config/i3/config"
--'  268  0  ~/.config/i3/config
-|4,39,268,0,1605147239,"~/.config/i3/config"
--'  266  0  ~/.config/i3/config
-|4,39,266,0,1605147239,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1605147239,"~/.config/i3/config"
--'  265  0  ~/.config/i3/config
-|4,39,265,0,1605147239,"~/.config/i3/config"
--'  268  0  ~/.config/i3/config
-|4,39,268,0,1605147239,"~/.config/i3/config"
--'  266  0  ~/.config/i3/config
-|4,39,266,0,1605147239,"~/.config/i3/config"
--'  267  0  ~/.config/i3/config
-|4,39,267,0,1605147239,"~/.config/i3/config"
--'  265  0  ~/.config/i3/config
-|4,39,265,0,1605147239,"~/.config/i3/config"
--'  428  0  ~/.config/i3/config
-|4,39,428,0,1605147198,"~/.config/i3/config"
--'  427  0  ~/.config/i3/config
-|4,39,427,0,1605147198,"~/.config/i3/config"
--'  428  0  ~/.config/i3/config
-|4,39,428,0,1605147198,"~/.config/i3/config"
--'  427  0  ~/.config/i3/config
-|4,39,427,0,1605147198,"~/.config/i3/config"
--'  428  0  ~/.config/i3/config
-|4,39,428,0,1605147198,"~/.config/i3/config"
--'  427  0  ~/.config/i3/config
-|4,39,427,0,1605147198,"~/.config/i3/config"
--'  428  0  ~/.config/i3/config
-|4,39,428,0,1605147198,"~/.config/i3/config"
--'  427  0  ~/.config/i3/config
-|4,39,427,0,1605147198,"~/.config/i3/config"
--'  428  0  ~/.config/i3/config
-|4,39,428,0,1605147198,"~/.config/i3/config"
--'  427  0  ~/.config/i3/config
-|4,39,427,0,1605147198,"~/.config/i3/config"
--'  428  0  ~/.config/i3/config
-|4,39,428,0,1605147198,"~/.config/i3/config"
--'  427  0  ~/.config/i3/config
-|4,39,427,0,1605147198,"~/.config/i3/config"
--'  41  0  ~/.config/i3/config
-|4,39,41,0,1605147195,"~/.config/i3/config"
--'  41  0  ~/.config/i3/config
-|4,39,41,0,1605147195,"~/.config/i3/config"
--'  41  0  ~/.config/i3/config
-|4,39,41,0,1605147195,"~/.config/i3/config"
--'  41  0  ~/.config/i3/config
-|4,39,41,0,1605147195,"~/.config/i3/config"
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1607128852,"~/.config/i3/config"
+-'  3  24  ~/.applications/dmenu/dmenu_run
+|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+-'  3  24  ~/.applications/dmenu/dmenu_run
+|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+-'  3  24  ~/.applications/dmenu/dmenu_run
+|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+-'  3  24  ~/.applications/dmenu/dmenu_run
+|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+-'  3  24  ~/.applications/dmenu/dmenu_run
+|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+-'  3  24  ~/.applications/dmenu/dmenu_run
+|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
 
-> ~/.config/i3/scripts/bandwidthImprove
-	*	1605304819	0
-	"	15	0
+> ~/dotfiles
+	*	1607130000	0
+	"	18	18
+	^	18	19
+	.	18	18
+	+	35	0
+	+	19	2
+	+	37	6
+	+	19	0
+	+	18	18
+
+> ~/.applications/dmenu/dmenu_run
+	*	1607129582	0
+	"	3	20
+	^	3	21
+	.	3	20
+	+	3	0
+	+	2	0
+	+	3	20
+
+> ~/.applications/dmenu/dmenu-nosort-5.0.diff
+	*	1607129527	0
+	"	83	0
+
+> ~/.applications/dmenu/dmenu.c
+	*	1607129525	0
+	"	715	0
+	^	251	0
+	.	715	0
+	+	92	0
+	+	94	0
+	+	95	0
+	+	96	0
+	+	97	0
+	+	98	1
+	+	97	0
+	+	98	0
+	+	99	0
+	+	100	0
+	+	101	0
+	+	102	0
+	+	619	0
+	+	646	0
+	+	647	0
+	+	648	0
+	+	656	0
+	+	657	0
+	+	658	0
+	+	660	0
+	+	4	0
+	+	47	0
+	+	252	0
+	+	251	0
+	+	263	0
+	+	264	0
+	+	254	0
+	+	255	0
+	+	256	0
+	+	257	0
+	+	258	0
+	+	259	0
+	+	260	0
+	+	261	0
+	+	262	0
+	+	694	0
+	+	714	0
+	+	715	0
+
+> ~/.applications/dmenu/dmenu.1
+	*	1607129297	0
+	"	50	0
+	.	50	0
+	+	50	0
+	+	52	0
+	+	51	0
+	+	50	0
+
+> ~/.config/i3/config
+	*	1607128859	0
+	"	58	0
+	^	58	0
+	.	58	0
+	+	191	0
+	+	192	0
+	+	191	0
+	+	192	0
+	+	20	18
+	+	360	0
+	+	362	0
+	+	363	0
+	+	364	0
+	+	365	0
+	+	367	0
+	+	160	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	166	0
+	+	167	0
+	+	168	0
+	+	169	0
+	+	20	18
+	+	361	50
+	+	35	0
+	+	191	0
+	+	192	0
+	+	430	9
+	+	191	0
+	+	192	0
+	+	412	15
+	+	404	40
+	+	405	0
+	+	404	1
+	+	405	1
+	+	404	1
+	+	35	0
+	+	20	14
+	+	35	0
+	+	179	20
+	+	180	8
+	+	181	8
+	+	182	8
+	+	240	0
+	+	241	0
+	+	240	0
+	+	236	0
+	+	239	14
+	+	35	0
+	+	239	0
+	+	35	0
+	+	239	0
+	+	191	0
+	+	192	0
+	+	195	0
+	+	404	1
+	+	405	1
+	+	404	0
+	+	195	0
+	+	195	40
+	+	195	21
+	+	195	30
+	+	35	0
+	+	195	15
+	+	195	0
+	+	42	0
+	+	43	0
+	+	435	0
+	+	434	0
+	+	435	0
+	+	40	0
+	+	38	0
+	+	39	0
+	+	435	0
+	+	194	0
+	+	195	0
+	+	239	0
+	+	194	0
+	+	238	0
+	+	57	0
+	+	56	0
+	+	57	35
+	+	401	1
+	+	404	1
+	+	406	1
+	+	407	1
+	+	412	1
+	+	430	1
+	+	431	0
+	+	430	0
+	+	412	0
+	+	407	0
+	+	406	0
+	+	404	0
+	+	401	0
+	+	324	0
+	+	322	0
+	+	324	33
+	+	49	17
+	+	43	21
+	+	44	32
+	+	59	0
+	+	58	0
+
+> ~/.applications/dmenu/config.h
+	*	1607128730	0
+	"	17	34
+	^	17	35
+	.	17	34
+	+	17	34
+
+> ~/.applications/dmenu/dmenu-center-4.8.diff
+	*	1607126587	0
+	"	53	0
+	.	27	0
+	+	26	0
+	+	27	0
+
+> /etc/resolv.conf
+	*	1607028774	0
+	"	2	17
+	^	2	18
+	.	2	17
+	+	2	17
+
+> ~/.mozilla/firefox/th1cdmo8.default/distribution/policies.json
+	*	1606863839	0
+	"	6	0
+	^	6	1
+	.	6	0
+	+	6	0
+
+> ~/.xinitrc
+	*	1606856857	0
+	"	4	0
+	^	4	1
+	.	4	0
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	8	11
+	+	6	9
+	+	8	0
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	2	0
+	+	6	9
+	+	2	0
+	+	6	9
+	+	2	0
+	+	3	0
+	+	6	9
+	+	3	0
+	+	6	9
+	+	3	0
+	+	6	9
+	+	8	13
+	+	3	0
+	+	8	0
+	+	3	0
+	+	6	0
+	+	6	9
+	+	8	0
+	+	6	9
+	+	3	0
+	+	6	9
+	+	7	0
+	+	3	0
+	+	7	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	4	0
+
+> /etc/adduser.conf
+	*	1606657220	0
+	"	88	0
 
 > ~/.config/i3/bar.sh
-	*	1605304745	0
-	"	92	6
-	^	92	7
-	.	92	6
+	*	1606252840	0
+	"	75	19
+	^	75	20
+	.	75	19
 	+	115	6
 	+	103	1
 	+	104	0
@@ -563,166 +911,314 @@ $5
 	+	102	0
 	+	100	0
 	+	92	6
+	+	74	14
+	+	75	19
 
-> ~/.config/i3/config
-	*	1605304278	0
-	"	56	35
-	^	56	36
-	.	56	35
-	+	55	0
-	+	190	0
-	+	191	0
-	+	190	11
-	+	191	0
-	+	190	0
-	+	191	0
-	+	190	0
-	+	302	0
-	+	326	0
-	+	329	0
-	+	190	0
-	+	191	0
-	+	399	36
-	+	329	0
-	+	326	0
-	+	328	0
-	+	326	0
-	+	329	0
-	+	190	0
-	+	191	0
-	+	190	0
-	+	191	0
-	+	190	0
-	+	191	0
-	+	20	18
-	+	355	0
-	+	357	0
-	+	358	0
-	+	359	0
-	+	360	0
-	+	362	0
-	+	159	0
-	+	160	0
-	+	161	0
-	+	162	0
-	+	165	0
-	+	166	0
-	+	167	0
-	+	168	0
-	+	20	18
-	+	356	50
-	+	35	0
-	+	190	0
-	+	191	0
-	+	425	9
-	+	190	0
-	+	191	0
-	+	407	15
-	+	399	40
-	+	400	0
-	+	399	1
-	+	400	1
-	+	399	1
-	+	35	0
-	+	20	14
-	+	35	0
-	+	178	20
-	+	179	8
-	+	180	8
-	+	181	8
-	+	239	0
-	+	240	0
-	+	239	0
-	+	235	0
-	+	238	14
-	+	35	0
-	+	238	0
-	+	35	0
-	+	238	0
-	+	190	0
-	+	191	0
-	+	194	0
-	+	399	1
-	+	400	1
-	+	399	0
-	+	194	0
-	+	194	40
-	+	194	21
-	+	194	30
-	+	35	0
-	+	194	15
-	+	194	0
-	+	42	0
-	+	43	0
-	+	430	0
-	+	429	0
-	+	430	0
-	+	40	0
-	+	38	0
-	+	39	0
-	+	430	0
-	+	193	0
-	+	194	0
-	+	238	0
-	+	193	0
-	+	237	0
-	+	56	0
-	+	55	0
-	+	56	35
+> /etc/samba/smb.conf
+	*	1606252534	0
+	"	266	0
+	^	266	1
+	.	266	0
+	+	273	0
+	+	266	0
 
-> ~/.xinitrc
-	*	1605123138	0
-	"	3	0
-	^	3	0
-	.	3	0
+> ~/.applications/dwm-6.1.stable.systrayTest/dwm.c
+	*	1605829799	0
+	"	2541	1
+	^	2541	82
+	.	2541	1
+	+	2459	0
+	+	2460	0
+	+	2461	0
+	+	2462	0
+	+	2463	0
+	+	2464	0
+	+	2465	0
+	+	2466	0
+	+	2467	0
+	+	2468	0
+	+	2469	0
+	+	2470	0
+	+	2471	0
+	+	2472	0
+	+	2473	0
+	+	2474	0
+	+	2475	0
+	+	2476	0
+	+	2477	0
+	+	2478	0
+	+	2479	0
+	+	2480	0
+	+	2481	0
+	+	2482	0
+	+	2483	0
+	+	2484	0
+	+	2485	0
+	+	2486	0
+	+	2487	0
+	+	2488	0
+	+	2489	0
+	+	2490	0
+	+	2491	0
+	+	2492	0
+	+	2493	0
+	+	2494	0
+	+	2495	0
+	+	2496	0
+	+	2497	0
+	+	2498	0
+	+	2499	0
+	+	2500	0
+	+	2501	0
+	+	2502	0
+	+	2503	0
+	+	2504	0
+	+	2505	0
+	+	2506	0
+	+	2507	0
+	+	2508	0
+	+	2509	0
+	+	2510	0
+	+	2511	0
+	+	2512	0
+	+	2513	0
+	+	2514	0
+	+	2515	0
+	+	2516	0
+	+	2517	0
+	+	2518	0
+	+	2519	0
+	+	2520	0
+	+	2521	0
+	+	2522	0
+	+	2523	0
+	+	2524	0
+	+	2525	0
+	+	2526	0
+	+	2527	0
+	+	2528	0
+	+	2529	0
+	+	2530	0
+	+	2531	0
+	+	2532	0
+	+	2533	1
+	+	2533	0
+	+	2534	0
+	+	2535	0
+	+	2536	0
+	+	2537	0
+	+	2538	0
+	+	2539	0
+	+	2540	0
+	+	2542	0
+	+	2543	0
+	+	2544	0
+	+	2649	0
+	+	2651	0
+	+	2652	0
+	+	2653	0
+	+	2654	0
+	+	2655	0
+	+	2656	0
+	+	2657	0
+	+	2658	0
+	+	2659	0
+	+	324	0
+	+	2540	2
+	+	2541	81
+	+	2541	1
+
+> ~/.config/screenMenu.sh
+	*	1605829067	0
+	"	38	94
+	.	38	94
+	+	38	94
+
+> ~/.applications/dwm-6.1.stable.systrayTest/config.def.h
+	*	1605829039	0
+	"	115	0
+	^	44	0
+	.	48	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	47	0
+	+	48	0
+
+> ~/.applications/dwm-6.1.stable.systrayTest/dwm.
+	*	1605828715	0
+	"	1	0
+
+> ~/.applications/dwm-6.1.stable.systrayTest/dwm-6.1-systray.diff
+	*	1605828677	0
+	"	652	0
+	^	48	1
+
+> ~/tstscript.sh
+	*	1605480716	0
+	"	1	0
+	^	14	9
+	.	14	8
+	+	8	25
+	+	11	42
+	+	14	28
+	+	18	28
+	+	11	45
+	+	18	32
+	+	11	53
+	+	18	40
+	+	11	22
+	+	18	8
+	+	11	44
+	+	18	30
+	+	3	20
+	+	5	16
+	+	11	67
+	+	11	89
+	+	17	29
+	+	18	82
+	+	5	26
+	+	11	28
+	+	17	28
+	+	11	2
+	+	17	2
+	+	9	68
+	+	15	53
+	+	6	45
+	+	11	54
+	+	17	0
+	+	17	76
+	+	20	0
+	+	21	29
+	+	13	0
+	+	13	29
+	+	13	0
+	+	15	0
+	+	13	0
+	+	9	0
+	+	18	0
+	+	20	0
+	+	18	0
+	+	9	0
+	+	11	0
+	+	13	0
+	+	15	0
+	+	17	0
+	+	20	0
+	+	11	0
+	+	13	0
+	+	17	0
+	+	10	0
+	+	6	17
+	+	10	13
+	+	16	13
+	+	12	13
+	+	19	13
+	+	21	12
+	+	10	18
+	+	12	16
+	+	16	18
+	+	19	16
+	+	21	15
+	+	8	33
+	+	14	8
+
+> ~/.config/i3/yabar.conf
+	*	1605458238	0
+	"	31	14
+	^	31	15
+	.	31	14
+	+	1	21
+	+	19	50
+	+	37	0
 	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	8	11
-	+	6	9
-	+	8	0
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	2	0
-	+	6	9
-	+	2	0
-	+	6	9
-	+	7	0
-	+	2	0
-	+	3	0
-	+	7	0
-	+	3	0
-	+	7	0
-	+	3	0
-	+	7	0
-	+	8	13
-	+	3	0
-	+	8	0
-	+	3	0
+	+	5	12
+	+	6	1
+	+	9	1
+	+	10	1
+	+	14	1
+	+	15	1
+	+	16	1
+	+	17	1
+	+	25	1
+	+	25	2
+	+	8	19
+	+	24	2
+	+	12	10
+	+	8	26
+	+	28	6
+	+	36	1
+	+	30	27
+	+	31	15
+	+	34	13
+	+	25	0
+	+	33	15
+	+	31	14
+	+	32	15
+	+	5	13
+	+	32	17
+	+	24	14
+	+	35	17
+	+	31	13
+	+	5	0
+	+	35	18
+	+	32	16
+	+	31	15
+	+	35	14
+	+	31	14
+
+> /etc/default/lxc
+	*	1605454912	0
+	"	1	0
+
+> /etc/default/lxc-net
+	*	1605454905	0
+	"	19	34
+	^	19	35
+	.	19	33
+	+	16	16
+	+	19	33
+
+> ~/tst.log
+	*	1605449872	0
+	"	7	0
+
+> ~/tst
+	*	1605448583	0
+	"	1	0
+
+> /etc/default/console-setup
+	*	1605391434	0
+	"	1	0
+
+> /etc/systemd/logind.conf
+	*	1605391424	0
+	"	15	0
+	^	15	1
+	.	15	0
+	+	15	0
+
+> ~/bd/danisable/gge
+	*	1605307165	0
+	"	45	0
+	.	45	0
+	+	45	0
+	+	4	91
+	+	13	92
+	+	23	92
+	+	44	92
+	+	45	0
 
 > ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1605041975	0
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
+	*	1605304871	0
+	"	1	12
+	^	1	13
+	.	1	12
+	+	1	12
 
-> ~/dotfiles
-	*	1605041850	0
-	"	18	0
-	^	36	7
-	.	18	0
-	+	34	0
-	+	18	2
-	+	36	6
-	+	18	0
+> ~/.config/i3/scripts/bandwidthImprove
+	*	1605304819	0
+	"	15	0
 
 > ~/scripts/loginMega
 	*	1605041724	0

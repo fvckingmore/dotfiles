@@ -5,4 +5,3 @@ exec i3
 #exec spectrwm
 #exec dwm
 #exec dwm61
-#exec startlxde

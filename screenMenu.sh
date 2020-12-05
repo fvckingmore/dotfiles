@@ -35,7 +35,7 @@ case $CHOISE in
 
 	Laptop) xrandr --output LVDS1 --primary --mode 1024x600 --output VGA1 --off; nitrogen --restore ;;
 
-	"VGA Single") $COM || ($DIR/1280x720 && xrandr --output LVDS1 --off --output VGA1 --primary; nitrogen --restore) ;;
+	"VGA Single") $COM || ($DIR/1280x720 && xrandr --output LVDS1 --off --output VGA1 --primary; ) ;;
 
 	"VGA Extended") $COM || $DIR/1280x720; nitrogen --restore; xrandr --output LVDS1 --primary ;;
 
