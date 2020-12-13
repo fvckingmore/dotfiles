@@ -20,14 +20,16 @@
 $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
-:wq
-|2,0,1607868989,,"wq"
 :q!
-|2,0,1607504097,,"q!"
+|2,0,1607890880,,"q!"
+:wq
+|2,0,1607890817,,"wq"
+:w
+|2,0,1607890699,,"w"
+:set rnu!
+|2,0,1607889888,,"set rnu!"
 :q
 |2,0,1607303131,,"q"
-:w
-|2,0,1607282609,,"w"
 :709
 |2,0,1607129511,,"709"
 :689
@@ -314,41 +316,44 @@ $
 # Historia de Debug Line (de lo más nuevo a lo más antiguo):
 
 # Registros:
-""0	LINE	0
-	exec --no-startup-id xcompmgr -c -t-5 -l-5 -r6 -o1 -fF -I.09 -O.09 -D2
-|3,1,0,1,1,0,1607303636,"exec --no-startup-id xcompmgr -c -t-5 -l-5 -r6 -o1 -fF -I.09 -O.09 -D2"
+"0	LINE	0
+	screen -d -m -S $SNAME
+|3,0,0,1,1,0,1607889750,"screen -d -m -S $SNAME"
+"1	LINE	0
+	
+|3,0,1,1,1,0,1607889658,""
 "2	LINE	0
 		fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
 |3,0,2,1,1,0,1607129490,"	fputs(\"usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\\n\""
 "3	LINE	0
+		fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+|3,0,3,1,1,0,1607129490,"	fputs(\"usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\\n\""
+"4	LINE	0
 			else if (!fstrncmp(tokv[0], item->text, len))
 				appenditem(item, &lprefix, &prefixend);
 			else
 				appenditem(item, &lsubstr, &substrend);
-|3,0,3,1,4,0,1607129430,"		else if (!fstrncmp(tokv[0], item->text, len))","			appenditem(item, &lprefix, &prefixend);","		else","			appenditem(item, &lsubstr, &substrend);"
-"4	LINE	0
+|3,0,4,1,4,0,1607129430,"		else if (!fstrncmp(tokv[0], item->text, len))","			appenditem(item, &lprefix, &prefixend);","		else","			appenditem(item, &lsubstr, &substrend);"
+"5	LINE	0
 			/* exact matches go first, then prefixes, then substrings */
 			if (!tokc || !fstrncmp(text, item->text, textsize))
-|3,0,4,1,2,0,1607129386,"		/* exact matches go first, then prefixes, then substrings */","		if (!tokc || !fstrncmp(text, item->text, textsize))"
-"5	LINE	0
-		promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
-|3,0,5,1,1,0,1607126578,"	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;"
+|3,0,5,1,2,0,1607129386,"		/* exact matches go first, then prefixes, then substrings */","		if (!tokc || !fstrncmp(text, item->text, textsize))"
 "6	LINE	0
+		promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
+|3,0,6,1,1,0,1607126578,"	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;"
+"7	LINE	0
 			x = 0;
 			y = topbar ? 0 : wa.height - mh;
 			mw = wa.width;
-|3,0,6,1,3,0,1607126569,"		x = 0;","		y = topbar ? 0 : wa.height - mh;","		mw = wa.width;"
-"7	LINE	0
+|3,0,7,1,3,0,1607126569,"		x = 0;","		y = topbar ? 0 : wa.height - mh;","		mw = wa.width;"
+"8	LINE	0
 			x = info[i].x_org;
 			y = info[i].y_org + (topbar ? 0 : info[i].height - mh);
 			mw = info[i].width;
-|3,0,7,1,3,0,1607126521,"		x = info[i].x_org;","		y = info[i].y_org + (topbar ? 0 : info[i].height - mh);","		mw = info[i].width;"
-"8	LINE	0
-	 static int running = 1;
-|3,0,8,1,1,0,1605828825," static int running = 1;"
+|3,0,8,1,3,0,1607126521,"		x = info[i].x_org;","		y = info[i].y_org + (topbar ? 0 : info[i].height - mh);","		mw = info[i].width;"
 "9	LINE	0
-			m->barwin = XCreateWindow(dpy, root, m->wx, m->by, m->ww, bh, 0, DefaultDepth(dpy, screen),
-|3,0,9,1,1,0,1605828429,"		m->barwin = XCreateWindow(dpy, root, m->wx, m->by, m->ww, bh, 0, DefaultDepth(dpy, screen),"
+	 static int running = 1;
+|3,0,9,1,1,0,1605828825," static int running = 1;"
 "a	LINE	0
 	+		else if (!strcmp(argv[i], "-S"))   /* do not sort matches */
 	+			sortmatches = false;
@@ -357,237 +362,289 @@ $
 	jk
 |3,0,20,0,1,0,1603640262,"jk"
 "u	CHAR	0
-	
-|3,0,30,0,1,0,1605829794,""
-"-	CHAR	0
-	no
-|3,0,36,0,1,0,1607282606,"no"
+	
+|3,0,30,0,1,0,1607889125,""
+""-	CHAR	0
+	-
+|3,1,36,0,1,0,1607889761,"-"
 
 # Marcas en el archivo:
-'0  177  1  ~/.bashrc
-|4,48,177,1,1607868989,"~/.bashrc"
-'1  153  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,49,153,0,1607868128,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
-'2  249  0  /etc/samba/smb.conf
-|4,50,249,0,1607504123,"/etc/samba/smb.conf"
-'3  249  0  /etc/samba/smb.conf
-|4,51,249,0,1607504097,"/etc/samba/smb.conf"
-'4  251  0  /etc/samba/smb.conf
-|4,52,251,0,1607503990,"/etc/samba/smb.conf"
-'5  251  0  /etc/samba/smb.conf
-|4,53,251,0,1607503990,"/etc/samba/smb.conf"
-'6  251  0  /etc/samba/smb.conf
-|4,54,251,0,1607503990,"/etc/samba/smb.conf"
-'7  251  0  /etc/samba/smb.conf
-|4,55,251,0,1607503990,"/etc/samba/smb.conf"
-'8  12  0  ~/scripts/screenOutputMenu
-|4,56,12,0,1607304275,"~/scripts/screenOutputMenu"
-'9  344  41  ~/.config/i3/config
-|4,57,344,41,1607303652,"~/.config/i3/config"
+'0  1  0  ~/scr.sh
+|4,48,1,0,1607890880,"~/scr.sh"
+'1  15  29  ~/scr2.sh
+|4,49,15,29,1607890817,"~/scr2.sh"
+'2  16  22  ~/scr2.sh
+|4,50,16,22,1607890706,"~/scr2.sh"
+'3  15  22  ~/scr2.sh
+|4,51,15,22,1607890706,"~/scr2.sh"
+'4  16  32  ~/scr2.sh
+|4,52,16,32,1607890587,"~/scr2.sh"
+'5  15  32  ~/scr2.sh
+|4,53,15,32,1607890587,"~/scr2.sh"
+'6  1  0  ~/scr.sh
+|4,54,1,0,1607890014,"~/scr.sh"
+'7  3  31  ~/scr.sh
+|4,55,3,31,1607889818,"~/scr.sh"
+'8  3  31  ~/scr.sh
+|4,56,3,31,1607889818,"~/scr.sh"
+'9  3  31  ~/scr.sh
+|4,57,3,31,1607889818,"~/scr.sh"
 
 # Lista de saltos (el más reciente va primero):
--'  177  1  ~/.bashrc
-|4,39,177,1,1607868989,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1607868984,"~/.bashrc"
--'  153  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,153,0,1607868128,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  153  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,153,0,1607868128,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1607868112,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-|4,39,1,0,1607868112,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504123,"/etc/samba/smb.conf"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504123,"/etc/samba/smb.conf"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504123,"/etc/samba/smb.conf"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504123,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504103,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504103,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504103,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504103,"/etc/samba/smb.conf"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504097,"/etc/samba/smb.conf"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504097,"/etc/samba/smb.conf"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504097,"/etc/samba/smb.conf"
--'  249  0  /etc/samba/smb.conf
-|4,39,249,0,1607504097,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504031,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504031,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504031,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607504031,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  251  0  /etc/samba/smb.conf
-|4,39,251,0,1607503990,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607503979,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607503979,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607503979,"/etc/samba/smb.conf"
--'  1  0  /etc/samba/smb.conf
-|4,39,1,0,1607503979,"/etc/samba/smb.conf"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  12  0  ~/scripts/screenOutputMenu
-|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
--'  14  0  ~/scripts/screenOutputMenu
-|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890880,"~/scr.sh"
+-'  15  29  ~/scr2.sh
+|4,39,15,29,1607890817,"~/scr2.sh"
+-'  15  29  ~/scr2.sh
+|4,39,15,29,1607890817,"~/scr2.sh"
+-'  16  1  ~/scr2.sh
+|4,39,16,1,1607890796,"~/scr2.sh"
+-'  16  1  ~/scr2.sh
+|4,39,16,1,1607890796,"~/scr2.sh"
+-'  1  0  ~/scr2.sh
+|4,39,1,0,1607890742,"~/scr2.sh"
+-'  1  0  ~/scr2.sh
+|4,39,1,0,1607890742,"~/scr2.sh"
+-'  15  22  ~/scr2.sh
+|4,39,15,22,1607890706,"~/scr2.sh"
+-'  15  22  ~/scr2.sh
+|4,39,15,22,1607890706,"~/scr2.sh"
+-'  2  0  ~/scr2.sh
+|4,39,2,0,1607890687,"~/scr2.sh"
+-'  2  0  ~/scr2.sh
+|4,39,2,0,1607890687,"~/scr2.sh"
+-'  2  0  ~/scr2.sh
+|4,39,2,0,1607890687,"~/scr2.sh"
+-'  2  0  ~/scr2.sh
+|4,39,2,0,1607890687,"~/scr2.sh"
+-'  1  0  ~/scr2.sh
+|4,39,1,0,1607890686,"~/scr2.sh"
+-'  1  0  ~/scr2.sh
+|4,39,1,0,1607890686,"~/scr2.sh"
+-'  15  32  ~/scr2.sh
+|4,39,15,32,1607890587,"~/scr2.sh"
+-'  15  32  ~/scr2.sh
+|4,39,15,32,1607890587,"~/scr2.sh"
+-'  1  0  ~/scr2.sh
+|4,39,1,0,1607890493,"~/scr2.sh"
+-'  1  0  ~/scr2.sh
+|4,39,1,0,1607890493,"~/scr2.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607890014,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  3  31  ~/scr.sh
+|4,39,3,31,1607889818,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889798,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  5  10  ~/scr.sh
+|4,39,5,10,1607889768,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  1  0  ~/scr.sh
+|4,39,1,0,1607889731,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
+-'  3  32  ~/scr.sh
+|4,39,3,32,1607889723,"~/scr.sh"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/scr.sh
+	*	1607890872	0
+	"	1	0
+	^	3	32
+	.	3	31
+	+	13	4
+	+	4	0
+	+	13	10
+	+	13	0
+	+	7	6
+	+	11	0
+	+	10	1
+	+	11	0
+	+	17	3
+	+	15	9
+	+	15	0
+	+	13	4
+	+	4	0
+	+	15	29
+	+	3	33
+	+	4	21
+	+	13	4
+	+	15	28
+	+	16	0
+	+	3	32
+	+	5	0
+	+	4	0
+	+	5	10
+	+	3	31
+
+> ~/scr2.sh
+	*	1607890804	0
+	"	15	29
+	^	15	30
+	.	15	29
+	+	13	15
+	+	16	32
+	+	20	15
+	+	16	23
+	+	15	10
+	+	16	16
+	+	15	27
+	+	16	0
+	+	15	29
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1607869031	0
+	"	1	0
+	^	1	6
+	.	1	5
+	+	1	5
 
 > ~/.bashrc
 	*	1607868988	0
@@ -641,13 +698,6 @@ $
 	+	160	2
 	+	172	0
 	+	177	1
-
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1607868127	0
-	"	153	0
-	^	1	6
-	.	1	5
-	+	1	5
 
 > /etc/samba/smb.conf
 	*	1607504121	0
