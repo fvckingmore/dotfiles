@@ -2,8 +2,8 @@
 	"auto_complete_delay": 5,
 	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
 	"dictionary": "Packages/Language - Spanish/es_ES.dic",
-	"font_face": "Consolas",
-	"font_size": 10,
+	"font_face": "monospace",
+	"font_size": 9,
 	"ignored_packages":
 	[
 	],

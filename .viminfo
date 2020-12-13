@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último Patrón de búsqueda:
-~MSle0~/dmen
+~MSle0~/xcom
 
 # Último SustituciónPatrón de búsqueda:
 ~MSle0&10
@@ -21,9 +21,13 @@ $
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
 :wq
-|2,0,1607130003,,"wq"
+|2,0,1607868989,,"wq"
 :q!
-|2,0,1607129529,,"q!"
+|2,0,1607504097,,"q!"
+:q
+|2,0,1607303131,,"q"
+:w
+|2,0,1607282609,,"w"
 :709
 |2,0,1607129511,,"709"
 :689
@@ -46,14 +50,10 @@ $
 |2,0,1607126444,,"598"
 :e dmenu.c
 |2,0,1607126290,,"e dmenu.c"
-:w
-|2,0,1607042841,,"w"
 :324
 |2,0,1605828821,,"324"
 :tabe dwm.c
 |2,0,1605825654,,"tabe dwm.c"
-:q
-|2,0,1605825649,,"q"
 :tabe config.def.h
 |2,0,1605825607,,"tabe config.def.h"
 :tabe scripts/bandwidthImprove
@@ -142,6 +142,10 @@ $
 |2,0,1602543871,," '"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+?/xcom
+|2,1,1607303634,47,"xcom"
+?/Pass
+|2,1,1607275141,47,"Pass"
 ?/dmen
 |2,1,1607128852,47,"dmen"
 ?/mw
@@ -310,12 +314,9 @@ $
 # Historia de Debug Line (de lo más nuevo a lo más antiguo):
 
 # Registros:
-"0	LINE	0
-	.applications/dwm*
-|3,0,0,1,1,0,1607129994,".applications/dwm*"
-"1	LINE	0
-		fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
-|3,0,1,1,1,0,1607129498,"	fputs(\"usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\\n\""
+""0	LINE	0
+	exec --no-startup-id xcompmgr -c -t-5 -l-5 -r6 -o1 -fF -I.09 -O.09 -D2
+|3,1,0,1,1,0,1607303636,"exec --no-startup-id xcompmgr -c -t-5 -l-5 -r6 -o1 -fF -I.09 -O.09 -D2"
 "2	LINE	0
 		fputs("usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
 |3,0,2,1,1,0,1607129490,"	fputs(\"usage: dmenu [-bfiv] [-l lines] [-p prompt] [-fn font] [-m monitor]\\n\""
@@ -358,235 +359,516 @@ $
 "u	CHAR	0
 	
 |3,0,30,0,1,0,1605829794,""
-""-	CHAR	0
-	wm*
-|3,1,36,0,1,0,1607129998,"wm*"
+"-	CHAR	0
+	no
+|3,0,36,0,1,0,1607282606,"no"
 
 # Marcas en el archivo:
-'0  18  18  ~/dotfiles
-|4,48,18,18,1607130003,"~/dotfiles"
-'1  3  20  ~/.applications/dmenu/dmenu_run
-|4,49,3,20,1607129583,"~/.applications/dmenu/dmenu_run"
-'2  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,50,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
-'3  3  19  ~/.applications/dmenu/dmenu_run
-|4,51,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
-'4  3  21  ~/.applications/dmenu/dmenu_run
-|4,52,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
-'5  3  21  ~/.applications/dmenu/dmenu_run
-|4,53,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
-'6  58  0  ~/.config/i3/config
-|4,54,58,0,1607128860,"~/.config/i3/config"
-'7  3  24  ~/.applications/dmenu/dmenu_run
-|4,55,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
-'8  3  24  ~/.applications/dmenu/dmenu_run
-|4,56,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
-'9  3  24  ~/.applications/dmenu/dmenu_run
-|4,57,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+'0  177  1  ~/.bashrc
+|4,48,177,1,1607868989,"~/.bashrc"
+'1  153  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,49,153,0,1607868128,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+'2  249  0  /etc/samba/smb.conf
+|4,50,249,0,1607504123,"/etc/samba/smb.conf"
+'3  249  0  /etc/samba/smb.conf
+|4,51,249,0,1607504097,"/etc/samba/smb.conf"
+'4  251  0  /etc/samba/smb.conf
+|4,52,251,0,1607503990,"/etc/samba/smb.conf"
+'5  251  0  /etc/samba/smb.conf
+|4,53,251,0,1607503990,"/etc/samba/smb.conf"
+'6  251  0  /etc/samba/smb.conf
+|4,54,251,0,1607503990,"/etc/samba/smb.conf"
+'7  251  0  /etc/samba/smb.conf
+|4,55,251,0,1607503990,"/etc/samba/smb.conf"
+'8  12  0  ~/scripts/screenOutputMenu
+|4,56,12,0,1607304275,"~/scripts/screenOutputMenu"
+'9  344  41  ~/.config/i3/config
+|4,57,344,41,1607303652,"~/.config/i3/config"
 
 # Lista de saltos (el más reciente va primero):
--'  18  18  ~/dotfiles
-|4,39,18,18,1607130003,"~/dotfiles"
--'  1  0  ~/dotfiles
-|4,39,1,0,1607129989,"~/dotfiles"
--'  3  20  ~/.applications/dmenu/dmenu_run
-|4,39,3,20,1607129583,"~/.applications/dmenu/dmenu_run"
--'  3  20  ~/.applications/dmenu/dmenu_run
-|4,39,3,20,1607129583,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607129577,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607129577,"~/.applications/dmenu/dmenu_run"
--'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  83  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,83,0,1607129529,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  1  0  ~/.applications/dmenu/dmenu-nosort-5.0.diff
-|4,39,1,0,1607129237,"~/.applications/dmenu/dmenu-nosort-5.0.diff"
--'  3  19  ~/.applications/dmenu/dmenu_run
-|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
--'  3  19  ~/.applications/dmenu/dmenu_run
-|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
--'  3  19  ~/.applications/dmenu/dmenu_run
-|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
--'  3  19  ~/.applications/dmenu/dmenu_run
-|4,39,3,19,1607128959,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128944,"~/.applications/dmenu/dmenu_run"
--'  3  21  ~/.applications/dmenu/dmenu_run
-|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
--'  3  21  ~/.applications/dmenu/dmenu_run
-|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
--'  3  21  ~/.applications/dmenu/dmenu_run
-|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
--'  3  21  ~/.applications/dmenu/dmenu_run
-|4,39,3,21,1607128937,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
--'  1  0  ~/.applications/dmenu/dmenu_run
-|4,39,1,0,1607128924,"~/.applications/dmenu/dmenu_run"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  58  0  ~/.config/i3/config
-|4,39,58,0,1607128860,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1607128852,"~/.config/i3/config"
--'  3  24  ~/.applications/dmenu/dmenu_run
-|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
--'  3  24  ~/.applications/dmenu/dmenu_run
-|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
--'  3  24  ~/.applications/dmenu/dmenu_run
-|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
--'  3  24  ~/.applications/dmenu/dmenu_run
-|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
--'  3  24  ~/.applications/dmenu/dmenu_run
-|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
--'  3  24  ~/.applications/dmenu/dmenu_run
-|4,39,3,24,1607128793,"~/.applications/dmenu/dmenu_run"
+-'  177  1  ~/.bashrc
+|4,39,177,1,1607868989,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1607868984,"~/.bashrc"
+-'  153  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,153,0,1607868128,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  153  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,153,0,1607868128,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,0,1607868112,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  1  0  ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,0,1607868112,"~/Documentos/dotfiles/.git/COMMIT_EDITMSG"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504123,"/etc/samba/smb.conf"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504123,"/etc/samba/smb.conf"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504123,"/etc/samba/smb.conf"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504123,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504103,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504103,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504103,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504103,"/etc/samba/smb.conf"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504097,"/etc/samba/smb.conf"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504097,"/etc/samba/smb.conf"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504097,"/etc/samba/smb.conf"
+-'  249  0  /etc/samba/smb.conf
+|4,39,249,0,1607504097,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504031,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504031,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504031,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607504031,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  251  0  /etc/samba/smb.conf
+|4,39,251,0,1607503990,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607503979,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607503979,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607503979,"/etc/samba/smb.conf"
+-'  1  0  /etc/samba/smb.conf
+|4,39,1,0,1607503979,"/etc/samba/smb.conf"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  12  0  ~/scripts/screenOutputMenu
+|4,39,12,0,1607304275,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
+-'  14  0  ~/scripts/screenOutputMenu
+|4,39,14,0,1607304273,"~/scripts/screenOutputMenu"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
+
+> ~/.bashrc
+	*	1607868988	0
+	"	177	1
+	^	177	2
+	.	177	1
+	+	175	15
+	+	174	0
+	+	33	0
+	+	34	0
+	+	33	0
+	+	34	1
+	+	5	0
+	+	5	28
+	+	5	0
+	+	5	17
+	+	6	0
+	+	7	0
+	+	18	0
+	+	9	0
+	+	10	4
+	+	11	2
+	+	12	4
+	+	13	5
+	+	14	3
+	+	15	6
+	+	16	3
+	+	9	17
+	+	10	16
+	+	11	12
+	+	12	16
+	+	13	17
+	+	14	15
+	+	15	18
+	+	16	15
+	+	17	15
+	+	75	0
+	+	74	4
+	+	75	91
+	+	75	70
+	+	147	0
+	+	146	0
+	+	147	88
+	+	75	68
+	+	160	8
+	+	172	0
+	+	176	0
+	+	176	2
+	+	160	6
+	+	176	0
+	+	160	2
+	+	172	0
+	+	177	1
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1607868127	0
+	"	153	0
+	^	1	6
+	.	1	5
+	+	1	5
+
+> /etc/samba/smb.conf
+	*	1607504121	0
+	"	249	0
+	^	248	1
+	.	249	0
+	+	273	0
+	+	266	0
+	+	239	18
+	+	242	16
+	+	253	16
+	+	252	3
+	+	243	3
+	+	238	0
+	+	249	0
+	+	238	0
+	+	249	0
+
+> ~/scripts/screenOutputMenu
+	*	1607304273	0
+	"	12	0
+	^	12	2
+	.	12	0
+	+	27	0
+	+	12	22
+	+	12	0
+	+	12	22
+	+	13	0
+	+	20	0
+	+	12	0
+
+> ~/.config/i3/config
+	*	1607303651	0
+	"	344	41
+	^	344	1
+	.	344	41
+	+	364	0
+	+	365	0
+	+	366	0
+	+	367	0
+	+	369	0
+	+	160	0
+	+	161	0
+	+	162	0
+	+	163	0
+	+	166	0
+	+	167	0
+	+	168	0
+	+	169	0
+	+	20	18
+	+	363	50
+	+	35	0
+	+	191	0
+	+	192	0
+	+	432	9
+	+	191	0
+	+	192	0
+	+	414	15
+	+	406	40
+	+	407	0
+	+	406	1
+	+	407	1
+	+	406	1
+	+	35	0
+	+	20	14
+	+	35	0
+	+	179	20
+	+	180	8
+	+	181	8
+	+	182	8
+	+	240	0
+	+	241	0
+	+	240	0
+	+	236	0
+	+	239	14
+	+	35	0
+	+	239	0
+	+	35	0
+	+	239	0
+	+	191	0
+	+	192	0
+	+	195	0
+	+	406	1
+	+	407	1
+	+	406	0
+	+	195	0
+	+	195	40
+	+	195	21
+	+	195	30
+	+	35	0
+	+	195	15
+	+	195	0
+	+	42	0
+	+	43	0
+	+	437	0
+	+	436	0
+	+	437	0
+	+	40	0
+	+	38	0
+	+	39	0
+	+	437	0
+	+	194	0
+	+	195	0
+	+	239	0
+	+	194	0
+	+	238	0
+	+	57	0
+	+	56	0
+	+	57	35
+	+	403	1
+	+	406	1
+	+	408	1
+	+	409	1
+	+	414	1
+	+	432	1
+	+	433	0
+	+	432	0
+	+	414	0
+	+	409	0
+	+	408	0
+	+	406	0
+	+	403	0
+	+	324	0
+	+	322	0
+	+	324	33
+	+	49	17
+	+	43	21
+	+	44	32
+	+	59	0
+	+	58	0
+	+	343	69
+	+	342	0
+	+	24	0
+	+	344	0
+	+	343	0
+	+	344	41
+
+> /etc/ssh/sshd_config
+	*	1607275155	0
+	"	32	18
+	^	32	19
+	.	32	18
+	+	56	0
+	+	32	18
+
+> ~/scripts/installFirefox.sh
+	*	1607216929	0
+	"	123	0
+
+> ~/scripts/instalarFirefox.sh
+	*	1607216835	0
+	"	43	0
+
+> ~/tstscript.sh
+	*	1607216766	0
+	"	1	0
+	^	14	9
+	.	14	8
+	+	8	25
+	+	11	42
+	+	14	28
+	+	18	28
+	+	11	45
+	+	18	32
+	+	11	53
+	+	18	40
+	+	11	22
+	+	18	8
+	+	11	44
+	+	18	30
+	+	3	20
+	+	5	16
+	+	11	67
+	+	11	89
+	+	17	29
+	+	18	82
+	+	5	26
+	+	11	28
+	+	17	28
+	+	11	2
+	+	17	2
+	+	9	68
+	+	15	53
+	+	6	45
+	+	11	54
+	+	17	0
+	+	17	76
+	+	20	0
+	+	21	29
+	+	13	0
+	+	13	29
+	+	13	0
+	+	15	0
+	+	13	0
+	+	9	0
+	+	18	0
+	+	20	0
+	+	18	0
+	+	9	0
+	+	11	0
+	+	13	0
+	+	15	0
+	+	17	0
+	+	20	0
+	+	11	0
+	+	13	0
+	+	17	0
+	+	10	0
+	+	6	17
+	+	10	13
+	+	16	13
+	+	12	13
+	+	19	13
+	+	21	12
+	+	10	18
+	+	12	16
+	+	16	18
+	+	19	16
+	+	21	15
+	+	8	33
+	+	14	8
 
 > ~/dotfiles
 	*	1607130000	0
@@ -664,112 +946,6 @@ $
 	+	52	0
 	+	51	0
 	+	50	0
-
-> ~/.config/i3/config
-	*	1607128859	0
-	"	58	0
-	^	58	0
-	.	58	0
-	+	191	0
-	+	192	0
-	+	191	0
-	+	192	0
-	+	20	18
-	+	360	0
-	+	362	0
-	+	363	0
-	+	364	0
-	+	365	0
-	+	367	0
-	+	160	0
-	+	161	0
-	+	162	0
-	+	163	0
-	+	166	0
-	+	167	0
-	+	168	0
-	+	169	0
-	+	20	18
-	+	361	50
-	+	35	0
-	+	191	0
-	+	192	0
-	+	430	9
-	+	191	0
-	+	192	0
-	+	412	15
-	+	404	40
-	+	405	0
-	+	404	1
-	+	405	1
-	+	404	1
-	+	35	0
-	+	20	14
-	+	35	0
-	+	179	20
-	+	180	8
-	+	181	8
-	+	182	8
-	+	240	0
-	+	241	0
-	+	240	0
-	+	236	0
-	+	239	14
-	+	35	0
-	+	239	0
-	+	35	0
-	+	239	0
-	+	191	0
-	+	192	0
-	+	195	0
-	+	404	1
-	+	405	1
-	+	404	0
-	+	195	0
-	+	195	40
-	+	195	21
-	+	195	30
-	+	35	0
-	+	195	15
-	+	195	0
-	+	42	0
-	+	43	0
-	+	435	0
-	+	434	0
-	+	435	0
-	+	40	0
-	+	38	0
-	+	39	0
-	+	435	0
-	+	194	0
-	+	195	0
-	+	239	0
-	+	194	0
-	+	238	0
-	+	57	0
-	+	56	0
-	+	57	35
-	+	401	1
-	+	404	1
-	+	406	1
-	+	407	1
-	+	412	1
-	+	430	1
-	+	431	0
-	+	430	0
-	+	412	0
-	+	407	0
-	+	406	0
-	+	404	0
-	+	401	0
-	+	324	0
-	+	322	0
-	+	324	33
-	+	49	17
-	+	43	21
-	+	44	32
-	+	59	0
-	+	58	0
 
 > ~/.applications/dmenu/config.h
 	*	1607128730	0
@@ -914,14 +1090,6 @@ $
 	+	74	14
 	+	75	19
 
-> /etc/samba/smb.conf
-	*	1606252534	0
-	"	266	0
-	^	266	1
-	.	266	0
-	+	273	0
-	+	266	0
-
 > ~/.applications/dwm-6.1.stable.systrayTest/dwm.c
 	*	1605829799	0
 	"	2541	1
@@ -1054,75 +1222,6 @@ $
 	"	652	0
 	^	48	1
 
-> ~/tstscript.sh
-	*	1605480716	0
-	"	1	0
-	^	14	9
-	.	14	8
-	+	8	25
-	+	11	42
-	+	14	28
-	+	18	28
-	+	11	45
-	+	18	32
-	+	11	53
-	+	18	40
-	+	11	22
-	+	18	8
-	+	11	44
-	+	18	30
-	+	3	20
-	+	5	16
-	+	11	67
-	+	11	89
-	+	17	29
-	+	18	82
-	+	5	26
-	+	11	28
-	+	17	28
-	+	11	2
-	+	17	2
-	+	9	68
-	+	15	53
-	+	6	45
-	+	11	54
-	+	17	0
-	+	17	76
-	+	20	0
-	+	21	29
-	+	13	0
-	+	13	29
-	+	13	0
-	+	15	0
-	+	13	0
-	+	9	0
-	+	18	0
-	+	20	0
-	+	18	0
-	+	9	0
-	+	11	0
-	+	13	0
-	+	15	0
-	+	17	0
-	+	20	0
-	+	11	0
-	+	13	0
-	+	17	0
-	+	10	0
-	+	6	17
-	+	10	13
-	+	16	13
-	+	12	13
-	+	19	13
-	+	21	12
-	+	10	18
-	+	12	16
-	+	16	18
-	+	19	16
-	+	21	15
-	+	8	33
-	+	14	8
-
 > ~/.config/i3/yabar.conf
 	*	1605458238	0
 	"	31	14
@@ -1208,13 +1307,6 @@ $
 	+	23	92
 	+	44	92
 	+	45	0
-
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1605304871	0
-	"	1	12
-	^	1	13
-	.	1	12
-	+	1	12
 
 > ~/.config/i3/scripts/bandwidthImprove
 	*	1605304819	0
@@ -1433,56 +1525,6 @@ $
 	+	112	1
 	+	123	0
 
-> ~/.bashrc
-	*	1604285848	0
-	"	160	0
-	.	160	0
-	+	175	15
-	+	174	0
-	+	33	0
-	+	34	0
-	+	33	0
-	+	34	1
-	+	5	0
-	+	5	28
-	+	5	0
-	+	5	17
-	+	6	0
-	+	7	0
-	+	18	0
-	+	9	0
-	+	10	4
-	+	11	2
-	+	12	4
-	+	13	5
-	+	14	3
-	+	15	6
-	+	16	3
-	+	9	17
-	+	10	16
-	+	11	12
-	+	12	16
-	+	13	17
-	+	14	15
-	+	15	18
-	+	16	15
-	+	17	15
-	+	75	0
-	+	74	4
-	+	75	91
-	+	75	70
-	+	147	0
-	+	146	0
-	+	147	88
-	+	75	68
-	+	160	8
-	+	172	0
-	+	176	0
-	+	176	2
-	+	160	6
-	+	176	0
-	+	160	0
-
 > ~/.bash
 	*	1604282685	0
 	"	1	0
@@ -1592,10 +1634,6 @@ $
 > ~/SoftMaker/Settings/install.ini
 	*	1603920099	0
 	"	1	0
-
-> ~/scripts/screenOutputMenu
-	*	1603660227	0
-	"	2	0
 
 > ~/.config/xfce4/terminal/terminalrc
 	*	1603658948	0
