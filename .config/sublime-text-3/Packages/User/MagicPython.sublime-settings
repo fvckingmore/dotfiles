@@ -1,6 +1,0 @@
-// These settings override both User and Default settings for the MagicPython syntax
-{
-
-	"shift_tab_unindent": true,
-	
-}

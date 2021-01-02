@@ -1,7 +1,0 @@
-{
-	"shell_cmd": "lxterminal -e ' bash -c \"python3 -u ${file}; echo;read line\" ' ",
-	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-	"selector": "source.python",
-
-	"env": {"PYTHONIOENCODING": "utf-8"},
-}
