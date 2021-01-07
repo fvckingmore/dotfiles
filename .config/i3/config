@@ -279,6 +279,15 @@ mode "$mode_exit" {
 
 
 #######################################################
+#SCRATCHPAD
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+m move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+m scratchpad show
+
+#######################################################
 #USER KEYMAP
 
 #File Manager keymap

@@ -107,9 +107,6 @@ fi
 #alias la='ls -A'
 #alias l='ls -CF'
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -154,24 +151,13 @@ alias apagar='echo "kldhs" | sudo -S init 0'
 alias ll='ls -lXh --group-directories-first'
 alias la='ls -lXha --group-directories-first'
 alias root='sudo su --preserve-environment'
+alias sshChurunMeru='ssh -i ~/.ssh/churun_meru root@churun-meru'
+alias sshRouter='ssh -i ~/.ssh/id_rsa.firewall-router cit@150.188.128.3'
+alias xx='startx'
 
 
-
-: '
-echo "
- ▄▄▄       ███▄ ▄███▓
-▒████▄    ▓██▒▀█▀ ██▒
-▒██  ▀█▄  ▓██    ▓██░
-░██▄▄▄▄██ ▒██    ▒██
- ▓█   ▓██▒▒██▒   ░██▒
- ▒▒   ▓▒█░░ ▒░   ░  ░
-  ▒   ▒▒ ░░  ░      ░
-  ░   ▒   ░      ░
-      ░  ░       ░
-"
-'
 
 export HISTFILESIZE=
 export HISTSIZE=
-
-#e
+export VISUAL=vim
+export EDITOR=$VISUAL

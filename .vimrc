@@ -107,8 +107,9 @@ set noswapfile
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 " Linebreak on 500 characters
 " set lbr
@@ -168,7 +169,6 @@ set laststatus=2
 
 "set number
 syntax on
-set tabstop=4
 set autoindent
 set rnu
 set wrap
