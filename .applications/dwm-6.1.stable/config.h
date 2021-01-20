@@ -2,9 +2,9 @@
 #include <X11/XF86keysym.h>
 /* appearance */
 static const char *fonts[] = {
-	"Ubuntu Bold:size=8"
+	"Sans:size=8"
 };
-static const char dmenufont[]       = "Ubuntu Bold:size=9";
+static const char dmenufont[]       = "Sans:size=9";
 
 #define dCBlack "#282a36";
 #define dCWhite "#f8f8f2";
@@ -17,28 +17,26 @@ static const char dmenufont[]       = "Ubuntu Bold:size=9";
 #define dCYellow "#f1fa8c";
 
 #define sCBlue "#268BD2";
-#define sCRed "#DC322F";
-
 
 #define oCBlue "#005577";
 
-/*
+
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
 static const char selbordercolor[]  = "#005577";
 static const char selbgcolor[]      = "#005577";
 static const char selfgcolor[]      = "#eeeeee";
-*/
 
 
+/*
 static const char normbordercolor[] = dCBlack;
 static const char normbgcolor[]     = dCBlack;
 static const char normfgcolor[]     = dCWhite;
-static const char selbordercolor[]  = sCRed;
-static const char selbgcolor[]      = oCBlue;
-static const char selfgcolor[]      = dCWhite;
-
+static const char selbordercolor[]  = dCCyan;
+static const char selbgcolor[]      = dCCyan;
+static const char selfgcolor[]      = dCBlack;
+*/
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 5;       /* snap pixel */
@@ -67,10 +65,10 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "[M]",      monocle },    /* first entry is default */
+	{ "[]=",      tile },
 	{ "###",      horizgrid },
+	{ "><>",      NULL },    /* no layout function means floating behavior */
 };
 
 /* key definitions */
@@ -178,9 +176,9 @@ static Key keys[] = {
     { MODKEY,                       XK_Tab,         view,           {0} },
     { MODKEY|ShiftMask,             XK_q,           killclient,     {0} },
     { MODKEY,                       XK_p,           setlayout,      {.v = &layouts[0]} },
-    { MODKEY|ShiftMask,             XK_f,           setlayout,      {.v = &layouts[1]} },
-    { MODKEY,                       XK_o,           setlayout,      {.v = &layouts[2]} },
-    { MODKEY,                       XK_i,           setlayout,      {.v = &layouts[3]} },
+    { MODKEY,                       XK_o,           setlayout,      {.v = &layouts[1]} },
+    { MODKEY,                       XK_i,           setlayout,      {.v = &layouts[2]} },
+    { MODKEY|ShiftMask,             XK_f,           setlayout,      {.v = &layouts[3]} },
     { MODKEY,                       XK_space,       setlayout,      {0} },
     { MODKEY|ShiftMask,             XK_space,       togglefloating, {0} },
 

@@ -11,23 +11,33 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último Patrón de búsqueda:
-~Msle0~/\<reboot\>
+~MSle0~/gap
 
 # Último SustituciónPatrón de búsqueda:
 ~MSle0&\t{2}
 
 # Última cadena de sustitución:
-$\t
+$
 
 # Historia de Línea de órdenes (de lo más nuevo a lo más antiguo):
-:q!
-|2,0,1610041653,,"q!"
 :wq
-|2,0,1610041097,,"wq"
+|2,0,1611179622,,"wq"
 :w
-|2,0,1610038525,,"w"
+|2,0,1611179569,,"w"
+:q!
+|2,0,1611179304,,"q!"
+:!markdown RandD.md > RandD.html
+|2,0,1611078665,,"!markdown RandD.md > RandD.html"
+:Q!
+|2,0,1611011654,,"Q!"
+:set nu
+|2,0,1610920726,,"set nu"
 :set tabstop=4
-|2,0,1609359958,,"set tabstop=4"
+|2,0,1610920707,,"set tabstop=4"
+:w prueba.sh
+|2,0,1610668805,,"w prueba.sh"
+:terminal
+|2,0,1610666938,,"terminal"
 :set tabstop=3
 |2,0,1609359469,,"set tabstop=3"
 :set tabstop=2
@@ -52,8 +62,6 @@ $\t
 |2,0,1609357556,,"% s/\\t+/\\t/g"
 :'<,'>/\t
 |2,0,1609357528,,"'<,'>/\\t"
-:Q!
-|2,0,1609357441,,"Q!"
 :tabdo
 |2,0,1609357431,,"tabdo"
 :q
@@ -178,6 +186,10 @@ $\t
 |2,0,1602543871,," '"
 
 # Historia de Cadena de búsqueda (de lo más nuevo a lo más antiguo):
+? @$
+|2,1,1611178702,,"@$"
+?/gap
+|2,1,1611175693,47,"gap"
 ? \<reboot\>
 |2,1,1610041091,,"\\<reboot\\>"
 ?/tab
@@ -206,8 +218,6 @@ $\t
 |2,1,1605829780,47,"XFil"
 ?/updatesys
 |2,1,1605829609,47,"updatesys"
-? @$
-|2,1,1605829014,,"@$"
 ?/^+
 |2,1,1605828741,47,"^+"
 ?/+
@@ -306,8 +316,6 @@ $\t
 |2,1,1605232588,47,"dmenu"
 ?/gaps
 |2,1,1605227606,47,"gaps"
-?/gap
-|2,1,1605146534,47,"gap"
 ?/ga
 |2,1,1605041357,47,"ga"
 ?/radi
@@ -361,48 +369,40 @@ $\t
 
 # Registros:
 "0	LINE	0
-	alias sshChurunMeru='ssh -i ~/.ssh/churun_meru root@churun-meru'
-|3,0,0,1,1,0,1609277849,"alias sshChurunMeru='ssh -i ~/.ssh/churun_meru root@churun-meru'"
+			d) CHOISE=$(echo -e "$OPTS" | dmenu -i -p "$PROMPT" -nf '#FFFFFF' -nb '#282a36' -sb '#f1fa8c' -sf '#282a36' -fn 'Ubuntu Bold-10') ;;
+|3,0,0,1,1,0,1611178703,"		d) CHOISE=$(echo -e \"$OPTS\" | dmenu -i -p \"$PROMPT\" -nf '#FFFFFF' -nb '#282a36' -sb '#f1fa8c' -sf '#282a36' -fn 'Ubuntu Bold-10') ;;"
 ""1	LINE	0
-	: '
-	echo "
-	 ▄▄▄       ███▄ ▄███▓
-	▒████▄    ▓██▒▀█▀ ██▒
-	▒██  ▀█▄  ▓██    ▓██░
-	░██▄▄▄▄██ ▒██    ▒██
-	 ▓█   ▓██▒▒██▒   ░██▒
-	 ▒▒   ▓▒█░░ ▒░   ░  ░
-	  ▒   ▒▒ ░░  ░      ░
-	  ░   ▒   ░      ░
-	      ░  ░       ░
-	"
-	'
-|3,1,1,1,13,0,1610038523,": '","echo \""," ▄▄▄       ███▄ ▄███▓","▒████▄    ▓██▒▀█▀ ██▒","▒██  ▀█▄  ▓██    ▓██░","░██▄▄▄▄██ ▒██    ▒██"," ▓█   ▓██▒▒██▒   ░██▒"," ▒▒   ▓▒█░░ ▒░   ░  ░","  ▒   ▒▒ ░░  ░      ░","  ░   ▒   ░      ░","      ░  ░       ░","\"","'"
+	done
+|3,1,1,1,1,0,1611179563,"done"
 "2	LINE	0
-	#   sleep 10; alert
-|3,0,2,1,1,0,1610038499,"#   sleep 10; alert"
-"3	LINE	0
-	# Add an "alert" alias for long running commands.  Use like so:
-|3,0,3,1,1,0,1610038498,"# Add an \"alert\" alias for long running commands.  Use like so:"
-"4	LINE	0
 	
-	# Alias definitions.
-|3,0,4,1,2,0,1610038494,"","# Alias definitions."
+|3,0,2,1,1,0,1611179560,""
+"3	LINE	0
+	while [ $# -ne 0 ]; do
+|3,0,3,1,1,0,1611179559,"while [ $# -ne 0 ]; do"
+"4	LINE	0
+	    { MODKEY|ShiftMask,             XK_f,           setlayout,      {.v = &layouts[1]} },
+|3,0,4,1,1,0,1611176314,"    { MODKEY|ShiftMask,             XK_f,           setlayout,      {.v = &layouts[1]} },"
 "5	LINE	0
-	alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-|3,0,5,1,1,0,1610038493,"alias alert='notify-send --urgency=low -i \"$([ $? = 0 ] && echo terminal || echo error)\" \"$(history|tail -n1|sed -e '\\''s/^\\s*[0-9]\\+\\s*//;s/[;&|]\\s*alert$//'\\'')\"'"
+		{ "###",      horizgrid },
+|3,0,5,1,1,0,1611176286,"	{ \"###\",      horizgrid },"
 "6	LINE	0
-	.oh-my-zsh/
-|3,0,6,1,1,0,1609569958,".oh-my-zsh/"
+		{ "[M]",      monocle },
+|3,0,6,1,1,0,1611175400,"	{ \"[M]\",      monocle },"
 "7	LINE	0
-	.config/sublime-text-3
-|3,0,7,1,1,0,1609569955,".config/sublime-text-3"
+	VOL() (
+		local VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]");
+|3,0,7,1,2,0,1610668558,"VOL() (","	local VOL=$(amixer -M get Master | grep -E -o \"\\[[0-9]+%\\]\");"
 "8	LINE	0
-	set tabstop=2
-|3,0,8,1,1,0,1609359198,"set tabstop=2"
+	VOL() (
+		local VOL=$(amixer -M get Master | grep -E -o "\[[0-9]+%\]");
+|3,0,8,1,2,0,1610668552,"VOL() (","	local VOL=$(amixer -M get Master | grep -E -o \"\\[[0-9]+%\\]\");"
 "9	LINE	0
-	set tabstop=2
-|3,0,9,1,1,0,1609359196,"set tabstop=2"
+	# Example Bar Action Script for Linux.
+	# Requires: acpi, iostat.
+	# Tested on: Debian 10, Fedora 31.
+	#
+|3,0,9,1,4,0,1610668539,"# Example Bar Action Script for Linux.","# Requires: acpi, iostat.","# Tested on: Debian 10, Fedora 31.","#"
 "a	LINE	0
 	+		else if (!strcmp(argv[i], "-S"))   /* do not sort matches */
 	+			sortmatches = false;
@@ -414,348 +414,759 @@ $\t
 	
 |3,0,30,0,1,0,1607889125,""
 "-	CHAR	0
-	meru
-|3,0,36,0,1,0,1609277885,"meru"
+	opt
+|3,0,36,0,1,0,1611178891,"opt"
 
 # Marcas en el archivo:
-'0  39  0  ~/dotfiles
-|4,48,39,0,1610041653,"~/dotfiles"
-'1  26  0  /tmp/crontab.TXttl9/crontab
-|4,49,26,0,1610041097,"/tmp/crontab.TXttl9/crontab"
-'2  1  0  /tmp/crontab.p0ZlEV/crontab
-|4,50,1,0,1610038991,"/tmp/crontab.p0ZlEV/crontab"
-'3  26  34  /tmp/crontab.MDmeDO/crontab
-|4,51,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
-'4  162  0  ~/.bashrc
-|4,52,162,0,1610038527,"~/.bashrc"
-'5  26  32  /tmp/crontab.GlfQB1/crontab
-|4,53,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
-'6  26  34  /tmp/crontab.Hz9F5r/crontab
-|4,54,26,34,1610036701,"/tmp/crontab.Hz9F5r/crontab"
-'7  163  20  ~/.bashrc
-|4,55,163,20,1610036635,"~/.bashrc"
-'8  179  20  ~/.bashrc
-|4,56,179,20,1610036635,"~/.bashrc"
-'9  238  0  /usr/bin/startx
-|4,57,238,0,1609617181,"/usr/bin/startx"
+'0  18  0  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,48,18,0,1611179622,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'1  102  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,49,102,0,1611179613,"~/.applications/dwm-6.1.stable/config.def.h"
+'2  21  2  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,50,21,2,1611179304,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'3  23  2  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,51,23,2,1611179304,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'4  18  9  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,52,18,9,1611179265,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'5  18  9  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,53,18,9,1611179265,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'6  18  9  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,54,18,9,1611179265,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'7  18  10  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,55,18,10,1611179073,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'8  18  10  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,56,18,10,1611179073,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+'9  18  10  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,57,18,10,1611179073,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
 
 # Lista de saltos (el más reciente va primero):
--'  39  0  ~/dotfiles
-|4,39,39,0,1610041653,"~/dotfiles"
--'  1  0  ~/dotfiles
-|4,39,1,0,1610041623,"~/dotfiles"
--'  26  0  /tmp/crontab.TXttl9/crontab
-|4,39,26,0,1610041097,"/tmp/crontab.TXttl9/crontab"
--'  26  0  /tmp/crontab.TXttl9/crontab
-|4,39,26,0,1610041097,"/tmp/crontab.TXttl9/crontab"
--'  1  0  /tmp/crontab.TXttl9/crontab
-|4,39,1,0,1610041090,"/tmp/crontab.TXttl9/crontab"
--'  1  0  /tmp/crontab.TXttl9/crontab
-|4,39,1,0,1610041090,"/tmp/crontab.TXttl9/crontab"
--'  1  0  /tmp/crontab.p0ZlEV/crontab
-|4,39,1,0,1610038991,"/tmp/crontab.p0ZlEV/crontab"
--'  1  0  /tmp/crontab.p0ZlEV/crontab
-|4,39,1,0,1610038991,"/tmp/crontab.p0ZlEV/crontab"
--'  1  0  /tmp/crontab.p0ZlEV/crontab
-|4,39,1,0,1610038991,"/tmp/crontab.p0ZlEV/crontab"
--'  1  0  /tmp/crontab.p0ZlEV/crontab
-|4,39,1,0,1610038991,"/tmp/crontab.p0ZlEV/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  26  34  /tmp/crontab.MDmeDO/crontab
-|4,39,26,34,1610038850,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  1  53  /tmp/crontab.MDmeDO/crontab
-|4,39,1,53,1610038848,"/tmp/crontab.MDmeDO/crontab"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  162  0  ~/.bashrc
-|4,39,162,0,1610038527,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  112  0  ~/.bashrc
-|4,39,112,0,1610038495,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1610038423,"~/.bashrc"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
--'  26  32  /tmp/crontab.GlfQB1/crontab
-|4,39,26,32,1610036902,"/tmp/crontab.GlfQB1/crontab"
+-'  18  0  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,18,0,1611179622,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  102  0  ~/.applications/dwm-6.1.stable/config.def.h
+|4,39,102,0,1611179613,"~/.applications/dwm-6.1.stable/config.def.h"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,1,0,1611179332,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  21  2  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,21,2,1611179304,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  23  2  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,23,2,1611179304,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,1,0,1611179293,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  18  9  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,18,9,1611179265,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  18  9  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,18,9,1611179265,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,1,0,1611179254,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  18  10  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,18,10,1611179073,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,1,0,1611179032,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  27  17  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,27,17,1611179018,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  29  17  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,29,17,1611179018,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  29  17  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,29,17,1611179018,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  29  17  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,29,17,1611179018,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  29  17  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,29,17,1611179018,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  1  0  ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+|4,39,1,0,1611178816,"~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  23  61  ~/.config/screenMenu.sh
+|4,39,23,61,1611178783,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  22  2  ~/.config/screenMenu.sh
+|4,39,22,2,1611178773,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
+-'  1  0  ~/.config/screenMenu.sh
+|4,39,1,0,1611178760,"~/.config/screenMenu.sh"
 
 # Historia de las marcas en los archivos (de la más reciente a la más antigua):
 
-> ~/dotfiles
-	*	1610041643	0
-	"	39	0
-	^	18	19
-	.	26	0
-	+	33	0
-	+	19	2
-	+	35	6
-	+	19	0
-	+	18	18
-	+	21	0
-	+	26	0
+> ~/.applications/dwm-6.1.stable/config.def.h
+	*	1611179607	0
+	"	102	0
+	^	23	0
+	.	181	83
+	+	5	5
+	+	7	42
+	+	56	2
+	+	72	0
+	+	68	0
+	+	69	21
+	+	68	25
+	+	32	1
+	+	39	1
+	+	30	0
+	+	23	0
+	+	72	0
+	+	70	0
+	+	179	0
+	+	181	0
+	+	179	0
+	+	179	83
+	+	180	83
+	+	180	0
+	+	180	83
+	+	181	83
 
-> /tmp/crontab.TXttl9/crontab
-	*	1610041096	0
-	"	26	0
-	^	26	1
-	.	26	0
-	+	26	0
+> ~/.applications/dwm-6.1.stable/dwm.cfg/screenMenu.sh
+	*	1611179569	0
+	"	18	0
+	^	18	8
+	.	18	0
+	+	18	15
+	+	25	68
+	+	25	64
+	+	27	2
+	+	23	13
+	+	21	69
+	+	23	27
+	+	27	18
+	+	18	9
+	+	21	4
+	+	23	4
+	+	25	35
+	+	18	7
+	+	18	0
+	+	29	0
+	+	18	0
 
-> /tmp/crontab.p0ZlEV/crontab
-	*	1610038988	0
+> ~/.config/screenMenu.sh
+	*	1611178783	0
+	"	23	61
+	^	23	62
+	.	23	61
+	+	39	94
+	+	23	0
+	+	22	2
+	+	23	53
+	+	22	0
+	+	23	61
+
+> ~/.applications/dmenu/dmenu_run
+	*	1611178715	0
+	"	1	0
+	^	3	21
+	.	3	20
+	+	3	0
+	+	2	0
+	+	3	20
+
+> ~/.applications/dmenu/arg.h
+	*	1611178703	0
 	"	1	0
 
-> /tmp/crontab.MDmeDO/crontab
-	*	1610038850	0
-	"	26	34
-	^	26	35
-	.	26	34
-	+	26	34
+> ~/.applications/dwm-6.1.stable/dwm.cfg/bar.sh
+	*	1611176031	0
+	"	60	1
+	^	60	2
+	.	60	1
+	+	114	0
+	+	115	0
+	+	113	1
+	+	124	0
+	+	60	0
+	+	59	1
+	+	60	1
 
-> ~/.bashrc
-	*	1610038526	0
-	"	162	0
-	^	163	21
-	.	159	0
-	+	161	15
-	+	160	0
-	+	33	0
-	+	34	0
-	+	33	0
-	+	34	1
-	+	5	0
-	+	5	28
-	+	5	0
-	+	5	17
+> ~/.xinitrc
+	*	1611175457	0
+	"	7	0
+	^	7	0
+	.	7	0
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	8	11
+	+	6	9
+	+	8	0
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	4	0
+	+	6	9
+	+	2	0
+	+	6	9
+	+	2	0
+	+	6	9
+	+	2	0
+	+	3	0
+	+	6	9
+	+	3	0
+	+	6	9
+	+	3	0
+	+	6	9
+	+	8	13
+	+	3	0
+	+	8	0
+	+	3	0
 	+	6	0
+	+	6	9
+	+	8	0
+	+	6	9
+	+	3	0
+	+	6	9
 	+	7	0
+	+	3	0
+	+	7	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	7	0
+	+	3	0
+	+	7	0
+	+	3	0
+	+	5	0
+	+	3	0
+	+	7	0
+
+> ~/.applications/dwm-6.1.stable/config.h
+	*	1611175326	0
+	"	46	42
+	^	7	43
+	.	7	42
+	+	58	2
+	+	5	5
+	+	7	42
+
+> ~/Documentos/innovacionDesarrollo/RandD.md
+	*	1611078667	0
+	"	10	0
+	^	7	282
+	.	7	0
+	+	7	0
+
+> ~/.spectrwm.conf
+	*	1611012257	0
+	"	191	29
+	^	61	44
+	.	61	43
+	+	52	0
+	+	51	0
+	+	52	49
+	+	62	0
+	+	61	0
+	+	60	0
+	+	61	43
+
+> ~/.config/baraction.sh
+	*	1611011654	0
+	"	1	0
+
+> ~/.config/autostart.sh.bak
+	*	1611011599	0
+	"	5	0
+
+> ~/gges.sh
+	*	1610988111	0
+	"	1	0
+	^	14	14
+	.	14	13
+	+	4	20
+	+	6	0
+	+	5	12
+	+	7	25
+	+	8	0
+	+	10	0
+	+	9	0
+	+	10	25
+	+	11	14
+	+	12	0
+	+	13	6
+	+	15	1
+	+	14	13
+
+> ~/Documentos/TicTacToe/tictactoe2.py
+	*	1610920830	0
+	"	243	0
+
+> ~/tstscript.sh
+	*	1610920658	0
+	"	1	0
+	^	14	9
+	.	14	8
+	+	8	25
+	+	11	42
+	+	14	28
+	+	18	28
+	+	11	45
+	+	18	32
+	+	11	53
+	+	18	40
+	+	11	22
+	+	18	8
+	+	11	44
+	+	18	30
+	+	3	20
+	+	5	16
+	+	11	67
+	+	11	89
+	+	17	29
+	+	18	82
+	+	5	26
+	+	11	28
+	+	17	28
+	+	11	2
+	+	17	2
+	+	9	68
+	+	15	53
+	+	6	45
+	+	11	54
+	+	17	0
+	+	17	76
+	+	20	0
+	+	21	29
+	+	13	0
+	+	13	29
+	+	13	0
+	+	15	0
+	+	13	0
+	+	9	0
+	+	18	0
+	+	20	0
 	+	18	0
 	+	9	0
-	+	10	4
-	+	11	2
-	+	12	4
-	+	13	5
-	+	14	3
-	+	15	6
-	+	16	3
-	+	9	17
-	+	10	16
-	+	11	12
+	+	11	0
+	+	13	0
+	+	15	0
+	+	17	0
+	+	20	0
+	+	11	0
+	+	13	0
+	+	17	0
+	+	10	0
+	+	6	17
+	+	10	13
+	+	16	13
+	+	12	13
+	+	19	13
+	+	21	12
+	+	10	18
 	+	12	16
-	+	13	17
-	+	14	15
-	+	15	18
-	+	16	15
-	+	17	15
-	+	75	0
-	+	74	4
-	+	75	91
-	+	75	70
-	+	144	0
-	+	143	0
-	+	144	88
-	+	75	68
-	+	159	8
-	+	159	0
-	+	162	0
-	+	162	2
-	+	159	6
-	+	162	0
-	+	159	2
-	+	159	0
-	+	163	1
+	+	16	18
+	+	19	16
+	+	21	15
+	+	8	33
+	+	14	8
+
+> ~/LibreWolf/build.sh
+	*	1610920232	0
+	"	7	0
+
+> /etc/init.d/samba-ad-dc
+	*	1610895307	0
+	"	77	0
+
+> ~/.config/i3/scripts/screenOutputMenu
+	*	1610668726	0
+	"	44	0
+
+> ~/.config/i3/bar2.sh
+	*	1610668658	0
+	"	55	1
+	^	17	12
+	.	18	0
+	+	6	33
+	+	7	33
+	+	6	27
+	+	7	27
+	+	6	25
+	+	3	64
+	+	6	0
+	+	5	6
+	+	7	0
+	+	10	0
+	+	9	0
+	+	10	0
+	+	6	105
+	+	7	105
+	+	8	51
+	+	9	29
+	+	12	6
+	+	13	0
+	+	15	0
+	+	14	0
+	+	15	0
+	+	13	85
+	+	14	18
+	+	17	0
+	+	19	0
+	+	17	6
+	+	19	55
+	+	19	13
+	+	20	0
+	+	19	6
+	+	20	0
+	+	22	7
+	+	23	0
+	+	25	0
+	+	26	0
+	+	23	122
+	+	24	59
+	+	25	24
+	+	24	0
+	+	23	0
+	+	28	0
+	+	30	0
+	+	28	8
+	+	29	0
+	+	31	0
+	+	32	0
+	+	29	52
+	+	30	82
+	+	31	14
+	+	28	0
+	+	22	0
+	+	34	0
+	+	35	76
+	+	36	148
+	+	34	8
+	+	37	0
+	+	35	0
+	+	37	0
+	+	39	7
+	+	40	6
+	+	40	89
+	+	40	0
+	+	41	0
+	+	42	0
+	+	41	21
+	+	45	0
+	+	53	0
+	+	44	0
+	+	45	0
+	+	45	1
+	+	44	7
+	+	45	10
+	+	46	86
+	+	47	23
+	+	46	0
+	+	47	0
+	+	48	45
+	+	49	24
+	+	50	36
+	+	51	1
+	+	53	6
+	+	54	0
+	+	53	24
+	+	54	22
+	+	53	14
+	+	54	12
+	+	55	0
+	+	56	0
+	+	45	0
+	+	47	24
+	+	58	0
+	+	59	124
+	+	33	0
+	+	11	0
+	+	59	0
+	+	60	0
+	+	2	0
+	+	19	0
+	+	18	0
+
+> /tmp/hola.sh
+	*	1610589743	0
+	"	5	0
+	^	6	30
+	.	6	29
+	+	9	3
+	+	5	22
+	+	6	28
+	+	5	26
+	+	6	19
+	+	7	20
+	+	6	29
+
+> ~/.config/i3/config
+	*	1610409188	0
+	"	217	0
+	^	194	1
+	.	194	0
 	+	163	0
-	+	154	41
-	+	155	71
-	+	156	15
-	+	163	20
-	+	112	0
-	+	110	0
-	+	159	0
+	+	166	0
+	+	167	0
+	+	168	0
+	+	169	0
+	+	20	18
+	+	373	50
+	+	35	0
+	+	191	0
+	+	192	0
+	+	442	9
+	+	191	0
+	+	192	0
+	+	424	15
+	+	416	40
+	+	417	0
+	+	416	1
+	+	417	1
+	+	416	1
+	+	35	0
+	+	20	14
+	+	35	0
+	+	179	20
+	+	180	8
+	+	181	8
+	+	182	8
+	+	240	0
+	+	241	0
+	+	240	0
+	+	236	0
+	+	239	14
+	+	35	0
+	+	239	0
+	+	35	0
+	+	239	0
+	+	191	0
+	+	192	0
+	+	195	0
+	+	416	1
+	+	417	1
+	+	416	0
+	+	195	0
+	+	195	40
+	+	195	21
+	+	195	30
+	+	35	0
+	+	195	15
+	+	195	0
+	+	42	0
+	+	43	0
+	+	447	0
+	+	446	0
+	+	447	0
+	+	40	0
+	+	38	0
+	+	39	0
+	+	447	0
+	+	194	0
+	+	195	0
+	+	239	0
+	+	194	0
+	+	238	0
+	+	57	0
+	+	56	0
+	+	57	35
+	+	413	1
+	+	416	1
+	+	418	1
+	+	419	1
+	+	424	1
+	+	442	1
+	+	443	0
+	+	442	0
+	+	424	0
+	+	419	0
+	+	418	0
+	+	416	0
+	+	413	0
+	+	333	0
+	+	331	0
+	+	333	33
+	+	49	17
+	+	43	21
+	+	44	32
+	+	59	0
+	+	58	0
+	+	352	69
+	+	351	0
+	+	24	0
+	+	353	0
+	+	352	0
+	+	353	41
+	+	281	0
+	+	289	0
+	+	283	0
+	+	288	33
+	+	285	20
+	+	288	14
+	+	354	45
+	+	194	0
 
-> /tmp/crontab.GlfQB1/crontab
-	*	1610036902	0
-	"	26	32
-	^	26	33
-	.	26	33
-	+	26	33
+> /etc/fstab
+	*	1610136112	0
+	"	17	40
+	^	17	41
+	.	17	40
+	+	17	0
+	+	16	2
+	+	17	40
 
-> /tmp/crontab.Hz9F5r/crontab
-	*	1610036700	0
-	"	26	34
-	^	26	35
-	.	26	34
-	+	26	34
-
-> /usr/bin/startx
-	*	1609617179	0
-	"	238	0
+> /mnt/fvckingmore/fvckingmore/Dispositivos
+	*	1610111408	0
+	"	38	0
 
 > ~/vncConfig
-	*	1609616828	0
-	"	49	0
+	*	1610076295	0
+	"	1	0
 	^	43	34
 	.	43	33
 	+	1	10
@@ -809,19 +1220,161 @@ $\t
 	+	30	12
 	+	43	33
 
+> ~/.bashrc
+	*	1610062904	0
+	"	159	0
+	^	159	21
+	.	32	0
+	+	157	15
+	+	156	0
+	+	32	0
+	+	32	1
+	+	5	0
+	+	5	28
+	+	5	0
+	+	5	17
+	+	6	0
+	+	7	0
+	+	18	0
+	+	9	0
+	+	10	4
+	+	11	2
+	+	12	4
+	+	13	5
+	+	14	3
+	+	15	6
+	+	16	3
+	+	9	17
+	+	10	16
+	+	11	12
+	+	12	16
+	+	13	17
+	+	14	15
+	+	15	18
+	+	16	15
+	+	17	15
+	+	71	0
+	+	70	4
+	+	71	91
+	+	71	70
+	+	140	0
+	+	139	0
+	+	140	88
+	+	71	68
+	+	155	8
+	+	155	0
+	+	158	0
+	+	158	2
+	+	155	6
+	+	158	0
+	+	155	2
+	+	155	0
+	+	159	1
+	+	159	0
+	+	150	41
+	+	151	71
+	+	152	15
+	+	159	20
+	+	108	0
+	+	106	0
+	+	155	0
+	+	32	0
+
+> ~/.megarc
+	*	1610049933	0
+	"	2	30
+	^	2	31
+	.	2	30
+	+	1	7
+	+	3	18
+	+	5	4
+	+	6	9
+	+	2	30
+
+> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
+	*	1610041705	0
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/scripts/gge.sh
+	*	1610041685	0
+	"	1	0
+	^	15	23
+	.	15	22
+	+	24	3
+	+	19	4
+	+	14	5
+	+	11	18
+	+	12	19
+	+	13	18
+	+	15	9
+	+	14	16
+	+	15	14
+	+	27	15
+	+	15	14
+	+	7	0
+	+	15	0
+	+	5	6
+	+	7	16
+	+	15	22
+
+> ~/dotfiles
+	*	1610041643	0
+	"	39	0
+	^	18	19
+	.	26	0
+	+	33	0
+	+	19	2
+	+	35	6
+	+	19	0
+	+	18	18
+	+	21	0
+	+	26	0
+
+> /tmp/crontab.TXttl9/crontab
+	*	1610041096	0
+	"	26	0
+	^	26	1
+	.	26	0
+	+	26	0
+
+> /tmp/crontab.p0ZlEV/crontab
+	*	1610038988	0
+	"	1	0
+
+> /tmp/crontab.MDmeDO/crontab
+	*	1610038850	0
+	"	26	34
+	^	26	35
+	.	26	34
+	+	26	34
+
+> /tmp/crontab.GlfQB1/crontab
+	*	1610036902	0
+	"	26	32
+	^	26	33
+	.	26	33
+	+	26	33
+
+> /tmp/crontab.Hz9F5r/crontab
+	*	1610036700	0
+	"	26	34
+	^	26	35
+	.	26	34
+	+	26	34
+
+> /usr/bin/startx
+	*	1609617179	0
+	"	238	0
+
 > ~/Documentos/subl/.git/COMMIT_EDITMSG
 	*	1609616456	0
 	"	1	3
 	^	1	4
 	.	1	3
 	+	1	3
-
-> ~/Documentos/dotfiles/.git/COMMIT_EDITMSG
-	*	1609569789	0
-	"	1	13
-	^	1	14
-	.	1	13
-	+	1	13
 
 > ~/TicTacToe.py
 	*	1609359964	0
@@ -950,34 +1503,6 @@ $\t
 	*	1609298397	0
 	"	4	0
 
-> ~/.config/screenMenu.sh
-	*	1609283118	0
-	"	9	0
-	.	38	94
-	+	38	94
-
-> ~/scripts/gge.sh
-	*	1609163363	0
-	"	11	12
-	^	15	23
-	.	15	22
-	+	24	3
-	+	19	4
-	+	14	5
-	+	11	18
-	+	12	19
-	+	13	18
-	+	15	9
-	+	14	16
-	+	15	14
-	+	27	15
-	+	15	14
-	+	7	0
-	+	15	0
-	+	5	6
-	+	7	16
-	+	15	22
-
 > ~/scripts/bakTst.sh
 	*	1609161973	0
 	"	124	0
@@ -1015,112 +1540,6 @@ $\t
 	*	1608504792	0
 	"	84	0
 
-> ~/.config/i3/config
-	*	1608485063	0
-	"	288	14
-	^	288	15
-	.	288	14
-	+	161	0
-	+	162	0
-	+	163	0
-	+	166	0
-	+	167	0
-	+	168	0
-	+	169	0
-	+	20	18
-	+	372	50
-	+	35	0
-	+	191	0
-	+	192	0
-	+	441	9
-	+	191	0
-	+	192	0
-	+	423	15
-	+	415	40
-	+	416	0
-	+	415	1
-	+	416	1
-	+	415	1
-	+	35	0
-	+	20	14
-	+	35	0
-	+	179	20
-	+	180	8
-	+	181	8
-	+	182	8
-	+	240	0
-	+	241	0
-	+	240	0
-	+	236	0
-	+	239	14
-	+	35	0
-	+	239	0
-	+	35	0
-	+	239	0
-	+	191	0
-	+	192	0
-	+	195	0
-	+	415	1
-	+	416	1
-	+	415	0
-	+	195	0
-	+	195	40
-	+	195	21
-	+	195	30
-	+	35	0
-	+	195	15
-	+	195	0
-	+	42	0
-	+	43	0
-	+	446	0
-	+	445	0
-	+	446	0
-	+	40	0
-	+	38	0
-	+	39	0
-	+	446	0
-	+	194	0
-	+	195	0
-	+	239	0
-	+	194	0
-	+	238	0
-	+	57	0
-	+	56	0
-	+	57	35
-	+	412	1
-	+	415	1
-	+	417	1
-	+	418	1
-	+	423	1
-	+	441	1
-	+	442	0
-	+	441	0
-	+	423	0
-	+	418	0
-	+	417	0
-	+	415	0
-	+	412	0
-	+	333	0
-	+	331	0
-	+	333	33
-	+	49	17
-	+	43	21
-	+	44	32
-	+	59	0
-	+	58	0
-	+	352	69
-	+	351	0
-	+	24	0
-	+	353	0
-	+	352	0
-	+	353	41
-	+	281	0
-	+	289	0
-	+	283	0
-	+	288	33
-	+	285	20
-	+	288	14
-
 > /etc/ssh/sshd_config
 	*	1608400531	0
 	"	122	0
@@ -1132,58 +1551,6 @@ $\t
 > /etc/issue
 	*	1608400487	0
 	"	1	1
-
-> ~/.xinitrc
-	*	1607985459	0
-	"	7	0
-	^	7	1
-	.	7	0
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	8	11
-	+	6	9
-	+	8	0
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	4	0
-	+	6	9
-	+	2	0
-	+	6	9
-	+	2	0
-	+	6	9
-	+	2	0
-	+	3	0
-	+	6	9
-	+	3	0
-	+	6	9
-	+	3	0
-	+	6	9
-	+	8	13
-	+	3	0
-	+	8	0
-	+	3	0
-	+	6	0
-	+	6	9
-	+	8	0
-	+	6	9
-	+	3	0
-	+	6	9
-	+	7	0
-	+	3	0
-	+	7	0
-	+	3	0
-	+	4	0
-	+	3	0
-	+	4	0
-	+	7	0
-	+	3	0
-	+	7	0
 
 > ~/scripts/scr2.sh
 	*	1607907006	0
@@ -1258,84 +1625,6 @@ $\t
 > ~/scripts/instalarFirefox.sh
 	*	1607216835	0
 	"	43	0
-
-> ~/tstscript.sh
-	*	1607216766	0
-	"	1	0
-	^	14	9
-	.	14	8
-	+	8	25
-	+	11	42
-	+	14	28
-	+	18	28
-	+	11	45
-	+	18	32
-	+	11	53
-	+	18	40
-	+	11	22
-	+	18	8
-	+	11	44
-	+	18	30
-	+	3	20
-	+	5	16
-	+	11	67
-	+	11	89
-	+	17	29
-	+	18	82
-	+	5	26
-	+	11	28
-	+	17	28
-	+	11	2
-	+	17	2
-	+	9	68
-	+	15	53
-	+	6	45
-	+	11	54
-	+	17	0
-	+	17	76
-	+	20	0
-	+	21	29
-	+	13	0
-	+	13	29
-	+	13	0
-	+	15	0
-	+	13	0
-	+	9	0
-	+	18	0
-	+	20	0
-	+	18	0
-	+	9	0
-	+	11	0
-	+	13	0
-	+	15	0
-	+	17	0
-	+	20	0
-	+	11	0
-	+	13	0
-	+	17	0
-	+	10	0
-	+	6	17
-	+	10	13
-	+	16	13
-	+	12	13
-	+	19	13
-	+	21	12
-	+	10	18
-	+	12	16
-	+	16	18
-	+	19	16
-	+	21	15
-	+	8	33
-	+	14	8
-
-> ~/.applications/dmenu/dmenu_run
-	*	1607129582	0
-	"	3	20
-	^	3	21
-	.	3	20
-	+	3	0
-	+	2	0
-	+	3	20
 
 > ~/.applications/dmenu/dmenu-nosort-5.0.diff
 	*	1607129527	0
@@ -1800,16 +2089,6 @@ $\t
 	+	18	0
 	+	4	0
 
-> ~/.applications/dwm-6.1.stable/dwm.cfg/bar.sh
-	*	1604443575	0
-	"	135	0
-	^	112	2
-	.	123	0
-	+	113	0
-	+	114	0
-	+	112	1
-	+	123	0
-
 > ~/.bash
 	*	1604282685	0
 	"	1	0
@@ -1825,13 +2104,6 @@ $\t
 > ~/paks/Packages
 	*	1604188521	0
 	"	5035	9
-
-> ~/.applications/dwm-6.1.stable/config.h
-	*	1604186962	0
-	"	58	2
-	^	58	3
-	.	58	2
-	+	58	2
 
 > ~/.config/openbox/rc.xml
 	*	1604095487	0
@@ -1875,102 +2147,3 @@ $\t
 > /etc/xdg/openbox/LXDE/ne
 	*	1604093870	0
 	"	1	0
-
-> ~/.config/openbox/menu.xml
-	*	1604093832	0
-	"	1	0
-	^	31	67
-	.	31	23
-	+	31	23
-
-> ~/.config/lxpanel/default/panels/panel
-	*	1604092374	0
-	"	72	4
-
-> ~/.config/lxpanel/Lubuntu/panels/panel
-	*	1604092343	0
-	"	1	0
-
-> ~/.config/lxpanel/Lubuntu/config
-	*	1604092333	0
-	"	1	0
-
-> /etc/xdg/openbox/environment
-	*	1604092121	0
-	"	1	0
-
-> /etc/xdg/openbox/autostart
-	*	1604092114	0
-	"	1	0
-
-> ~/.config/autostart.sh
-	*	1604091574	0
-	"	1	0
-
-> ~/.config/openbox/autostart
-	*	1604091131	0
-	"	5	9
-	^	5	10
-	.	5	9
-	+	1	0
-	+	6	0
-	+	5	9
-
-> ~/SoftMaker/Settings/install.ini
-	*	1603920099	0
-	"	1	0
-
-> ~/.config/xfce4/terminal/terminalrc
-	*	1603658948	0
-	"	25	0
-	^	25	1
-	.	25	0
-	+	29	0
-	+	25	0
-	+	29	0
-	+	25	0
-	+	23	0
-	+	28	0
-	+	24	10
-	+	27	0
-	+	26	0
-	+	25	0
-
-> /media/moreno/fvckingmore/documentos/C/Producto co solo suma_pae por referencia.c
-	*	1603651364	0
-	"	57	0
-
-> /media/moreno/fvckingmore/documentos/C/Banco.c
-	*	1603651213	0
-	"	6	8
-
-> ~/.vimrc.full
-	*	1603649424	0
-	"	40	0
-
-> /media/moreno/fvckingmore/programacion/python/Ejercicios/tictactoe/TicTacToe.py
-	*	1603646981	0
-	"	57	0
-
-> ~/.config/i3/scripts/tmp
-	*	1603646469	0
-	"	35	0
-	^	12	12
-	.	12	0
-	+	15	0
-	+	16	35
-	+	15	38
-	+	19	0
-	+	22	20
-	+	15	38
-	+	44	61
-	+	44	0
-	+	33	52
-	+	33	48
-	+	33	42
-	+	33	0
-	+	12	0
-
-> /media/moreno/fvckingmore/programacion/c++/practica4.cpp
-	*	1603646391	0
-	"	142	0

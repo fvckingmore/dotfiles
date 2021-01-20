@@ -191,7 +191,7 @@ bindsym Control+$mod+Right resize grow width 5 px or 5 ppt
 #i3 GAPS
 #######################################################
 
-gaps inner 4
+#gaps inner 4
 gaps outer 4
 
 
@@ -351,6 +351,7 @@ exec --no-startup-id redshift -O 3400
 #exec --no-startup-id xcompmgr -c -t-5 -l-5 -r5 -o.55 -fF -I.04 -O.04 -D3
 #exec --no-startup-id xcompmgr -c -t-5 -l-5 -r6 -o1 -fF -I.09 -O.09 -D2
 exec --no-startup-id xcompmgr -c -t-5 -l-3 -r6 -o1 -fF -I.09 -O.09 -D2
+exec --no-startup-id /usr/lib/vino/vino-server
 
 
 

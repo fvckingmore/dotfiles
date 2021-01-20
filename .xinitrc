@@ -1,7 +1,7 @@
 xrdb ~/.Xresources &
 
-exec i3
+#exec i3
 #exec openbox-session
 #exec spectrwm
 #exec dwm
-#exec dwm61
+exec dwm61

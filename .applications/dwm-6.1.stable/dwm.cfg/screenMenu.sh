@@ -15,21 +15,17 @@ OPTS="Laptop\nVGA Extended\nVGA Single\nManual"
 DIR="/home/moreno/.config/i3/scripts"
 COM="[ "$(xrandr --query | awk '/VGA1/{print $2}')" = "disconnected" ]"
 
-while getopts "dm:" opt; do
+case $1 in
 
-	case $opt in
+	#d) CHOISE=$(echo -e "$OPTS" | dmenu -i -p "$PROMPT" -nf '#FFFFFF' -nb '#282a36' -sb '#f1fa8c' -sf '#282a36' -fn 'Ubuntu Bold-10') ;;
+	"d") CHOISE=$(echo -e "$OPTS" | dmenu -i -p "$PROMPT" -S -l 15); shift ;;
 
-		#d) CHOISE=$(echo -e "$OPTS" | dmenu -i -p "$PROMPT" -nf '#FFFFFF' -nb '#282a36' -sb '#f1fa8c' -sf '#282a36' -fn 'Ubuntu Bold-10') ;;
-		d) CHOISE=$(echo -e "$OPTS" | dmenu -i -p "$PROMPT" -S -l 15) ;;
+	"m") CHOISE=$2; shift; shift ;;
 
-		m) CHOISE=$OPTARG ;;
+	$(echo $1 | grep -E "^$")) echo "necesita argumento"; exit 1 ;;
 
-		:) echo "-$OPTARG necesita argumento" >&2;
-			exit 1 ;;
-
-		\?) echo "Opcion -$OPTARG incorrecta" ;;
-	esac
-done
+	*) echo "Opcion incorrecta" ;;
+esac
 
 
 case $CHOISE in
